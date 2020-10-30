@@ -1,0 +1,228 @@
+/** IMPORTS **/
+@import "../fonts/fonts.css";
+@import "header.css";
+
+body {
+    font-family: 'Proxima Nova Rg', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+ul.horizontal {
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    margin: 0;
+}
+
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-19 {
+    font-size: 19px;
+}
+
+.fs-20 {
+    font-size: 200px;
+}
+
+.fs-21 {
+    font-size: 21px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-23 {
+    font-size: 23px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.f-regular {
+    font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+.f-light {
+    font-family: 'Proxima Nova Lt', sans-serif;
+}
+
+.f-thin {
+    font-family: 'Proxima Nova Th', sans-serif;
+}
+
+.f-semibold {
+    font-family: 'Proxima Nova Sb', sans-serif;
+}
+
+.f-extrabold {
+    font-family: 'Proxima Nova Eb', sans-serif;
+}
+
+.f-bold {
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.f-black {
+    font-family: 'Proxima Nova Bl', sans-serif;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.color-black {
+    color: #000000;
+}
+
+.color-dark {
+    color: #023047;
+}
+
+.color-blue {
+    color: #0081A7;
+}
+
+.bg-blue {
+    background: #0081A7;
+}
+
+.custom-selectbox {
+    position: relative;
+}
+
+.custom-selectbox .custom-select-toggler {
+    border: 1px solid rgba(2, 48, 71, .1);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    white-space: nowrap;
+    height: 34px;
+    position: relative;
+    padding: 10px 50px 10px 10px;
+}
+
+.custom-selectbox .custom-select-menu {
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height .25s;
+    margin-top: 10px;
+}
+
+.custom-selectbox .custom-select-menu .menu {
+    padding: 0;
+    border: 1px solid rgba(2, 48, 71, .1);
+}
+
+.custom-selectbox .custom-select-menu-item {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    white-space: nowrap;
+    height: 34px;
+    padding: 0 10px;
+}
+
+
+.currency-select.custom-selectbox .custom-select-toggler .icon,
+.currency-select.custom-selectbox .custom-select-menu .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: #023047;
+}
+
+.custom-selectbox .custom-select-menu-item:hover {
+    background: #023047;
+    color: #FFFFFF;
+}
+
+.custom-selectbox .custom-select-menu-item:hover .icon {
+    fill: #fff;
+}
+
+.custom-selectbox .custom-select-toggler .icon.arrow {
+    width: 8px;
+    height: 8px;
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    top: calc(50% - 4px);
+    fill: #023047;
+}
+
+.custom-selectbox .custom-select-menu.open {
+    max-height: 1000px;
+    transition: max-height .5s;
+}
+
+.form-button {
+    font-size: 15px;
+    color: #FFFFFF;
+    height: 36px;
+    width: 100%;
+    border: 0;
+}
+
+.form-button:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
+.form-button:hover {
+    opacity: .9;
+}

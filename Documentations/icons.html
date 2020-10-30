@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
+    <title>Documentations - Icons</title>
+    <style>
+        .documentation-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .html-code-block {
+            display: flex;
+            flex-direction: column;
+            background: #000;
+            padding: 10px;
+            width: 400px;
+        }
+
+        .html-code-block pre {
+            margin: 0 0 10px;
+            color: #fff3cd;
+            font-weight: 600;
+        }
+
+        .example-icon {
+            width: 20px;
+            height: 20px;
+            fill: red;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            margin-bottom: 25px;
+        }
+
+        .box {
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icons-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .icons-list .icon-wrapper {
+            width: calc(100% / 10);
+            min-width: 150px;
+            margin: 10px;
+            border: 1px solid black;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .icons-list .icon-wrapper .icon {
+            width: 30px;
+            height: 30px;
+            fill: #000;
+        }
+
+        .icons-list .icon-wrapper h6 {
+            margin: 20px 0 0;
+        }
+    </style>
+</head>
+<body>
+<div class="documentation-content">
+    <h1>ICONS</h1>
+    <div class="box">
+        <h5> HTML Code:</h5>
+        <div class="html-code-block">
+            <pre>&lt;svg class="icon" &gt;</pre>
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;&lt;use href="your-path/sprite.svg#address" &gt;</pre>
+            <pre>&lt;/svg &gt;</pre>
+        </div>
+    </div>
+    <div class="box">
+        <h5> CSS Code:</h5>
+        <div class="html-code-block">
+            <pre>.icon {</pre>
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;width: 20px;</pre>
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;height: 20px;</pre>
+            <pre>&nbsp;&nbsp;&nbsp;&nbsp;fill: red;</pre>
+            <pre>}</pre>
+        </div>
+    </div>
+    <div class="box">
+        <h5> Output:</h5>
+        <svg class="icon example-icon">
+            <use href="../assets/icons/sprite.svg#address"></use>
+        </svg>
+    </div>
+    <h2>Icons List</h2>
+    <div class="icons-list">
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#address"></use>
+            </svg>
+            <h6>#address</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#baby"></use>
+            </svg>
+            <h6>#baby</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#brazil"></use>
+            </svg>
+            <h6>#brazil</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#bluetooth"></use>
+            </svg>
+            <h6>#bluetooth</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#car"></use>
+            </svg>
+            <h6>#car</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#car-2"></use>
+            </svg>
+            <h6>#car-2</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#car-3"></use>
+            </svg>
+            <h6>#car-3</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#car-check"></use>
+            </svg>
+            <h6>#car-check</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#car-multiple"></use>
+            </svg>
+            <h6>#car-multiple</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#car-shield"></use>
+            </svg>
+            <h6>#car-shield</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#car-stars"></use>
+            </svg>
+            <h6>#car-stars</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#chat"></use>
+            </svg>
+            <h6>#chat</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#china"></use>
+            </svg>
+            <h6>#china</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#city-map"></use>
+            </svg>
+            <h6>#city-map</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#clean"></use>
+            </svg>
+            <h6>#clean</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#close"></use>
+            </svg>
+            <h6>#close</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#contact-mail"></use>
+            </svg>
+            <h6>#contact-mail</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#credit-card"></use>
+            </svg>
+            <h6>#credit-card</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#document"></use>
+            </svg>
+            <h6>#document</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#dollar"></use>
+            </svg>
+            <h6>#dollar</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#down-angle"></use>
+            </svg>
+            <h6>#down-angle</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#driver"></use>
+            </svg>
+            <h6>#driver</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#driving-license"></use>
+            </svg>
+            <h6>#driving-license</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#enter"></use>
+            </svg>
+            <h6>#enter</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#euro"></use>
+            </svg>
+            <h6>#euro</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#filter"></use>
+            </svg>
+            <h6>#filter</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#flag"></use>
+            </svg>
+            <h6>#flag</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#france"></use>
+            </svg>
+            <h6>#france</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#fuel"></use>
+            </svg>
+            <h6>#fuel</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#germany"></use>
+            </svg>
+            <h6>#germany</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#globe"></use>
+            </svg>
+            <h6>#globe</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#heart-bubble"></use>
+            </svg>
+            <h6>#heart-bubble</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#home"></use>
+            </svg>
+            <h6>#home</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#information-button"></use>
+            </svg>
+            <h6>#information-button</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#keyword"></use>
+            </svg>
+            <h6>#keyword</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#left-arrow"></use>
+            </svg>
+            <h6>#left-arrow</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#location"></use>
+            </svg>
+            <h6>#location</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#location-arrow"></use>
+            </svg>
+            <h6>#location-arrow</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#location-arrow-2"></use>
+            </svg>
+            <h6>#location-arrow-2</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#location-empty"></use>
+            </svg>
+            <h6>#location-empty</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#clean"></use>
+            </svg>
+            <h6>#maestro</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#mail"></use>
+            </svg>
+            <h6>#mail</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#map"></use>
+            </svg>
+            <h6>#map</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#map-2"></use>
+            </svg>
+            <h6>#map-2</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#mastercard"></use>
+            </svg>
+            <h6>#mastercard</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#more"></use>
+            </svg>
+            <h6>#more</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#parking"></use>
+            </svg>
+            <h6>#parking</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#pay"></use>
+            </svg>
+            <h6>#pay</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#phone"></use>
+            </svg>
+            <h6>#phone</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#photo"></use>
+            </svg>
+            <h6>#photo</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#pickup-car"></use>
+            </svg>
+            <h6>#pickup-car</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#plus-circle"></use>
+            </svg>
+            <h6>#plus-circle</h6>
+        </div>
+
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#product"></use>
+            </svg>
+            <h6>#product</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#receipt"></use>
+            </svg>
+            <h6>#receipt</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#right-angle"></use>
+            </svg>
+            <h6>#right-angle</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#right-arrow"></use>
+            </svg>
+            <h6>#right-arrow</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#right-up-arrow"></use>
+            </svg>
+            <h6>#right-up-arrow</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#riyal"></use>
+            </svg>
+            <h6>#riyal</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#satisfaction"></use>
+            </svg>
+            <h6>#satisfaction</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#search"></use>
+            </svg>
+            <h6>#search</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#shield"></use>
+            </svg>
+            <h6>#shield</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#speech-bubble"></use>
+            </svg>
+            <h6>#speech-bubble</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#speed"></use>
+            </svg>
+            <h6>#speed</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#star"></use>
+            </svg>
+            <h6>#star</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#steering-wheel"></use>
+            </svg>
+            <h6>#steering-wheel</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#steering-wheel-user"></use>
+            </svg>
+            <h6>#steering-wheel-user</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#sterlin"></use>
+            </svg>
+            <h6>#sterlin</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#street"></use>
+            </svg>
+            <h6>#street</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#traffic"></use>
+            </svg>
+            <h6>#traffic</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#translation"></use>
+            </svg>
+            <h6>#translation</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#transmission"></use>
+            </svg>
+            <h6>#transmission</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#transportation"></use>
+            </svg>
+            <h6>#transportation</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#turkey"></use>
+            </svg>
+            <h6>#turkey</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#turkish-lira"></use>
+            </svg>
+            <h6>#turkish-lira</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#umbrella"></use>
+            </svg>
+            <h6>#umbrella</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#united-kingdom"></use>
+            </svg>
+            <h6>#united-kingdom</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#user"></use>
+            </svg>
+            <h6>#user</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#user-key"></use>
+            </svg>
+            <h6>#user-key</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#visa"></use>
+            </svg>
+            <h6>#visa</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#wallet"></use>
+            </svg>
+            <h6>#wallet</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#work"></use>
+            </svg>
+            <h6>#work</h6>
+        </div>
+        <div class="icon-wrapper">
+            <svg class="icon">
+                <use href="../assets/icons/sprite.svg#yuan"></use>
+            </svg>
+            <h6>#yuan</h6>
+        </div>
+
+
+    </div>
+</div>
+
+</body>
+</html>

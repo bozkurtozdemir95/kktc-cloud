@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--- LIBRARIES --->
+    <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
+
+    <script src="../assets/libs/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
+
+    <script src="../assets/js/main.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>KKTC - Araç Kiralama</title>
+</head>
+<body>
+<div id="Header">
+    <div class="header-top">
+        <div class="container h-100">
+            <div class="d-flex justify-content-between h-100">
+                <div class="header-top-left">
+                    <a href="#">
+                        <img src="../assets/images/logo-sm.png" alt="KKTC">
+                    </a>
+                    <ul class="top-navigation horizontal h-100">
+                        <li><a href="#" class="color-dark fs-12 blue">İlan</a></li>
+                        <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
+                        <li><a href="#" class="color-dark fs-12 orange">Firma</a></li>
+                        <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
+                        <li><a href="#" class="color-dark fs-12 green">Sipariş</a></li>
+                        <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
+                        <li><a href="#" class="color-dark fs-12 darkblue">Fatura</a></li>
+                        <li class="more">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#more"></use>
+                            </svg>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header-top-right">
+                    <ul class="horizontal h-100">
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropdown-toggler d-flex align-items-center" id="currencyDropdown"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon currency">
+                                        <use href="../assets/icons/sprite.svg#turkish-lira"></use>
+                                    </svg>
+                                    <span class="fs-12 color-dark">Para Birimi</span>
+                                </div>
+                                <div class="dropdown-menu no-close" aria-labelledby="currencyDropdown">
+                                    <h5>Para Birimi</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#dollar"></use>
+                                            </svg>
+                                            Amerikan Doları (USD)
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#dollar"></use>
+                                                    </svg>
+                                                    Amerikan Doları (USD)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#yuan"></use>
+                                                    </svg>
+                                                    Çin Yuanı (CNY)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#sterlin"></use>
+                                                    </svg>
+                                                    Sterlin (GBP)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#euro"></use>
+                                                    </svg>
+                                                    Euro (EUR)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#dollar"></use>
+                                                    </svg>
+                                                    Avustralya Doları (AUD)
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="form-button bg-blue">Değiştir</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <div class="dropdown-toggler d-flex align-items-center" id="languageDropdown"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon language">
+                                        <use href="../assets/icons/sprite.svg#turkey"></use>
+                                    </svg>
+                                    <span class="fs-12 color-dark">TR-TR</span>
+                                </div>
+                                <div class="dropdown-menu no-close" aria-labelledby="currencyDropdown">
+                                    <h5>Ülke/bölge seçin</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#turkey"></use>
+                                            </svg>
+                                            Türkiye
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#brazil"></use>
+                                                    </svg>
+                                                    Brazil
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#china"></use>
+                                                    </svg>
+                                                    China
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#france"></use>
+                                                    </svg>
+                                                    France
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#germany"></use>
+                                                    </svg>
+                                                    Germany
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#united-kingdom"></use>
+                                                    </svg>
+                                                    United Kingdom
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <h5>Dil seçin</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#translation"></use>
+                                            </svg>
+                                            Türkçe
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#translation"></use>
+                                                    </svg>
+                                                    English
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#translation"></use>
+                                                    </svg>
+                                                    Arabic
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="form-button bg-blue">Değiştir</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="after-login">
+                            <div class="dropdown">
+                                <div class="dropdown-toggler d-flex align-items-center" id="accountDropdown"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <img src="../assets/images/avatar.png" alt="KKTC" class="avatar">
+                                    <span class="fs-12 color-dark">John Doe</span>
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                    </svg>
+                                </div>
+                                <div class="dropdown-menu no-close" aria-labelledby="accountDropdown">
+                                    <h5>Ülke/bölge seçin</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#turkey"></use>
+                                            </svg>
+                                            Türkiye
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#brazil"></use>
+                                                    </svg>
+                                                    Brazil
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#china"></use>
+                                                    </svg>
+                                                    China
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#france"></use>
+                                                    </svg>
+                                                    France
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#germany"></use>
+                                                    </svg>
+                                                    Germany
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#united-kingdom"></use>
+                                                    </svg>
+                                                    United Kingdom
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <h5>Dil seçin</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#translation"></use>
+                                            </svg>
+                                            Türkçe
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#translation"></use>
+                                                    </svg>
+                                                    English
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#translation"></use>
+                                                    </svg>
+                                                    Arabic
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="form-button bg-blue">Değiştir</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
