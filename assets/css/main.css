@@ -135,6 +135,10 @@ p {
     color: #0081A7;
 }
 
+.color-red {
+    color: #F3031B;
+}
+
 .bg-blue {
     background: #0081A7;
 }
@@ -161,6 +165,7 @@ p {
     overflow: hidden;
     transition: max-height .25s;
     margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .custom-selectbox .custom-select-menu .menu {
@@ -225,4 +230,16 @@ p {
 
 .form-button:hover {
     opacity: .9;
+}
+
+.empty-button {
+    background: transparent;
+    padding: 0;
+    border: 0;
+    box-shadow: none;
+}
+
+.empty-button:focus {
+    box-shadow: none;
+    outline: 0;
 }
