@@ -129,6 +129,67 @@
     fill: #023047;
 }
 
+#popularCarsTab {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+#popularCarsTab .icon {
+    height: 20px;
+    max-width: 40px;
+    margin-right: 5px;
+}
+
+#popularCarsTab .nav-item {
+    width: calc(100% / 6 - 10px);
+}
+
+#popularCarsTab .nav-link {
+    background: #FFFFFF;
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .05);
+    border-radius: 0;
+    font-size: 16px;
+    line-height: 21px;
+    color: #023047;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+}
+
+#popularCarsTab .nav-link:hover,
+#popularCarsTab .nav-link.active {
+    background: #0081A7;
+    color: #FFFFFF;
+    font-family: 'Proxima Nova Sb', sans-serif;
+}
+
+#popularCarsTab .tab-navigation {
+    position: absolute;
+}
+
+#popularCarsTab .tab-navigation .icon {
+    width: 26px;
+    height: 26px;
+    fill: rgba(2, 48, 71, .3);
+    transition: all .25s;
+}
+
+#popularCarsTab .tab-navigation.prev {
+    left: -50px;
+}
+
+#popularCarsTab .tab-navigation.next {
+    right: -50px;
+}
+
+#popularCarsTab .tab-navigation:hover .icon {
+    fill: #0077B6;
+}
+
 @media only screen and (max-width: 1024px) {
     .rent-popular {
         padding-left: 15px !important;
@@ -149,6 +210,37 @@
 
     .step-box h5 {
         font-size: 14px !important;
+    }
+
+    #popularCarsTab {
+        margin-top: 80px;
+    }
+
+    #popularCarsTab .nav-item {
+        width: calc(100% / 3 - 5px);
+        margin-bottom: 15px;
+    }
+
+    #popularCarsTab .icon {
+        min-width: 20px;
+    }
+
+    #popularCarsTab .nav-link {
+        font-size: 12px;
+    }
+
+    #popularCarsTab .tab-navigation {
+        top: -50px;
+    }
+
+    #popularCarsTab .tab-navigation.prev {
+        left: auto;
+        right: 50px;
+    }
+
+    #popularCarsTab .tab-navigation.next {
+        left: auto;
+        right: 0;
     }
 }
 
