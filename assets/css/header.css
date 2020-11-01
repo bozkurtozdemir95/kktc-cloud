@@ -136,7 +136,6 @@
 
 .dropdown .dropdown-menu {
     padding: 15px;
-    transform: translate(calc(-50% + 45px), 50px) !important;
     border: 0;
     box-shadow: 0 3px 22px rgba(0, 0, 0, 0.09);
 }
@@ -243,6 +242,11 @@ div.more {
     padding-left: 30px;
 }
 
+.main-navigation li {
+    width: 100%;
+}
+
+.main-navigation .icon,
 .header-main-left ul .icon {
     width: 18px;
     height: 18px;
@@ -250,8 +254,32 @@ div.more {
     margin-right: 4px;
 }
 
+.main-navigation a,
 .header-main-left ul a {
     font-size: 14px;
+}
+
+.main-navigation li {
+    margin: 0 !important;
+}
+
+.main-navigation a {
+    white-space: nowrap;
+    display: flex;
+    padding: 10px 25px;
+}
+
+.main-navigation a .icon {
+    margin-right: 10px;
+}
+
+.main-navigation a:hover {
+    background: #023047;
+    color: #fff;
+}
+
+.main-navigation a:hover .icon {
+    fill: #FFFFFF;
 }
 
 .header-main-right ul li {
@@ -262,26 +290,31 @@ div.more {
     display: none;
 }
 
+.main-menu .dropdown-toggler .icon {
+    width: 20px;
+    height: 20px;
+    fill: #023047;
+}
+
+.show-mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 1024px) {
     #Header .container {
         max-width: 100%;
     }
 
-    .top-navigation {
-        display: none !important;
-    }
-
     .top-navigation.mobile {
-        display: flex !important;
         border: 0;
         padding: 0;
     }
 
-    .left-nav-mobile {
-        display: flex;
+    #Header .no-mobile {
+        display: none !important;;
     }
 
-    .right-menu li span.no-mobile {
-        display: none;
+    #Header .show-mobile {
+        display: flex !important;
     }
 }

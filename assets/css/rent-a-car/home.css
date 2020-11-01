@@ -33,7 +33,7 @@
     margin-bottom: 16px;
 }
 
-.popular-car-list .col-lg-4 {
+.popular-car-list .col-md-4 {
     padding-left: 8px;
     padding-right: 8px;
 }
@@ -49,5 +49,8 @@
 @media only screen and (max-width: 1024px) {
     .rent-popular {
         padding-left: 15px !important;
+    }
+    .rent-form{
+        margin-bottom: 30px;
     }
 }

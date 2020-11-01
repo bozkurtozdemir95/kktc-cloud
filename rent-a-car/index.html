@@ -28,7 +28,7 @@
                     <a href="#">
                         <img src="../assets/images/logo-sm.png" alt="KKTC">
                     </a>
-                    <ul class="top-navigation horizontal h-100">
+                    <ul class="top-navigation no-mobile horizontal h-100">
                         <li><a href="#" class="color-dark fs-12 blue">İlan</a></li>
                         <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
                         <li><a href="#" class="color-dark fs-12 orange">Firma</a></li>
@@ -42,7 +42,7 @@
                             </svg>
                         </li>
                     </ul>
-                    <div class="dropdown left-nav-mobile">
+                    <div class="dropdown text-center show-mobile">
                         <div class="dropdown-toggler d-flex align-items-center" id="leftNav"
                              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="more">
@@ -51,8 +51,8 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="dropdown-menu no-close" aria-labelledby="leftNav">
-                            <ul class="top-navigation mobile vertical h-100">
+                        <div class="dropdown-menu dropdown-menu-center no-close" aria-labelledby="leftNav">
+                            <ul class="top-navigation show-mobile vertical h-100">
                                 <li><a href="#" class="color-dark fs-12 blue">İlan</a></li>
                                 <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
                                 <li><a href="#" class="color-dark fs-12 orange">Firma</a></li>
@@ -79,7 +79,7 @@
                             </button>
                         </li>
                         <li>
-                            <div class="dropdown">
+                            <div class="dropdown text-center">
                                 <div class="dropdown-toggler d-flex align-items-center" id="currencyDropdown"
                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <svg class="icon currency">
@@ -87,7 +87,7 @@
                                     </svg>
                                     <span class="fs-12 color-dark no-mobile">Para Birimi</span>
                                 </div>
-                                <div class="dropdown-menu no-close" aria-labelledby="currencyDropdown">
+                                <div class="dropdown-menu dropdown-menu-center no-close" aria-labelledby="currencyDropdown">
                                     <h5>Para Birimi</h5>
                                     <div class="custom-selectbox currency-select">
                                         <div class="custom-select-toggler">
@@ -140,7 +140,7 @@
                             </div>
                         </li>
                         <li>
-                            <div class="dropdown">
+                            <div class="dropdown text-center">
                                 <div class="dropdown-toggler d-flex align-items-center" id="languageDropdown"
                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <svg class="icon language">
@@ -148,7 +148,7 @@
                                     </svg>
                                     <span class="fs-12 color-dark no-mobile">TR-TR</span>
                                 </div>
-                                <div class="dropdown-menu no-close" aria-labelledby="currencyDropdown">
+                                <div class="dropdown-menu no-close dropdown-menu-center" aria-labelledby="languageDropdown">
                                     <h5>Ülke/bölge seçin</h5>
                                     <div class="custom-selectbox currency-select">
                                         <div class="custom-select-toggler">
@@ -230,7 +230,7 @@
                             </div>
                         </li>
                         <li class="after-login">
-                            <div class="dropdown">
+                            <div class="dropdown text-center">
                                 <div class="dropdown-toggler d-flex align-items-center" id="accountDropdown"
                                      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <img src="../assets/images/avatar.png" alt="KKTC" class="avatar">
@@ -239,7 +239,7 @@
                                         <use href="../assets/icons/sprite.svg#down-angle"></use>
                                     </svg>
                                 </div>
-                                <div class="dropdown-menu no-close" aria-labelledby="accountDropdown">
+                                <div class="dropdown-menu dropdown-menu-right no-close" aria-labelledby="accountDropdown">
                                     <h5>John Doe</h5>
                                     <ul class="user-menu vertical-menu">
                                         <li><a href="#" class="fs-14 color-dark">İlanlarım</a></li>
@@ -265,7 +265,7 @@
                     <a href="#" class="logo">
                         <img src="../assets/images/logo.png" alt="KKTC">
                     </a>
-                    <ul class="horizontal">
+                    <ul class="horizontal no-mobile">
                         <li>
                             <a href="#" class="fs-14 color-dark">
                                 <svg class="icon">
@@ -344,6 +344,62 @@
                                     <use href="../assets/icons/sprite.svg#right-angle"></use>
                                 </svg>
                             </a>
+                        </li>
+                        <li class="show-mobile">
+                            <div class="dropdown text-center main-menu">
+                                <div class="dropdown-toggler d-flex align-items-center" id="mainMenu"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <button class="main-button white">
+                                        <svg class="icon m-0">
+                                            <use href="../assets/icons/sprite.svg#menu"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right no-close p-0" aria-labelledby="mainMenu">
+                                    <ul class="main-navigation show-mobile vertical h-100">
+                                        <li>
+                                            <a href="#" class="fs-14 color-dark">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#heart-bubble"></use>
+                                                </svg>
+                                                Kiralama Kampanyaları
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="fs-14 color-dark">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#car-3"></use>
+                                                </svg>
+                                                Araçlarımız
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="fs-14 color-dark">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#car-multiple"></use>
+                                                </svg>
+                                                Filo
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="fs-14 color-dark">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#contact-mail"></use>
+                                                </svg>
+                                                İletişim
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="fs-14 color-dark">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#city-map"></use>
+                                                </svg>
+                                                Ofisler
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -466,7 +522,7 @@
                     <a href="#" class="fs-14 f-semibold lh-19 color-blue">Daha Fazlası</a>
                 </div>
                 <div class="row popular-car-list">
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <div class="white-box d-flex flex-column">
                             <img class="mb-20" src="../assets/images/cars/car-1.png" alt="KKTC">
                             <h5 class="fs-14 f-bold lh-19 mb-10">2020 Renault Clio 0.9 Joy</h5>
@@ -510,7 +566,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <div class="white-box d-flex flex-column">
                             <img class="mb-20" src="../assets/images/cars/car-2.png" alt="KKTC">
                             <h5 class="fs-14 f-bold lh-19 mb-10">2020 Renault Clio 0.9 Joy</h5>
@@ -554,7 +610,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-md-4">
                         <div class="white-box d-flex flex-column">
                             <img class="mb-20" src="../assets/images/cars/car-3.png" alt="KKTC">
                             <h5 class="fs-14 f-bold lh-19 mb-10">2020 Renault Clio 0.9 Joy</h5>
@@ -604,6 +660,8 @@
         </div>
     </div>
 </div>
+
+<div class="rent-brands"></div>
 
 </body>
 </html>

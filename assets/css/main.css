@@ -566,3 +566,32 @@ img {
 .popover .arrow::after {
     border-top-color: #023047;
 }
+
+.dropdown-menu {
+    top: 50px !important;
+}
+
+.dropdown-menu-center {
+    left: 50% !important;
+    right: auto !important;
+    transform: translate(-50%, 0) !important;
+}
+
+.dropdown-menu-right {
+    left: 100% !important;
+    right: auto !important;
+    transform: translate(-100%, 0) !important;
+}
+
+.dropdown .dropdown-menu-right.dropdown-menu:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 21px solid #FFFFFF;
+    top: -21px;
+    left: calc(100%);
+    transform: translateX(calc(-100% - 10px));
+}
