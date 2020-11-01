@@ -50,7 +50,7 @@
     padding-top: 40px;
 }
 
-.rent-brands .item{
+.rent-brands .item {
     border-right: 1px solid rgba(2, 48, 71, .2);
     padding: 0 25px;
 }
@@ -66,6 +66,68 @@
     fill: #0081A7;
 }
 
+.four-step .icon.half-circle {
+    width: 95px;
+    height: 18px;
+    stroke: rgba(2, 48, 71, .2);
+    transition: all .2s;
+}
+
+.seperator {
+    padding-top: 20px;
+}
+
+.seperator.down .icon {
+    transform: rotate(180deg);
+    transform-origin: bottom center;
+}
+
+.four-step .col {
+    margin-bottom: 15px;
+}
+
+.four-step .col:hover + .seperator .icon {
+    stroke: #0077B6;
+}
+
+.four-step .col:hover .step-box-icon {
+    background: #0081A7;
+}
+
+.four-step .col:hover .step-box-icon .icon {
+    fill: #FFFFFF;
+}
+
+.step-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.step-box h5 {
+    text-align: center;
+}
+
+.step-box p {
+    text-align: center;
+}
+
+.step-box .step-box-icon {
+    width: 97px;
+    height: 97px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s;
+}
+
+.step-box .step-box-icon .icon {
+    width: 38px;
+    height: 38px;
+    fill: #023047;
+}
 
 @media only screen and (max-width: 1024px) {
     .rent-popular {
@@ -74,5 +136,24 @@
 
     .rent-form {
         margin-bottom: 30px;
+    }
+
+    .seperator {
+        display: none;
+    }
+
+    .four-step .col {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+    }
+
+    .step-box h5 {
+        font-size: 14px !important;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .four-step .col {
+        padding: 0 !important;
     }
 }

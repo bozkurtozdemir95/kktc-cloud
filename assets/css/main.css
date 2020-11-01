@@ -144,6 +144,10 @@ img {
     line-height: 19px;
 }
 
+.lh-21 {
+    line-height: 21px;
+}
+
 .lh-27 {
     line-height: 27px;
 }
@@ -196,6 +200,10 @@ img {
     color: #023047;
 }
 
+.color-light {
+    color: rgba(2, 48, 71, .5)
+}
+
 .color-blue {
     color: #0081A7;
 }
@@ -222,6 +230,10 @@ img {
 
 .mb-10 {
     margin-bottom: 10px;
+}
+
+.mb-13 {
+    margin-bottom: 13px;
 }
 
 .mb-20 {
@@ -594,4 +606,28 @@ img {
     top: -21px;
     left: calc(100%);
     transform: translateX(calc(-100% - 10px));
+}
+
+.custom-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.custom-title h2 {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.custom-title h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: #0077B6;
 }
