@@ -138,6 +138,7 @@
     padding: 15px;
     border: 0;
     box-shadow: 0 3px 22px rgba(0, 0, 0, 0.09);
+    border-radius: 0;
 }
 
 .dropdown .dropdown-menu:after {
