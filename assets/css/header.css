@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     background: #FFFFFF;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
 }
 
 .header-top {
@@ -12,6 +13,7 @@
 .header-top-left {
     display: flex;
     align-items: center;
+    height: 100%;
 }
 
 .header-top-left img {
@@ -76,6 +78,9 @@
     text-decoration: none;
 }
 
+.header-top-right {
+    height: 100%;
+}
 
 .more .icon {
     width: 14px;
@@ -88,6 +93,10 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+}
+
+.right-menu li:hover {
+    background: rgba(2, 48, 71, .1);
 }
 
 .right-menu li .icon.currency {
@@ -221,8 +230,40 @@ div.more {
     transform: translateY(-50%);
 }
 
+.header-main {
+    height: 60px;
+}
+
+.header-main-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-main-left ul li {
+    padding-left: 30px;
+}
+
+.header-main-left ul .icon {
+    width: 18px;
+    height: 18px;
+    fill: #023047;
+    margin-right: 4px;
+}
+
+.header-main-left ul a {
+    font-size: 14px;
+}
+
+.header-main-right ul li {
+    margin-left: 10px;
+}
+
+.header-main-right ul li.after-login {
+    display: none;
+}
+
 @media only screen and (max-width: 1024px) {
-    .header-top .container {
+    #Header .container {
         max-width: 100%;
     }
 

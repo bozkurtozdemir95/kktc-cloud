@@ -2,9 +2,22 @@
 @import "../fonts/fonts.css";
 @import "header.css";
 
+/** Rent a car css files **/
+@import "rent-a-car/home.css";
+
 body {
     font-family: 'Proxima Nova Rg', sans-serif !important;
     color: #023047;
+    background: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus,
+button:focus {
+    outline: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,6 +44,13 @@ p {
     margin: 0;
 }
 
+img {
+    width: 100%;
+}
+
+.fs-9 {
+    font-size: 9px;
+}
 
 .fs-10 {
     font-size: 10px;
@@ -73,7 +93,7 @@ p {
 }
 
 .fs-20 {
-    font-size: 200px;
+    font-size: 20px;
 }
 
 .fs-21 {
@@ -90,6 +110,46 @@ p {
 
 .fs-24 {
     font-size: 24px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fs-26 {
+    font-size: 26px;
+}
+
+.fs-27 {
+    font-size: 27px;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-29 {
+    font-size: 29px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.lh-16 {
+    line-height: 16px;
+}
+
+.lh-19 {
+    line-height: 19px;
+}
+
+.lh-27 {
+    line-height: 27px;
+}
+
+.lh-33 {
+    line-height: 33px;
 }
 
 .f-regular {
@@ -125,14 +185,22 @@ p {
 }
 
 .color-black {
-    color: #000000;
+    color: #011627;
 }
 
 .color-dark {
     color: #023047;
 }
 
+.color-dark:hover {
+    color: #023047;
+}
+
 .color-blue {
+    color: #0081A7;
+}
+
+.color-blue:hover {
     color: #0081A7;
 }
 
@@ -144,13 +212,67 @@ p {
     background: #0081A7;
 }
 
+.bg-light {
+    background: #FAFAFA;
+}
+
+.py-50 {
+    padding: 50px 0;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mr-5p {
+    margin-right: 5px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.white-box {
+    background: #FFFFFF;
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .05);
+    padding: 22px;
+}
+
 .custom-selectbox {
     position: relative;
+    cursor: pointer;
 }
 
 .custom-selectbox .custom-select-toggler {
     border: 1px solid rgba(2, 48, 71, .1);
-    border-radius: 5px;
     display: flex;
     align-items: center;
     font-size: 14px;
@@ -161,7 +283,6 @@ p {
 }
 
 .custom-selectbox .custom-select-menu {
-    border-radius: 5px;
     max-height: 0;
     overflow: hidden;
     transition: max-height .25s;
@@ -192,6 +313,39 @@ p {
     fill: #023047;
 }
 
+.rent-select .custom-select-toggler {
+    position: relative;
+    border: 0;
+    border-bottom: 1px solid rgba(2, 48, 71, .1);
+    border-radius: 0;
+}
+
+.rent-select .custom-select-toggler .icon,
+.rent-form .datetimepicker .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    fill: #023047;
+}
+
+.rent-form .datetimepicker .icon {
+    margin-left: 10px;
+}
+
+.rent-form .datetimepicker {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rent-select .custom-select-menu {
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+    background: #FFFFFF;
+    margin: 0;
+}
+
 .custom-selectbox .custom-select-menu-item:hover {
     background: #023047;
     color: #FFFFFF;
@@ -201,6 +355,7 @@ p {
     fill: #fff;
 }
 
+.rent-form .datetimepicker .icon.arrow,
 .custom-selectbox .custom-select-toggler .icon.arrow {
     width: 8px;
     height: 8px;
@@ -216,12 +371,48 @@ p {
     transition: max-height .5s;
 }
 
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.custom-checkbox input {
+    border: 2px solid #023047;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+}
+
+.custom-checkbox label {
+    padding-left: 20px;
+    margin: 0;
+}
+
 .form-button {
     font-size: 15px;
     color: #FFFFFF;
     height: 36px;
     width: 100%;
     border: 0;
+    position: relative;
+}
+
+.form-button.big {
+    height: 51px;
+}
+
+.form-button.big .icon {
+    width: 23px;
+    height: 23px;
+}
+
+.form-button.bg-blue .icon {
+    fill: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
 }
 
 .form-button:focus {
@@ -243,4 +434,135 @@ p {
 .empty-button:focus {
     box-shadow: none;
     outline: 0;
+}
+
+.feature-button {
+    border: 1px solid #023047;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3px;
+}
+
+.feature-button .icon {
+    width: 16px;
+    height: 16px;
+    fill: #023047;
+}
+
+.feature-button.blue {
+    background: #0081A7;
+    border-color: #0081A7;
+}
+
+.feature-button.blue .icon {
+    fill: #FFFFFF;
+}
+
+.main-button {
+    border: 1px solid;
+    height: 32px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    line-height: 15px;
+    transition: all .25s;
+    white-space: nowrap;
+}
+
+.main-button:hover {
+    text-decoration: none;
+}
+
+.main-button .icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.main-button .icon.arrow {
+    width: 5px;
+    height: 5px;
+    stroke: #023047;
+    margin-left: 5px;
+}
+
+.main-button.white {
+    color: #023047;
+    border-color: rgba(2, 48, 71, .1);
+    background: #FFFFFF;
+}
+
+.main-button.white .icon {
+    fill: #023047;
+}
+
+.main-button.white:hover {
+    background: rgba(2, 48, 71, .1);
+}
+
+.main-button.white.blue-bordered {
+    border-color: #0081A7;
+}
+
+.main-button.white.blue-bordered:hover {
+    background: #0081A7;
+    color: #FFFFFF;
+}
+
+.main-button.dark {
+    color: #FFFFFF;
+    border-color: #023047;
+    background: #023047;
+}
+
+.main-button.dark .icon {
+    fill: #FFFFFF;
+}
+
+.main-button.dark:hover {
+    background: #011d2b;
+}
+
+.main-button.blue {
+    color: #FFFFFF;
+    border: #007BFF;
+    background: #007BFF;
+}
+
+.main-button.blue .icon {
+    fill: #FFFFFF;
+}
+
+.main-button.blue:hover {
+    background: #066ddc;
+}
+
+.datetimepicker {
+    position: relative;
+}
+
+.datetimepicker .add-on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.popover {
+    border-color: #023047;
+}
+
+.popover-body {
+    padding: 0 5px;
+}
+
+.popover .arrow::after {
+    border-top-color: #023047;
 }

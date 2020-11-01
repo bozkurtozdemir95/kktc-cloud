@@ -1,0 +1,53 @@
+.rent-form h4 {
+    margin-bottom: 12px;
+}
+
+.rent-form-row {
+    position: relative;
+    cursor: pointer;
+}
+
+.rent-form-row.half {
+    width: calc(50% - 10px);
+}
+
+.rent-form-row .datetimepicker {
+    height: 34px;
+}
+
+.rent-form-row input {
+    position: absolute;
+    width: 100%;
+    background: transparent;
+    border: 0;
+    height: 34px;
+    padding-left: 40px;
+    font-size: 14px;
+    color: #023047;
+    border-bottom: 1px solid rgba(2, 48, 71, .1);
+}
+
+.popular-car-list .white-box {
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.popular-car-list .col-lg-4 {
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.popular-car-list img {
+    max-width: 250px;
+}
+
+.popular-car-list .car-price {
+    width: 100%;
+}
+
+@media only screen and (max-width: 1024px) {
+    .rent-popular {
+        padding-left: 15px !important;
+    }
+}
