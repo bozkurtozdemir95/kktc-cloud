@@ -46,11 +46,33 @@
     width: 100%;
 }
 
+.rent-brands {
+    padding-top: 40px;
+}
+
+.rent-brands .item{
+    border-right: 1px solid rgba(2, 48, 71, .2);
+    padding: 0 25px;
+}
+
+.rent-brands .item .icon {
+    height: 23px;
+    max-width: 100px;
+    fill: rgba(2, 48, 71, .2);
+    transition: all .25s;
+}
+
+.rent-brands .item:hover .icon {
+    fill: #0081A7;
+}
+
+
 @media only screen and (max-width: 1024px) {
     .rent-popular {
         padding-left: 15px !important;
     }
-    .rent-form{
+
+    .rent-form {
         margin-bottom: 30px;
     }
 }

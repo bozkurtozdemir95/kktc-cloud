@@ -33,3 +33,24 @@ $(function () {
 $(function () {
     $('[data-toggle="popover"]').popover()
 })
+
+$(document).ready(function(){
+    $('.owl-carousel-brands').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:false,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        responsive:{
+            0:{
+                items:3
+            },
+            600:{
+                items:5
+            },
+            1000:{
+                items:7
+            }
+        }
+    })
+});
