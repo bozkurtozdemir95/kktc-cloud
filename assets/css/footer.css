@@ -1,0 +1,131 @@
+#Footer {
+    padding-top: 50px;
+}
+
+.footer-logo img {
+    max-width: 170px;
+}
+
+.footer-socials {
+    padding-right: 30px;
+}
+
+.footer-socials .icon {
+    width: 28px;
+    height: 28px;
+    fill: #023047;
+    transition: all .25s;
+}
+
+.footer-payments li,
+.footer-socials li {
+    margin-right: 20px;
+}
+
+.footer-socials a:hover .icon {
+    fill: #0081A7;
+}
+
+.footer-payments .icon {
+    width: 70px;
+    max-height: 40px;
+}
+
+#Footer .menu-title {
+    position: relative;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#Footer .menu-title:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #0081A7;
+    border-radius: 2px;
+}
+
+#Footer .footer-menu-col ul a {
+    color: #001C1D;
+    font-size: 14px;
+    line-height: 34px;
+}
+
+#Footer .footer-menu-col ul a:hover {
+    color: #0081A7;
+}
+
+#Footer .pr-70 {
+    padding-right: 70px;
+}
+
+.mobile-apps img {
+    width: 110px;
+    margin-bottom: 15px;
+}
+
+.footer-bottom-menu {
+    border-top: 1px solid rgba(2, 48, 71, 0.1);
+    margin-top: 30px;
+}
+
+.footer-bottom-menu ul {
+    justify-content: center;
+}
+
+.footer-bottom-menu li {
+    padding: 30px 15px 15px;
+}
+
+.footer-bottom-menu li a {
+    font-size: 14px;
+    line-height: 19px;
+    color: #001C1D;
+}
+
+.footer-bottom-menu li a:hover {
+    color: #0081A7;
+}
+
+.copyright {
+    border-top: 1px solid rgba(2, 48, 71, 0.1);
+}
+
+@media only screen and (max-width: 992px) {
+    .footer-left {
+        margin-bottom: 30px;
+        padding-right: 15px !important;
+    }
+
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-socials {
+        padding-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-payments {
+        display: flex;
+        justify-content: center;
+    }
+
+    #Footer .footer-menu-col {
+        width: 50% !important;
+        margin-bottom: 20px;
+    }
+
+    .footer-bottom-menu ul {
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom-menu li {
+        padding: 20px 10px 15px;
+    }
+}

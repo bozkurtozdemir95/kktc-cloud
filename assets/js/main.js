@@ -53,4 +53,23 @@ $(document).ready(function(){
             }
         }
     })
+    $('.owl-carousel-banners').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        navText: ["<svg class='icon'><use href='../assets/icons/sprite.svg#left-arrow'></use></svg> <div class='line'></div>"," <div class='line'></div><svg class='icon'><use href='../assets/icons/sprite.svg#right-arrow'></use></svg>"],
+        autoplay: false,
+        autoplayTimeout: 3000,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:2
+            }
+        }
+    })
 });

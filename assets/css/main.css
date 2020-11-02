@@ -1,6 +1,7 @@
 /** IMPORTS **/
 @import "../fonts/fonts.css";
 @import "header.css";
+@import "footer.css";
 
 /** Rent a car css files **/
 @import "rent-a-car/home.css";
@@ -9,6 +10,7 @@ body {
     font-family: 'Proxima Nova Rg', sans-serif !important;
     color: #023047;
     background: #FFFFFF;
+    overflow-x: hidden;
 }
 
 a:hover {
@@ -136,6 +138,10 @@ img {
     font-size: 30px;
 }
 
+.fs-37 {
+    font-size: 37px;
+}
+
 .lh-16 {
     line-height: 16px;
 }
@@ -152,8 +158,16 @@ img {
     line-height: 27px;
 }
 
+.lh-32 {
+    line-height: 32px;
+}
+
 .lh-33 {
     line-height: 33px;
+}
+
+.lh-49 {
+    line-height: 49px;
 }
 
 .f-regular {
@@ -252,6 +266,10 @@ img {
     margin-top: 10px;
 }
 
+.mt-15 {
+    margin-top: 15px;
+}
+
 .mt-20 {
     margin-top: 20px;
 }
@@ -262,6 +280,10 @@ img {
 
 .mt-40 {
     margin-top: 40px;
+}
+
+.mt-120 {
+    margin-top: 120px;
 }
 
 .mr-5p {
@@ -579,20 +601,18 @@ img {
     border-top-color: #023047;
 }
 
-.dropdown-menu {
-    top: 50px !important;
-}
-
 .dropdown-menu-center {
     left: 50% !important;
     right: auto !important;
     transform: translate(-50%, 0) !important;
+    top: 50px !important;
 }
 
 .dropdown-menu-right {
     left: 100% !important;
     right: auto !important;
     transform: translate(-100%, 0) !important;
+    top: 50px !important;
 }
 
 .dropdown .dropdown-menu-right.dropdown-menu:after {
@@ -606,6 +626,10 @@ img {
     top: -21px;
     left: calc(100%);
     transform: translateX(calc(-100% - 10px));
+}
+
+.owl-carousel {
+    cursor: pointer;
 }
 
 .custom-title {
