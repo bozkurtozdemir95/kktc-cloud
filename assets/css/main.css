@@ -421,6 +421,7 @@ img {
 .custom-checkbox label {
     padding-left: 20px;
     margin: 0;
+    cursor: pointer;
 }
 
 .form-button {
@@ -430,6 +431,7 @@ img {
     width: 100%;
     border: 0;
     position: relative;
+    transition: all .25s;
 }
 
 .form-button.big {

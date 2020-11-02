@@ -93,10 +93,15 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    transition: all .25s;
 }
 
 .right-menu li:hover {
     background: rgba(2, 48, 71, .1);
+}
+
+.right-menu li.small-buttons:hover {
+    background: none;
 }
 
 .right-menu li .icon.currency {
@@ -161,6 +166,8 @@
     font-size: 15px;
     color: rgba(2, 48, 71, .5);
     margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 0 10px;
 }
 
 .right-menu .small-buttons button {
@@ -180,10 +187,15 @@
     border: 1px solid #FFFFFF;
 }
 
+.right-menu .small-buttons button:hover .icon {
+    fill: #0081A7;
+}
+
 .right-menu .small-buttons .icon {
     fill: rgba(2, 48, 71, .3);
     width: 20px;
     height: 15px;
+    transition: all .25s;
 }
 
 
@@ -193,6 +205,7 @@
 
 .user-menu li a {
     line-height: 35px;
+    padding: 0 10px;
 }
 
 .user-menu li a.color-dark:hover {
@@ -253,11 +266,21 @@ div.more {
     height: 18px;
     fill: #023047;
     margin-right: 4px;
+    transition: all .24s;
 }
 
 .main-navigation a,
 .header-main-left ul a {
     font-size: 14px;
+    transition: all .24s;
+}
+
+.header-main-left ul li:hover a {
+    color: #0081A7;
+}
+
+.header-main-left ul li:hover .icon {
+    fill: #0081A7;
 }
 
 .main-navigation li {

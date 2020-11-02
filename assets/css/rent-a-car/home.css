@@ -193,6 +193,12 @@
 .banner-box {
     display: flex;
     height: 192px;
+    transition: all .25s;
+}
+
+.banner-box:hover {
+    transform: scale(1.005);
+    transform-origin: center center;
 }
 
 .banner-box.banner-white {
@@ -270,6 +276,11 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 15px;
+    transition: all .25s;
+}
+
+.company-list a:hover {
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .4);
 }
 
 .company-list a img {
@@ -344,6 +355,10 @@
 @media only screen and (max-width: 768px) {
     .popular-car-list .col-md-3 {
         flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .rent-brands .item .icon {
         max-width: 100%;
     }
 }
