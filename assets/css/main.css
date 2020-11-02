@@ -17,8 +17,10 @@ a:hover {
     text-decoration: none;
 }
 
+input:focus,
 a:focus,
 button:focus {
+    box-shadow: none;
     outline: 0;
 }
 
@@ -656,4 +658,135 @@ img {
     width: 50px;
     height: 3px;
     background: #0077B6;
+}
+
+.page-link-nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.page-link-nav a {
+    margin-right: 10px;
+}
+
+.page-link-nav a .icon {
+    width: 7px;
+    height: 7px;
+    fill: #023047;
+    margin-left: 10px;
+}
+
+.page-link-nav a:hover {
+    color: #0081A7;
+}
+
+.page-link-nav a:hover .icon {
+    fill: #0081A7;
+}
+
+.page-link-nav a:last-child {
+    color: #0081A7;
+}
+
+.page-link-nav a:last-child .icon {
+    display: none;
+}
+
+.sidebar .card {
+    border: 0;
+    box-shadow: none;
+    border-bottom: 1px solid rgba(2, 48, 71, 0.05) !important;
+}
+
+.sidebar .card-header {
+    border: 0;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px 22px;
+    cursor: pointer;
+}
+
+.sidebar .card-header .icon {
+    width: 10px;
+    height: 10px;
+    fill: #023047;
+    transition: all .25s;
+}
+
+.sidebar .card-header[aria-expanded='true'] .icon {
+    transform: rotate(-180deg);
+}
+
+.sidebar-custom-checkbox {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.sidebar-custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    appearance: none;
+}
+
+.sidebar-custom-checkbox label {
+    margin-bottom: 0;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 12px;
+    line-height: 16px;
+    color: #023047;
+}
+
+.sidebar-custom-checkbox .checkmark {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    border: 1px solid rgba(2, 48, 71, .2);
+}
+
+.sidebar-custom-checkbox :hover input ~ .checkmark {
+    background-color: rgba(0, 129, 167, .5);
+}
+
+.sidebar-custom-checkbox input:checked ~ .checkmark {
+    background-color: #0081A7;
+}
+
+.sidebar-custom-checkbox .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.sidebar-custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.sidebar-half-input input {
+    border-radius: 3px;
+    border: 1px solid rgba(2, 48, 71, 0.2);
+    font-size: 12px;
+    height: 34px;
+    width: 100%;
+    padding: 0 10px;
+    color: #023047;
+}
+
+.sidebar-half-input input::placeholder {
+    color: #023047;
+}
+
+.sidebar-half-input {
+    width: calc(50% - 10px);
 }
