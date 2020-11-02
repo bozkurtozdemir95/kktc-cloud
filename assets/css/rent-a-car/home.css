@@ -11,11 +11,11 @@
     width: calc(50% - 10px);
 }
 
-.rent-form-row .datetimepicker {
+.rent-form .datetimepicker {
     height: 34px;
 }
 
-.rent-form-row input {
+.rent-form input {
     position: absolute;
     width: 100%;
     background: transparent;

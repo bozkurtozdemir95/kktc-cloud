@@ -70,6 +70,7 @@
 .footer-bottom-menu {
     border-top: 1px solid rgba(2, 48, 71, 0.1);
     margin-top: 30px;
+    flex-direction: column;
 }
 
 .footer-bottom-menu ul {
@@ -77,7 +78,7 @@
 }
 
 .footer-bottom-menu li {
-    padding: 30px 15px 15px;
+    padding: 15px;
 }
 
 .footer-bottom-menu li a {
@@ -91,6 +92,7 @@
 }
 
 .copyright {
+    width: 100%;
     border-top: 1px solid rgba(2, 48, 71, 0.1);
 }
 
