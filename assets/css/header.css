@@ -306,6 +306,10 @@ div.more {
         max-width: 100%;
     }
 
+    .header-main-left {
+        padding-left: 15px;
+    }
+
     .top-navigation.mobile {
         border: 0;
         padding: 0;
