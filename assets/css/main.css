@@ -28,6 +28,10 @@ button:focus {
     outline: 0;
 }
 
+textarea {
+    resize: none;
+}
+
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
@@ -117,7 +121,7 @@ img {
 }
 
 .fs-24 {
-    font-size: 24px;
+    font-size: 24px !important;
 }
 
 .fs-25 {
@@ -1331,6 +1335,47 @@ img {
     color: #011627;
     font-family: 'Proxima Nova Bo', sans-serif;
     margin-top: 10px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 28px;
+}
+
+.form-box label {
+    font-size: 16px;
+    line-height: 21px;
+    color: #011627;
+}
+
+.form-box input,
+.form-box select,
+.form-box textarea {
+    border: 1px solid rgba(1, 22, 39, .1);
+    background: #FFFFFF;
+    font-size: 16px;
+    line-height: 21px;
+    color: #011627;
+    height: 47px;
+    width: 100%;
+    padding: 0 20px;
+    transition: all .3s;
+}
+
+.form-box textarea {
+    height: auto;
+    padding: 20px;
+}
+
+.form-box input:focus,
+.form-box select:focus {
+    border: 1px solid rgba(1, 22, 39, .3);
+}
+
+.checkbox-as-label {
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 992px) {
