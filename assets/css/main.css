@@ -1001,6 +1001,15 @@ img {
     width: calc(50% - 10px);
 }
 
+.card.transparent,
+.card-body.transparent,
+.card-header.transparent {
+    background: transparent;
+    border: 0;
+    padding: 0;
+    border-radius: 0;
+}
+
 .small-form .col,
 .small-form .col-lg-1,
 .small-form .col-lg-2,
