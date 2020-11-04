@@ -32,6 +32,13 @@ $(function () {
 
 $(function () {
     $('[data-toggle="popover"]').popover()
+    $('.btn-plus, .btn-minus').on('click', function(e) {
+        const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
+        const input = $(e.target).closest('.custom-number-input').find('input');
+        if (input.is('input')) {
+            input[0][isNegative ? 'stepDown' : 'stepUp']()
+        }
+    })
 })
 
 $(document).ready(function(){

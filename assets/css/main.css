@@ -338,6 +338,10 @@ img {
     margin-right: 10px;
 }
 
+.mr-15 {
+    margin-right: 15px;
+}
+
 .mr-20 {
     margin-right: 20px !important;
 }
@@ -350,6 +354,117 @@ img {
     background: #FFFFFF;
     box-shadow: 0 3px 22px rgba(0, 0, 0, .05);
     padding: 22px;
+}
+
+.white-box-md {
+    border: 1px solid rgba(2, 48, 71, .1);
+    padding: 16px 0;
+    background: #FFFFFF;
+}
+
+.white-box-md.bg-blue {
+    border-color: #0081A7;
+    background: #0081A7;
+}
+
+.white-box-md h4 {
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    margin-bottom: 20px;
+    color: #0081A7;
+    margin-left: 16px;
+}
+
+.white-box-md p {
+    font-size: 12px;
+    line-height: 19px;
+    color: #011627;
+    margin-left: 16px;
+}
+
+.white-box-md.bg-blue h4,
+.white-box-md.bg-blue p {
+    color: #FFFFFF;
+}
+
+.white-box-md .white-box-row {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.white-box-md .white-box-row .icon {
+    width: 19px;
+    height: 19px;
+    fill: #0081A7;
+}
+
+.white-box-md .white-box-row:last-child {
+    margin-bottom: 13px;
+}
+
+.white-box-md .table thead th {
+    border-top: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, .22);
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    font-family: 'Proxima Nova Eb', sans-serif;
+}
+
+.white-box-md .table td {
+    font-size: 12px;
+    color: #FFFFFF;
+    padding: 7px 20px;
+    border: 1px solid rgba(255, 255, 255, .22);
+    border-left: 0;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    text-align: center;
+}
+
+.white-box-md .table tr td:first-child {
+    text-align: left;
+}
+
+.white-box-md .table tr td:last-child {
+    border-right: 0;
+}
+
+.white-box-md .table .icon {
+    width: 16px;
+    height: 16px;
+    fill: #FFFFFF;
+}
+
+.white-box-md .table .icon.green {
+    fill: #06B440;
+}
+
+.white-box-sm-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.white-box-sm {
+    background: #FFFFFF;
+    padding-top: 30px;
+    padding-bottom: 14px;
+    border: 1px solid rgba(2, 48, 71, .1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 15px 30px;
+    width: calc(100% / 6 - 30px);
+    cursor: pointer;
+    transition: all .25s;
+}
+
+.white-box-sm:hover {
+    box-shadow: 0 0 6px rgba(0, 0, 0, .2);
 }
 
 .custom-selectbox {
@@ -486,6 +601,10 @@ img {
     transition: all .25s;
 }
 
+.form-button b {
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
 .form-button.big {
     height: 51px;
 }
@@ -503,6 +622,10 @@ img {
     top: 50%;
     transform: translateY(-50%);
     left: 20px;
+}
+
+.form-button.bg-dark {
+    background: #023047;
 }
 
 .form-button:focus {
@@ -956,10 +1079,117 @@ img {
     fill: #FFFFFF;
 }
 
+.custom-number-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.custom-number-input input[type="number"]::-webkit-inner-spin-button,
+.custom-number-input input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-number-input input[type="number"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.custom-number-input input {
+    width: 30px;
+    border: 0;
+    background: 0;
+    box-shadow: none;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.custom-number-input button {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+}
+
+.custom-number-input button .icon {
+    width: 18px;
+    height: 18px;
+    fill: #023047;
+    transition: all .25s;
+}
+
+.custom-number-input button:hover .icon {
+    fill: #0081A7;
+}
+
+.page-content {
+    width: 100%;
+}
+
+.page-content-title {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.page-content-title .icon {
+    width: 45px;
+    height: 45px;
+    fill: #0081A7;
+    margin-right: 10px;
+}
+
+.white-box-sm .icon {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 18px;
+    fill: #0081A7;
+}
+
+.white-box-sm h5 {
+    font-size: 12px;
+    line-height: 17px;
+    color: #011627;
+}
+
+.white-box-sm h6 {
+    font-size: 11px;
+    line-height: 17px;
+    color: rgba(1, 22, 39, .65);
+}
+
+.white-box-sm h4 {
+    font-size: 16px;
+    line-height: 17px;
+    color: #0081A7;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    margin-top: 5px;
+}
+
+.white-box-sm h3 {
+    font-size: 18px;
+    line-height: 17px;
+    color: #011627;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    margin-top: 10px;
+}
+
 @media only screen and (max-width: 992px) {
 
     .small-form .custom-selectbox,
     .small-form .datetimepicker {
         margin-bottom: 15px;
+    }
+
+    .white-box-sm {
+        width: calc(100% / 3 - 30px);
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .white-box-sm {
+        width: calc(100% / 2 - 30px);
     }
 }
