@@ -26,7 +26,7 @@
 }
 
 .car-step:hover .step-icon .icon,
-.car-step.active.step-icon .icon {
+.car-step.active .step-icon .icon {
     fill: #FFFFFF;
 }
 
@@ -176,6 +176,19 @@
     height: 13px;
     margin-right: 5px;
     fill: #0081A7;
+}
+
+.car-info-list .item.more .icon {
+    width: 6px;
+    height: 6px;
+    fill: #FFFFFF;
+    margin-right: 0;
+    margin-left: 5px;
+    stroke: #FFFFFF;
+}
+
+.car-info-list .item.more a:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 992px) {

@@ -1,0 +1,229 @@
+.car-payment .car-step .step-icon {
+    background: rgba(255, 255, 255, .1);
+    margin-right: 0;
+}
+
+.car-payment .car-step .step-icon .icon {
+    fill: #FFFFFF;
+}
+
+.car-payment .car-step:hover .step-icon,
+.car-payment .car-step.active .step-icon {
+    background: #0081A7;
+}
+
+.car-payment .car-step h5,
+.car-payment .car-step:hover h5,
+.car-payment .car-step.active h5 {
+    color: #FFFFFF;
+}
+
+
+.car-payment .car-step-divider {
+    height: 100%;
+    width: 1px;
+    border: 1px dashed #FFFF;
+    margin: 10px auto;
+    min-height: 40px;
+}
+
+.car-image-box {
+    background: linear-gradient(90deg, #0081A7 60%, transparent 40%);
+}
+
+.car-payment-info {
+    padding-left: 50px;
+}
+
+.car-payment-info-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.car-payment-info-title img {
+    max-width: 72px;
+}
+
+.car-payment-info-title a:hover {
+    text-decoration: underline;
+}
+
+.place-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.place-box .icon {
+    width: 28px;
+    height: 28px;
+    fill: #FFFFFF;
+    margin-right: 10px;
+}
+
+.place-box h4 {
+    max-width: 35px;
+    margin-right: 10px;
+}
+
+#extraCarAccordion.accordion .card {
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+}
+
+#extraCarAccordion.accordion .card-body {
+    padding: 15px 0;
+}
+
+#extraCarAccordion.accordion .card-header {
+    background: transparent;
+    padding: 0;
+    border: 0;
+}
+
+#extraCarAccordion.accordion .card-header button {
+    background: #0081A7;
+    height: 30px;
+    border-radius: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 15px;
+}
+
+#extraCarAccordion.accordion .card-header button h4 {
+    display: flex;
+    align-items: center;
+}
+
+#extraCarAccordion.accordion .card-header button h4 b {
+    font-family: 'Proxima Nova Bl', sans-serif;
+    font-weight: unset;
+    margin: 0 5px;
+}
+
+#extraCarAccordion .card-header .icon {
+    width: 11px;
+    height: 11px;
+    fill: #FFFFFF;
+    margin-right: 10px;
+    stroke: #FFFFFF;
+    transition: all .25s;
+}
+
+#extraCarAccordion .card-header .icon.arrow {
+    margin-right: 20px;
+}
+
+#extraCarAccordion.accordion .card-header button[aria-expanded='true'] .icon.arrow {
+    transform: rotate(180deg);
+}
+
+.extra-car-list {
+    display: flex;
+    align-items: center;
+    margin: 10px -10px;
+}
+
+.extra-car-list .col-lg-3 {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.extra-car-button {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    padding: 7px;
+    cursor: pointer;
+    height: 100px;
+    transition: all .25s;
+}
+
+.extra-car-button img {
+    max-height: 40px;
+}
+
+.extra-car-button .empty-button {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.extra-car-button .icon {
+    width: 13px;
+    height: 13px;
+    fill: #0081A7;
+}
+
+.extra-car-button h5 {
+    margin-top: 8px;
+}
+
+.extra-car-button:hover {
+    box-shadow: 0 3px 22px rgba(255, 255, 255, .3);
+    transform: scale(1.01);
+}
+
+.car-payment-bottom {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.car-payment-bottom .bottom-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.car-payment-bottom .bottom-row button {
+    width: calc(50% - 10px);
+}
+
+@media only screen and (max-width: 992px) {
+    .car-payment-info {
+        padding: 40px 30px !important;
+    }
+
+    .car-image-box {
+        background: #0081A7;
+        padding: 40px;
+    }
+
+    .car-payment .car-list-steps {
+        display: flex;
+        flex-direction: row !important;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 30px 20px 30px;
+    }
+
+    .car-payment .car-step-divider {
+        height: 1px;
+        width: 100%;
+        border: 1px dashed #FFFF;
+        margin: auto 10px;
+        min-width: 20px;
+        min-height: 0;
+    }
+
+    #extraCarAccordion.accordion .card-header button h4 {
+        font-size: 10px !important;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .car-payment .car-list-steps {
+        position: absolute;
+        top: 30px;
+        left: -100px;
+    }
+}

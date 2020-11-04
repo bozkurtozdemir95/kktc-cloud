@@ -6,6 +6,7 @@
 /** Rent a car css files **/
 @import "rent-a-car/home.css";
 @import "rent-a-car/choose-car.css";
+@import "rent-a-car/car-payment.css";
 
 body {
     font-family: 'Proxima Nova Rg', sans-serif !important;
@@ -106,7 +107,7 @@ img {
 }
 
 .fs-22 {
-    font-size: 22px;
+    font-size: 22px !important;
 }
 
 .fs-23 {
@@ -161,6 +162,10 @@ img {
     line-height: 21px;
 }
 
+.lh-23 {
+    line-height: 23px;
+}
+
 .lh-27 {
     line-height: 27px;
 }
@@ -213,6 +218,10 @@ img {
     color: #ffffff;
 }
 
+.color-white:hover {
+    color: #ffffff;
+}
+
 .color-black {
     color: #011627;
 }
@@ -227,6 +236,10 @@ img {
 
 .color-light {
     color: rgba(2, 48, 71, .5)
+}
+
+.color-lightwhite {
+    color: rgba(255, 255, 255, .5);
 }
 
 .color-blue {
@@ -245,12 +258,28 @@ img {
     background: #0081A7;
 }
 
+.bg-green {
+    background: #06B440;
+}
+
+.bg-darkblue {
+    background: #023047;
+}
+
 .bg-light {
     background: #FAFAFA;
 }
 
+.py-40 {
+    padding: 40px 0;
+}
+
 .py-50 {
     padding: 50px 0;
+}
+
+.pt-30 {
+    padding-top: 30px;
 }
 
 .mb-10 {
@@ -307,6 +336,14 @@ img {
 
 .mr-10 {
     margin-right: 10px;
+}
+
+.mr-20 {
+    margin-right: 20px !important;
+}
+
+.mr-25 {
+    margin-right: 25px !important;
 }
 
 .white-box {
@@ -456,6 +493,8 @@ img {
 .form-button.big .icon {
     width: 23px;
     height: 23px;
+    fill: #FFFFFF;
+    margin-right: 5px;
 }
 
 .form-button.bg-blue .icon {
@@ -505,13 +544,33 @@ img {
     fill: #023047;
 }
 
+.feature-button:hover {
+    background: #0081A7;
+    border-color: #0081A7;
+}
+
+.feature-button:hover .icon {
+    fill: #FFFFFF;
+}
+
 .feature-button.blue {
     background: #0081A7;
     border-color: #0081A7;
 }
 
+.feature-button.white .icon,
 .feature-button.blue .icon {
     fill: #FFFFFF;
+}
+
+.feature-button.white {
+    background: transparent;
+    border-color: #FFFFFF;
+}
+
+.feature-button.white:hover {
+    background: #0081A7;
+    border-color: #0081A7;
 }
 
 .main-button {
@@ -843,6 +902,10 @@ img {
 
 .rating .icon.active {
     fill: #FFB703;
+}
+
+.rating.white .icon.active {
+    fill: #FFFFFF;
 }
 
 .rating h6 {
