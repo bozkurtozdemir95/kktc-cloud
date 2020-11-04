@@ -1397,6 +1397,10 @@ img {
     .rating-bar .d-flex:first-child .rating-bar-box:last-child {
         border-bottom: 0;
     }
+
+    .page-link-nav {
+        margin-bottom: 20px;
+    }
 }
 
 @media only screen and (max-width: 660px) {
