@@ -354,6 +354,11 @@ img {
     background: #FFFFFF;
     box-shadow: 0 3px 22px rgba(0, 0, 0, .05);
     padding: 22px;
+    transition: all .25s;
+}
+
+.white-box:hover {
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .3);
 }
 
 .white-box-md {
