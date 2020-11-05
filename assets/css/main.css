@@ -7,6 +7,7 @@
 @import "rent-a-car/home.css";
 @import "rent-a-car/choose-car.css";
 @import "rent-a-car/car-payment.css";
+@import "rent-a-car/company-profile.css";
 
 body {
     font-family: 'Proxima Nova Rg', sans-serif !important;
@@ -1211,6 +1212,7 @@ img {
     justify-content: center;
     border-radius: 0;
     border: 0;
+    transition: all .25s;
 }
 
 .pagination .prev .page-link,
@@ -1226,7 +1228,7 @@ img {
 .pagination .page-link .icon {
     width: 10px;
     height: 10px;
-    fill: #023047;
+    stroke: #023047;
 }
 
 .pagination .page-item.active .page-link,
@@ -1237,7 +1239,7 @@ img {
 
 .pagination .page-item.active .page-link .icon,
 .pagination .page-item:hover .page-link .icon {
-    fill: #FFFFFF;
+    stroke: #FFFFFF;
 }
 
 .custom-number-input {

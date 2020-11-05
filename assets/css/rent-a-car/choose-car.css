@@ -106,7 +106,9 @@
 .filters h6 {
     margin-left: 10px;
 }
-
+.cars-list .col-lg-6{
+    padding: 0 9px;
+}
 .car-box {
     margin-bottom: 30px;
 }
