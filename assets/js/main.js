@@ -12,6 +12,7 @@ $(document).ready(function () {
 });
 $(function () {
     $('.datetimepicker.date').datetimepicker({
+        useCurrent: false,
         language: 'en',
         pickDate: true,
         pickTime: false,
