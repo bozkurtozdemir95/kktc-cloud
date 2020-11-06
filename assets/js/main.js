@@ -79,4 +79,11 @@ $(document).ready(function(){
             }
         }
     })
+    $('.custom-checkbox input').click(function() {
+        if ($(this).is(':checked')) {
+            $(".delivery-location").toggleClass("delivery-show");
+        } else {
+            $(".delivery-location").toggleClass("delivery-show");
+        }
+    });
 });

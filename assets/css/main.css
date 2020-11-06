@@ -1439,6 +1439,18 @@ img {
     align-items: center;
 }
 
+.delivery-location {
+    max-height: 0;
+    overflow: hidden;
+    margin-bottom: 0;
+    transition: all .25s;
+}
+
+.delivery-show {
+    max-height: 100%;
+    margin-bottom: 30px;
+}
+
 @media only screen and (max-width: 992px) {
 
     .small-form .custom-selectbox,
