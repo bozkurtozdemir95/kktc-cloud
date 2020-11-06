@@ -1445,6 +1445,7 @@ img {
     font-size: 16px;
     line-height: 21px;
     color: #011627;
+    white-space: nowrap;
 }
 
 .form-box input,
@@ -1474,6 +1475,11 @@ img {
 .checkbox-as-label {
     display: flex;
     align-items: center;
+}
+
+.checkbox-as-label .sidebar-custom-checkbox {
+    line-height: 16px;
+    margin-bottom: .5rem;
 }
 
 .delivery-location {
