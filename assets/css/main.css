@@ -9,6 +9,19 @@
 @import "rent-a-car/car-payment.css";
 @import "rent-a-car/company-profile.css";
 
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0081A7;
+}
+
 body {
     font-family: 'Proxima Nova Rg', sans-serif !important;
     color: #023047;
@@ -560,6 +573,13 @@ img {
     justify-content: space-between;
 }
 
+.rent-form .custom-checkbox {
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+}
+
 .rent-select .custom-select-menu {
     position: absolute;
     width: 100%;
@@ -567,6 +587,7 @@ img {
     background: #FFFFFF;
     margin: 0;
 }
+
 
 .custom-selectbox .custom-select-menu-item:hover {
     background: #023047;
@@ -630,9 +651,20 @@ img {
     height: 51px;
 }
 
+.form-button.md {
+    height: 45px;
+}
+
 .form-button.big .icon {
     width: 23px;
     height: 23px;
+    fill: #FFFFFF;
+    margin-right: 5px;
+}
+
+.form-button.md .icon {
+    width: 17px;
+    height: 17px;
     fill: #FFFFFF;
     margin-right: 5px;
 }
@@ -1163,6 +1195,11 @@ img {
     border-right: 0;
 }
 
+.comment-list {
+    max-height: 360px;
+    overflow-y: auto;
+}
+
 .comment-box {
     display: flex;
     align-items: center;
@@ -1442,13 +1479,33 @@ img {
 .delivery-location {
     max-height: 0;
     overflow: hidden;
-    margin-bottom: 0;
+    margin: 0;
     transition: all .25s;
 }
 
 .delivery-show {
     max-height: 100%;
     margin-bottom: 30px;
+    overflow: visible;
+}
+
+.delivery-show.mt-15 {
+    margin-top: 15px !important;
+}
+
+.companyFormItems {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.companyFormItems.show {
+    max-height: 100%;
+    overflow: visible;
+}
+
+#map {
+    width: 100%;
+    height: 200px;
 }
 
 @media only screen and (max-width: 992px) {

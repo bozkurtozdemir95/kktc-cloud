@@ -96,6 +96,10 @@
     justify-content: space-between;
 }
 
+.filters {
+    cursor: pointer;
+}
+
 .filters .icon {
     fill: #0081A7;
     width: 15px;
@@ -106,9 +110,11 @@
 .filters h6 {
     margin-left: 10px;
 }
-.cars-list .col-lg-6{
+
+.cars-list .col-lg-6 {
     padding: 0 9px;
 }
+
 .car-box {
     margin-bottom: 30px;
 }
@@ -170,7 +176,7 @@
 .car-info-list .item {
     display: flex;
     align-items: center;
-    margin-top: 9px;
+    margin-top: 15px;
 }
 
 .car-info-list .icon {

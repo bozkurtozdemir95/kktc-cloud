@@ -557,8 +557,8 @@
                 </a>
             </div>
         </div>
-        <div class="row mx-0 mb-30 small-form rent-form">
-            <div class="col-lg-3 d-flex align-items-end">
+        <div class="row mx-2 mb-30 mt-30 small-form rent-form">
+            <div class="col-lg-3 d-flex flex-column">
                 <div class="custom-selectbox rent-select">
                     <div class="custom-select-toggler borderless">
                         <svg class="icon">
@@ -583,8 +583,36 @@
                         </div>
                     </div>
                 </div>
+                <div class="custom-selectbox rent-select delivery-location mt-15">
+                    <div class="custom-select-toggler borderless">
+                        <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#location"></use>
+                        </svg>
+                        Teslim Edilecek Konum?
+                        <svg class="icon arrow">
+                            <use href="../assets/icons/sprite.svg#down-angle"></use>
+                        </svg>
+                    </div>
+                    <div class="custom-select-menu">
+                        <div class="menu">
+                            <div class="custom-select-menu-item">
+                                Sabiha Gökçen Havalimanı
+                            </div>
+                            <div class="custom-select-menu-item">
+                                İstanbul Havalimanı
+                            </div>
+                            <div class="custom-select-menu-item">
+                                Esenboğa Havalimanı
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="custom-checkbox">
+                    <input type="checkbox" id="difPlace" name="difPlace">
+                    <label for="difPlace" class="fs-14 lh-14">Aracı farklı yerde teslim edeceğim.</label>
+                </div>
             </div>
-            <div class="col-lg-7 d-flex align-items-end">
+            <div class="col-lg-7 d-flex align-items-start">
                 <div class="row mx-0 w-100">
                     <div class="col-lg-3">
                         <div id="datetimepicker1" class="datetimepicker date">
@@ -638,15 +666,10 @@
                             <span class="add-on"></span>
                         </div>
                     </div>
-
                 </div>
             </div>
-            <div class="col-lg-2">
-                <div class="custom-checkbox">
-                    <input type="checkbox" id="difPlace" name="difPlace">
-                    <label for="difPlace" class="fs-14 lh-14">Aracı farklı yerde teslim edeceğim.</label>
-                </div>
-                <button class="form-button bg-blue big mt-15">
+            <div class="col-lg-2 d-flex align-items-start">
+                <button class="form-button bg-blue md">
                     <svg class="icon">
                         <use href="../assets/icons/sprite.svg#search"></use>
                     </svg>
@@ -674,42 +697,42 @@
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Avec (23)
-                                            <input type="radio" name="companyCheck">
+                                            <input type="checkbox" name="companyCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             EkarGloba (23)
-                                            <input type="radio" name="companyCheck">
+                                            <input type="checkbox" name="companyCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Gold Car (23)
-                                            <input type="radio" name="companyCheck">
+                                            <input type="checkbox" name="companyCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Hara Filo (23)
-                                            <input type="radio" name="companyCheck">
+                                            <input type="checkbox" name="companyCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Popy (23)
-                                            <input type="radio" name="companyCheck">
+                                            <input type="checkbox" name="companyCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Surprice (23)
-                                            <input type="radio" name="companyCheck">
+                                            <input type="checkbox" name="companyCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -734,21 +757,21 @@
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Otomatik
-                                            <input type="radio" name="transmissionCheck">
+                                            <input type="checkbox" name="transmissionCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Manuel
-                                            <input type="radio" name="transmissionCheck">
+                                            <input type="checkbox" name="transmissionCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Yarı Otomatik
-                                            <input type="radio" name="transmissionCheck">
+                                            <input type="checkbox" name="transmissionCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -793,21 +816,21 @@
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Dizel
-                                            <input type="radio" name="fuelCheck">
+                                            <input type="checkbox" name="fuelCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Benzin
-                                            <input type="radio" name="transmissionCheck">
+                                            <input type="checkbox" name="transmissionCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             LPG
-                                            <input type="radio" name="transmissionCheck">
+                                            <input type="checkbox" name="transmissionCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -829,42 +852,42 @@
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Audi
-                                            <input type="radio" name="brandCheck">
+                                            <input type="checkbox" name="brandCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             BMW
-                                            <input type="radio" name="brandCheck">
+                                            <input type="checkbox" name="brandCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Fiat
-                                            <input type="radio" name="brandCheck">
+                                            <input type="checkbox" name="brandCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Kia
-                                            <input type="radio" name="brandCheck">
+                                            <input type="checkbox" name="brandCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Mercedes
-                                            <input type="radio" name="brandCheck">
+                                            <input type="checkbox" name="brandCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             Renault
-                                            <input type="radio" name="brandCheck">
+                                            <input type="checkbox" name="brandCheck">
                                             <span class="checkmark"></span>
                                         </label>
                                     </div>
@@ -1040,13 +1063,19 @@
                     </div>
                 </div>
                 <div class="list-filter-row mb-20">
-                    <h6 class="fs-11 f-bold lh-30">168 Araç Listeleniyor</h6>
-                    <div class="filters d-flex align-items-center">
-                        <h6 class="fs-11 f-bold lh-30">Sırala</h6>
-                        <h6 class="fs-11 lh-30 color-blue">Azalan Fiyata Göre</h6>
+                    <h6 class="fs-12 f-bold lh-30">168 Araç Listeleniyor</h6>
+                    <div class="filters d-flex align-items-center h-dropdown">
+                        <h6 class="fs-12 f-bold lh-30">Sırala</h6>
+                        <h6 class="fs-12 lh-30 color-blue">Azalan Fiyata Göre</h6>
                         <svg class="icon">
                             <use href="../assets/icons/sprite.svg#filter"></use>
                         </svg>
+                        <div class="h-dropdown-content">
+                            <a href="#">Tavsiye Edilen</a>
+                            <a href="#">Azalan Fiyata Göre</a>
+                            <a href="#">Artan Fiyata Göre</a>
+                            <a href="#">En Son Eklenen</a>
+                        </div>
                     </div>
                 </div>
                 <div class="cars-list row">
@@ -1055,7 +1084,8 @@
                             <div class="car-box-title">
                                 <h4 class="fs-12 lh-16 f-bold color-dark">2020 Renault Clio 0.9 Joy</h4>
                                 <div class="title-right">
-                                    <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                                    <a href="https://greenmotion.com/" target="_blank"><img
+                                            src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                                     <div class="rating">
                                         <svg class="icon active">
                                             <use href="../assets/icons/sprite.svg#star"></use>
@@ -1160,7 +1190,8 @@
                             <div class="car-box-title">
                                 <h4 class="fs-12 lh-16 f-bold color-dark">2020 Renault Clio 0.9 Joy</h4>
                                 <div class="title-right">
-                                    <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                                    <a href="https://greenmotion.com/" target="_blank"><img
+                                            src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                                     <div class="rating">
                                         <svg class="icon active">
                                             <use href="../assets/icons/sprite.svg#star"></use>
@@ -1265,7 +1296,8 @@
                             <div class="car-box-title">
                                 <h4 class="fs-12 lh-16 f-bold color-dark">2020 Renault Clio 0.9 Joy</h4>
                                 <div class="title-right">
-                                    <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                                    <a href="https://greenmotion.com/" target="_blank"><img
+                                            src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                                     <div class="rating">
                                         <svg class="icon active">
                                             <use href="../assets/icons/sprite.svg#star"></use>
@@ -1370,7 +1402,8 @@
                             <div class="car-box-title">
                                 <h4 class="fs-12 lh-16 f-bold color-dark">2020 Renault Clio 0.9 Joy</h4>
                                 <div class="title-right">
-                                    <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                                    <a href="https://greenmotion.com/" target="_blank"><img
+                                            src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                                     <div class="rating">
                                         <svg class="icon active">
                                             <use href="../assets/icons/sprite.svg#star"></use>
@@ -1475,7 +1508,8 @@
                             <div class="car-box-title">
                                 <h4 class="fs-12 lh-16 f-bold color-dark">2020 Renault Clio 0.9 Joy</h4>
                                 <div class="title-right">
-                                    <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                                    <a href="https://greenmotion.com/" target="_blank"><img
+                                            src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                                     <div class="rating">
                                         <svg class="icon active">
                                             <use href="../assets/icons/sprite.svg#star"></use>
@@ -1580,7 +1614,8 @@
                             <div class="car-box-title">
                                 <h4 class="fs-12 lh-16 f-bold color-dark">2020 Renault Clio 0.9 Joy</h4>
                                 <div class="title-right">
-                                    <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                                    <a href="https://greenmotion.com/" target="_blank"><img
+                                            src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                                     <div class="rating">
                                         <svg class="icon active">
                                             <use href="../assets/icons/sprite.svg#star"></use>
@@ -1685,7 +1720,8 @@
                             <div class="car-box-title">
                                 <h4 class="fs-12 lh-16 f-bold color-dark">2020 Renault Clio 0.9 Joy</h4>
                                 <div class="title-right">
-                                    <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                                    <a href="https://greenmotion.com/" target="_blank"><img
+                                            src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                                     <div class="rating">
                                         <svg class="icon active">
                                             <use href="../assets/icons/sprite.svg#star"></use>
@@ -1790,7 +1826,8 @@
                             <div class="car-box-title">
                                 <h4 class="fs-12 lh-16 f-bold color-dark">2020 Renault Clio 0.9 Joy</h4>
                                 <div class="title-right">
-                                    <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                                    <a href="https://greenmotion.com/" target="_blank"><img
+                                            src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                                     <div class="rating">
                                         <svg class="icon active">
                                             <use href="../assets/icons/sprite.svg#star"></use>
@@ -1895,7 +1932,8 @@
                             <div class="car-box-title">
                                 <h4 class="fs-12 lh-16 f-bold color-dark">2020 Renault Clio 0.9 Joy</h4>
                                 <div class="title-right">
-                                    <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                                    <a href="https://greenmotion.com/" target="_blank"><img
+                                            src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                                     <div class="rating">
                                         <svg class="icon active">
                                             <use href="../assets/icons/sprite.svg#star"></use>
@@ -2000,7 +2038,8 @@
                             <div class="car-box-title">
                                 <h4 class="fs-12 lh-16 f-bold color-dark">2020 Renault Clio 0.9 Joy</h4>
                                 <div class="title-right">
-                                    <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                                    <a href="https://greenmotion.com/" target="_blank"><img
+                                            src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                                     <div class="rating">
                                         <svg class="icon active">
                                             <use href="../assets/icons/sprite.svg#star"></use>
@@ -2105,7 +2144,8 @@
                             <div class="car-box-title">
                                 <h4 class="fs-12 lh-16 f-bold color-dark">2020 Renault Clio 0.9 Joy</h4>
                                 <div class="title-right">
-                                    <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                                    <a href="https://greenmotion.com/" target="_blank"><img
+                                            src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                                     <div class="rating">
                                         <svg class="icon active">
                                             <use href="../assets/icons/sprite.svg#star"></use>
@@ -2210,7 +2250,8 @@
                             <div class="car-box-title">
                                 <h4 class="fs-12 lh-16 f-bold color-dark">2020 Renault Clio 0.9 Joy</h4>
                                 <div class="title-right">
-                                    <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                                    <a href="https://greenmotion.com/" target="_blank"><img
+                                            src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                                     <div class="rating">
                                         <svg class="icon active">
                                             <use href="../assets/icons/sprite.svg#star"></use>

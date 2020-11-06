@@ -581,7 +581,8 @@
                     <div class="col-lg-5 car-payment-info py-40">
                         <div class="car-payment-info-title">
                             <h4 class="fs-12 lh-16 f-bold color-white">2020 Renault Clio 0.9 Joy</h4>
-                            <a href="https://greenmotion.com/" target="_blank"><img src="../assets/images/companies/car-company.png" alt="KKTC"></a>
+                            <a href="https://greenmotion.com/" target="_blank"><img
+                                    src="../assets/images/companies/car-company.png" alt="KKTC"></a>
                             <div class="rating">
                                 <svg class="icon active">
                                     <use href="../assets/icons/sprite.svg#star"></use>
@@ -659,13 +660,68 @@
                                 </svg>
                                 <h5 class="fs-12 color-white lh-14">ABS</h5>
                             </div>
-                            <div class="item more p-0">
+                            <div class="item more p-0" data-toggle="collapse"
+                                 data-target="#moreFeatures"
+                                 aria-expanded="false" aria-controls="moreFeatures">
                                 <a href="#" class="fs-12 color-white lh-14">
                                     Tüm Özellikler
                                 </a>
                                 <svg class="icon">
                                     <use href="../assets/icons/sprite.svg#right-angle"></use>
                                 </svg>
+
+                            </div>
+                            <div class="collapse" id="moreFeatures">
+                                <div class="d-flex flex-wrap">
+                                    <div class="item mr-15">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#street"></use>
+                                        </svg>
+                                        <h5 class="fs-12 color-white lh-14">300 km/Gün</h5>
+                                    </div>
+                                    <div class="item mr-15">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#work"></use>
+                                        </svg>
+                                        <h5 class="fs-12 color-white lh-14">5 Bavul</h5>
+                                    </div>
+                                    <div class="item mr-15">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#driving-license"></use>
+                                        </svg>
+                                        <h5 class="fs-12 color-white lh-14">Ehliyet yaşı 1 ve üzeri</h5>
+                                    </div>
+                                    <div class="item mr-15">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#shield"></use>
+                                        </svg>
+                                        <h5 class="fs-12 color-white lh-14">ABS</h5>
+                                    </div>
+                                    <div class="item mr-15">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#street"></use>
+                                        </svg>
+                                        <h5 class="fs-12 color-white lh-14">300 km/Gün</h5>
+                                    </div>
+                                    <div class="item mr-15">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#work"></use>
+                                        </svg>
+                                        <h5 class="fs-12 color-white lh-14">5 Bavul</h5>
+                                    </div>
+                                    <div class="item mr-15">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#driving-license"></use>
+                                        </svg>
+                                        <h5 class="fs-12 color-white lh-14">Ehliyet yaşı 1 ve üzeri</h5>
+                                    </div>
+                                    <div class="item mr-15">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#shield"></use>
+                                        </svg>
+                                        <h5 class="fs-12 color-white lh-14">ABS</h5>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="car-place-info mt-30">
@@ -687,6 +743,9 @@
                                         <svg class="icon">
                                             <use href="../assets/icons/sprite.svg#parking"></use>
                                         </svg>
+                                        <h4 class="fs-12 lh-16 color-white">
+                                            Teslim Noktası
+                                        </h4>
                                         <h5 class="fs-12 lh-10 color-lightwhite">
                                             Mete Cad. Gümüşsuyu mah. No:4 D:7 <br>
                                             Beyoğlu Taksim-İstanbul
@@ -844,11 +903,21 @@
                             </div>
                             <div class="form-box col-lg-4">
                                 <label for="birthday">Sürücü Doğum Günü (Örn: 30/12/1995)</label>
-                                <input id="birthday" name="birthday" type="text"
-                                       placeholder="Sürücü Doğum Günü (Örn: 30/12/1995)">
+                                <div class="datetimepicker date">
+                                    <input id="birthday" data-format="dd/MM/yyyy" type="text"
+                                           value="Sürücü Doğum Günü"/>
+                                    <span class="add-on"></span>
+                                </div>
                             </div>
                             <div class="form-box col-lg-4">
                                 <div class="checkbox-as-label">
+                                    <div class="sidebar-custom-checkbox">
+                                        <label class="container">
+                                            KKTC Kimlik
+                                            <input type="radio" name="companyCheck">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
                                     <div class="sidebar-custom-checkbox">
                                         <label class="container">
                                             TC Kimlik
@@ -864,7 +933,7 @@
                                         </label>
                                     </div>
                                 </div>
-                                <input id="id" name="id" type="text" placeholder="TC Kimlik / Pasaport No.">
+                                <input id="id" name="id" type="text" placeholder="Kimlik veya Pasaport No.">
                             </div>
                         </div>
                         <div class="row mx-0 d-flex flex-column">
@@ -872,14 +941,14 @@
                                 <label class="container">
                                     Üyelik Sözleşmesi, gizlilik sözleşmesi ve çerez politikası ve Kişisel verilerin
                                     korunması hakkında aydınlatma formunu okdumu ve kabul ediyorum.
-                                    <input type="radio" name="companyCheck">
+                                    <input type="checkbox" name="companyCheck">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
                             <div class="sidebar-custom-checkbox">
                                 <label class="container">
                                     Önemli kampanyalardan haberdar olmak için Ticari Elektronik İleti almak istiyorum.
-                                    <input type="radio" name="companyCheck">
+                                    <input type="checkbox" name="companyCheck">
                                     <span class="checkmark"></span>
                                 </label>
                             </div>
@@ -901,18 +970,24 @@
                     <form action="#" class="driver-form">
                         <div class="row">
                             <div class="form-box col-lg-4">
-                                <label for="type">Fatura Türü</label>
-                                <select name="type" id="type">
+                                <label for="typeForReceipt">Fatura Türü</label>
+                                <select name="type" id="typeForReceipt">
                                     <option value="0">Bireysel</option>
                                     <option value="1">Şirket</option>
                                 </select>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row companyFormItems">
                             <div class="form-box col-lg-4">
-                                <label for="zipcode">Posta Kodu</label>
-                                <input id="zipcode" name="zipcode" type="text" placeholder="Posta Kodu">
+                                <label for="companyName">Firma Adı</label>
+                                <input id="companyName" name="companyName" type="text" placeholder="Firma Adı">
                             </div>
+                            <div class="form-box col-lg-4">
+                                <label for="companyNo">Vergi Numarası</label>
+                                <input id="companyNo" name="companyNo" type="text" placeholder="Vergi Numarası">
+                            </div>
+                        </div>
+                        <div class="row">
                             <div class="form-box col-lg-4">
                                 <label for="country">Ülke</label>
                                 <select name="country" id="country">
@@ -930,6 +1005,19 @@
                                     <option value="2">Ankara</option>
                                     <option value="3">Antalya</option>
                                 </select>
+                            </div>
+                            <div class="form-box col-lg-4">
+                                <label for="district">Bölge / İlçe</label>
+                                <select name="district" id="district">
+                                    <option value="0">Beşiktaş</option>
+                                    <option value="1">Kadıköy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box col-lg-4">
+                                <label for="zipcode">Posta Kodu</label>
+                                <input id="zipcode" name="zipcode" type="text" placeholder="Posta Kodu">
                             </div>
                         </div>
                         <div class="row">
