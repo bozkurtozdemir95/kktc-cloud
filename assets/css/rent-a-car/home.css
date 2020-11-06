@@ -71,6 +71,7 @@
     height: 18px;
     stroke: rgba(2, 48, 71, .2);
     transition: all .2s;
+    animation: fillSeperator 1.5s;
 }
 
 .seperator {
@@ -86,16 +87,97 @@
     margin-bottom: 15px;
 }
 
-.four-step .col:hover + .seperator .icon {
-    stroke: #0077B6;
+.four-step .step-col-1,
+.four-step .step-col-2,
+.four-step .step-col-3,
+.four-step .step-col-4,
+.four-step .step-col-5 {
+    animation: heartBeat 1s;
 }
 
-.four-step .col:hover .step-box-icon {
-    background: #0081A7;
+.four-step .step-col-1,
+.four-step .step-col-1 .step-box-icon,
+.four-step .step-col-1 .step-box-icon .icon,
+.four-step .step-col-1 + .seperator .icon {
+    animation-delay: 1.5s;
 }
 
-.four-step .col:hover .step-box-icon .icon {
-    fill: #FFFFFF;
+.four-step .step-col-2,
+.four-step .step-col-2 .step-box-icon,
+.four-step .step-col-2 .step-box-icon .icon,
+.four-step .step-col-2 + .seperator .icon {
+    animation-delay: 3s;
+}
+
+.four-step .step-col-3,
+.four-step .step-col-3 .step-box-icon,
+.four-step .step-col-3 .step-box-icon .icon,
+.four-step .step-col-3 + .seperator .icon {
+    animation-delay: 4.5s;
+}
+
+.four-step .step-col-4,
+.four-step .step-col-4 .step-box-icon,
+.four-step .step-col-4 .step-box-icon .icon,
+.four-step .step-col-4 + .seperator .icon {
+    animation-delay: 6s;
+}
+
+.four-step .step-col-5,
+.four-step .step-col-5 .step-box-icon,
+.four-step .step-col-5 .step-box-icon .icon,
+.four-step .step-col-5 + .seperator .icon {
+    animation-delay: 7.5s;
+}
+
+@keyframes heartBeat {
+    0% {
+        transform: scale(1);
+    }
+
+    14% {
+        transform: scale(1.2);
+    }
+
+    28% {
+        transform: scale(1);
+    }
+
+    42% {
+        transform: scale(1.2);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fillIconWrapper {
+    from {
+        background: #FFFFFF
+    }
+    to {
+        background: #0081A7
+    }
+}
+
+@keyframes fillIcon {
+    from {
+        fill: #023047;
+    }
+    to {
+        fill: #FFFFFF;
+    }
+
+}
+
+@keyframes fillSeperator {
+    from {
+        stroke: rgba(2, 48, 71, .2);
+    }
+    to {
+        stroke: #0077B6;
+    }
 }
 
 .step-box {
@@ -121,12 +203,14 @@
     align-items: center;
     justify-content: center;
     transition: all .2s;
+    animation: fillIconWrapper 1.5s;
 }
 
 .step-box .step-box-icon .icon {
     width: 38px;
     height: 38px;
     fill: #023047;
+    animation: fillIcon 1.5s linear;
 }
 
 #popularCarsTab {
@@ -236,39 +320,59 @@
     align-items: center;
 }
 
-.owl-carousel-banners .owl-nav button {
+.owl-carousel-brands .owl-nav {
+    position: absolute;
+    bottom: -50px;
+    right: 0;
     display: flex;
     align-items: center;
 }
 
-.owl-carousel-banners .owl-nav button.owl-next {
+.owl-carousel-banners .owl-nav button,
+.owl-carousel-brands .owl-nav button {
+    display: flex;
+    align-items: center;
+}
+
+.owl-carousel-banners .owl-nav button.owl-next,
+.owl-carousel-brands .owl-nav button.owl-next {
     margin-left: 15px;
 }
 
-.owl-carousel-banners .owl-nav .icon {
+.owl-carousel-banners .owl-nav .icon,
+.owl-carousel-brands .owl-nav .icon {
     width: 26px;
     height: 26px;
     fill: rgba(2, 48, 71, .3);
     transition: all .25s;
 }
 
-.owl-carousel-banners .owl-nav .line {
+.owl-carousel-banners .owl-nav .line,
+.owl-carousel-brands .owl-nav .line {
     width: 0;
     height: 2px;
     background: #0077B6;
     transition: all .25s;
 }
 
-.owl-carousel-banners .owl-nav button:hover .line {
+.owl-carousel-banners .owl-nav button:hover .line,
+.owl-carousel-brands .owl-nav button:hover .line {
     width: 70px;
 }
 
-.owl-carousel-banners .owl-nav button:hover .icon {
+.owl-carousel-banners .owl-nav button:hover .icon,
+.owl-carousel-brands .owl-nav button:hover .icon {
     fill: #0077B6;
 }
 
-.owl-carousel-banners .owl-nav button.owl-prev .line {
-    margin-left: -1px;
+.owl-carousel-banners .owl-nav button.owl-prev .line,
+.owl-carousel-brands .owl-nav button.owl-prev .line {
+    margin-left: -3px;
+}
+
+.owl-carousel-banners .owl-nav button.owl-next .line,
+.owl-carousel-brands .owl-nav button.owl-next .line {
+    margin-right: -3px;
 }
 
 .company-list a {
