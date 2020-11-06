@@ -890,6 +890,11 @@ img {
     font-size: 14px;
     line-height: 19px;
     border-bottom: 1px solid rgba(2, 48, 71, .1);
+    width: 100% !important;
+}
+
+.h-dropdown-content a.color-red {
+    color: #F3031B !important;
 }
 
 .h-dropdown-content a:last-child {
@@ -900,6 +905,7 @@ img {
     text-shadow: none !important;
     background: rgba(2, 48, 71, .1);
     border-color: transparent;
+    font-family: 'Proxima Nova Rg', sans-serif !important;
 }
 
 .h-dropdown:hover .h-dropdown-content {

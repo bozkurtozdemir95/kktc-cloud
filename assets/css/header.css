@@ -27,16 +27,16 @@
 
 .header-top-left ul {
     padding-left: 15px;
-    border-right: 1px solid rgba(2, 48, 71, .1);
 }
 
 .header-top-left ul li {
-    padding: 0 10px;
+    padding: 0 20px;
     cursor: pointer;
 }
 
 .header-top-left ul li a {
     position: relative;
+    width: 33px;
 }
 
 .header-top-left a {
@@ -49,7 +49,7 @@
     content: "";
     position: absolute;
     top: 10px;
-    right: -6px;
+    right: -10px;
     width: 4px;
     height: 4px;
     border-radius: 50%;
@@ -58,6 +58,25 @@
 
 .top-navigation a:hover:after {
     display: block;
+}
+
+.top-navigation.show-mobile {
+    padding: 0;
+}
+
+.top-navigation.show-mobile a {
+    width: 100%;
+    padding: 7px 20px;
+}
+
+.top-navigation.show-mobile a:after {
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.top-navigation.show-mobile li {
+    padding: 0;
 }
 
 .header-top-left ul li.more {
@@ -95,7 +114,7 @@
 
 
 .header-top-left ul li a:hover {
-    text-shadow: 0 0 1px #023047;
+    font-family: 'Proxima Nova Bo', sans-serif;
     text-decoration: none;
 }
 
@@ -146,14 +165,22 @@
     height: 100%;
 }
 
-.right-menu li .dropdown .dropdown-toggler img.avatar {
+.right-menu li.h-dropdown {
+    padding: 0 9px;
+}
+
+.user-menu li:hover {
+    background: none;
+}
+
+.user-menu-wrapper img.avatar {
     width: 24px;
     height: 24px;
     border-radius: 50%;
     margin-right: 10px;
 }
 
-.right-menu li .dropdown .dropdown-toggler .icon.arrow {
+.user-menu-wrapper .icon.arrow {
     width: 8px;
     height: 8px;
     fill: #023047;
@@ -183,7 +210,13 @@
     left: calc(50% - 22px);
 }
 
-.right-menu li .dropdown .dropdown-menu h5 {
+.right-menu li h5 {
+    font-size: 15px;
+    color: rgba(2, 48, 71, .5);
+    margin-bottom: 10px;
+}
+
+.h-dropdown-content h5 {
     font-size: 15px;
     color: rgba(2, 48, 71, .5);
     margin-bottom: 10px;
@@ -244,6 +277,7 @@
 
 div.more {
     padding: 0 15px;
+    cursor: pointer;
 }
 
 .top-navigation.mobile a {
@@ -419,6 +453,12 @@ div.more {
     display: flex;
 }
 
+@media only screen and (max-width: 1200px) {
+    .header-top-left ul li {
+        padding: 0 18px;
+    }
+}
+
 @media only screen and (max-width: 1024px) {
     #Header .container {
         max-width: 100%;
@@ -440,4 +480,5 @@ div.more {
     #Header .show-mobile {
         display: flex !important;
     }
+
 }

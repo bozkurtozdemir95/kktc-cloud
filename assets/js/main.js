@@ -7,7 +7,7 @@ $(document).ready(function () {
         $(e.target).next().toggleClass('open');
     });
     $('.custom-select-menu-item').click(function (e) {
-        $(e.target).parents().find('.custom-select-menu').toggleClass('open');
+        $(e.target).parents().closest('.custom-select-menu').toggleClass('open');
     });
 });
 $(function () {

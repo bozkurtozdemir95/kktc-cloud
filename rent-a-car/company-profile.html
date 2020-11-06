@@ -40,9 +40,11 @@
                         <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
                         <li><a href="#" class="color-dark fs-12 darkblue">Fatura</a></li>
                         <li class="more h-dropdown">
+                            <div class="color-dark fs-12 mr-2">Daha fazla</div>
                             <svg class="icon">
                                 <use href="../assets/icons/sprite.svg#more"></use>
                             </svg>
+
                             <div class="h-dropdown-content">
                                 <a href="#">Şans Oyunları</a>
                                 <a href="#">Alışveriş</a>
@@ -59,7 +61,7 @@
                                 </svg>
                             </div>
                         </div>
-                        <div class="dropdown-menu dropdown-menu-center no-close" aria-labelledby="leftNav">
+                        <div class="dropdown-menu dropdown-menu-center no-close p-0" aria-labelledby="leftNav">
                             <ul class="top-navigation show-mobile vertical h-100">
                                 <li><a href="#" class="color-dark fs-12 blue">İlan</a></li>
                                 <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
@@ -329,29 +331,23 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="after-login">
-                            <div class="dropdown text-center">
-                                <div class="dropdown-toggler d-flex align-items-center" id="accountDropdown"
-                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <img src="../assets/images/avatar.png" alt="KKTC" class="avatar">
-                                    <span class="fs-12 color-dark no-mobile">John Doe</span>
-                                    <svg class="icon arrow">
-                                        <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                    </svg>
-                                </div>
-                                <div class="dropdown-menu dropdown-menu-right p-0 no-close"
-                                     aria-labelledby="accountDropdown">
-                                    <h5>John Doe</h5>
-                                    <ul class="user-menu vertical-menu">
-                                        <li><a href="#" class="fs-14 color-dark">İlanlarım</a></li>
-                                        <li><a href="#" class="fs-14 color-dark">Favorilerim</a></li>
-                                        <li><a href="#" class="fs-14 color-dark">Sepetim</a></li>
-                                        <li><a href="#" class="fs-14 color-dark">Siparişlerim</a></li>
-                                        <li><a href="#" class="fs-14 color-dark">Satış İşlemlerim</a></li>
-                                        <li><a href="#" class="fs-14 color-dark">Üyeliğim</a></li>
-                                        <li><a href="#" class="fs-14 color-red">Çıkış Yap</a></li>
-                                    </ul>
-                                </div>
+                        <li class="after-login user-menu-wrapper h-dropdown">
+                            <img src="../assets/images/avatar.png" alt="KKTC" class="avatar">
+                            <span class="fs-12 color-dark no-mobile">John Doe</span>
+                            <svg class="icon arrow">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                            <div class="h-dropdown-content">
+                                <h5>John Doe</h5>
+                                <ul class="user-menu vertical-menu">
+                                    <li><a href="#" class="fs-14 color-dark">İlanlarım</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Favorilerim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Sepetim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Siparişlerim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Satış İşlemlerim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Üyeliğim</a></li>
+                                    <li><a href="#" class="fs-14 color-red">Çıkış Yap</a></li>
+                                </ul>
                             </div>
                         </li>
                     </ul>
@@ -705,21 +701,48 @@
                         </div>
                     </div>
                     <div class="white-box">
-                        <p class="fs-12 lh-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
-                        <p class="fs-12 lh-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor</p>
-                        <p class="fs-12 lh-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                            exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                            in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </p>
+                        <div class="d-flex flex-column about-text">
+                            <p class="fs-12 lh-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+                            <p class="fs-12 lh-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor</p>
+                            <p class="fs-12 lh-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </p>
+                            <div class="collapse" id="moreAbout">
+                                <p class="fs-12 lh-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit</p>
+                                <p class="fs-12 lh-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor</p>
+                                <p class="fs-12 lh-24">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                                    in
+                                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                                    occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </p>
+                            </div>
+                        </div>
+                        <button class="empty-button more-comment" type="button" data-toggle="collapse" data-target="#moreAbout" aria-expanded="false" aria-controls="moreAbout">
+                            <h6 class="fs-14 color-dark f-bold mr-20">
+                                Devamını Oku...
+                            </h6>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                        </button>
                     </div>
+
                 </div>
                 <div class="cars-list row">
                     <div class="col-lg-12">
