@@ -62,6 +62,10 @@
     display: none;
 }
 
+.top-navigation a:hover {
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
 .top-navigation a:hover:after {
     display: block;
 }
