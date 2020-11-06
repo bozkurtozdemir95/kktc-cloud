@@ -47,6 +47,10 @@
     align-items: center;
 }
 
+.top-navigation {
+    justify-content: space-between;
+}
+
 .top-navigation a:after {
     content: "";
     position: absolute;
