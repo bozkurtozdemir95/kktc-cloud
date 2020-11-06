@@ -46,7 +46,7 @@ $(document).ready(function(){
         loop:true,
         margin:10,
         nav:false,
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         responsive:{
             0:{
@@ -65,7 +65,7 @@ $(document).ready(function(){
         margin:10,
         nav:true,
         navText: ["<svg class='icon'><use href='../assets/icons/sprite.svg#left-arrow'></use></svg> <div class='line'></div>"," <div class='line'></div><svg class='icon'><use href='../assets/icons/sprite.svg#right-arrow'></use></svg>"],
-        autoplay: true,
+        autoplay: false,
         autoplayTimeout: 3000,
         responsive:{
             0:{

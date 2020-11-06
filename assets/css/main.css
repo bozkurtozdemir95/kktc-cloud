@@ -817,6 +817,59 @@ img {
     border-top-color: #023047;
 }
 
+.h-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.h-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    min-width: 160px;
+    box-shadow: 0 6px 19px rgba(0, 0, 0, .2);
+    z-index: 9;
+    right: 0;
+    bottom: 0;
+    transform: translateY(100%);
+}
+.h-dropdown-content:after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 9px solid transparent;
+    border-right: 9px solid transparent;
+    border-bottom: 9px solid #FFFFFF;
+    top: -9px;
+    right: 10px;
+}
+
+.h-dropdown-content a {
+    color: #023047;
+    padding: 9px 14px;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    line-height: 19px;
+    border-bottom: 1px solid rgba(2, 48, 71, .1);
+}
+
+.h-dropdown-content a:last-child {
+    border: 0;
+}
+
+.h-dropdown-content a:hover {
+    text-shadow: none !important;
+    background: rgba(2, 48, 71, .1);
+    border-color: transparent;
+}
+
+.h-dropdown:hover .h-dropdown-content {
+    display: block;
+}
+
+
 .dropdown-menu-center {
     left: 50% !important;
     right: auto !important;

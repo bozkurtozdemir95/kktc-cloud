@@ -6,7 +6,7 @@
 }
 
 .header-top {
-    height: 30px;
+    height: 34px;
     border-bottom: 1px solid rgba(2, 48, 71, .1);
 }
 
@@ -17,7 +17,7 @@
 }
 
 .header-top-left img {
-    max-width: 60px;
+    max-width: 61px;
 }
 
 .header-top-left ul {
@@ -34,14 +34,30 @@
     position: relative;
 }
 
+.header-top-left a {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .top-navigation a:after {
     content: "";
     position: absolute;
-    top: 0;
+    top: 10px;
     right: -6px;
     width: 4px;
     height: 4px;
     border-radius: 50%;
+    display: none;
+}
+
+.top-navigation a:hover:after {
+    display: block;
+}
+
+.header-top-left ul li.more {
+    display: flex;
+    align-items: center;
 }
 
 .header-top-left ul li a.blue:after {
@@ -249,11 +265,18 @@ div.more {
 
 .header-main-left {
     display: flex;
+    height: 100%;
     align-items: center;
+}
+
+.header-main-left ul {
+    height: 100%;
 }
 
 .header-main-left ul li {
     padding-left: 30px;
+    display: flex;
+    align-items: center;
 }
 
 .main-navigation li {
@@ -322,6 +345,73 @@ div.more {
 
 .show-mobile {
     display: none;
+}
+
+.message-list-top {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.message-box {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    border-bottom: 1px solid rgba(2, 48, 71, .1);
+}
+
+.message-box:hover {
+    background: rgba(2, 48, 71, .1);
+}
+
+.message-box .message-avatar {
+    width: 35px;
+    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.message-box .message-user {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.message-box .message-user .read-circle {
+    width: 8px;
+    height: 8px;
+    display: flex;
+    background: rgba(2, 48, 71, .3);
+    border-radius: 50%;
+}
+
+.message-box .message-user .read-circle.readable {
+    background: #F2072F;
+}
+
+.message-box .message-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.message-box .message-text p {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.message-list-top a.empty-button {
+    margin: 0;
+    height: 40px;
+    padding: 0;
+    display: flex;
 }
 
 @media only screen and (max-width: 1024px) {
