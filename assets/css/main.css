@@ -9,6 +9,8 @@
 @import "rent-a-car/car-payment.css";
 @import "rent-a-car/company-profile.css";
 
+/** Company css files **/
+@import "company/index.css";
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -275,6 +277,14 @@ img {
     color: #0081A7;
 }
 
+.color-blue2 {
+    color: #007BFF;
+}
+
+.color-blue2:hover {
+    color: #007BFF;
+}
+
 .color-red {
     color: #F3031B;
 }
@@ -305,6 +315,14 @@ img {
 
 .pt-30 {
     padding-top: 30px;
+}
+
+.mb-5p {
+    margin-bottom: 5px;
+}
+
+.mb-8 {
+    margin-bottom: 8px;
 }
 
 .mb-10 {
@@ -517,12 +535,41 @@ img {
     padding: 10px 50px 10px 10px;
 }
 
+.custom-selectbox .custom-select-toggler.borderless {
+    border: 0;
+    border-bottom: 1px solid rgba(2, 48, 71, .1);
+}
+
+.main-form .custom-selectbox .custom-select-menu {
+    margin-top: 0;
+}
+
+.main-form .custom-input {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    position: relative;
+}
+
+.main-form .custom-input .icon {
+    margin-left: 8px;
+}
+
+.custom-input input::-webkit-input-placeholder {
+    color: #023047;
+}
+
 .custom-selectbox .custom-select-menu {
     max-height: 0;
     overflow: hidden;
     transition: max-height .25s;
     margin-top: 10px;
     margin-bottom: 20px;
+}
+
+.main-form .form-button .icon {
+    position: absolute;
+    left: 30px;
 }
 
 .custom-selectbox .custom-select-menu .menu {
@@ -548,39 +595,40 @@ img {
     fill: #023047;
 }
 
-.rent-select .custom-select-toggler {
+.custom-select-toggler {
     position: relative;
     border: 0;
     border-bottom: 1px solid rgba(2, 48, 71, .1);
     border-radius: 0;
 }
 
-.rent-select .custom-select-toggler .icon,
-.rent-form .datetimepicker .icon {
+.custom-input .icon,
+.custom-select-toggler .icon,
+.main-form .datetimepicker .icon {
     width: 16px;
     height: 16px;
     margin-right: 10px;
     fill: #023047;
 }
 
-.rent-form .datetimepicker .icon {
+.main-form .datetimepicker .icon {
     margin-left: 10px;
 }
 
-.rent-form .datetimepicker {
+.main-form .datetimepicker {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.rent-form .custom-checkbox {
+.main-form .custom-checkbox {
     width: 100%;
     margin-top: 15px;
     margin-bottom: 15px;
     padding-left: 15px;
 }
 
-.rent-select .custom-select-menu {
+.custom-select-menu {
     position: absolute;
     width: 100%;
     z-index: 9;
@@ -598,7 +646,7 @@ img {
     fill: #fff;
 }
 
-.rent-form .datetimepicker .icon.arrow,
+.main-form .datetimepicker .icon.arrow,
 .custom-selectbox .custom-select-toggler .icon.arrow {
     width: 8px;
     height: 8px;
@@ -679,6 +727,10 @@ img {
 
 .form-button.bg-dark {
     background: #023047;
+}
+
+.form-button.bg-blue2 {
+    background: #007BFF;
 }
 
 .form-button:focus {
@@ -1144,6 +1196,10 @@ img {
     fill: #023047;
     margin-right: 1px;
     cursor: pointer;
+}
+
+.rating.gray .icon {
+    fill: rgba(2, 48, 71, .2);
 }
 
 .rating .icon.active {

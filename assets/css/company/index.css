@@ -1,0 +1,17 @@
+.city-company-list .place .icon {
+    width: 14px;
+    height: 14px;
+    fill: #007BFF;
+    margin-right: 5px;
+}
+
+.city-company-list img {
+    height: 230px;
+    max-width: 205px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .city-company-list h4 {
+        text-align: center;
+    }
+}

@@ -1,21 +1,21 @@
-.rent-form h4 {
+.main-form h4 {
     margin-bottom: 12px;
 }
 
-.rent-form-row {
+.main-form-row {
     position: relative;
     cursor: pointer;
 }
 
-.rent-form-row.half {
+.main-form-row.half {
     width: calc(50% - 10px);
 }
 
-.rent-form .datetimepicker {
+.main-form .datetimepicker {
     height: 34px;
 }
 
-.rent-form input {
+.main-form input {
     position: absolute;
     width: 100%;
     background: transparent;
@@ -396,7 +396,7 @@
         padding-left: 15px !important;
     }
 
-    .rent-form {
+    .main-form {
         margin-bottom: 30px;
     }
 
