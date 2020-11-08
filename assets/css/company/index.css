@@ -69,8 +69,11 @@
     left: -50px;
     top: 50%;
     transform: translateY(calc(-50% + -10px));
+    z-index: 1;
 }
-
+.owl-carousel-categories .owl-stage-outer{
+    z-index: 2;
+}
 .owl-carousel-categories .owl-nav .owl-prev {
     transform: rotate(180deg);
 }
