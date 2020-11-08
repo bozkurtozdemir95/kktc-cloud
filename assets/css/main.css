@@ -289,6 +289,10 @@ img {
     color: #F3031B;
 }
 
+.color-lightgreen {
+    color: #A0A038;
+}
+
 .bg-blue {
     background: #0081A7;
 }
@@ -302,7 +306,19 @@ img {
 }
 
 .bg-light {
-    background: #FAFAFA;
+    background: #FAFAFA !important;
+}
+
+.bg-light-2 {
+    background: #F8F9FA;
+}
+
+.pr-10 {
+    padding-right: 10px;
+}
+
+.pl-10 {
+    padding-left: 10px;
 }
 
 .py-40 {
@@ -367,6 +383,10 @@ img {
 
 .mt-40 {
     margin-top: 40px;
+}
+
+.mt-46 {
+    margin-top: 46px;
 }
 
 .mt-120 {
@@ -1574,6 +1594,44 @@ img {
 #map {
     width: 100%;
     height: 200px;
+}
+
+.page-subtitle {
+    padding-bottom: 16px;
+    margin-bottom: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid rgba(2, 48, 71, .05);
+    position: relative;
+}
+
+.page-subtitle h4 {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.page-subtitle a {
+    font-size: 14px;
+    line-height: 19px;
+    color: #007BFF;
+}
+
+.page-subtitle:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #007BFF;
+    width: 110px;
+    height: 3px;
+    transform: translateY(50%);
+}
+
+.page-subcontent {
+    width: 100%;
 }
 
 @media only screen and (max-width: 992px) {

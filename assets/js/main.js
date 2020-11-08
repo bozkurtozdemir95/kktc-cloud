@@ -81,6 +81,36 @@ $(document).ready(function () {
             }
         }
     })
+
+    $('.owl-carousel-categories').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        navText: ["<svg class='icon'><use href='../assets/icons/sprite.svg#right-angle'></use></svg>", "<svg class='icon'><use href='../assets/icons/sprite.svg#right-angle'></use></svg>"],
+        autoplay: false,
+        autoplayTimeout: 3000,
+        responsive: {
+            0: {
+                items: 3
+            },
+            600: {
+                items: 5
+            },
+            1000: {
+                items: 10
+            }
+        }
+    })
+
+    $('.owl-carousel-company-banners').owlCarousel({
+        loop: true,
+        margin: 10,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        items: 1,
+        dots: true
+    })
+
     $('.custom-checkbox input').click(function () {
         if ($(this).is(':checked')) {
             $(".delivery-location").toggleClass("delivery-show");
@@ -92,16 +122,15 @@ $(document).ready(function () {
     $('#typeForReceipt').on('change', function () {
         if (this.value === 1) {
             $('.companyFormItems').toggleClass('show');
-        } else{
+        } else {
             $('.companyFormItems').toggleClass('show');
         }
     });
 });
 
 
-
 function initMap() {
-    const location = {lat: -33.872, lng: 151.252 }
+    const location = {lat: -33.872, lng: 151.252}
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 6,
         center: location,
@@ -282,8 +311,8 @@ function initMap() {
     })
 }
 
-$(function(){
-    $(window).on('load', function(){
+$(function () {
+    $(window).on('load', function () {
         initMap();
     });
 });

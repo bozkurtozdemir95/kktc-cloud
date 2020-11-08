@@ -54,3 +54,43 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'Gilroy Black';
+    src: url('Gilroy/Gilroy-Black.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy Bold';
+    src: url('Gilroy/Gilroy-Bold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy ExtraBold';
+    src: url('Gilroy/Gilroy-ExtraBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy Black';
+    src: url('Gilroy/Gilroy-Black.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy Heavy';
+    src: url('Gilroy/Gilroy-Heavy.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy Light';
+    src: url('Gilroy/Gilroy-Light.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy Medium';
+    src: url('Gilroy/Gilroy-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy SemiBold';
+    src: url('Gilroy/Gilroy-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy Thin';
+    src: url('Gilroy/Gilroy-Thin.woff') format('woff');
+}
+@font-face {
+    font-family: 'Gilroy UltraLight';
+    src: url('Gilroy/Gilroy-UltraLight.woff') format('woff');
+}
