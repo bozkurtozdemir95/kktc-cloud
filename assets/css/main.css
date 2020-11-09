@@ -12,6 +12,7 @@
 /** Company css files **/
 @import "company/index.css";
 @import "company/company-list.css";
+@import "company/company-map.css";
 
 ::-webkit-scrollbar {
     width: 5px;
