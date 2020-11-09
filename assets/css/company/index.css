@@ -171,13 +171,13 @@
     margin-right: 5px;
 }
 
-.popular-companies-box .box-bottom .box-socials a {
+.box-socials a {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.popular-companies-box .box-bottom .box-socials .icon {
+.box-socials .icon {
     width: 21px;
     height: 21px;
     fill: rgba(2, 48, 71, .5);
@@ -185,7 +185,7 @@
     transition: all .25s;
 }
 
-.popular-companies-box .box-bottom .box-socials a:hover .icon {
+.box-socials a:hover .icon {
     fill: #007BFF;
 }
 

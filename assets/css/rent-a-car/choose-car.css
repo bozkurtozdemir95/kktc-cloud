@@ -90,6 +90,10 @@
     color: #0081A7;
 }
 
+.darkblue .selected-filter-box.clear:hover {
+    color: #007BFF;
+}
+
 .list-filter-row {
     display: flex;
     align-items: center;

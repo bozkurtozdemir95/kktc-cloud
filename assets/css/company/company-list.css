@@ -1,0 +1,165 @@
+.side-category-list .show-in-map {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #023047;
+    padding: 0 8px;
+}
+
+.side-category-list .show-in-map img {
+    width: 33px;
+    height: 33px;
+    margin-right: 12px;
+}
+
+.side-category-list .show-in-map .icon {
+    width: 14px;
+    height: 14px;
+    fill: #023047;
+}
+
+.side-category-menu {
+    padding: 0 !important;
+}
+
+.category-menu-title {
+    padding: 15px 12px;
+    font-size: 18px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.category-menu-title .icon {
+    fill: #023047;
+    width: 18px;
+    height: 18px;
+    margin-right: 10px;
+}
+
+.category-menu-title[aria-expanded='true'] .icon,
+.category-menu-title:hover .icon {
+    fill: #007BFF;
+}
+
+#categoryMenu ul li a {
+    display: flex;
+    align-items: center;
+    padding: 15px 12px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #023047;
+    transition: all .25s;
+}
+
+#categoryMenu ul li a .icon {
+    width: 17px;
+    height: 17px;
+    fill: #023047;
+    margin-right: 20px;
+    transition: all .25s;
+}
+
+#categoryMenu ul li a.active,
+#categoryMenu ul li a:hover {
+    color: #007BFF;
+}
+
+#categoryMenu ul li a.active .icon,
+#categoryMenu ul li a:hover .icon {
+    fill: #007BFF;
+}
+
+#categoryMenu ul li a span {
+    color: rgba(2, 48, 71, .2);
+    font-size: 11px;
+    line-height: 15px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+#categoryMenuAcc {
+    max-height: 630px;
+    overflow-y: auto;
+    margin-bottom: 30px;
+}
+
+.horizontal-company-box {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    background: #FFFFFF;
+    transition: all .25s;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.horizontal-company-box:hover {
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .3);
+}
+
+.horizontal-company-box .img {
+    width: 128px;
+    min-width: 128px;
+    height: 152px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+.horizontal-company-box .text {
+    padding: 9px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 152px;
+}
+
+.horizontal-company-box .title {
+    width: 100%;
+}
+
+.horizontal-company-box .title h4 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.horizontal-company-box .title h4 .icon {
+    width: 15px;
+    height: 15px;
+    stroke: #007BFF;
+    cursor: pointer;
+}
+
+.horizontal-company-box .title-bottom {
+    font-size: 12px;
+    line-height: 16px;
+    margin-top: 4px;
+}
+
+.horizontal-company-box .title-bottom .icon {
+    width: 13px;
+    height: 13px;
+    fill: #007BFF;
+    margin-right: 5px;
+}
+
+.horizontal-company-box p {
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    margin-top: 9px;
+    margin-bottom: 6px;
+}
+
+.horizontal-company-box .box-socials a:first-child .icon {
+    margin: 0;
+}
+

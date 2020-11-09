@@ -11,6 +11,7 @@
 
 /** Company css files **/
 @import "company/index.css";
+@import "company/company-list.css";
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -1069,6 +1070,10 @@ img {
     color: #0081A7;
 }
 
+.darkblue .page-link-nav a:last-child {
+    color: #007BFF;
+}
+
 .page-link-nav a:last-child .icon {
     display: none;
 }
@@ -1188,6 +1193,18 @@ img {
     border: 0;
     padding: 0;
     border-radius: 0;
+}
+
+.small-form .custom-select-toggler,
+.small-form .custom-input input,
+.small-form .custom-input,
+.small-form .datetimepicker,
+.small-form .datetimepicker input {
+    height: 45px;
+}
+
+.small-form .custom-input input:focus + .icon {
+    fill: #007BFF;
 }
 
 .small-form .col,
@@ -1392,6 +1409,11 @@ img {
     transition: all .25s;
 }
 
+.pagination .page-link:focus {
+    box-shadow: none;
+    outline: 0;
+}
+
 .pagination .prev .page-link,
 .pagination .next .page-link {
     width: 22px;
@@ -1417,6 +1439,16 @@ img {
 .pagination .page-item.active .page-link .icon,
 .pagination .page-item:hover .page-link .icon {
     stroke: #FFFFFF;
+}
+
+.darkblue .pagination .page-link {
+    background: #FFFFFF;
+}
+
+.darkblue .pagination .page-item.active .page-link,
+.darkblue .pagination .page-item:hover .page-link {
+    background: #007BFF;
+    color: #FFFFFF;
 }
 
 .custom-number-input {
