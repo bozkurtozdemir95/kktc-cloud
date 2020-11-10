@@ -396,11 +396,122 @@
     cursor: pointer;
 }
 
+.evaluation-line {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.evaluations .icon-wrapper {
+    width: 59px;
+    min-width: 59px;
+    height: 53px;
+    min-height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(2, 48, 71, .05);
+    margin-right: 18px;
+}
+
+.evaluations .icon {
+    width: 29px;
+    height: 29px;
+    fill: #007BFF;
+}
+
+.evaluation-progressbar {
+    display: flex;
+    align-items: center;
+}
+
+.evaluation-progressbar span {
+    width: 30px;
+    margin-left: 15px;
+}
+
+.evaluation-progressbar .progressbar-percent {
+    width: 100%;
+    height: 7px;
+    background: rgba(2, 48, 71, .05);
+    position: relative;
+}
+
+.evaluation-progressbar .progressbar-percent .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 7px;
+    background: #007BFF;
+}
+
+.company-product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-box {
+    position: relative;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.product-box.sm {
+    width: calc(22% - 10px);
+}
+
+.product-box.md {
+    width: calc(56% - 10px);
+}
+
+.product-box .text {
+    position: absolute;
+    bottom: 0;
+    z-index: 3;
+    padding: 7px;
+}
+
+.product-box .img {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+}
+
+.product-box .img-mask {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 60%;
+    background: linear-gradient(to bottom, transparent 0%, #023047 100%);
+    bottom: 0;
+    left: 0;
+}
+
+.product-box h4 {
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+.product-box h5 {
+    font-size: 10px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.product-box h5 b {
+    font-size: 12px;
+}
+
 @media only screen and (max-width: 1200px) {
     .subheader-buttons-wrapper .empty-button h6 {
         font-size: 12px;
     }
-
 }
 
 @media only screen and (max-width: 992px) {

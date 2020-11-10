@@ -1244,7 +1244,10 @@ img {
     margin-right: 1px;
     cursor: pointer;
 }
-
+.rating.big .icon{
+    width: 16px;
+    height: 16px;
+}
 .rating.gray .icon {
     fill: rgba(2, 48, 71, .2);
 }
