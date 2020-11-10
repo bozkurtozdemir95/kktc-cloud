@@ -352,6 +352,9 @@ div.more {
 .header-main-left ul a {
     font-size: 14px;
     transition: all .24s;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .header-main-left ul li:hover a {

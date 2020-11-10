@@ -1,0 +1,443 @@
+.company-details-subheader {
+    width: 100%;
+    height: 366px;
+    background-image: url("../../images/bg/company-subheader-bg.png");
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.company-details-subheader .gradient-bg {
+    background: linear-gradient(to bottom, transparent 0%, rgba(2, 48, 71, .75) 100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.company-details-subheader .blurred-bg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 66px;
+    background: -moz-linear-gradient(top, #435256 0%, #33515f 100%);
+    background: -webkit-linear-gradient(top, #435256 0%, #33515f 100%);
+    background: linear-gradient(to bottom, #435256 0%, #33515f 100%);
+    filter: blur(3px);
+    opacity: .9;
+    overflow: hidden;
+}
+
+.premium-badge {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(237, 7, 35, .75);
+    padding: 5px;
+    margin-bottom: 5px;
+    max-width: 170px;
+}
+
+.premium-badge .badge-icon {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.premium-badge .badge-icon .icon {
+    width: 18px;
+    height: 18px;
+    fill: #ED0723;
+}
+
+.premium-badge h6 {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.premium-badge .border-shape {
+    width: 10px;
+    height: 40px;
+    border-radius: 5px;
+    background: #FFFFFF;
+}
+
+.company-logo-col .badge-border {
+    width: 100%;
+    margin-bottom: 5px;
+    max-width: 170px;
+}
+
+.company-logo-col .badge-border.red {
+    background: #ED0723;
+}
+
+.company-logo-col .badge-border.red:nth-child(1) {
+    background: rgba(237, 7, 35, .8);
+    height: 4px;
+}
+
+.company-logo-col .badge-border.red:nth-child(2) {
+    background: rgba(237, 7, 35, .6);
+    height: 3px;
+}
+
+.company-logo-col .badge-border.red:nth-child(3) {
+    background: rgba(237, 7, 35, .4);
+    height: 2px;
+}
+
+.company-logo-col .logo-wrapper {
+    border: 3px solid #ED0723;
+    margin-bottom: -30px;
+    max-width: 170px;
+}
+
+.company-logo-col .logo-wrapper img {
+    width: 100%;
+    height: 150px;
+}
+
+.subheader-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.company-title .socials {
+    display: flex;
+    align-items: center;
+}
+
+.company-title .socials a {
+    margin-right: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-title .socials a .icon {
+    width: 15px;
+    height: 15px;
+    fill: #FFFFFF;
+}
+
+.company-title .socials a:hover .icon {
+    fill: #0063CE;
+}
+
+.company-title h6 {
+    padding-right: 7px;
+    margin-right: 13px;
+    position: relative;
+}
+
+.company-title h6:after {
+    content: "";
+    position: absolute;
+    right: -3px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, .5);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+}
+
+.subheader-top-wrapper {
+    margin-bottom: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subheader-buttons-wrapper {
+    padding: 16px 0;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.subheader-buttons-wrapper .empty-button {
+    padding: 9px 20px 9px 9px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: rgba(255, 255, 255, .1);
+    transition: all .25s;
+    margin-left: 15px;
+}
+
+.subheader-buttons-wrapper .empty-button h6 {
+    color: #FFFFFF;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.subheader-buttons-wrapper .empty-button:hover {
+    background: rgba(255, 255, 255, .2);
+}
+
+.subheader-buttons-wrapper .empty-button:hover .button-arrow {
+    background: rgba(255, 255, 255, .1);
+}
+
+.subheader-buttons-wrapper .empty-button .icon {
+    width: 18px;
+    height: 18px;
+    margin-right: 12px;
+    fill: #FFFFFF;
+}
+
+.subheader-buttons-wrapper .empty-button .icon.heart {
+    fill: none;
+    stroke: #FFFFFF;
+}
+
+.subheader-buttons-wrapper .empty-button .icon.yellow {
+    fill: #FFB300;
+}
+
+.subheader-buttons-wrapper .empty-button .button-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 14px;
+    height: 100%;
+    background: rgba(255, 255, 255, .2);
+}
+
+.subheader-buttons-wrapper .empty-button .button-arrow .icon {
+    width: 8px;
+    height: 8px;
+    stroke: #FFFFFF;
+    margin: 0;
+}
+
+.subheader-buttons-wrapper .right {
+    justify-content: flex-end;
+}
+
+.subheader-buttons-wrapper .right .empty-button {
+    padding: 0 20px 0 0;
+}
+
+.subheader-buttons-wrapper .right .empty-button .icon-wrapper {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.subheader-buttons-wrapper .right .empty-button .icon-wrapper.green {
+    background: #05CC5B;
+}
+
+.subheader-buttons-wrapper .right .empty-button .icon-wrapper.yellow {
+    background: #FFB300;
+}
+
+.subheader-buttons-wrapper .right .empty-button .icon-wrapper.blue {
+    background: #007BFF;
+}
+
+.subheader-buttons-wrapper .right .empty-button .icon-wrapper.red {
+    background: #ED0723;
+}
+
+.subheader-buttons-wrapper .right .empty-button .icon-wrapper .icon {
+    margin: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.company-stories {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.company-stories .company-story {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: all .25s;
+    margin-left: 20px;
+}
+
+.company-stories .company-story.active,
+.company-stories .company-story:hover {
+    border: 2px solid #007BFF;
+}
+
+.company-info-table table tr td {
+    font-size: 14px;
+    padding: 8px 0;
+    white-space: nowrap;
+}
+
+.company-info-table table tr {
+    border-bottom: 1px solid rgba(2, 48, 71, .05);
+}
+
+.company-info-table table tr:last-child {
+    border: 0;
+}
+
+.company-info-table table tr td:first-child {
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.company-info-table table tr td:last-child {
+    padding-left: 30px;
+}
+
+.company-info-table table tr.blue td {
+    color: #007BFF;
+}
+
+.company-small-map {
+    height: 260px;
+    margin-bottom: 30px;
+}
+
+.company-info-bar {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(2, 48, 71, .05);
+    display: flex;
+    align-items: center;
+    margin-bottom: 11px;
+    border-radius: 5px 0 0 5px;
+    cursor: pointer;
+}
+
+.company-info-bar .icon-wrapper {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    border-radius: 5px 0 0 5px;
+}
+
+.company-info-bar .icon-wrapper .icon {
+    width: 16px;
+    height: 16px;
+    fill: #FFFFFF;
+}
+
+.company-info-bar .icon.arrow {
+    width: 8px;
+    height: 8px;
+    stroke: #000000;
+}
+
+.company-info-bar .text {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.company-info-bar .text b {
+    font-size: 10px;
+}
+
+.company-info-bar.red .text b {
+    color: #ED0723;
+}
+
+.company-info-bar.blue .text b {
+    color: #007BFF;
+}
+
+.company-info-bar.red .icon-wrapper {
+    background: #ED0723;
+}
+
+.company-info-bar.blue .icon-wrapper {
+    background: #007BFF;
+}
+
+.share-socials {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.share-socials a {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.share-socials .icon {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1200px) {
+    .subheader-buttons-wrapper .empty-button h6 {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 992px) {
+    .subheader-buttons-wrapper .empty-button,
+    .subheader-buttons-wrapper .right .empty-button {
+        padding-right: 14px;
+    }
+
+    .subheader-buttons-wrapper .right .empty-button .icon-wrapper {
+        margin-right: 0;
+    }
+
+    .subheader-buttons-wrapper .empty-button h6 {
+        display: none;
+    }
+
+    .subheader-top-wrapper {
+        margin-bottom: 0;
+        padding: 0 15px;
+        flex-direction: column-reverse;
+    }
+
+    .company-stories {
+        margin-top: 50px;
+    }
+
+    .company-title {
+        display: flex;
+        align-items: center;
+    }
+
+    .company-title h4 {
+        margin-right: 15px;
+        font-size: 20px !important;
+    }
+
+    .company-title h6 {
+        font-size: 12px !important;
+    }
+}

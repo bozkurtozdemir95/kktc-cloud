@@ -16,6 +16,8 @@
     <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
     <script src="../assets/libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
     <script src="../assets/libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWP3Q6SElBhRoC1Wf8BBj-Q9VWdOawqyY&callback=initMap&libraries=&v=weekly"
+            defer></script>
 
     <script src="../assets/js/main.js"></script>
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -423,6 +425,14 @@
                 <div class="header-main-right">
                     <ul class="horizontal">
                         <li>
+                            <a href="add-firma.html" class="main-button blue">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#plus"></use>
+                                </svg>
+                                Ücretsiz İlan Ver
+                            </a>
+                        </li>
+                        <li>
                             <a href="#" class="main-button white">
                                 <svg class="icon">
                                     <use href="../assets/icons/sprite.svg#enter"></use>
@@ -436,14 +446,6 @@
                                     <use href="../assets/icons/sprite.svg#user-key"></use>
                                 </svg>
                                 Giriş Yap
-                            </a>
-                        </li>
-                        <li class="after-login">
-                            <a href="#" class="main-button blue">
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#plus"></use>
-                                </svg>
-                                Ücretsiz İlan Ver
                             </a>
                         </li>
                         <li class="after-login">
@@ -512,8 +514,338 @@
     </div>
 </div>
 <div class="page-wrapper darkblue">
+    <div class="company-details-subheader">
+        <div class="gradient-bg"></div>
+        <div class="blurred-bg"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-2 col-sm-3 company-logo-col">
+                    <div class="premium-badge">
+                        <div class="badge-icon">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#madal"></use>
+                            </svg>
+                        </div>
+                        <h6>PREMIUM FIRMA</h6>
+                        <div class="border-shape"></div>
+                    </div>
+                    <div class="badge-border red"></div>
+                    <div class="badge-border red"></div>
+                    <div class="badge-border red"></div>
+                    <div class="logo-wrapper">
+                        <img src="../assets/images/companies/company-logo.png" alt="KKTC">
+                    </div>
+                </div>
+                <div class="col-lg-10 col-sm-9 subheader-right">
+                    <div class="row subheader-top-wrapper">
+                        <div class="company-title">
+                            <h4 class="fs-24 lh-32 color-white">Lefkoşa Restaurant</h4>
+                            <div class="d-flex align-items-center">
+                                <h6 class="fs-14 lh-19 color-white">Lefkoşa / Yenişehir</h6>
+                                <div class="socials">
+                                    <a href="#">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#whatsapp"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#youtube"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="company-stories">
+                            <a href="#" class="company-story active">
+                                <img src="../assets/images/companies/company-story-1.png" alt="KKTC">
+                            </a>
+                            <a href="#" class="company-story active">
+                                <img src="../assets/images/companies/company-story-1.png" alt="KKTC">
+                            </a>
+                            <a href="#" class="company-story active">
+                                <img src="../assets/images/companies/company-story-1.png" alt="KKTC">
+                            </a>
+                            <a href="#" class="company-story">
+                                <img src="../assets/images/companies/company-story-1.png" alt="KKTC">
+                            </a>
+                            <a href="#" class="company-story">
+                                <img src="../assets/images/companies/company-story-1.png" alt="KKTC">
+                            </a>
+                            <a href="#" class="company-story">
+                                <img src="../assets/images/companies/company-story-1.png" alt="KKTC">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row subheader-buttons-wrapper">
+                        <div class="left d-flex align-items-center">
+                            <button class="empty-button m-0">
+                                <svg class="icon yellow">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <h6>4.5 / 5</h6>
+                                <span class="button-arrow">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="empty-button">
+                                <svg class="icon heart">
+                                    <use href="../assets/icons/sprite.svg#heart-empty"></use>
+                                </svg>
+                                <h6>Favorilere Ekle</h6>
+                                <span class="button-arrow">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                        <div class="right d-flex align-items-center">
+                            <button class="empty-button">
+                               <span class="icon-wrapper green">
+                                   <svg class="icon">
+                                       <use href="../assets/icons/sprite.svg#whatsapp"></use>
+                                   </svg>
+                               </span>
+                                <h6>WhatsApptan Yaz</h6>
+                                <span class="button-arrow">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="empty-button">
+                               <span class="icon-wrapper yellow">
+                                   <svg class="icon">
+                                       <use href="../assets/icons/sprite.svg#mail-2"></use>
+                                   </svg>
+                               </span>
+                                <h6>Mesaj Gönder</h6>
+                                <span class="button-arrow">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="empty-button">
+                               <span class="icon-wrapper blue">
+                                   <svg class="icon">
+                                       <use href="../assets/icons/sprite.svg#phone-call"></use>
+                                   </svg>
+                               </span>
+                                <h6>Hemen Ara</h6>
+                                <span class="button-arrow">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                            <button class="empty-button">
+                               <span class="icon-wrapper red">
+                                   <svg class="icon">
+                                       <use href="../assets/icons/sprite.svg#location-empty"></use>
+                                   </svg>
+                               </span>
+                                <h6>Yol Tarifi</h6>
+                                <span class="button-arrow">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                    </svg>
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
-        <div class="row">
+        <div class="row mt-70">
+            <div class="col-lg-5 mb-30">
+                <div id="carousel-thumb" class="carousel slide carousel-fade carousel-thumbnails" data-ride="carousel">
+                    <!--Slides-->
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <img src="../assets/images/companies/carousel-img-1.png" alt="KKTC">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/companies/carousel-img-2.png" alt="KKTC">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="../assets/images/companies/carousel-img-1.png" alt="KKTC">
+                        </div>
+                    </div>
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-thumb" data-slide-to="0" class="active">
+                            <img src="../assets/images/companies/carousel-img-1.png" alt="KKTC">
+                        </li>
+                        <li data-target="#carousel-thumb" data-slide-to="1">
+                            <img src="../assets/images/companies/carousel-img-2.png" alt="KKTC">
+                        </li>
+                        <li data-target="#carousel-thumb" data-slide-to="2">
+                            <img src="../assets/images/companies/carousel-img-1.png" alt="KKTC">
+                        </li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="page-subtitle mb-0">
+                    <h4>Firma Bilgileri</h4>
+                </div>
+                <div class="company-info-table mb-30">
+                    <table>
+                        <tbody>
+                        <tr class="blue">
+                            <td>Firma Adı</td>
+                            <td>Lefkoşa Belediyesi</td>
+                        </tr>
+                        <tr>
+                            <td>Telefon</td>
+                            <td> +90 392 228 52 21</td>
+                        </tr>
+                        <tr>
+                            <td>Fax</td>
+                            <td> +90 392 228 43 87</td>
+                        </tr>
+                        <tr>
+                            <td>Email</td>
+                            <td>iletisim@lefkosabelediyesi.org</td>
+                        </tr>
+                        <tr>
+                            <td>Website</td>
+                            <td>www.lefkosabelediyesi.org</td>
+                        </tr>
+                        <tr>
+                            <td>Adres</td>
+                            <td>Atatürk Caddesi No: 90 Yenişehir Lefkoşa, Kuzey Kıbrıs</td>
+                        </tr>
+                        <tr>
+                            <td>İl / İlçe</td>
+                            <td>Lefkoşa / Lefkoşa / Yenişehir</td>
+                        </tr>
+                        <tr>
+                            <td>Yetkili Kişi</td>
+                            <td>Lefkoşa Belediye Başkanı</td>
+                        </tr>
+                        <tr>
+                            <td>Yetkili Telefon</td>
+                            <td>+90 392 228 52 21</td>
+                        </tr>
+                        <tr>
+                            <td>Sektör</td>
+                            <td>Devlet Kurumları</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <div id="map" class="company-small-map"></div>
+                <div class="d-flex flex-column dropright">
+                    <div class="company-info-bar red">
+                        <div class="icon-wrapper">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#clock"></use>
+                            </svg>
+                        </div>
+                        <div class="text">
+                            <b>Şuan Kapalı</b>
+                            09:00AM - 05:00PM
+                        </div>
+                    </div>
+                    <div class="company-info-bar blue" data-toggle="dropdown" aria-haspopup="true"
+                         aria-expanded="false">
+                        <div class="icon-wrapper">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#share"></use>
+                            </svg>
+                        </div>
+                        <div class="text">
+                            Paylaş
+                        </div>
+                        <svg class="icon arrow ml-auto mr-15">
+                            <use href="../assets/icons/sprite.svg#right-angle"></use>
+                        </svg>
+                        <div class="dropdown-menu">
+                            <div class="share-socials">
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#facebook-colorful"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <object type="image/svg+xml" data="../assets/icons/instagram.svg" class="icon"> </object>
+                                </a>
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#linkedin-colorful"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#messenger-colorful"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#skype-colorful"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#twitter-colorful"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#whatsapp-colorful"></use>
+                                    </svg>
+                                </a>
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#youtube-colorful"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="company-info-bar blue">
+                        <div class="icon-wrapper">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#chat-2"></use>
+                            </svg>
+                        </div>
+                        <div class="text">
+                            18 Yorum
+                        </div>
+                        <svg class="icon arrow ml-auto mr-15">
+                            <use href="../assets/icons/sprite.svg#right-angle"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

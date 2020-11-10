@@ -13,6 +13,7 @@
 @import "company/index.css";
 @import "company/company-list.css";
 @import "company/company-map.css";
+@import "company/company-details.css";
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -389,6 +390,14 @@ img {
 
 .mt-46 {
     margin-top: 46px;
+}
+
+.mt-70 {
+    margin-top: 70px;
+}
+
+.mt-100 {
+    margin-top: 100px;
 }
 
 .mt-120 {
@@ -1665,6 +1674,48 @@ img {
 
 .page-subcontent {
     width: 100%;
+}
+
+.carousel-thumbnails {
+    width: 100%;
+    height: 320px;
+    margin-bottom: 100px;
+}
+
+.carousel-thumbnails .carousel-inner {
+    width: 100%;
+    height: 320px;
+}
+
+.carousel-thumbnails .carousel-inner .carousel-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-thumbnails .carousel-indicators {
+    bottom: -100px;
+    margin: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.carousel-thumbnails .carousel-indicators li {
+    display: flex;
+    align-items: flex-end;
+    flex: none;
+    width: 78px;
+    height: 78px;
+    border: 0;
+    margin: 0 20px 0 0;
+    opacity: 1;
+}
+
+.carousel-thumbnails .carousel-indicators li img {
+    width: 78px;
+    height: 78px;
 }
 
 @media only screen and (max-width: 992px) {
