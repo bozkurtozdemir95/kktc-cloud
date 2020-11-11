@@ -1,3 +1,32 @@
+
+.city-company-list .city-company-box {
+    position: relative;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.city-company-box .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #F8F9FA;
+    z-index: 1;
+    transition: all .3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .06);
+}
+
+.city-company-box .box-body {
+    position: relative;
+    z-index: 2;
+}
+
+.city-company-list .city-company-box:hover .bg {
+    height: 100%;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
 .city-company-list .place .icon {
     width: 14px;
     height: 14px;
@@ -71,9 +100,11 @@
     transform: translateY(calc(-50% + -10px));
     z-index: 1;
 }
-.owl-carousel-categories .owl-stage-outer{
+
+.owl-carousel-categories .owl-stage-outer {
     z-index: 2;
 }
+
 .owl-carousel-categories .owl-nav .owl-prev {
     transform: rotate(180deg);
 }
@@ -97,22 +128,38 @@
 }
 
 .popular-companies-box {
-    background: #FFFFFF;
     cursor: pointer;
     margin-bottom: 30px;
+    position: relative;
 }
 
-.popular-companies-box:hover {
+.popular-companies-box .bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background: #FFFFFF;
+    z-index: 1;
+    transition: all .3s;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .06);
+}
+
+.popular-companies-box:hover .bg {
     box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+    height: 100%;
 }
 
 .popular-companies-box .box-body {
-    padding: 8px 15px;
+    padding: 15px;
+    position: relative;
+    z-index: 2;
 }
 
 .popular-companies-box img {
     width: 100%;
     height: 158px;
+    margin-bottom: 15px;
 }
 
 .popular-companies-box .rating-badge {
@@ -157,6 +204,8 @@
     align-items: center;
     justify-content: space-between;
     padding: 8px 10px;
+    position: relative;
+    z-index: 2;
 }
 
 .popular-companies-box .box-bottom h6 {
