@@ -318,3 +318,132 @@
     display: block;
     padding-bottom: 100%;
 }
+
+.payment-sidebox {
+    border: 1px solid rgba(2, 48, 71, .3);
+}
+
+.payment-sidebox .title {
+    padding: 15px 20px;
+}
+
+.payment-sidebox .title h4 {
+    font-size: 20px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    margin-bottom: 10px;
+}
+
+.payment-sidebox .title p {
+    font-size: 14px;
+}
+
+#paymentTypeTab.nav-tabs .nav-link {
+    border-radius: 0;
+    background: transparent;
+    border: 0;
+    border-top: 1px solid rgba(2, 48, 71, .3);
+    font-size: 16px;
+    color: #023047;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    transition: all .25s;
+    padding: 15px 20px;
+}
+
+#paymentTypeTab.nav-tabs .nav-link:hover,
+#paymentTypeTab.nav-tabs .nav-link.active {
+    background: #023047;
+    color: #FFFFFF;
+}
+
+.payment-sidebox .summary li {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    border-top: 1px solid rgba(2, 48, 71, .3);
+}
+
+.payment-sidebox .summary li h5 {
+    font-size: 16px;
+}
+
+.payment-sidebox .summary li h4 {
+    font-size: 18px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.subTabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin: 0 -10px;
+}
+
+.subTabs .nav-link {
+    height: 57px;
+    border-radius: 0;
+    font-size: 16px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #023047;
+    border: 1px solid rgba(2, 48, 71, .3);
+    transition: all .25s;
+}
+
+.subTabs .nav-link:hover,
+.subTabs .nav-link.active {
+    background: #007BFF;
+    color: #FFFFFF;
+    border-color: #007BFF;
+}
+
+.subTabs .nav-item {
+    width: 100%;
+    margin: 0 10px;
+}
+
+.subTabs .nav-link img {
+    max-width: 50px;
+    margin-right: 5px;
+}
+
+.subTabsContent .form-box {
+    width: 100%;
+    position: relative;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.subTabsContent .form-box input {
+    background: transparent;
+    border-color: rgba(2, 48, 71, .3);
+    padding-left: 50px;
+}
+
+.subTabsContent .form-box input::placeholder {
+    color: rgba(2, 48, 71, .5);
+}
+
+.subTabsContent .form-box input:focus {
+    border-color: rgba(2, 48, 71, .5);
+}
+
+.subTabsContent .form-box .icon {
+    width: 20px;
+    max-height: 25px;
+    fill: rgba(2, 48, 71, .3);
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.subTabsContent .form-box input:focus + .icon {
+    fill: rgba(2, 48, 71, .5);
+}

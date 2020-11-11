@@ -28,6 +28,15 @@ $(function () {
         maskInput: true,
         format: 'hh:mm',
     });
+    $('.datetimepicker.yearMonth').datetimepicker({
+        useCurrent: false,
+        language: 'en',
+        pickDate: true,
+        pickTime: false,
+        pickSeconds: false,
+        maskInput: true,
+        format: 'MM/yyyy',
+    });
 });
 
 

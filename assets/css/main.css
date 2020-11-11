@@ -362,7 +362,7 @@ img {
 }
 
 .mb-30 {
-    margin-bottom: 30px;
+    margin-bottom: 30px !important;
 }
 
 .mb-40 {
@@ -1161,12 +1161,24 @@ img {
     border: 1px solid rgba(2, 48, 71, .2);
 }
 
+.sidebar-custom-checkbox.square .checkmark {
+    border-radius: 0;
+}
+
 .sidebar-custom-checkbox :hover input ~ .checkmark {
     background-color: rgba(0, 129, 167, .5);
 }
 
 .sidebar-custom-checkbox input:checked ~ .checkmark {
     background-color: #0081A7;
+}
+
+.sidebar-custom-checkbox.blue :hover input ~ .checkmark {
+    background-color: rgba(0, 123, 255, .5);
+}
+
+.sidebar-custom-checkbox.blue input:checked ~ .checkmark {
+    background-color: rgba(0, 123, 255, 1);
 }
 
 .sidebar-custom-checkbox .checkmark:after {
@@ -1245,10 +1257,12 @@ img {
     margin-right: 1px;
     cursor: pointer;
 }
-.rating.big .icon{
+
+.rating.big .icon {
     width: 16px;
     height: 16px;
 }
+
 .rating.gray .icon {
     fill: rgba(2, 48, 71, .2);
 }
