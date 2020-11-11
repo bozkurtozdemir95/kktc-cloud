@@ -425,7 +425,7 @@
                 <div class="header-main-right">
                     <ul class="horizontal">
                         <li>
-                            <a href="add-firma.html" class="main-button blue">
+                            <a href="add-company.html" class="main-button blue">
                                 <svg class="icon">
                                     <use href="../assets/icons/sprite.svg#plus"></use>
                                 </svg>
@@ -518,15 +518,15 @@
         <div class="row mx-0">
             <div class="form-links">
                 <div class="form-link-bg"></div>
-                <a href="add-firma.html" class="form-link">
+                <a href="add-company.html" class="form-link active">
                     <span>1</span>
                     <h4>Firma Bilgileri</h4>
                 </a>
-                <a href="add-firma.html" class="form-link">
+                <a href="select-usertype.html" class="form-link active">
                     <span>2</span>
                     <h4>Üyelik Tercihi</h4>
                 </a>
-                <a href="add-firma.html" class="form-link">
+                <a href="add-company.html" class="form-link">
                     <span>3</span>
                     <h4>Fotoğraflar</h4>
                 </a>
@@ -536,10 +536,10 @@
             <div class="form-title">
                 <div class="icon-wrapper">
                     <svg class="icon">
-                        <use href="../assets/icons/sprite.svg#building-2"></use>
+                        <use href="../assets/icons/sprite.svg#user-3"></use>
                     </svg>
                 </div>
-                <h3>Firma Bilgileri</h3>
+                <h3>Üyelik Tercihi</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor </p>
                 <div class="form-title-borders">
                     <div class="form-title-border"></div>
@@ -548,97 +548,339 @@
                 </div>
             </div>
         </div>
-        <div class="simple-form w-100">
-            <div class="row mx-0">
-                <div class="form-box">
-                    <label for="category">Kategori</label>
-                    <input id="category" name="category" type="text" placeholder="Kategori">
-                </div>
-            </div>
-            <div class="row mx-0">
-                <div class="form-box">
-                    <label for="companyName">Firma Adı</label>
-                    <input id="companyName" name="companyName" type="text" placeholder="Firma Adı">
-                </div>
-            </div>
+        <div class="user-type-banners w-100">
             <div class="row">
-                <div class="form-box col-lg-4">
-                    <label for="email">E-posta Adresi</label>
-                    <input id="email" name="email" type="text" placeholder="E-posta Adresi">
-                </div>
-                <div class="form-box col-lg-4">
-                    <label for="phone">Telefon</label>
-                    <input id="phone" name="phone" type="text" placeholder="Telefon">
-                </div>
-                <div class="form-box col-lg-4">
-                    <label for="fax">Faks</label>
-                    <input id="fax" name="fax" type="text" placeholder="Faks">
-                </div>
-            </div>
-            <div class="row mx-0">
-                <div class="form-box">
-                    <label for="website">Websitesi</label>
-                    <input id="website" name="website" type="text" placeholder="Websitesi">
-                </div>
-            </div>
-            <div class="row mx-0">
-                <div class="form-box">
-                    <label for="desc">Açıklama</label>
-                    <textarea name="desc" id="desc" rows="4"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="form-box">
-                        <label for="authName">Yetkili Ad Soyad</label>
-                        <input id="authName" name="authName" type="text" placeholder="Yetkili Ad Soyad">
+                <div class="col-lg-3">
+                    <div class="banner-wrapper">
+                        <div class="title">
+                            <h4><b>ÜCRETSİZ</b>ÜYELİK</h4>
+                        </div>
+                        <ul class="vertical">
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Ücretsiz Paket
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                1 Fotoğraf
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Logo ve kapak gösterimi
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Doğrudan arama
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Doğrudan WhatsApp mesajı
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Doğrudan yol tarifi
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Ücretsiz Paket rozeti
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Yorum yönetimi
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Detaylı ziyaret istatistikleri
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Google Haritalar Firma Kayıtı
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Özel Premium Üyelik Ayrıcalıkları
+                            </li>
+
+                        </ul>
+                        <div class="price">
+                            <h4>0 TL</h4>
+                        </div>
+                        <button class="banner-button empty-button f-bold fs-20">SEÇ</button>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="form-box">
-                        <label for="authPhone">Yetkili Telefon</label>
-                        <input id="authPhone" name="authPhone" type="text" placeholder="Yetkili Telefon">
+                <div class="col-lg-3">
+                    <div class="banner-wrapper">
+                        <div class="title gray">
+                            <h4><b>STANDART</b>ÜYELİK</h4>
+                        </div>
+                        <ul class="vertical">
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Ücretsiz Paket
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                1 Fotoğraf
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Logo ve kapak gösterimi
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Doğrudan arama
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Doğrudan WhatsApp mesajı
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Doğrudan yol tarifi
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Ücretsiz Paket rozeti
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Yorum yönetimi
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Detaylı ziyaret istatistikleri
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Google Haritalar Firma Kayıtı
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Özel Premium Üyelik Ayrıcalıkları
+                            </li>
+
+                        </ul>
+                        <div class="price">
+                            <h4>49 TL</h4>
+                            <span>/ 12 AY</span>
+                        </div>
+                        <button class="banner-button empty-button f-bold fs-20">SEÇ</button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="banner-wrapper">
+                        <div class="title yellow">
+                            <h4><b>GOLD</b>ÜYELİK</h4>
+                        </div>
+                        <ul class="vertical">
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Ücretsiz Paket
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                1 Fotoğraf
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Logo ve kapak gösterimi
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Doğrudan arama
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Doğrudan WhatsApp mesajı
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Doğrudan yol tarifi
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Ücretsiz Paket rozeti
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Yorum yönetimi
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Detaylı ziyaret istatistikleri
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Google Haritalar Firma Kayıtı
+                            </li>
+                            <li>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Özel Premium Üyelik Ayrıcalıkları
+                            </li>
+
+                        </ul>
+                        <div class="price">
+                            <h4>99 TL</h4>
+                            <span>/ 12 AY</span>
+                        </div>
+                        <button class="banner-button empty-button f-bold fs-20">SEÇ</button>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="banner-wrapper">
+                        <div class="title red">
+                            <h4><b>PREMIUM</b>ÜYELİK</h4>
+                        </div>
+                        <ul class="vertical">
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Ücretsiz Paket
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                1 Fotoğraf
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Logo ve kapak gösterimi
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Doğrudan arama
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Doğrudan WhatsApp mesajı
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Doğrudan yol tarifi
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Ücretsiz Paket rozeti
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Yorum yönetimi
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Detaylı ziyaret istatistikleri
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Google Haritalar Firma Kayıtı
+                            </li>
+                            <li class="active">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                </svg>
+                                Özel Premium Üyelik Ayrıcalıkları
+                            </li>
+
+                        </ul>
+                        <div class="price">
+                            <h4>199 TL</h4>
+                            <span>/ 12 AY</span>
+                        </div>
+                        <button class="banner-button empty-button f-bold fs-20">SEÇ</button>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="form-box col-lg-4">
-                    <label for="country">Ülke</label>
-                    <select name="country" id="country">
-                        <option value="0">Kıbrıs</option>
-                        <option value="1">Türkiye</option>
-                    </select>
-                </div>
-                <div class="form-box col-lg-4">
-                    <label for="city">Şehir</label>
-                    <select name="city" id="city">
-                        <option value="0">Lefkoşa</option>
-                        <option value="1">İstanbul</option>
-                    </select>
-                </div>
-                <div class="form-box col-lg-4">
-                    <label for="district">Bölge / İlçe</label>
-                    <select name="district" id="district">
-                        <option value="0">Beşiktaş</option>
-                        <option value="1">Kadıköy</option>
-                    </select>
-                </div>
-            </div>
-            <div class="row mx-0">
-                <div class="form-box">
-                    <label for="adress">Adres</label>
-                    <input id="adress" name="adress" type="text" placeholder="Adres">
-                </div>
-            </div>
-        </div>
-        <div class="row mx-0">
-            <div id="map" style="height: 300px"></div>
         </div>
         <div class="row d-flex justify-content-end mt-30">
             <div class="col-lg-4 d-flex align-items-center justify-content-end">
                 <div class="custom-checkbox">
                     <input type="checkbox" id="checkk" name="checkk">
-                    <label for="checkk" class="fs-12 lh-19">Lorem ipsum dolor sit amet, consectetur adipiscing elit</label>
+                    <label for="checkk" class="fs-12 lh-19">Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit</label>
                 </div>
             </div>
             <div class="col-lg-2">
