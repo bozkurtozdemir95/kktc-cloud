@@ -1,0 +1,133 @@
+.form-links {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.form-link-bg {
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    background: #ffffff;
+    z-index: 1;
+}
+
+.form-links .form-link {
+    position: relative;
+    z-index: 2;
+    width: 52px;
+    height: 52px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-links .form-link span {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #007BFF;
+    font-size: 16px;
+    color: #FFFFFF;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.form-links .form-link h4 {
+    font-size: 14px;
+    line-height: 19px;
+    color: #023047;
+    position: absolute;
+    left: 50%;
+    bottom: -30px;
+    white-space: nowrap;
+    transform: translateX(-50%);
+}
+
+.form-title {
+    width: calc(100% - 50px);
+    height: 60px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form-title .icon-wrapper {
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    background: #007BFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+
+.form-title .icon-wrapper .icon {
+    width: 30px;
+    height: 30px;
+    fill: #FFFFFF;
+}
+
+.form-title h3 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    color: #023047;
+    padding-right: 20px;
+    margin-right: 20px;
+    border-right: 1px solid rgba(2, 48, 71, .2);
+}
+
+.form-title p {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.form-title-borders {
+    position: absolute;
+    top: 0;
+    right: -45px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.form-title-border {
+    height: 100%;
+    background: #FFFFFF;
+    margin-left: 5px;
+}
+
+.form-title-border:nth-child(1) {
+    width: 15px;
+}
+
+.form-title-border:nth-child(2) {
+    width: 10px;
+}
+
+.form-title-border:nth-child(3) {
+    width: 5px;
+}
+
+.simple-form .form-box {
+    width: 100%;
+}
+
+.simple-form .form-box input,
+.simple-form .form-box select,
+.simple-form .form-box textarea{
+    border: 1px solid rgba(2, 48, 71, .3);
+    background: transparent;
+}

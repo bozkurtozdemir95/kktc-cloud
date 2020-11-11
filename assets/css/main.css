@@ -2,6 +2,7 @@
 @import "../fonts/fonts.css";
 @import "header.css";
 @import "footer.css";
+@import "add-form.css";
 
 /** Rent a car css files **/
 @import "rent-a-car/home.css";
