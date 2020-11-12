@@ -69,6 +69,10 @@
     fill: #FFFFFF;
 }
 
+.ads-sidemenu-top {
+    padding-bottom: 10px;
+}
+
 .ads-sidemenu-top li {
     height: 26px;
     margin-bottom: 6px;
