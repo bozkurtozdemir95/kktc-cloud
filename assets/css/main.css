@@ -258,7 +258,7 @@ img {
 }
 
 .color-dark {
-    color: #023047;
+    color: #023047 !important;
 }
 
 .color-dark:hover {
@@ -549,6 +549,11 @@ img {
 
 .white-box-sm:hover {
     box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+}
+
+.bordered-box {
+    border: 1px solid rgba(2, 48, 71, .1);
+    padding: 11px 15px;
 }
 
 .custom-selectbox {
@@ -1694,47 +1699,6 @@ img {
     width: 100%;
 }
 
-.carousel-thumbnails {
-    width: 100%;
-    height: 320px;
-    margin-bottom: 100px;
-}
-
-.carousel-thumbnails .carousel-inner {
-    width: 100%;
-    height: 320px;
-}
-
-.carousel-thumbnails .carousel-inner .carousel-item img {
-    width: 100%;
-    height: 100%;
-}
-
-.carousel-thumbnails .carousel-indicators {
-    bottom: -100px;
-    margin: 0;
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: flex-end;
-    justify-content: flex-start;
-}
-
-.carousel-thumbnails .carousel-indicators li {
-    display: flex;
-    align-items: flex-end;
-    flex: none;
-    width: 78px;
-    height: 78px;
-    border: 0;
-    margin: 0 20px 0 0;
-    opacity: 1;
-}
-
-.carousel-thumbnails .carousel-indicators li img {
-    width: 78px;
-    height: 78px;
-}
 
 @media only screen and (max-width: 992px) {
 
