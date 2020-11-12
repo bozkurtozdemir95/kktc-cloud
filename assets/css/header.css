@@ -366,6 +366,10 @@ div.more {
     fill: #0081A7;
 }
 
+.purple .header-main-left ul li:hover .icon {
+    fill: #4866FC;
+}
+
 .main-navigation li {
     margin: 0 !important;
 }

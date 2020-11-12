@@ -41,7 +41,7 @@ $(function () {
 
 
 $(function () {
-    $('[data-toggle="popover"]').popover()
+    $('[data-toggle="popover"]').popover();
     $('.btn-plus, .btn-minus').on('click', function (e) {
         const isNegative = $(e.target).closest('.btn-minus').is('.btn-minus');
         const input = $(e.target).closest('.custom-number-input').find('input');

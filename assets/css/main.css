@@ -16,6 +16,9 @@
 @import "company/company-map.css";
 @import "company/company-details.css";
 
+/** Ads css files **/
+@import "ads/index.css";
+
 ::-webkit-scrollbar {
     width: 5px;
 }
@@ -947,7 +950,7 @@ button:active,
 
 .main-button.blue {
     color: #FFFFFF;
-    border: #007BFF;
+    border-color: #007BFF;
     background: #007BFF;
 }
 
@@ -957,6 +960,21 @@ button:active,
 
 .main-button.blue:hover {
     background: #066ddc;
+}
+
+.main-button.purple {
+    background: #4866FC;
+    border-color: #4866FC;
+    color: #FFFFFF;
+}
+
+.main-button.purple:hover {
+    background: #5b75fb;
+    border-color: #5b75fb;
+}
+
+.main-button.purple .icon {
+    fill: #FFFFFF;
 }
 
 .datetimepicker {
@@ -1713,10 +1731,19 @@ button:active,
     position: relative;
 }
 
+.page-subtitle.purple {
+    padding-bottom: 12px;
+}
+
 .page-subtitle h4 {
     font-size: 22px;
     line-height: 30px;
     font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.page-subtitle.purple h4 {
+    font-size: 14px;
+    line-height: 19px;
 }
 
 .page-subtitle a {
@@ -1734,6 +1761,10 @@ button:active,
     width: 110px;
     height: 3px;
     transform: translateY(50%);
+}
+
+.page-subtitle.purple:after {
+    background: #4866FC;
 }
 
 .page-subcontent {
