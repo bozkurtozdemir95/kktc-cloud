@@ -333,6 +333,7 @@ div.more {
     padding-left: 30px;
     display: flex;
     align-items: center;
+    white-space: nowrap;
 }
 
 .main-navigation li {
