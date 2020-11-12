@@ -18,6 +18,7 @@
 
 /** Ads css files **/
 @import "ads/index.css";
+@import "ads/car-table.css";
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -29,6 +30,18 @@
 
 ::-webkit-scrollbar-thumb {
     background: #0081A7;
+}
+
+.purple ::-webkit-scrollbar {
+    width: 5px;
+}
+
+.purple ::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.purple ::-webkit-scrollbar-thumb {
+    background: #3F52E3;
 }
 
 body {
@@ -814,6 +827,10 @@ button:active,
     background: #007BFF;
 }
 
+.form-button.bg-purple {
+    background: #4866FC;
+}
+
 .form-button:focus {
     box-shadow: none;
     outline: 0;
@@ -1129,6 +1146,7 @@ button:active,
 
 .page-link-nav a {
     margin-right: 10px;
+    color: #023047;
 }
 
 .page-link-nav a .icon {
@@ -1142,12 +1160,24 @@ button:active,
     color: #0081A7;
 }
 
+.purple .page-link-nav a:hover {
+    color: #4866FC;
+}
+
 .page-link-nav a:hover .icon {
     fill: #0081A7;
 }
 
+.purple .page-link-nav a:hover .icon {
+    fill: #4866FC;
+}
+
 .page-link-nav a:last-child {
     color: #0081A7;
+}
+
+.purple .page-link-nav a:last-child {
+    color: #4866FC;
 }
 
 .darkblue .page-link-nav a:last-child {
@@ -1165,12 +1195,14 @@ button:active,
 .sidebar .card {
     border: 0;
     box-shadow: none;
-    border-bottom: 1px solid rgba(2, 48, 71, 0.05) !important;
+    margin-bottom: 20px;
 }
 
 .sidebar-title {
     border-bottom: 1px solid rgba(2, 48, 71, 0.05);
     padding: 13px 22px;
+    background: #FFFFFF;
+    margin-bottom: 20px;
 }
 
 .sidebar .card-header {
@@ -1181,6 +1213,8 @@ button:active,
     justify-content: space-between;
     padding: 13px 22px;
     cursor: pointer;
+    font-size: 14px;
+    font-family: 'Proxima Nova Bo', sans-serif;
 }
 
 .sidebar .card-header .icon {
@@ -1190,9 +1224,30 @@ button:active,
     transition: all .25s;
 }
 
+.sidebar .card-header .d-flex a {
+    font-size: 11px;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    color: #023047;
+    position: relative;
+    padding-left: 10px;
+    margin-left: 5px;
+}
+
+.sidebar .card-header .d-flex a:before {
+    content: ">";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
 
 .sidebar .card-header[aria-expanded='true'] .icon {
     transform: rotate(-180deg);
+}
+
+.sidebar .card-body {
+    max-height: 325px;
+    overflow-y: auto;
 }
 
 .sidebar-custom-checkbox {
@@ -1218,6 +1273,27 @@ button:active,
     color: #023047;
 }
 
+.sidebar-custom-checkbox.without-check label {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sidebar-custom-checkbox.without-check span {
+    color: #9AACB5;
+}
+
+.sidebar-custom-checkbox.without-check label h5 {
+    transition: all .25s;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.sidebar-custom-checkbox.without-check:hover h5 {
+    color: #4866FC;
+}
+
 .sidebar-custom-checkbox .checkmark {
     position: absolute;
     top: 50%;
@@ -1230,19 +1306,44 @@ button:active,
     border: 1px solid rgba(2, 48, 71, .2);
 }
 
+.sidebar-custom-checkbox.square-black .checkmark {
+    width: 11px;
+    height: 11px;
+    border-radius: 0;
+    border: 1px solid #023047;
+}
+
+.sidebar-custom-checkbox.square-black label {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
 .sidebar-custom-checkbox.square .checkmark {
     border-radius: 0;
 }
 
-.sidebar-custom-checkbox :hover input ~ .checkmark {
+.sidebar-custom-checkbox:hover input ~ .checkmark {
     background-color: rgba(0, 129, 167, .5);
+}
+
+.sidebar-custom-checkbox.square-black:hover input ~ .checkmark {
+    background: rgba(2, 48, 71, .5);
 }
 
 .sidebar-custom-checkbox input:checked ~ .checkmark {
     background-color: #0081A7;
 }
 
-.sidebar-custom-checkbox.blue :hover input ~ .checkmark {
+.sidebar-custom-checkbox.square-black input:checked ~ .checkmark {
+    background-color: #023047;
+}
+
+.sidebar-custom-checkbox.without-check input:checked ~ h5 {
+    color: #4866FC;
+}
+
+.sidebar-custom-checkbox.blue:hover input ~ .checkmark {
     background-color: rgba(0, 123, 255, .5);
 }
 
@@ -1260,8 +1361,37 @@ button:active,
     display: block;
 }
 
+.sidebar-input {
+    width: 100%;
+    position: relative;
+}
+
+.sidebar-input .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    stroke: #023047;
+}
+
+.sidebar-input input,
+.sidebar-input select {
+    border: 1px solid rgba(2, 48, 71, 0.2);
+    font-size: 12px;
+    height: 34px;
+    width: 100%;
+    padding: 0 10px;
+    color: #023047;
+    appearance: none;
+}
+
+.sidebar-input input::placeholder {
+    color: #023047;
+}
+
 .sidebar-half-input input {
-    border-radius: 3px;
     border: 1px solid rgba(2, 48, 71, 0.2);
     font-size: 12px;
     height: 34px;

@@ -1,0 +1,34 @@
+.result-status-bar {
+    height: 35px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 15px;
+}
+
+.result-status-bar h5 {
+    font-size: 12px;
+}
+
+.result-status-bar h5 b {
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.result-status-bar a {
+    font-size: 12px;
+    color: #023047;
+}
+
+.result-status-bar a .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    fill: #023047;
+    transition: all .3s;
+}
+
+.result-status-bar a:hover .icon {
+    fill: #F80044;
+}
