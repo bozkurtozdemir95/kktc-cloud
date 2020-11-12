@@ -69,10 +69,6 @@
     fill: #FFFFFF;
 }
 
-.ads-sidemenu-top {
-    padding-bottom: 10px;
-}
-
 .ads-sidemenu-top li {
     height: 26px;
     margin-bottom: 6px;
@@ -95,13 +91,8 @@
 .ads-sidemenu-box {
     background: #FFFFFF;
     cursor: pointer;
-    border-bottom: 1px solid rgba(2, 48, 71, .1);
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     transition: all .4s;
-}
-
-.ads-sidemenu-box:last-child {
-    border: 0;
 }
 
 .ads-sidemenu-header {
