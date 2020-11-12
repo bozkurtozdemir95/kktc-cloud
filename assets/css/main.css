@@ -1052,6 +1052,10 @@ button:active,
     right: 10px;
 }
 
+.h-dropdown-content.no-arrow:after {
+    content: none;
+}
+
 .h-dropdown-content a {
     color: #023047 !important;
     padding: 9px 14px;
@@ -1061,6 +1065,11 @@ button:active,
     line-height: 19px;
     border-bottom: 1px solid rgba(2, 48, 71, .1);
     width: 100% !important;
+}
+
+.h-dropdown-content.no-arrow a {
+    font-size: 12px;
+    line-height: 14px;
 }
 
 .h-dropdown-content a.color-red {

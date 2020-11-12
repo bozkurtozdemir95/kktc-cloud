@@ -32,3 +32,120 @@
 .result-status-bar a:hover .icon {
     fill: #F80044;
 }
+
+.table-filter-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.table-filter-bar button {
+    height: 30px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    transition: all .3s;
+    margin-right: 10px;
+    padding: 8px;
+}
+
+.table-filter-bar .left button {
+    width: 107px;
+}
+
+.table-filter-bar button.active,
+.table-filter-bar button:hover {
+    background: #3F52E3;
+    color: #FFFFFF;
+}
+
+.table-filter-bar .left button.active,
+.table-filter-bar .left button:hover {
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.table-filter-bar button img {
+    width: 17px;
+    height: 17px;
+    margin-right: 5px;
+}
+
+.table-filter-bar button .icon {
+    width: 16px;
+    height: 16px;
+    fill: #000000;
+    transition: all .3s;
+}
+
+.table-filter-bar button.active .icon,
+.table-filter-bar button:hover .icon {
+    fill: #FFFFFF;
+}
+
+.table-filter-bar button .icon.arrow {
+    width: 5px;
+    height: 5px;
+    fill: none;
+    stroke: #000000;
+    margin-left: 5px;
+}
+
+.table-filter-bar button.active .icon.arrow,
+.table-filter-bar button:hover .icon.arrow {
+    fill: none;
+    stroke: #FFFFFF;
+}
+
+.ads-table td.img-wrapper {
+    padding: 0;
+    text-align: left;
+}
+
+.ads-table td img {
+    width: 97px;
+    margin-right: 20px;
+}
+
+.ads-table td,
+.ads-table td h5 {
+    font-size: 11px;
+    line-height: 17px;
+}
+
+.ads-table td h4 {
+    font-size: 12px;
+    line-height: 17px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    max-width: 170px;
+}
+
+.ads-table td,
+.ads-table th {
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 11px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    background: #FFFFFF;
+    border: 6px solid #FAFAFA;
+}
+
+
+@media only screen and (max-width: 992px) {
+    .table-filter-bar {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+
+    .table-filter-bar .left,
+    .table-filter-bar .right {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .table-filter-bar .right {
+        margin-bottom: 10px;
+    }
+
+}
