@@ -362,6 +362,10 @@ div.more {
     color: #0081A7;
 }
 
+.main-navigation a.color-dark:hover {
+    color: #ffffff !important;
+}
+
 .header-main-left ul li:hover .icon {
     fill: #0081A7;
 }
