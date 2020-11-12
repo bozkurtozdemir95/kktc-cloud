@@ -170,3 +170,169 @@
     line-height: 26px;
     padding-left: 10px;
 }
+
+
+.ads-sm-box-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.ads-sm-box-list .ads-sm-box {
+    width: calc(100% / 6 - 20px);
+    background: #FFFFFF;
+    transition: all .3s;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.ads-sm-box-list .ads-sm-box:hover {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .1);
+}
+
+.ads-sm-box-list .ads-sm-box img {
+    height: 107px;
+}
+
+.ads-sm-box-list .ads-sm-box .text {
+    padding: 3px 7px 3px 5px;
+}
+
+.ads-sm-box-list .ads-sm-box .text h4,
+.ads-sm-box-list .ads-sm-box .text .bottom {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 12px;
+    line-height: 25px;
+}
+
+.ads-sm-box-list .ads-sm-box .text .place {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 8px;
+    line-height: 11px;
+}
+
+.ads-sm-box-list .ads-sm-box .text .place .icon {
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    fill: #4866FC;
+}
+
+.ads-sm-box-list .ads-sm-box .text .bottom {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+.ads-sm-box-list .ads-sm-box .text .bottom .icon {
+    width: 10px;
+    height: 10px;
+    fill: #F80044;
+}
+
+.ads-brands-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+.ads-brands-list .ads-brand {
+    width: calc(100% / 8 - 20px);
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .25s;
+}
+
+.ads-brands-list .ads-brand:hover {
+    transform: scale(1.005);
+    transform-origin: center;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .1);
+}
+
+.ads-banner {
+    background: #FFFFFF;
+    height: 212px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all .25s;
+    margin-bottom: 20px;
+}
+
+.ads-banner:hover {
+    box-shadow: 0 3px 15px rgba(0, 0, 0, .1);
+}
+
+.ads-banner-text {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    max-width: 43%;
+}
+
+.ads-banner-image {
+    max-width: 57%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.ads-banner h1 {
+    font-size: 20px;
+    line-height: 21px;
+    font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+.ads-banner h1 b {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    color: #4866FC;
+}
+
+.ads-banner .purple-line {
+    background: #4866FC;
+    height: 4px;
+    width: 75px;
+    margin: 13px 0;
+    border-radius: 2px;
+}
+
+.ads-banner p {
+    font-size: 12px;
+    line-height: 17px;
+}
+
+.ads-banner a {
+    color: rgba(2, 48, 71, .4);
+    font-size: 12px;
+    line-height: 17px;
+    transition: all .3s;
+    margin-top: 30px;
+}
+
+.ads-banner a:hover {
+    color: rgba(2, 48, 71, 1);
+}
+
+@media only screen and (max-width: 1200px) {
+    .ads-sm-box-list .ads-sm-box {
+        width: calc(100% / 4 - 20px);
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .ads-sm-box-list .ads-sm-box {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .ads-brands-list .ads-brand {
+        width: calc(100% / 4 - 20px);
+    }
+}
