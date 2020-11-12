@@ -902,6 +902,7 @@ button:active,
     width: 15px;
     height: 15px;
     margin-right: 5px;
+    transition: all .3s;
 }
 
 .main-button .icon.arrow {
@@ -909,6 +910,10 @@ button:active,
     height: 5px;
     stroke: #023047;
     margin-left: 5px;
+}
+
+.main-button.animated-icon:hover .icon {
+    transform: rotate(180deg);
 }
 
 .main-button.white {
@@ -1743,7 +1748,7 @@ button:active,
 }
 
 .page-subtitle.purple h4 {
-    font-size: 14px;
+    font-size: 16px;
     line-height: 19px;
 }
 
