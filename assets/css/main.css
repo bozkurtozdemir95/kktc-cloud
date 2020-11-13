@@ -463,6 +463,11 @@ button:active,
     box-shadow: 0 3px 22px rgba(0, 0, 0, .3);
 }
 
+.white-box.no-shadow,
+.white-box.no-shadow:hover {
+    box-shadow: none;
+}
+
 .white-box-md {
     border: 1px solid rgba(2, 48, 71, .1);
     padding: 16px 0;
@@ -1677,13 +1682,21 @@ button:active,
     stroke: #FFFFFF;
 }
 
-.darkblue .pagination .page-link {
+.darkblue .pagination .page-link,
+.purple .pagination .page-link {
     background: #FFFFFF;
 }
+
 
 .darkblue .pagination .page-item.active .page-link,
 .darkblue .pagination .page-item:hover .page-link {
     background: #007BFF;
+    color: #FFFFFF;
+}
+
+.purple .pagination .page-item.active .page-link,
+.purple .pagination .page-item:hover .page-link {
+    background: #4866FC;
     color: #FFFFFF;
 }
 

@@ -98,6 +98,11 @@
     stroke: #FFFFFF;
 }
 
+.ads-table {
+    margin: -6px;
+    width: auto;
+}
+
 .ads-table td.img-wrapper {
     padding: 0;
     text-align: left;
@@ -119,6 +124,7 @@
     line-height: 17px;
     font-family: 'Proxima Nova Sb', sans-serif;
     max-width: 170px;
+    width: 170px;
 }
 
 .ads-table td,
@@ -131,6 +137,13 @@
     border: 6px solid #FAFAFA;
 }
 
+.ads-table .green td {
+    background: #DBFEDC;
+}
+
+.ads-table .advertisement td {
+    background: rgba(154, 172, 181, .23);
+}
 
 @media only screen and (max-width: 992px) {
     .table-filter-bar {
