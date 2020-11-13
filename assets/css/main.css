@@ -19,6 +19,7 @@
 /** Ads css files **/
 @import "ads/index.css";
 @import "ads/car-table.css";
+@import "ads/car-list.css";
 
 ::-webkit-scrollbar {
     width: 5px;

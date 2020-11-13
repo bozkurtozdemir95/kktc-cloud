@@ -1,0 +1,132 @@
+.car-list-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+    width: 100%;
+}
+
+.car-list-wrapper .car-list-box {
+    margin: 10px;
+    width: calc(100% / 3 - 20px);
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.car-list-wrapper .car-list-box:hover {
+    box-shadow: 0 3px 22px rgba(0, 0, 0, 0.1);
+}
+
+.car-list-wrapper .car-list-box .text {
+    padding: 10px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.car-list-wrapper .car-list-box .text .title {
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.car-list-wrapper .car-list-box .text .title h2 {
+    display: flex;
+    align-items: center;
+
+}
+
+.car-list-wrapper .car-list-box .text .title h2 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.car-list-wrapper .car-list-box .text .title h2 .icon {
+    width: 10px;
+    height: 10px;
+    margin: 0 7px;
+}
+
+.car-list-wrapper .car-list-box .text .title h2 span:first-child {
+    font-size: 16px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.car-list-wrapper .car-list-box .text .title h2 span:last-child {
+    color: #9AACB5;
+    font-size: 12px;
+}
+
+.car-list-wrapper .car-list-box .text .title .fav {
+    display: flex;
+    align-items: center;
+}
+
+.car-list-wrapper .car-list-box .text .title .fav .icon {
+    width: 13px;
+    height: 13px;
+    fill: #F80044;
+}
+
+.car-list-wrapper .car-list-box p {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.car-list-box .location {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.car-list-box .location .icon {
+    max-width: 15px;
+    height: 14px;
+    fill: #4866FC;
+    margin-right: 3px;
+}
+
+.car-list-box .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #FFFFFF;
+    margin-top: 4px;
+}
+
+.car-list-box .bottom .bottom-box {
+    display: flex;
+    padding: 8px;
+}
+
+.car-list-box .bottom .bottom-box .icon {
+    width: 10px;
+    max-height: 12px;
+    margin-right: 3px;
+    margin-top: 2px;
+}
+
+.car-list-box .bottom .bottom-box h5 {
+    font-size: 10px;
+    line-height: 14px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.car-list-box .bottom .bottom-box h6 {
+    color: rgba(2, 48, 71, .5);
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .car-list-wrapper .car-list-box {
+        width: calc(100% / 2 - 20px);
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .car-list-wrapper .car-list-box {
+        width: calc(100% - 20px);
+    }
+
+}
