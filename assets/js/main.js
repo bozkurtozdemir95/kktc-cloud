@@ -324,4 +324,53 @@ $(function () {
     $(window).on('load', function () {
         initMap();
     });
+
+
+    $('.slider-for').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+    });
+    $('.slider-nav').slick({
+        slidesPerRow: 7,
+        rows: 2,
+        arrows: true,
+        prevArrow: "<svg class='prev'><use href='../assets/icons/sprite.svg#right-angle'></use></svg>",
+        nextArrow: "<svg class='next'><use href='../assets/icons/sprite.svg#right-angle'></use></svg>",
+        infinite: false
+    });
+
+    const $parent = $(".slider-for");
+    const $green = $(".slider-nav");
+    const $images = $green.find("img");
+    let killit = false;
+
+    $images.on("click", function(e){
+        if( !killit ) {
+            e.stopPropagation();
+            var idx = $(this).data("thumb");
+            $parent.slick("goTo", idx-1);
+            for ($i = 0; $i < $images.length; $i ++){
+               $images[$i].classList.remove('active')
+            }
+            e.target.classList.add('active');
+        }
+    });
+
+// need to register a flag that doesn't let us click the slider
+// as we are trying to swipe it.
+
+    $green
+        .on("beforeChange", function() {
+            killit = true;
+
+        }).on("afterChange", function() {
+        killit = false;
+    });
+
+    $("#lightgallery").lightGallery();
+
 });
+
+

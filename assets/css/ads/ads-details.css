@@ -1,0 +1,31 @@
+.thumbs-box {
+    background: #FFFFFF;
+    position: relative;
+}
+
+.thumbs-box-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.thumbs-box-header a {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 18px;
+    margin-right: 30px;
+    color: #023047;
+}
+
+.thumbs-box-header a .icon {
+    height: 12px;
+    max-width: 15px;
+    margin-right: 5px;
+    fill: #4866FC;
+}
+.thumb-box-content{
+    padding: 5px;
+}

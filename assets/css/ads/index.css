@@ -175,6 +175,10 @@
     content: none;
 }
 
+.ads-sidemenu-toggler[aria-expanded='true'] {
+    color: #4866FC;
+}
+
 .ads-sidemenu-toggler[aria-expanded='true']:after {
     width: 100%;
 }
