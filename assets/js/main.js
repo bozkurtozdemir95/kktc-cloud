@@ -333,7 +333,9 @@ $(function () {
     $('.slider-for').slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        arrows: false,
+        arrows: true,
+        prevArrow: "<div class='prevBig'></div>",
+        nextArrow: "<div class='nextBig'></div>",
         fade: true,
     });
     $('.slider-nav').slick({

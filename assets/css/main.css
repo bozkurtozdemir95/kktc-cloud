@@ -1982,6 +1982,23 @@ button:active,
     stroke: #4866FC;
 }
 
+.prevBig.slick-arrow {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+}
+.nextBig.slick-arrow {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+}
+
 .price-list {
     padding-top: 10px;
     max-height: 0;
