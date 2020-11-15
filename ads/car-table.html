@@ -694,12 +694,24 @@
 
                             <div id="sidebarAdressContent" class="collapse show" aria-labelledby="sidebarAdress">
                                 <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between mb-10">
+                                        <div class="sidebar-input">
+                                            <select name="country" id="country">
+                                                <option value="0">Kıbrıs</option>
+                                                <option value="1">Türkiye</option>
+                                                <option value="2">Almanya</option>
+                                            </select>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
                                     <div class="d-flex align-items-center justify-content-between">
                                         <div class="sidebar-input">
                                             <select name="city" id="city">
-                                                <option value="">İl Seçiniz</option>
+                                                <option value="0">İl Seçiniz</option>
                                                 <option value="1">Lefkoşa</option>
-                                                <option value="2">İstanbul</option>
+                                                <option value="2">Şehir</option>
                                             </select>
                                             <svg class="icon">
                                                 <use href="../assets/icons/sprite.svg#down-angle"></use>
@@ -721,12 +733,40 @@
 
                             <div id="sidebarPriceContent" class="collapse show" aria-labelledby="sidebarPrice">
                                 <div class="card-body">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="sidebar-half-input">
-                                            <input type="text" placeholder="Min TL">
+                                    <div class="d-flex flex-column" id="priceInputs">
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <div class="sidebar-half-input">
+                                                <input type="text" placeholder="Min TL">
+                                            </div>
+                                            <div class="sidebar-half-input">
+                                                <input type="text" placeholder="Max TL">
+                                            </div>
                                         </div>
-                                        <div class="sidebar-half-input">
-                                            <input type="text" placeholder="Max TL">
+                                        <div class="price-list">
+                                            <p>
+                                                <span>0 TL</span>
+                                                <span>10.000 TL</span>
+                                            </p>
+                                            <p>
+                                                <span>10.000 TL</span>
+                                                <span>20.000 TL</span>
+                                            </p>
+                                            <p>
+                                                <span>20.000 TL</span>
+                                                <span>30.000 TL</span>
+                                            </p>
+                                            <p>
+                                                <span>30.000 TL</span>
+                                                <span>40.000 TL</span>
+                                            </p>
+                                            <p>
+                                                <span>40.000 TL</span>
+                                                <span>50.000 TL</span>
+                                            </p>
+                                            <p>
+                                                <span>50.000 TL</span>
+                                                <span>60.000 TL</span>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -773,6 +813,119 @@
                                         </div>
                                         <div class="sidebar-half-input">
                                             <input type="text" placeholder="Max KM">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="sidebarCase" data-toggle="collapse"
+                                 data-target="#sidebarCaseContent" aria-expanded="true"
+                                 aria-controls="sidebarCaseContent">
+                                Kasa Tipi
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                </svg>
+                            </div>
+
+                            <div id="sidebarCaseContent" class="collapse show" aria-labelledby="sidebarCase">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="sidebar-input">
+                                            <select name="type" id="type">
+                                                <option value="">Seçiniz</option>
+                                                <option value="0">Cabrio</option>
+                                                <option value="1">Hatchback 3 Kapı</option>
+                                                <option value="2">Hatchback 5 Kapı</option>
+                                                <option value="3">Sedan</option>
+                                            </select>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="sidebarEngine" data-toggle="collapse"
+                                 data-target="#sidebarEngineContent" aria-expanded="true"
+                                 aria-controls="sidebarEngineContent">
+                                Motor Gücü
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                </svg>
+                            </div>
+
+                            <div id="sidebarEngineContent" class="collapse show" aria-labelledby="sidebarEngine">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="sidebar-input">
+                                            <select name="engine" id="engine">
+                                                <option value="">Seçiniz</option>
+                                                <option value="0">50 HP ve altı</option>
+                                                <option value="1">51 - 75 HP</option>
+                                                <option value="2">76 - 100 HP</option>
+                                            </select>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="sidebarCekis" data-toggle="collapse"
+                                 data-target="#sidebarCekisContent" aria-expanded="true"
+                                 aria-controls="sidebarCekisContent">
+                                Çekiş
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                </svg>
+                            </div>
+
+                            <div id="sidebarCekisContent" class="collapse show" aria-labelledby="sidebarCekis">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="sidebar-input">
+                                            <select name="cekis" id="cekis">
+                                                <option value="">Seçiniz</option>
+                                                <option value="0">Önden Çekiş</option>
+                                                <option value="1">Arkadan İtiş</option>
+                                                <option value="2">4WD</option>
+                                            </select>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="sidebarRegion" data-toggle="collapse"
+                                 data-target="#sidebarRegionContent" aria-expanded="true"
+                                 aria-controls="sidebarRegionContent">
+                                Plaka / Uyruk
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                </svg>
+                            </div>
+
+                            <div id="sidebarRegionContent" class="collapse show" aria-labelledby="sidebarRegion">
+                                <div class="card-body">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class="sidebar-input">
+                                            <select name="region" id="region">
+                                                <option value="">Seçiniz</option>
+                                                <option value="0">Kıbrıs</option>
+                                                <option value="1">Türkiye</option>
+                                                <option value="2">Almanya</option>
+                                            </select>
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
                                         </div>
                                     </div>
                                 </div>

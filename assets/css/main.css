@@ -1482,6 +1482,14 @@ button:active,
     fill: rgba(2, 48, 71, .2);
 }
 
+.rating.yellow .icon {
+    fill: #FFFFFF;
+}
+
+.rating.yellow .icon.active {
+    fill: #FFB703;
+}
+
 .rating .icon.active {
     fill: #FFB703;
 }
@@ -1946,6 +1954,7 @@ button:active,
 
 .slider-nav-item {
     padding: 5px;
+    cursor: pointer;
 }
 
 .slider-nav-item img.active {
@@ -1971,6 +1980,29 @@ button:active,
 
 .slider-nav .slick-arrow:hover {
     stroke: #4866FC;
+}
+
+.price-list {
+    padding-top: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .5s;
+}
+
+.price-list.open {
+    max-height: 900px;
+}
+
+.price-list p {
+    display: flex;
+    align-items: center;
+}
+
+.price-list span {
+    cursor: pointer;
+    display: flex;
+    margin: 2px 10px;
+    font-size: 12px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -1999,6 +2031,13 @@ button:active,
     .page-link-nav {
         margin-bottom: 20px;
     }
+}
+
+#dynamic {
+    border: 1px solid #e6e6e6;
+    background-color: #ce4844;
+    color: #FFF;
+    padding: 10px 20px;
 }
 
 @media only screen and (max-width: 660px) {

@@ -49,6 +49,10 @@ $(function () {
             input[0][isNegative ? 'stepDown' : 'stepUp']()
         }
     })
+
+    $('#priceInputs input').on('click', function (e) {
+        $('#priceInputs .price-list').toggleClass('open');
+    })
 })
 
 $(document).ready(function () {
@@ -346,13 +350,13 @@ $(function () {
     const $images = $green.find("img");
     let killit = false;
 
-    $images.on("click", function(e){
-        if( !killit ) {
+    $images.on("click", function (e) {
+        if (!killit) {
             e.stopPropagation();
             var idx = $(this).data("thumb");
-            $parent.slick("goTo", idx-1);
-            for ($i = 0; $i < $images.length; $i ++){
-               $images[$i].classList.remove('active')
+            $parent.slick("goTo", idx - 1);
+            for ($i = 0; $i < $images.length; $i++) {
+                $images[$i].classList.remove('active')
             }
             e.target.classList.add('active');
         }
@@ -362,14 +366,60 @@ $(function () {
 // as we are trying to swipe it.
 
     $green
-        .on("beforeChange", function() {
+        .on("beforeChange", function () {
             killit = true;
 
-        }).on("afterChange", function() {
+        }).on("afterChange", function () {
         killit = false;
     });
 
-    $("#lightgallery").lightGallery();
+    $('#lightgalleryCar').on('click', function (e) {
+        e.preventDefault();
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": '../assets/images/cars/aston-martin/aston-martin-1.jpg',
+                'thumb': '../assets/images/cars/aston-martin/aston-martin-1.jpg',
+            }, {
+                'src': '../assets/images/cars/aston-martin/aston-martin-2.jpg',
+                'thumb': '../assets/images/cars/aston-martin/aston-martin-2.jpg',
+            }, {
+                'src': '../assets/images/cars/aston-martin/aston-martin-3.jpg',
+                'thumb': '../assets/images/cars/aston-martin/aston-martin-3.jpg',
+            }, {
+                'src': '../assets/images/cars/aston-martin/aston-martin-4.jpg',
+                'thumb': '../assets/images/cars/aston-martin/aston-martin-4.jpg',
+            },
+                {
+                    'src': '../assets/images/cars/aston-martin/aston-martin-5.jpg',
+                    'thumb': '../assets/images/cars/aston-martin/aston-martin-5.jpg',
+                }, {
+                    'src': '../assets/images/cars/aston-martin/aston-martin-6.jpg',
+                    'thumb': '../assets/images/cars/aston-martin/aston-martin-6.jpg',
+                }, {
+                    'src': '../assets/images/cars/aston-martin/aston-martin-7.jpg',
+                    'thumb': '../assets/images/cars/aston-martin/aston-martin-7.jpg',
+                },
+                {
+                    'src': '../assets/images/cars/aston-martin/aston-martin-8.jpg',
+                    'thumb': '../assets/images/cars/aston-martin/aston-martin-8.jpg',
+                }, {
+                    'src': '../assets/images/cars/aston-martin/aston-martin-9.jpg',
+                    'thumb': '../assets/images/cars/aston-martin/aston-martin-9.jpg',
+                }, {
+                    'src': '../assets/images/cars/aston-martin/aston-martin-10.jpg',
+                    'thumb': '../assets/images/cars/aston-martin/aston-martin-10.jpg',
+                },
+                {
+                    'src': '../assets/images/cars/aston-martin/aston-martin-11.jpg',
+                    'thumb': '../assets/images/cars/aston-martin/aston-martin-11.jpg',
+                }, {
+                    'src': '../assets/images/cars/aston-martin/aston-martin-12.jpg',
+                    'thumb': '../assets/images/cars/aston-martin/aston-martin-12.jpg',
+                },]
+        })
+
+    });
 
 });
 

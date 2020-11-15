@@ -102,7 +102,7 @@
     width: 10px;
     max-height: 12px;
     margin-right: 3px;
-    margin-top: 2px;
+    fill: rgba(2, 48, 71, 1);
 }
 
 .ads-list-box .bottom .bottom-box h5 {
@@ -115,6 +115,7 @@
     color: rgba(2, 48, 71, .5);
     font-size: 12px;
     line-height: 16px;
+    margin-left: -14px;
 }
 
 @media only screen and (max-width: 1200px) {

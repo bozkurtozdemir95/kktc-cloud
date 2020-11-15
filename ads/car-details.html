@@ -18,6 +18,9 @@
     <script src="../assets/libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
     <script src="../assets/libs/slick-carousel/slick.min.js"></script>
     <script src="../assets/libs/light-gallery/lightgallery.min.js"></script>
+    <script src="../assets/libs/light-gallery/lg-thumbnail.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWP3Q6SElBhRoC1Wf8BBj-Q9VWdOawqyY&callback=initMap&libraries=&v=weekly"
+            defer></script>
 
 
     <script src="../assets/js/main.js"></script>
@@ -497,9 +500,35 @@
             </div>
         </div>
         <div class="row mt-30">
+            <div class="col-lg-12">
+                <div class="row mx-0 mb-20 d-flex align-items-center justify-content-between">
+                    <div class="ads-detail-header col-lg-6">
+                        <h1>ASTON MARTIN TURKEY 2009 ASTON MARTIN DB9 COUPE V12 - BAYİ</h1>
+                    </div>
+                    <div class="ads-detail-buttons col-lg-6">
+                        <span><b>1.458</b> Kişi Favorilere Ekledi.</span>
+                        <button class="empty-button">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#printer"></use>
+                            </svg>
+                        </button>
+                        <button class="empty-button">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#share"></use>
+                            </svg>
+                        </button>
+                        <button class="empty-button">
+                            <svg class="icon heart">
+                                <use href="../assets/icons/sprite.svg#heart-full"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
             <div class="col-lg-9">
                 <div class="row mx-0">
                     <div class="col-lg-8">
+
                         <div class="slider-for">
                             <div>
                                 <img src="../assets/images/cars/aston-martin/aston-martin-1.jpg" alt="KKTC">
@@ -577,107 +606,1378 @@
                         </div>
                         <div class="thumbs-box mt-20">
                             <div class="thumbs-box-header">
-                               <div class="d-flex">
-                                   <a href="#">
-                                       <svg class="icon">
-                                           <use href="../assets/icons/sprite.svg#search"></use>
-                                       </svg>
-                                       Büyük Fotoğraf
-                                   </a>
-                                   <a href="#">
-                                       <svg class="icon">
-                                           <use href="../assets/icons/sprite.svg#video-camera"></use>
-                                       </svg>
-                                       Video Göster
-                                   </a>
-                               </div>
+                                <div class="d-flex">
+                                    <a href="#" id="lightgalleryCar">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#search"></use>
+                                        </svg>
+                                        Büyük Fotoğraf
+                                    </a>
+                                    <a href="#">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#video-camera"></use>
+                                        </svg>
+                                        Video Göster
+                                    </a>
+                                </div>
                             </div>
                             <div class="thumb-box-content">
                                 <div class="slider-nav">
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-1.jpg" alt="KKTC" data-thumb="1">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-1.jpg" alt="KKTC"
+                                             data-thumb="1">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-2.jpg" alt="KKTC" data-thumb="2">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-2.jpg" alt="KKTC"
+                                             data-thumb="2">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-3.jpg" alt="KKTC" data-thumb="3">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-3.jpg" alt="KKTC"
+                                             data-thumb="3">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-4.jpg" alt="KKTC" data-thumb="4">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-4.jpg" alt="KKTC"
+                                             data-thumb="4">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-5.jpg" alt="KKTC" data-thumb="5" class="active">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-5.jpg" alt="KKTC"
+                                             data-thumb="5" class="active">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-6.jpg" alt="KKTC" data-thumb="6">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-6.jpg" alt="KKTC"
+                                             data-thumb="6">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-7.jpg" alt="KKTC" data-thumb="7">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-7.jpg" alt="KKTC"
+                                             data-thumb="7">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-8.jpg" alt="KKTC" data-thumb="8">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-8.jpg" alt="KKTC"
+                                             data-thumb="8">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-9.jpg" alt="KKTC" data-thumb="9">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-9.jpg" alt="KKTC"
+                                             data-thumb="9">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-10.jpg" alt="KKTC" data-thumb="10">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-10.jpg" alt="KKTC"
+                                             data-thumb="10">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-11.jpg" alt="KKTC" data-thumb="11">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-11.jpg" alt="KKTC"
+                                             data-thumb="11">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-12.jpg" alt="KKTC" data-thumb="12">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-12.jpg" alt="KKTC"
+                                             data-thumb="12">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-1.jpg" alt="KKTC" data-thumb="13">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-1.jpg" alt="KKTC"
+                                             data-thumb="13">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-2.jpg" alt="KKTC" data-thumb="14">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-2.jpg" alt="KKTC"
+                                             data-thumb="14">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-3.jpg" alt="KKTC" data-thumb="15">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-3.jpg" alt="KKTC"
+                                             data-thumb="15">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-4.jpg" alt="KKTC" data-thumb="16">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-4.jpg" alt="KKTC"
+                                             data-thumb="16">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-5.jpg" alt="KKTC" data-thumb="17" class="active">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-5.jpg" alt="KKTC"
+                                             data-thumb="17" class="active">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-6.jpg" alt="KKTC" data-thumb="18">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-6.jpg" alt="KKTC"
+                                             data-thumb="18">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-7.jpg" alt="KKTC" data-thumb="19">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-7.jpg" alt="KKTC"
+                                             data-thumb="19">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-8.jpg" alt="KKTC" data-thumb="20">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-8.jpg" alt="KKTC"
+                                             data-thumb="20">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-9.jpg" alt="KKTC" data-thumb="21">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-9.jpg" alt="KKTC"
+                                             data-thumb="21">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-10.jpg" alt="KKTC" data-thumb="22">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-10.jpg" alt="KKTC"
+                                             data-thumb="22">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-11.jpg" alt="KKTC" data-thumb="23">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-11.jpg" alt="KKTC"
+                                             data-thumb="23">
                                     </div>
                                     <div class="slider-nav-item">
-                                        <img src="../assets/images/cars/aston-martin/aston-martin-12.jpg" alt="KKTC" data-thumb="24">
+                                        <img src="../assets/images/cars/aston-martin/aston-martin-12.jpg" alt="KKTC"
+                                             data-thumb="24">
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <div class="col-lg-4">
+                        <div class="ads-detail-table">
+                            <div class="ads-detail-table-head">
+                                <h2>
+                                    <span>$1750</span>
+                                    <a href="#">
+                                        <svg class="icon arrow">
+                                            <use href="../assets/icons/sprite.svg#swap"></use>
+                                        </svg>
+                                    </a>
+                                    <span>(₺13.755,88)</span>
+                                </h2>
+                                <div class="location">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#location-fat"></use>
+                                    </svg>
+                                    <p>Kıbrıs, Lefkoşa</p>
+                                </div>
+                            </div>
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td>İlan No</td>
+                                    <td>842348416</td>
+                                </tr>
+                                <tr>
+                                    <td>İlan Tarihi</td>
+                                    <td>3 Eylül 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Marka</td>
+                                    <td>Aston Martin</td>
+                                </tr>
+                                <tr>
+                                    <td>Seri</td>
+                                    <td>DB9</td>
+                                </tr>
+                                <tr>
+                                    <td>Model</td>
+                                    <td>DB9</td>
+                                </tr>
+                                <tr>
+                                    <td>Yıl</td>
+                                    <td>2010</td>
+                                </tr>
+                                <tr>
+                                    <td>Yakıt</td>
+                                    <td>Benzin</td>
+                                </tr>
+                                <tr>
+                                    <td>Vites</td>
+                                    <td>Otomatik</td>
+                                </tr>
+                                <tr>
+                                    <td>KM</td>
+                                    <td>20.000</td>
+                                </tr>
+                                <tr>
+                                    <td>Kasa Tipi</td>
+                                    <td>Coupe</td>
+                                </tr>
+                                <tr>
+                                    <td>Motor Gücü</td>
+                                    <td>600 hp</td>
+                                </tr>
+                                <tr>
+                                    <td>Motor Hacmi</td>
+                                    <td>6200 cc</td>
+                                </tr>
+                                <tr>
+                                    <td>Çekiş</td>
+                                    <td>Arkadan İtiş</td>
+                                </tr>
+                                <tr>
+                                    <td>Renk</td>
+                                    <td>Gri</td>
+                                </tr>
+                                <tr>
+                                    <td>Garanti</td>
+                                    <td>842348416</td>
+                                </tr>
+                                <tr>
+                                    <td>Plaka / Uyruk</td>
+                                    <td>Türkiye (TR) Plakalı</td>
+                                </tr>
+                                <tr>
+                                    <td>Kimden</td>
+                                    <td>Galeriden</td>
+                                </tr>
+                                <tr>
+                                    <td>Takas</td>
+                                    <td>Hayır</td>
+                                </tr>
+                                <tr>
+                                    <td>Durumu</td>
+                                    <td>İkinci El</td>
+                                </tr>
+                                <tr>
+                                    <td>Görüntülü <br> Arama <br> İle Görülebilir</td>
+                                    <td>Evet</td>
+                                </tr>
 
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="ads-company-detail">
+                    <div class="ads-company-detail-head">
+                        <div class="logo-wrapper mb-5p">
+                            <div class="status online"></div>
+                            <img src="../assets/images/amblem.png" alt="KKTC">
+                        </div>
+                        <h5 class="mb-5p">KKTC OTOMOTİV</h5>
+                        <div class="rating big yellow mb-5p">
+                            <svg class="icon active">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon active">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon active">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon active">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <h6 class="fs-10 lh-16 color-white">(4.5 / 5)</h6>
+                        </div>
+                        <a href="#">Tüm İlanları Gör</a>
+                    </div>
+                    <div class="ads-company-detail-body">
+                        <div class="ads-company-detail-row">
+                            <div class="row mx-0 ads-company-detail-small">
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#calendar-3"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>20.08.2005</h4>
+                                        <span>Üyelik Tarihi</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#megaphone"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>128</h4>
+                                        <span>İlan Sayısı</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#clock-2"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>28 Dakika</h4>
+                                        <span>Geri Dönüş Ort.</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#star"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>4.5</h4>
+                                        <span>Değerlendirme</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#businessman"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>1.569</h4>
+                                        <span>Satış</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#receipt"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>78.523</h4>
+                                        <span>Kiralama</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ads-company-detail-row">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#phone-call"></use>
+                            </svg>
+                            <h6>0545 888 44 66</h6>
+                        </div>
+                        <div class="ads-company-detail-row">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#old-phone"></use>
+                            </svg>
+                            <h6>0212 659 72 72</h6>
+                        </div>
+                        <div class="company-buttons">
+                            <button class="empty-button">Profile Git</button>
+                            <button class="empty-button purple">Mesaj Gönder</button>
+                            <button class="empty-button full">
+                                <svg class="icon arrow">
+                                    <use href="../assets/icons/sprite.svg#exclamation"></use>
+                                </svg>
+                                İlan ile İlgili Şikayetim Var
+                            </button>
+                        </div>
+                        <div class="company-message-box">
+                            <div class="d-flex align-items-center">
+                                <div class="logo-wrapper mb-5p">
+                                    <div class="status online"></div>
+                                    <img src="../assets/images/amblem.png" alt="KKTC">
+                                </div>
+                                <h5>KKTC OTOMOTİV</h5>
+                            </div>
+                            <p>Satıcıya Mesaj At</p>
+                            <div class="auto-messages">
+                                <a href="#" class="auto-message">Merhaba, Müsait Misiniz?</a>
+                                <a href="#" class="auto-message">Merhaba, Son Fiyat Nedir?</a>
+                                <a href="#" class="auto-message">Merhaba, Satın Almak İstiyorum..</a>
+                            </div>
+                            <div class="message-form-wrapper d-flex align-items-center justify-content-between mt-auto">
+                                <input type="text" placeholder="Satıcı ile Mesajlaş...">
+                                <button class="empty-button purple">GÖNDER</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-lg-3"></div>
+        <div class="row mx-0 mt-30">
+            <div class="details-tabset">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-details-tab" data-toggle="pill" href="#pills-details"
+                           role="tab" aria-controls="pills-details" aria-selected="true">İlan Detayları</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-location-tab" data-toggle="pill" href="#pills-location" role="tab"
+                           aria-controls="pills-location" aria-selected="false">Konumu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-technic-tab" data-toggle="pill" href="#pills-technic"
+                           role="tab"
+                           aria-controls="pills-technic" aria-selected="false">Teknik Özellikler</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade" id="pills-details" role="tabpanel"
+                         aria-labelledby="pills-details-tab">...
+                    </div>
+                    <div class="tab-pane fade p-0" id="pills-location" role="tabpanel"
+                         aria-labelledby="pills-location-tab">
+                        <div class="map-wrapper">
+                            <div class="map-information">
+                                <h4>En Yakın Olanaklar</h4>
+                                <ul class="vertical">
+                                    <li>
+                                        <span></span>
+                                        Ulaşım
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Gıda Mağazaları
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Spor Kulüpleri
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Okullar
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Ulaşım
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Gıda Mağazaları
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Spor Kulüpleri
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div id="map"></div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show active" id="pills-technic" role="tabpanel"
+                         aria-labelledby="pills-technic-tab">
+                        <div class="detail-text">
+                            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing</h1>
+                            <p> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                                Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum. Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                                text
+                                used
+                                in laying out print, graphic or web designs. The passage is attributed to an unknown
+                                typesetter
+                                in the 15th century who is thought to have scrambled parts of Cicero's De Finibus
+                                Bonorum et
+                                Malorum for use in a type specimen book. It usually begins with:</p>
+                            <p>
+                                <b>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut
+                                    labore et dolore magna aliqua.”</b>
+                                The purpose of lorem ipsum is to create a natural looking block of text (sentence,
+                                paragraph,
+                                page, etc.) that doesn't distract from the layout. A practice not without controversy,
+                                laying
+                                out pages with meaningless filler text can be very useful when the focus is meant to be
+                                on
+                                design, not content.</p>
+                            <p> The passage experienced a surge in popularity during the 1960s when Letraset used it on
+                                their
+                                dry-transfer sheets, and again during the 90s as desktop publishers bundled the text
+                                with
+                                their
+                                software. Today it's seen all around the web; on templates, websites, and stock designs.
+                                Use
+                                our
+                                generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-30">
+            <div class="col-lg-6">
+                <div class="ads-details-box-sm">
+                    <div id="accordion">
+                        <div class="details-acc-head" data-toggle="collapse" data-target="#creditCollapse"
+                             aria-expanded="true" aria-controls="creditCollapse">
+                            Taşıt Kredisi Hesaplama
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#information-2"></use>
+                                </svg>
+                            </a>
+                            <svg class="icon arrow">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                        </div>
+
+                        <div id="creditCollapse" class="collapse show" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="creditType">Kredi Tipi</label>
+                                            <select name="type" id="creditType">
+                                                <option value="0">Taşıt Kredisi</option>
+                                                <option value="1">İhtiyaç Kredisi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="creditAmount">Almak İstediği Kredi Tutarı</label>
+                                            <select name="type" id="creditAmount">
+                                                <option value="0">10.000 TL</option>
+                                                <option value="1">20.000 TL</option>
+                                                <option value="2">30.000 TL</option>
+                                                <option value="3">40.000 TL</option>
+                                                <option value="4">50.000 TL</option>
+                                                <option value="5">60.000 TL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="time">Vade</label>
+                                            <select name="type" id="time">
+                                                <option value="0">6 Ay</option>
+                                                <option value="1">12 Ay</option>
+                                                <option value="2">18 Ay</option>
+                                                <option value="3">24 Ay</option>
+                                                <option value="4">36 Ay</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="percent">Faiz Oranı</label>
+                                            <select name="type" id="percent">
+                                                <option value="0">% 1.06</option>
+                                                <option value="1">% 1.16</option>
+                                                <option value="2">% 1.26</option>
+                                                <option value="3">% 1.30</option>
+                                                <option value="4">% 1.36</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="mail">E-Posta Adresiniz</label>
+                                            <input type="text" id="mail" name="mail" placeholder="E-Posta Adresiniz">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-lg-4">
+                                        <button class="empty-button dark">
+                                            Hesapla
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ads-details-box-sm">
+                    <div id="accordion2">
+                        <div class="details-acc-head" data-toggle="collapse" data-target="#similarCollapse"
+                             aria-expanded="true" aria-controls="similarCollapse">
+                            Benzer Araç Fiyatları
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#information-2"></use>
+                                </svg>
+                            </a>
+                            <svg class="icon arrow">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                        </div>
+
+                        <div id="similarCollapse" class="collapse show" data-parent="#accordion2">
+                            <div class="card-body">
+                                <table class="table similar-table">
+                                    <thead>
+                                    <tr>
+                                        <th>YIL</th>
+                                        <th>KM</th>
+                                        <th>MODEL</th>
+                                        <th>FİYAT</th>
+                                        <th>YAKIT</th>
+                                        <th>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>200.060</td>
+                                        <td>C 250 TD Classic</td>
+                                        <td>208.000 TL</td>
+                                        <td>Dizel</td>
+                                        <td>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>200.060</td>
+                                        <td>C 250 TD Classic</td>
+                                        <td>208.000 TL</td>
+                                        <td>Dizel</td>
+                                        <td>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>200.060</td>
+                                        <td>C 250 TD Classic</td>
+                                        <td>208.000 TL</td>
+                                        <td>Dizel</td>
+                                        <td>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>200.060</td>
+                                        <td>C 250 TD Classic</td>
+                                        <td>208.000 TL</td>
+                                        <td>Dizel</td>
+                                        <td>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>200.060</td>
+                                        <td>C 250 TD Classic</td>
+                                        <td>208.000 TL</td>
+                                        <td>Dizel</td>
+                                        <td>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>200.060</td>
+                                        <td>C 250 TD Classic</td>
+                                        <td>208.000 TL</td>
+                                        <td>Dizel</td>
+                                        <td>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-0 mt-30">
+            <div class="ads-feature-list">
+                <h4 class="feature-list-header">Teknik Ekipman / Güvenlik</h4>
+                <ul class="horizontal">
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mx-0 mt-30">
+            <div class="ads-feature-list">
+                <h4 class="feature-list-header">İç Donanım</h4>
+                <ul class="horizontal">
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mx-0 mt-30">
+            <div class="ads-feature-list">
+                <h4 class="feature-list-header">Multimedya</h4>
+                <ul class="horizontal">
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        6 İleri
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mx-0 mt-30">
+            <div class="car-parts-info">
+                <img src="../assets/images/car-parts.svg" alt="KKTC">
+                <div class="text">
+                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing </h4>
+                    <p>
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum. Lorem ipsum, or lipsum as it is sometimes known, is dummy text used
+                        in laying out print, graphic or web designs. The passage is attributed to an unknown typesetter
+                        in the 15th century who is thought to have scrambled parts of Cicero's De Finibus Bonorum et
+                        Malorum for use in a type specimen book. It usually begins with:
+                    </p>
+                    <div class="info-bar">
+                        <div class="box gray">
+                            <span></span>
+                            Orjinal
+                        </div>
+                        <div class="box green">
+                            <span></span>
+                            Boyalı
+                        </div>
+                        <div class="box orange">
+                            <span></span>
+                            Lokal Boyalı
+                        </div>
+                        <div class="box red">
+                            <span></span>
+                            Değişen
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 </div>
