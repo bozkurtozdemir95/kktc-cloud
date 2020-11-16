@@ -624,6 +624,10 @@
     margin-top: 15px;
 }
 
+.similar-table {
+    margin-bottom: 0;
+}
+
 .similar-table .icon {
     width: 7px;
     height: 7px;
