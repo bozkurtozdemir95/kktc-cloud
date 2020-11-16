@@ -50,6 +50,10 @@
     border-radius: 2px;
 }
 
+.purple #Footer .menu-title:after {
+    background: #023047;
+}
+
 #Footer .footer-menu-col ul a {
     color: #001C1D;
     font-size: 14px;
