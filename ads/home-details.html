@@ -9,13 +9,24 @@
     <!--- LIBRARIES --->
     <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
-    <link rel="stylesheet" href="../assets/libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/libs/slick-carousel/slick.css">
+    <link rel="stylesheet" href="../assets/libs/light-gallery/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"
+          integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w=="
+          crossorigin="anonymous"/>
 
     <script src="../assets/libs/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
     <script src="../assets/libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="../assets/libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="../assets/libs/slick-carousel/slick.min.js"></script>
+    <script src="../assets/libs/light-gallery/lightgallery.min.js"></script>
+    <script src="../assets/libs/light-gallery/lg-thumbnail.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWP3Q6SElBhRoC1Wf8BBj-Q9VWdOawqyY&callback=initMap&libraries=&v=weekly"
+            defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+            integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+            crossorigin="anonymous"></script>
 
     <script src="../assets/js/main.js"></script>
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -494,1123 +505,1375 @@
             </div>
         </div>
         <div class="row mt-30">
-            <div class="col-lg-3">
-                <div class="sidebar p-0">
-                    <h1 class="sidebar-title fs-14 lh-19 f-bold color-dark">Filtreleme</h1>
-                    <div class="accordion" id="sidebarAccordion">
-                        <div class="card">
-                            <div class="card-header" id="sidebarCompany" data-toggle="collapse"
-                                 data-target="#sibebarCompanyContent" aria-expanded="true"
-                                 aria-controls="sibebarCompanyContent">
-                                Marka
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sibebarCompanyContent" class="collapse show" aria-labelledby="sidebarCompany">
-                                <div class="card-body">
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Acura</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Alfa Romeo</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Anadol</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Aston Martin</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Audi</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>BMW</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Bentley</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Cadillac</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Acura</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Alfa Romeo</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Anadol</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Aston Martin</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Audi</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>BMW</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Bentley</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Cadillac</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Acura</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Alfa Romeo</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Anadol</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Aston Martin</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Audi</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>BMW</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Bentley</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox without-check">
-                                        <label class="container">
-                                            <input type="checkbox" name="companyCheck">
-                                            <h5>Cadillac</h5>
-                                            <span>99</span>
-                                        </label>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarAdress" data-toggle="collapse"
-                                 data-target="#sidebarAdressContent" aria-expanded="true"
-                                 aria-controls="sidebarAdressContent">
-                                Adres
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarAdressContent" class="collapse show" aria-labelledby="sidebarAdress">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center justify-content-between mb-10">
-                                        <div class="sidebar-input">
-                                            <select name="country" id="country">
-                                                <option value="0">Kıbrıs</option>
-                                                <option value="1">Türkiye</option>
-                                                <option value="2">Almanya</option>
-                                            </select>
-                                            <svg class="icon">
-                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="sidebar-input">
-                                            <select name="city" id="city">
-                                                <option value="0">İl Seçiniz</option>
-                                                <option value="1">Lefkoşa</option>
-                                                <option value="2">Şehir</option>
-                                            </select>
-                                            <svg class="icon">
-                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarPrice" data-toggle="collapse"
-                                 data-target="#sidebarPriceContent" aria-expanded="true"
-                                 aria-controls="sidebarPriceContent">
-                                Fiyat
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarPriceContent" class="collapse show" aria-labelledby="sidebarPrice">
-                                <div class="card-body">
-                                    <div class="d-flex flex-column" id="priceInputs">
-                                        <div class="d-flex align-items-center justify-content-between">
-                                            <div class="sidebar-half-input">
-                                                <input type="text" placeholder="Min TL">
-                                            </div>
-                                            <div class="sidebar-half-input">
-                                                <input type="text" placeholder="Max TL">
-                                            </div>
-                                        </div>
-                                        <div class="price-list">
-                                            <p>
-                                                <span>0 TL</span>
-                                                <span>10.000 TL</span>
-                                            </p>
-                                            <p>
-                                                <span>10.000 TL</span>
-                                                <span>20.000 TL</span>
-                                            </p>
-                                            <p>
-                                                <span>20.000 TL</span>
-                                                <span>30.000 TL</span>
-                                            </p>
-                                            <p>
-                                                <span>30.000 TL</span>
-                                                <span>40.000 TL</span>
-                                            </p>
-                                            <p>
-                                                <span>40.000 TL</span>
-                                                <span>50.000 TL</span>
-                                            </p>
-                                            <p>
-                                                <span>50.000 TL</span>
-                                                <span>60.000 TL</span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarAge" data-toggle="collapse"
-                                 data-target="#sidebarAgeContent" aria-expanded="true"
-                                 aria-controls="sidebarAgeContent">
-                                Yıl
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarAgeContent" class="collapse" aria-labelledby="sidebarAge">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="sidebar-half-input">
-                                            <input type="text" placeholder="Min Yıl">
-                                        </div>
-                                        <div class="sidebar-half-input">
-                                            <input type="text" placeholder="Max Yıl">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarKM" data-toggle="collapse"
-                                 data-target="#sidebarKMContent" aria-expanded="true"
-                                 aria-controls="sidebarKMContent">
-                                KM
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarKMContent" class="collapse" aria-labelledby="sidebarKM">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="sidebar-half-input">
-                                            <input type="text" placeholder="Min KM">
-                                        </div>
-                                        <div class="sidebar-half-input">
-                                            <input type="text" placeholder="Max KM">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarCase" data-toggle="collapse"
-                                 data-target="#sidebarCaseContent" aria-expanded="true"
-                                 aria-controls="sidebarCaseContent">
-                                Kasa Tipi
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarCaseContent" class="collapse show" aria-labelledby="sidebarCase">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="sidebar-input">
-                                            <select name="type" id="type">
-                                                <option value="">Seçiniz</option>
-                                                <option value="0">Cabrio</option>
-                                                <option value="1">Hatchback 3 Kapı</option>
-                                                <option value="2">Hatchback 5 Kapı</option>
-                                                <option value="3">Sedan</option>
-                                            </select>
-                                            <svg class="icon">
-                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarEngine" data-toggle="collapse"
-                                 data-target="#sidebarEngineContent" aria-expanded="true"
-                                 aria-controls="sidebarEngineContent">
-                                Motor Gücü
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarEngineContent" class="collapse show" aria-labelledby="sidebarEngine">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="sidebar-input">
-                                            <select name="engine" id="engine">
-                                                <option value="">Seçiniz</option>
-                                                <option value="0">50 HP ve altı</option>
-                                                <option value="1">51 - 75 HP</option>
-                                                <option value="2">76 - 100 HP</option>
-                                            </select>
-                                            <svg class="icon">
-                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarCekis" data-toggle="collapse"
-                                 data-target="#sidebarCekisContent" aria-expanded="true"
-                                 aria-controls="sidebarCekisContent">
-                                Çekiş
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarCekisContent" class="collapse show" aria-labelledby="sidebarCekis">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="sidebar-input">
-                                            <select name="cekis" id="cekis">
-                                                <option value="">Seçiniz</option>
-                                                <option value="0">Önden Çekiş</option>
-                                                <option value="1">Arkadan İtiş</option>
-                                                <option value="2">4WD</option>
-                                            </select>
-                                            <svg class="icon">
-                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarRegion" data-toggle="collapse"
-                                 data-target="#sidebarRegionContent" aria-expanded="true"
-                                 aria-controls="sidebarRegionContent">
-                                Plaka / Uyruk
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarRegionContent" class="collapse show" aria-labelledby="sidebarRegion">
-                                <div class="card-body">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="sidebar-input">
-                                            <select name="region" id="region">
-                                                <option value="">Seçiniz</option>
-                                                <option value="0">Kıbrıs</option>
-                                                <option value="1">Türkiye</option>
-                                                <option value="2">Almanya</option>
-                                            </select>
-                                            <svg class="icon">
-                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarRoom" data-toggle="collapse"
-                                 data-target="#sidebarRoomContent" aria-expanded="true"
-                                 aria-controls="sidebarRoomContent">
-                                Vites
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarRoomContent" class="collapse" aria-labelledby="sidebarRoom">
-                                <div class="card-body">
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Manuel
-                                            <input type="checkbox" name="fuelCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Otomatik
-                                            <input type="checkbox" name="fuelCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Triptonik
-                                            <input type="checkbox" name="fuelCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarFeatures" data-toggle="collapse"
-                                 data-target="#sidebarFeaturesContent" aria-expanded="true"
-                                 aria-controls="sidebarFeaturesContent">
-                                Yakıt
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarFeaturesContent" class="collapse" aria-labelledby="sidebarFeatures">
-                                <div class="card-body">
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Dizel
-                                            <input type="checkbox" name="featureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Benzin
-                                            <input type="checkbox" name="featureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            LPG
-                                            <input type="checkbox" name="featureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Hybrid
-                                            <input type="checkbox" name="featureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Elektrik
-                                            <input type="checkbox" name="featureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarColor" data-toggle="collapse"
-                                 data-target="#sidebarColorContent" aria-expanded="true"
-                                 aria-controls="sidebarColorContent">
-                                Renk
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarColorContent" class="collapse" aria-labelledby="sidebarColor">
-                                <div class="card-body">
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Siyah
-                                            <input type="checkbox" name="featureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Beyaz
-                                            <input type="checkbox" name="featureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Gri
-                                            <input type="checkbox" name="featureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Kırmızı
-                                            <input type="checkbox" name="featureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Mavi
-                                            <input type="checkbox" name="featureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarStatus" data-toggle="collapse"
-                                 data-target="#sidebarStatusContent" aria-expanded="true"
-                                 aria-controls="sidebarStatusContent">
-                                Durum
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarStatusContent" class="collapse" aria-labelledby="sidebarStatus">
-                                <div class="card-body">
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Satılık
-                                            <input type="checkbox" name="furnitureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Kiralık
-                                            <input type="radio" name="furnitureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarCredit" data-toggle="collapse"
-                                 data-target="#sidebarCreditContent" aria-expanded="true"
-                                 aria-controls="sidebarCreditContent">
-                                Krediye Uygun
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarCreditContent" class="collapse" aria-labelledby="sidebarCredit">
-                                <div class="card-body">
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Evet
-                                            <input type="radio" name="furnitureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Hayır
-                                            <input type="radio" name="furnitureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card">
-                            <div class="card-header" id="sidebarSite" data-toggle="collapse"
-                                 data-target="#sidebarSiteContent" aria-expanded="true"
-                                 aria-controls="sidebarSiteContent">
-                                Takas
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                                </svg>
-                            </div>
-
-                            <div id="sidebarSiteContent" class="collapse" aria-labelledby="sidebarSite">
-                                <div class="card-body">
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Evet
-                                            <input type="radio" name="furnitureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                    <div class="sidebar-custom-checkbox square-black">
-                                        <label class="container">
-                                            Hayır
-                                            <input type="radio" name="furnitureCheck">
-                                            <span class="checkmark"></span>
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="form-button big bg-purple mt-15 fs-14 lh-19 f-bold">ARA</button>
+            <div class="col-lg-12">
+                <div class="row mx-0 mb-20 d-flex align-items-center justify-content-between">
+                    <div class="ads-detail-header col-lg-6">
+                        <h1>ASTON MARTIN TURKEY 2009 ASTON MARTIN DB9 COUPE V12 - BAYİ</h1>
+                    </div>
+                    <div class="ads-detail-buttons col-lg-6">
+                        <span><b>1.458</b> Kişi Favorilere Ekledi.</span>
+                        <button class="empty-button">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#printer"></use>
+                            </svg>
+                        </button>
+                        <button class="empty-button">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#share"></use>
+                            </svg>
+                        </button>
+                        <button class="empty-button">
+                            <svg class="icon heart">
+                                <use href="../assets/icons/sprite.svg#heart-full"></use>
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="result-status-bar mb-20">
-                    <h5><b>E 180 ELITE</b> kategorisinde yer alan <b>978</b> Araç listelenmektedir.</h5>
-                    <a href="#">
-                        <svg class="icon">
-                            <use href="../assets/icons/sprite.svg#heart-full"></use>
+                <div class="row mx-0">
+                    <div class="col-lg-8">
+
+                        <div class="slider-for">
+                            <div>
+                                <img src="../assets/images/homes/home-1.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-2.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-3.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-4.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-5.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-6.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-7.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-8.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-9.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-10.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-11.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-12.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-1.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-2.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-3.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-4.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-5.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-6.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-7.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-8.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-9.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-10.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-11.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/homes/home-12.jpg" alt="KKTC">
+                            </div>
+                        </div>
+                        <div class="thumbs-box mt-20">
+                            <div class="thumbs-box-header">
+                                <div class="d-flex">
+                                    <a href="#" id="lightgalleryCar">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#search"></use>
+                                        </svg>
+                                        Büyük Fotoğraf
+                                    </a>
+                                    <a href="#">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#video-camera"></use>
+                                        </svg>
+                                        Video Göster
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="thumb-box-content">
+                                <div class="slider-nav">
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-1.jpg" alt="KKTC"
+                                             data-thumb="1">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-2.jpg" alt="KKTC"
+                                             data-thumb="2">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-3.jpg" alt="KKTC"
+                                             data-thumb="3">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-4.jpg" alt="KKTC"
+                                             data-thumb="4">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-5.jpg" alt="KKTC"
+                                             data-thumb="5" class="active">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-6.jpg" alt="KKTC"
+                                             data-thumb="6">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-7.jpg" alt="KKTC"
+                                             data-thumb="7">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-8.jpg" alt="KKTC"
+                                             data-thumb="8">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-9.jpg" alt="KKTC"
+                                             data-thumb="9">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-10.jpg" alt="KKTC"
+                                             data-thumb="10">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-11.jpg" alt="KKTC"
+                                             data-thumb="11">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-12.jpg" alt="KKTC"
+                                             data-thumb="12">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-1.jpg" alt="KKTC"
+                                             data-thumb="13">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-2.jpg" alt="KKTC"
+                                             data-thumb="14">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-3.jpg" alt="KKTC"
+                                             data-thumb="15">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-4.jpg" alt="KKTC"
+                                             data-thumb="16">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-5.jpg" alt="KKTC"
+                                             data-thumb="17" class="active">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-6.jpg" alt="KKTC"
+                                             data-thumb="18">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-7.jpg" alt="KKTC"
+                                             data-thumb="19">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-8.jpg" alt="KKTC"
+                                             data-thumb="20">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-9.jpg" alt="KKTC"
+                                             data-thumb="21">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-10.jpg" alt="KKTC"
+                                             data-thumb="22">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-11.jpg" alt="KKTC"
+                                             data-thumb="23">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/homes/home-12.jpg" alt="KKTC"
+                                             data-thumb="24">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="ads-detail-table">
+                            <div class="ads-detail-table-head">
+                                <h2>
+                                    <span>$1750</span>
+                                    <a href="#">
+                                        <svg class="icon arrow">
+                                            <use href="../assets/icons/sprite.svg#swap"></use>
+                                        </svg>
+                                    </a>
+                                    <span>(₺13.755,88)</span>
+                                </h2>
+                                <div class="location">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#location-fat"></use>
+                                    </svg>
+                                    <p>Kıbrıs, Lefkoşa</p>
+                                </div>
+                            </div>
+                            <table class="table">
+                                <tbody>
+                                <tr>
+                                    <td>İlan No</td>
+                                    <td>842348416</td>
+                                </tr>
+                                <tr>
+                                    <td>İlan Tarihi</td>
+                                    <td>3 Eylül 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>m2</td>
+                                    <td>1250</td>
+                                </tr>
+                                <tr>
+                                    <td>Oda Sayısı</td>
+                                    <td>6+2</td>
+                                </tr>
+                                <tr>
+                                    <td>Bina Yaşı</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Kat Sayısı</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>Bulunduğu Kat</td>
+                                    <td>7</td>
+                                </tr>
+                                <tr>
+                                    <td>Banyo Sayısı</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Balkon Sayısı</td>
+                                    <td>2</td>
+                                </tr>
+                                <tr>
+                                    <td>Isıtma</td>
+                                    <td>Doğalgaz</td>
+                                </tr>
+                                <tr>
+                                    <td>Eşyalı</td>
+                                    <td>Hayır</td>
+                                </tr>
+                                <tr>
+                                    <td>Kullanım Durumu</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Site İçi</td>
+                                    <td>Hayır</td>
+                                </tr>
+                                <tr>
+                                    <td>Aidat</td>
+                                    <td>Yok</td>
+                                </tr>
+                                <tr>
+                                    <td>Krediye Uygun</td>
+                                    <td>Evet</td>
+                                </tr>
+                                <tr>
+                                    <td>Plaka / Uyruk</td>
+                                    <td>Türkiye (TR) Plakalı</td>
+                                </tr>
+                                <tr>
+                                    <td>Kimden</td>
+                                    <td>Emlak Ofisinden</td>
+                                </tr>
+                                <tr>
+                                    <td>Takas</td>
+                                    <td>Hayır</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="ads-detail-table-footer">
+                            <div class="ads-detail-table-buttons">
+                                <button class="empty-button">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#home-2"></use>
+                                    </svg>
+                                    Evi Görmek İstiyorum
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                    </svg>
+                                </button>
+                                <button class="empty-button">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#phone-call"></use>
+                                    </svg>
+                                    Beni Ara
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="ads-company-detail">
+                    <div class="ads-company-detail-head">
+                        <div class="logo-wrapper mb-5p">
+                            <div class="status online"></div>
+                            <img src="../assets/images/amblem.png" alt="KKTC">
+                        </div>
+                        <h5 class="mb-5p">KKTC EMLAK</h5>
+                        <div class="rating big yellow mb-5p">
+                            <svg class="icon active">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon active">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon active">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon active">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <h6 class="fs-10 lh-16 color-white">(4.5 / 5)</h6>
+                        </div>
+                        <a href="#">Tüm İlanları Gör</a>
+                    </div>
+                    <div class="ads-company-detail-body">
+                        <div class="ads-company-detail-row">
+                            <div class="row mx-0 ads-company-detail-small">
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#calendar-3"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>20.08.2005</h4>
+                                        <span>Üyelik Tarihi</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#megaphone"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>128</h4>
+                                        <span>İlan Sayısı</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#clock-2"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>28 Dakika</h4>
+                                        <span>Geri Dönüş Ort.</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#star"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>4.5</h4>
+                                        <span>Değerlendirme</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#businessman"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>1.569</h4>
+                                        <span>Satış</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#receipt"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>78.523</h4>
+                                        <span>Kiralama</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ads-company-detail-row">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#phone-call"></use>
+                            </svg>
+                            <h6>0545 888 44 66</h6>
+                        </div>
+                        <div class="ads-company-detail-row">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#old-phone"></use>
+                            </svg>
+                            <h6>0212 659 72 72</h6>
+                        </div>
+                        <div class="company-buttons">
+                            <button class="empty-button">Profile Git</button>
+                            <button class="empty-button purple">Mesaj Gönder</button>
+                            <button class="empty-button full">
+                                <svg class="icon arrow">
+                                    <use href="../assets/icons/sprite.svg#exclamation"></use>
+                                </svg>
+                                İlan ile İlgili Şikayetim Var
+                            </button>
+                        </div>
+                        <div class="company-message-box">
+                            <div class="d-flex align-items-center">
+                                <div class="logo-wrapper mb-5p">
+                                    <div class="status online"></div>
+                                    <img src="../assets/images/amblem.png" alt="KKTC">
+                                </div>
+                                <h5>KKTC OTOMOTİV</h5>
+                            </div>
+                            <p>Satıcıya Mesaj At</p>
+                            <div class="auto-messages">
+                                <a href="#" class="auto-message">Merhaba, Müsait Misiniz?</a>
+                                <a href="#" class="auto-message">Merhaba, Son Fiyat Nedir?</a>
+                                <a href="#" class="auto-message">Merhaba, Satın Almak İstiyorum..</a>
+                            </div>
+                            <div class="message-form-wrapper d-flex align-items-center justify-content-between mt-auto">
+                                <input type="text" placeholder="Satıcı ile Mesajlaş...">
+                                <button class="empty-button purple">GÖNDER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-0 mt-30">
+            <div class="details-tabset">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-details-tab" data-toggle="pill" href="#pills-details"
+                           role="tab" aria-controls="pills-details" aria-selected="true">İlan Detayları</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-location-tab" data-toggle="pill" href="#pills-location" role="tab"
+                           aria-controls="pills-location" aria-selected="false">Konumu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-technic-tab" data-toggle="pill" href="#pills-technic"
+                           role="tab"
+                           aria-controls="pills-technic" aria-selected="false">Teknik Özellikler</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-details" role="tabpanel"
+                         aria-labelledby="pills-details-tab">
+                        <div class="detail-text">
+                            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing</h1>
+                            <p> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.
+                                Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                                deserunt
+                                mollit anim id est laborum. Lorem ipsum, or lipsum as it is sometimes known, is dummy
+                                text
+                                used
+                                in laying out print, graphic or web designs. The passage is attributed to an unknown
+                                typesetter
+                                in the 15th century who is thought to have scrambled parts of Cicero's De Finibus
+                                Bonorum et
+                                Malorum for use in a type specimen book. It usually begins with:</p>
+                            <p>
+                                <b>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt
+                                    ut
+                                    labore et dolore magna aliqua.”</b>
+                                The purpose of lorem ipsum is to create a natural looking block of text (sentence,
+                                paragraph,
+                                page, etc.) that doesn't distract from the layout. A practice not without controversy,
+                                laying
+                                out pages with meaningless filler text can be very useful when the focus is meant to be
+                                on
+                                design, not content.</p>
+                            <p> The passage experienced a surge in popularity during the 1960s when Letraset used it on
+                                their
+                                dry-transfer sheets, and again during the 90s as desktop publishers bundled the text
+                                with
+                                their
+                                software. Today it's seen all around the web; on templates, websites, and stock designs.
+                                Use
+                                our
+                                generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade p-0" id="pills-location" role="tabpanel"
+                         aria-labelledby="pills-location-tab">
+                        <div class="map-wrapper">
+                            <div class="map-information">
+                                <h4>En Yakın Olanaklar</h4>
+                                <ul class="vertical">
+                                    <li>
+                                        <span></span>
+                                        Ulaşım
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Gıda Mağazaları
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Spor Kulüpleri
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Okullar
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Ulaşım
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Gıda Mağazaları
+                                    </li>
+                                    <li>
+                                        <span></span>
+                                        Spor Kulüpleri
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <div id="map"></div>
+                        </div>
+                        <div class="ads-details-box-sm">
+                            <div class="details-acc-head borderless">
+                                Yerel Olanaklar
+                                <a href="#">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#information-2"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="details-acc-content">
+                                <div class="local-places-list">
+                                    <div class="local-place-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#park-wheel"></use>
+                                        </svg>
+                                        <h4>Çocuk Parkı</h4>
+                                        <span>1.5km</span>
+                                    </div>
+                                    <div class="local-place-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#shopping-mall"></use>
+                                        </svg>
+                                        <h4>Alışveriş Merkezi</h4>
+                                        <span>1.5km</span>
+                                    </div>
+                                    <div class="local-place-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#bus-stop"></use>
+                                        </svg>
+                                        <h4>Ulaşım</h4>
+                                        <span>1.5km</span>
+                                    </div>
+                                    <div class="local-place-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#coffee-shop"></use>
+                                        </svg>
+                                        <h4>Market</h4>
+                                        <span>1.5km</span>
+                                    </div>
+                                    <div class="local-place-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#health"></use>
+                                        </svg>
+                                        <h4>Sağlık</h4>
+                                        <span>1.5km</span>
+                                    </div>
+                                    <div class="local-place-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#park-wheel"></use>
+                                        </svg>
+                                        <h4>Çocuk Parkı</h4>
+                                        <span>1.5km</span>
+                                    </div>
+                                    <div class="local-place-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#shopping-mall"></use>
+                                        </svg>
+                                        <h4>Alışveriş Merkezi</h4>
+                                        <span>1.5km</span>
+                                    </div>
+                                    <div class="local-place-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#bus-stop"></use>
+                                        </svg>
+                                        <h4>Ulaşım</h4>
+                                        <span>1.5km</span>
+                                    </div>
+                                    <div class="local-place-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#coffee-shop"></use>
+                                        </svg>
+                                        <h4>Market</h4>
+                                        <span>1.5km</span>
+                                    </div>
+                                    <div class="local-place-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#health"></use>
+                                        </svg>
+                                        <h4>Sağlık</h4>
+                                        <span>1.5km</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-technic" role="tabpanel"
+                         aria-labelledby="pills-technic-tab">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-0 mt-30">
+            <div class="ads-feature-list">
+                <h4 class="feature-list-header">İç Özellikler</h4>
+                <ul class="horizontal">
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
                         </svg>
-                        Aramayı Favorilere Kaydet
-                    </a>
-                </div>
-                <div class="selected-filters mb-20">
-                    <div class="selected-filter-box">
-                        Siyah
-                        <button class="empty-button">
-                            <svg class="icon">
-                                <use href="../assets/icons/sprite.svg#close"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="selected-filter-box">
-                        Emlak
-                        <button class="empty-button">
-                            <svg class="icon">
-                                <use href="../assets/icons/sprite.svg#close"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="selected-filter-box">
-                        İstanbul
-                        <button class="empty-button">
-                            <svg class="icon">
-                                <use href="../assets/icons/sprite.svg#close"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="selected-filter-box">
-                        Bu Hafta
-                        <button class="empty-button">
-                            <svg class="icon">
-                                <use href="../assets/icons/sprite.svg#close"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="selected-filter-box">
-                        2005
-                        <button class="empty-button">
-                            <svg class="icon">
-                                <use href="../assets/icons/sprite.svg#close"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="selected-filter-box clear">
-                        Hepsini Temizle
-                    </div>
-                </div>
-                <div class="table-filter-bar mb-10">
-                    <div class="d-flex align-items-center left">
-                        <button class="empty-button active">Tüm İlanlar</button>
-                        <button class="empty-button">Sahibinden</button>
-                        <button class="empty-button">Galeriden</button>
-                    </div>
-                    <div class="d-flex align-items-center right">
-                        <button class="empty-button">
-                            <img src="../assets/images/google-maps.png" alt="KKTC">
-                            Haritada Göster
-                            <svg class="icon arrow">
-                                <use href="../assets/icons/sprite.svg#right-angle"></use>
-                            </svg>
-                        </button>
-                        <button class="empty-button">
-                            <svg class="icon">
-                                <use href="../assets/icons/sprite.svg#menu-2"></use>
-                            </svg>
-                        </button>
-                        <button class="empty-button active">
-                            <svg class="icon">
-                                <use href="../assets/icons/sprite.svg#grid"></use>
-                            </svg>
-                        </button>
-                        <button class="empty-button h-dropdown m-0">
-                            Gelişmiş Siralama
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Parke Zemin
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mt-30">
+            <div class="col-lg-6">
+                <div class="ads-details-box-sm">
+                    <div id="accordion">
+                        <div class="details-acc-head" data-toggle="collapse" data-target="#creditCollapse"
+                             aria-expanded="true" aria-controls="creditCollapse">
+                            Konut Kredisi Hesaplama
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#information-2"></use>
+                                </svg>
+                            </a>
                             <svg class="icon arrow">
                                 <use href="../assets/icons/sprite.svg#down-angle"></use>
                             </svg>
-                            <div class="h-dropdown-content no-arrow">
-                                <a href="#">Azalan Fiyata Göre</a>
-                                <a href="#">Artan Fiyata Göre</a>
-                                <a href="#">En Son Eklenen</a>
+                        </div>
+
+                        <div id="creditCollapse" class="collapse show" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="creditType">Kredi Tipi</label>
+                                            <select name="type" id="creditType">
+                                                <option value="0">Taşıt Kredisi</option>
+                                                <option value="1">Konut Kredisi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="creditAmount">Almak İstediği Kredi Tutarı</label>
+                                            <select name="type" id="creditAmount">
+                                                <option value="0">10.000 TL</option>
+                                                <option value="1">20.000 TL</option>
+                                                <option value="2">30.000 TL</option>
+                                                <option value="3">40.000 TL</option>
+                                                <option value="4">50.000 TL</option>
+                                                <option value="5">60.000 TL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="time">Vade</label>
+                                            <select name="type" id="time">
+                                                <option value="0">6 Ay</option>
+                                                <option value="1">12 Ay</option>
+                                                <option value="2">18 Ay</option>
+                                                <option value="3">24 Ay</option>
+                                                <option value="4">36 Ay</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="percent">Faiz Oranı</label>
+                                            <select name="type" id="percent">
+                                                <option value="0">% 1.06</option>
+                                                <option value="1">% 1.16</option>
+                                                <option value="2">% 1.26</option>
+                                                <option value="3">% 1.30</option>
+                                                <option value="4">% 1.36</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="mail">E-Posta Adresiniz</label>
+                                            <input type="text" id="mail" name="mail" placeholder="E-Posta Adresiniz">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-lg-4">
+                                        <button class="empty-button dark">
+                                            Hesapla
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
-                        </button>
+                        </div>
                     </div>
                 </div>
-                <div class="row mx-0 mb-20 table-wrapper">
-                    <table class="ads-table table-responsive">
-                        <thead>
-                        <tr>
-                            <th>İlan Başlığı</th>
-                            <th>Marka</th>
-                            <th>Seri</th>
-                            <th>Model</th>
-                            <th>Yıl</th>
-                            <th>Km</th>
-                            <th>Fiyat</th>
-                            <th>İlan Tarihi</th>
-                            <th>Adres</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr class="green">
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr class="green">
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr>
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr>
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr>
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr class="advertisement">
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/advertisement-1.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Sponsor Reklam</h5>
-                                        <h4>WİX ile Her şey Daha Kolay!</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td colspan="8">
-                                <div class="d-flex flex-column text-left">
-                                    <h6>Squarespace Website Builder</h6>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                        incididunt ut labore et dolore
-                                        magna aliqua. Ut enim ad minim veniam, quis nostrud</p>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr>
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr>
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr>
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr>
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr>
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr>
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr>
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
-                        <tr>
-                            <td class="img-wrapper">
-                                <div class="d-flex align-items-center">
-                                    <img src="../assets/images/ads-images/car-sm.png" alt="KKTC">
-                                    <div class="d-flex flex-column">
-                                        <h5>Kocabay Emlak</h5>
-                                        <h4>MERCEDES E Serisi 220 CDI
-                                            AMG Sport Blueeffciency</h4>
-                                    </div>
-                                </div>
-                            </td>
-                            <td>Mercedes</td>
-                            <td>C Serisi</td>
-                            <td>E 180 ELITE</td>
-                            <td>2005</td>
-                            <td>550.000</td>
-                            <td>₺54.000</td>
-                            <td>12.08.2020</td>
-                            <td>Kocaeli / Gebze</td>
-                        </tr>
+            </div>
+            <div class="col-lg-6">
+                <div class="ads-details-box-sm">
+                    <div id="accordion2">
+                        <div class="details-acc-head" data-toggle="collapse" data-target="#similarCollapse"
+                             aria-expanded="true" aria-controls="similarCollapse">
+                            Yıllık Emlak Giderleri
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#information-2"></use>
+                                </svg>
+                            </a>
+                            <svg class="icon arrow">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                        </div>
 
-                        </tbody>
-                    </table>
+                        <div id="similarCollapse" class="collapse show" data-parent="#accordion2">
+                            <div class="card-body">
+                                <p class="fs-12">
+                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                                    mollit anim id est laborum. Lorem ipsum, or lipsum as it is sometimes known, is
+                                    dummy text used in laying out print, graphic or web designs. The passage is
+                                    attributed to an unknown
+                                </p>
+                                <div class="chart-wrapper">
+                                    <div class="chart-total-value">
+                                        <h4>Toplam Gider</h4>
+                                        <h1>4.870$</h1>
+                                    </div>
+                                    <canvas id="doughnutChart" width="500" height="164"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row mx-0 mt-30 mb-30 pagination-row d-flex justify-content-end">
-                    <nav>
-                        <ul class="pagination">
-                            <li class="page-item prev">
-                                <a href="#" class="page-link">
-                                    <svg class="icon">
-                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#">4</a></li>
-                            <li class="page-item"><a class="page-link" href="#">5</a></li>
-                            <li class="page-item"><a class="page-link" href="#">6</a></li>
-                            <li class="page-item"><a class="page-link" href="#">7</a></li>
-                            <li class="page-item next">
-                                <a href="#" class="page-link">
-                                    <svg class="icon">
-                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+            </div>
+        </div>
+        <div class="row mt-30">
+            <div class="col-lg-6">
+                <div class="ads-details-box-sm">
+                    <div id="accordion3">
+                        <div class="details-acc-head" data-toggle="collapse" data-target="#internetCollapse"
+                             aria-expanded="true" aria-controls="internetCollapse">
+                            Konumda ki İnternet Hızı
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#information-2"></use>
+                                </svg>
+                            </a>
+                            <svg class="icon arrow">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                        </div>
+
+                        <div id="internetCollapse" class="collapse show" data-parent="#accordion3">
+                            <div class="card-body">
+                                <p class="fs-11">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                    officia
+                                    deserunt mollit anim id est laborum. Lorem ipsum, or lipsum as it is sometimes
+                                    known, is
+                                    dummy text used in laying out print, graphic or web designs. The passage is
+                                    attributed
+                                    to an unknown</p>
+                                <div class="network-list">
+                                    <div class="network-box big">
+                                        <h4>ALTYAPINIZIN DESTEKLEDİĞİ
+                                            <b class="purple">EN YÜKSEK</b> TAHMİNİ HIZ</h4>
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#internet"></use>
+                                        </svg>
+                                        <h1>50 MBPS</h1>
+                                        <a href="#">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#information-2"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="network-box">
+                                        <img src="../assets/images/network/comtech.png" alt="KKTC">
+                                        <ul class="vertical">
+                                            <li>
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                                </svg>
+                                                TAAHHÜT YOK
+                                            </li>
+                                            <li>
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                                </svg>
+                                                DİJİTAL
+                                            </li>
+                                            <li>
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                                </svg>
+                                                KOTA YOK
+                                            </li>
+                                            <li>
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                                </svg>
+                                                35 MBPS
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex flex-column">
+                                            <h4>TARİFE FİYATI</h4>
+                                            <h2 class="blue">85 TL</h2>
+                                        </div>
+                                    </div>
+                                    <div class="network-box">
+                                        <img src="../assets/images/network/turknet.png" alt="KKTC">
+                                        <ul class="vertical">
+                                            <li>
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                                </svg>
+                                                TAAHHÜT YOK
+                                            </li>
+                                            <li>
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                                </svg>
+                                                DİJİTAL
+                                            </li>
+                                            <li>
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                                </svg>
+                                                KOTA YOK
+                                            </li>
+                                            <li>
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                                </svg>
+                                                35 MBPS
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex flex-column">
+                                            <h4>TARİFE FİYATI</h4>
+                                            <h2 class="orange">99 TL</h2>
+                                        </div>
+                                    </div>
+                                    <div class="network-box">
+                                        <img src="../assets/images/network/vodafone.png" alt="KKTC">
+                                        <ul class="vertical">
+                                            <li>
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                                </svg>
+                                                TAAHHÜT YOK
+                                            </li>
+                                            <li>
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                                </svg>
+                                                DİJİTAL
+                                            </li>
+                                            <li>
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                                </svg>
+                                                KOTA YOK
+                                            </li>
+                                            <li>
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#check"></use>
+                                                </svg>
+                                                35 MBPS
+                                            </li>
+                                        </ul>
+                                        <div class="d-flex flex-column">
+                                            <h4>TARİFE FİYATI</h4>
+                                            <h2 class="red">68 TL</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="row mx-0">
-                    <div class="white-box no-shadow">
-                        <h4 class="fs-18 lh-20 f-bold mb-10">Lorem ipsum dolor sit amet, consectetur</h4>
-                        <p class="fs-14 lh-20">
-                            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                            fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
-                            officia deserunt mollit anim id est laborum.
-                        </p>
+            </div>
+            <div class="col-lg-6">
+                <div class="ads-details-box-sm">
+                    <div id="accordion4">
+                        <div class="details-acc-head" data-toggle="collapse" data-target="#indexCollapse"
+                             aria-expanded="true" aria-controls="indexCollapse">
+                            Çevrede ki Emlak Endeksi
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#information-2"></use>
+                                </svg>
+                            </a>
+                            <svg class="icon arrow">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                        </div>
+
+                        <div id="indexCollapse" class="collapse show" data-parent="#accordion4">
+                            <div class="card-body">
+                                <table class="table similar-table borderless">
+                                    <thead>
+                                    <tr>
+                                        <th>Yıl</th>
+                                        <th>Vergiler</th>
+                                        <th>Arazi</th>
+                                        <th></th>
+                                        <th>Eklemeler</th>
+                                        <th></th>
+                                        <th>Toplam Miktar</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-30">
+            <div class="col-lg-6">
+                <div class="ads-details-box-sm">
+                    <div id="accordion5">
+                        <div class="details-acc-head" data-toggle="collapse" data-target="#indexCollapse2"
+                             aria-expanded="true" aria-controls="indexCollapse2">
+                            Evin Fiyat Geçmişi
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#information-2"></use>
+                                </svg>
+                            </a>
+                            <svg class="icon arrow">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                        </div>
+
+                        <div id="indexCollapse2" class="collapse show" data-parent="#accordion5">
+                            <div class="card-body">
+                                <table class="table similar-table borderless">
+                                    <thead>
+                                    <tr>
+                                        <th>Yıl</th>
+                                        <th>Vergiler</th>
+                                        <th>Arazi</th>
+                                        <th></th>
+                                        <th>Eklemeler</th>
+                                        <th></th>
+                                        <th>Toplam Miktar</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>4785 TL</td>
+                                        <td>208.000 TL</td>
+                                        <td>+</td>
+                                        <td>208.000 TL</td>
+                                        <td>=</td>
+                                        <td>416.000 TL</td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 
 <div id="Footer" class="bg-light">

@@ -390,7 +390,7 @@
 .auto-messages .auto-message {
     margin: 5px;
     height: 22px;
-    padding: 0 2px;
+    padding: 0 10px;
     background: rgba(2, 48, 71, .1);
     font-size: 10px;
     line-height: 18px;
@@ -591,6 +591,10 @@
     border-radius: 5px 0 0 0;
 }
 
+.ads-details-box-sm .details-acc-head.borderless:before {
+    content: none;
+}
+
 .ads-details-box-sm .form-box {
     margin-bottom: 8px;
 }
@@ -642,6 +646,10 @@
 
 .similar-table tr {
     border-top: 1px solid rgba(2, 48, 71, .1);
+}
+
+.similar-table.borderless tr {
+    border: 0;
 }
 
 .ads-feature-list {
@@ -746,6 +754,198 @@
     background: #EE2A3A;
 }
 
+.ads-detail-table-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    background: #FFFFFF;
+    height: 41px;
+    padding: 0 5px;
+    flex: 1;
+}
+
+.ads-detail-table-buttons button:first-child {
+    margin-right: 10px;
+    flex: 2;
+}
+
+.ads-detail-table-buttons button .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    fill: #023047;
+}
+
+.ads-detail-table-buttons {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ads-detail-table-buttons button .icon.arrow {
+    margin: 0;
+    width: 6px;
+    height: 6px;
+    stroke: #023047;
+}
+
+.details-acc-content {
+    padding: 0 16px;
+}
+
+.local-places-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.local-place-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    height: 76px;
+    width: calc(100% / 10 - 20px);
+    border: 1px solid rgba(2, 48, 71, .1);
+}
+
+.local-place-box .icon {
+    max-width: 25px;
+    height: 20px;
+    margin-bottom: 5px;
+    fill: #023047;
+}
+
+.local-place-box h4 {
+    font-size: 12px;
+    line-height: 16px;
+    white-space: nowrap;
+}
+
+.local-place-box span {
+    font-size: 10px;
+    line-height: 16px;
+    color: rgba(2, 48, 71, .5);
+}
+
+.chart-wrapper {
+    position: relative;
+    margin-top: 10px;
+}
+
+.chart-total-value {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 108px;
+}
+
+.chart-total-value h1 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 28px;
+    line-height: 31px;
+    text-align: center;
+}
+
+.chart-total-value h4 {
+    font-size: 12px;
+    text-align: center;
+}
+
+.network-list {
+    margin: 0 -10px;
+    display: flex;
+}
+
+.network-list .network-box {
+    border: 1px solid rgba(2, 48, 71, .1);
+    padding: 10px;
+    width: calc(100% / 5 - -7px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+    margin: 5px;
+}
+
+.network-list .network-box.big {
+    width: 190px;
+}
+
+.network-list .network-box .icon {
+    width: 42px;
+    height: 42px;
+}
+
+.network-list .network-box a .icon {
+    width: 18px;
+    height: 18px;
+    fill: rgba(2, 48, 71, .2);
+}
+
+.network-list .network-box h1 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 22px;
+    line-height: 16px;
+}
+
+.network-list .network-box h2 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 20px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.network-list .network-box h4 {
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+}
+
+.network-list .network-box h4 b {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    color: #4866FC;
+}
+
+.network-list .network-box h5 {
+    font-size: 10px;
+    line-height: 16px;
+}
+
+.network-list .network-box h2.blue {
+    color: #0083C1;
+}
+
+.network-list .network-box h2.orange {
+    color: #FAA61A;
+}
+
+.network-list .network-box h2.red {
+    color: #EE3023;
+}
+
+.network-list .network-box img {
+    max-width: 60px;
+}
+
+.network-list .network-box li .icon {
+    fill: #16DF45;
+    margin-right: 5px;
+    width: 8px;
+    height: 8px;
+}
+
+.network-list .network-box li {
+    font-size: 10px;
+    line-height: 16px;
+}
+
 @media only screen and (max-width: 992px) {
     .details-tabset .nav {
         width: 100%;
@@ -757,5 +957,15 @@
 
     .car-parts-info img {
         margin-bottom: 20px;
+    }
+
+    .chart-total-value {
+        left: 185px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .chart-total-value {
+        left: 96px;
     }
 }

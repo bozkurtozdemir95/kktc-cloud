@@ -49,10 +49,59 @@ $(function () {
             input[0][isNegative ? 'stepDown' : 'stepUp']()
         }
     })
-
     $('#priceInputs input').on('click', function (e) {
         $('#priceInputs .price-list').toggleClass('open');
     })
+    var ctx = document.getElementById('doughnutChart');
+    var ctx2 = document.getElementById('lineChart');
+    var myPieChart = new Chart(ctx, {
+        type: 'doughnut',
+        data: {
+            labels: ['Emlak Liste Fiyat', 'Gayrimenkul Alım Vergisi', 'Emlakçı Komisyonu', 'Noter Ücreti', 'Deprem Sigortası'],
+            datasets: [{
+                label: '# of Votes',
+                data: [1257, 1200, 1000, 600, 200],
+                backgroundColor: [
+                    '#4866FC',
+                    '#FC48A8',
+                    '#05C711',
+                    '#FFAA00',
+                    '#FF0023',
+                ],
+            }]
+        },
+        options: {
+            cutoutPercentage: 85,
+            legend: {
+                position: 'right',
+                labels: {
+                    fontSize: 12,
+                    fontFamily: 'Proxima Nova Rg',
+                    padding: 15
+                }
+            }
+        },
+    });
+    var myLineChart = new Chart(ctx2, {
+        type: 'line',
+        data: {
+            labels: ["0s", "10s", "20s", "30s", "40s", "50s", "60s"],
+            datasets: [{
+                label: "Car Speed",
+                data: [0, 59, 75, 20, 20, 55, 40],
+            }],
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            min: -20,
+                            max: 140
+                        }
+                    }]
+                }
+            }
+        },
+    });
 })
 
 $(document).ready(function () {
@@ -94,7 +143,6 @@ $(document).ready(function () {
             }
         }
     })
-
     $('.owl-carousel-categories').owlCarousel({
         loop: true,
         margin: 10,
@@ -114,7 +162,6 @@ $(document).ready(function () {
             }
         }
     })
-
     $('.owl-carousel-company-banners').owlCarousel({
         loop: true,
         margin: 10,
@@ -123,7 +170,6 @@ $(document).ready(function () {
         items: 1,
         dots: true
     })
-
     $('.custom-checkbox input').click(function () {
         if ($(this).is(':checked')) {
             $(".delivery-location").toggleClass("delivery-show");
@@ -131,7 +177,6 @@ $(document).ready(function () {
             $(".delivery-location").toggleClass("delivery-show");
         }
     });
-
     $('#typeForReceipt').on('change', function () {
         if (this.value === 1) {
             $('.companyFormItems').toggleClass('show');
@@ -139,6 +184,7 @@ $(document).ready(function () {
             $('.companyFormItems').toggleClass('show');
         }
     });
+
 });
 
 
