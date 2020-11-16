@@ -1957,6 +1957,10 @@ button:active,
     cursor: pointer;
 }
 
+.slider-nav-item img {
+    height: 100% !important;
+}
+
 .slider-nav-item img.active {
     outline: 2px solid #4866FC;
 }
@@ -1982,6 +1986,10 @@ button:active,
     stroke: #4866FC;
 }
 
+.slick-slide img {
+    height: 400px;
+}
+
 .prevBig.slick-arrow {
     position: absolute;
     width: 50%;
@@ -1990,6 +1998,7 @@ button:active,
     top: 0;
     left: 0;
 }
+
 .nextBig.slick-arrow {
     position: absolute;
     width: 50%;
@@ -2047,6 +2056,10 @@ button:active,
 
     .page-link-nav {
         margin-bottom: 20px;
+    }
+
+    .slick-slide img {
+        height: auto;
     }
 }
 

@@ -74,6 +74,11 @@
 
 .ads-detail-table {
     background: #FFFFFF;
+    height: 100%;
+}
+
+.ads-detail-table table {
+    margin-bottom: 0;
 }
 
 .ads-detail-table-head {
@@ -124,13 +129,17 @@
 
 .ads-detail-table table td {
     font-size: 12px;
-    line-height: 26px;
+    line-height: 28px;
     border: 0;
     padding: 0 0 0 20px;
 }
 
 .ads-detail-table table tr {
     border-bottom: 2px solid #FAFAFA;
+}
+
+.ads-detail-table table tr:last-child {
+    border: 0;
 }
 
 .ads-detail-table table tr td:first-child {
@@ -758,7 +767,8 @@
     line-height: 18px;
     background: #FFFFFF;
     height: 41px;
-    padding: 0 5px;
+    padding-left: 20px;
+    padding-right: 20px;
     flex: 1;
 }
 
@@ -770,7 +780,7 @@
 .ads-detail-table-buttons button .icon {
     width: 16px;
     height: 16px;
-    margin-right: 5px;
+    margin-right: 10px;
     fill: #023047;
 }
 

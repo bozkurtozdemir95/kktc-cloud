@@ -526,9 +526,8 @@
                 </div>
             </div>
             <div class="col-lg-9">
-                <div class="row mx-0">
-                    <div class="col-lg-8">
-
+                <div class="row mx-0 h-100">
+                    <div class="col-lg-8 d-flex flex-column justify-content-between">
                         <div class="slider-for">
                             <div>
                                 <img src="../assets/images/cars/aston-martin/aston-martin-1.jpg" alt="KKTC">
@@ -604,7 +603,33 @@
                             </div>
 
                         </div>
-                        <div class="thumbs-box mt-20">
+                        <div class="ads-detail-table-footer mt-10">
+                            <div class="ads-detail-table-buttons">
+                                <button class="empty-button">
+                                    <div class="d-flex align-items-center">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#car"></use>
+                                        </svg>
+                                        Aracı Görmek İstiyorum
+                                    </div>
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                    </svg>
+                                </button>
+                                <button class="empty-button">
+                                    <div class="d-flex aling-items-center">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#phone-call"></use>
+                                        </svg>
+                                        Beni Ara
+                                    </div>
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="thumbs-box mt-10">
                             <div class="thumbs-box-header">
                                 <div class="d-flex">
                                     <a href="#" id="lightgalleryCar">
@@ -723,7 +748,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-lg-4 d-flex flex-column justify-content-between">
                         <div class="ads-detail-table">
                             <div class="ads-detail-table-head">
                                 <h2>
@@ -801,10 +826,6 @@
                                     <td>Gri</td>
                                 </tr>
                                 <tr>
-                                    <td>Garanti</td>
-                                    <td>842348416</td>
-                                </tr>
-                                <tr>
                                     <td>Plaka / Uyruk</td>
                                     <td>Türkiye (TR) Plakalı</td>
                                 </tr>
@@ -821,7 +842,7 @@
                                     <td>İkinci El</td>
                                 </tr>
                                 <tr>
-                                    <td>Görüntülü <br> Arama <br> İle Görülebilir</td>
+                                    <td>Görüntülü Arama <br> İle Görülebilir</td>
                                     <td>Evet</td>
                                 </tr>
 
@@ -832,7 +853,7 @@
                 </div>
             </div>
             <div class="col-lg-3">
-                <div class="ads-company-detail">
+                <div class="ads-company-detail h-100 d-flex flex-column justify-content-between">
                     <div class="ads-company-detail-head">
                         <div class="logo-wrapper mb-5p">
                             <div class="status online"></div>
@@ -957,6 +978,209 @@
                             <div class="message-form-wrapper d-flex align-items-center justify-content-between mt-auto">
                                 <input type="text" placeholder="Satıcı ile Mesajlaş...">
                                 <button class="empty-button purple">GÖNDER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-30">
+            <div class="col-lg-6">
+                <div class="ads-details-box-sm">
+                    <div id="accordion">
+                        <div class="details-acc-head" data-toggle="collapse" data-target="#creditCollapse"
+                             aria-expanded="true" aria-controls="creditCollapse">
+                            Taşıt Kredisi Hesaplama
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#information-2"></use>
+                                </svg>
+                            </a>
+                            <svg class="icon arrow">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                        </div>
+
+                        <div id="creditCollapse" class="collapse show" data-parent="#accordion">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="creditType">Kredi Tipi</label>
+                                            <select name="type" id="creditType">
+                                                <option value="0">Taşıt Kredisi</option>
+                                                <option value="1">İhtiyaç Kredisi</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="creditAmount">Almak İstediği Kredi Tutarı</label>
+                                            <select name="type" id="creditAmount">
+                                                <option value="0">10.000 TL</option>
+                                                <option value="1">20.000 TL</option>
+                                                <option value="2">30.000 TL</option>
+                                                <option value="3">40.000 TL</option>
+                                                <option value="4">50.000 TL</option>
+                                                <option value="5">60.000 TL</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="time">Vade</label>
+                                            <select name="type" id="time">
+                                                <option value="0">6 Ay</option>
+                                                <option value="1">12 Ay</option>
+                                                <option value="2">18 Ay</option>
+                                                <option value="3">24 Ay</option>
+                                                <option value="4">36 Ay</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="percent">Faiz Oranı</label>
+                                            <select name="type" id="percent">
+                                                <option value="0">% 1.06</option>
+                                                <option value="1">% 1.16</option>
+                                                <option value="2">% 1.26</option>
+                                                <option value="3">% 1.30</option>
+                                                <option value="4">% 1.36</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="form-box">
+                                            <label for="mail">E-Posta Adresiniz</label>
+                                            <input type="text" id="mail" name="mail" placeholder="E-Posta Adresiniz">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row ">
+                                    <div class="col-lg-4">
+                                        <button class="empty-button dark">
+                                            Hesapla
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="ads-details-box-sm">
+                    <div id="accordion2">
+                        <div class="details-acc-head" data-toggle="collapse" data-target="#similarCollapse"
+                             aria-expanded="true" aria-controls="similarCollapse">
+                            Benzer Araç Fiyatları
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#information-2"></use>
+                                </svg>
+                            </a>
+                            <svg class="icon arrow">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                        </div>
+
+                        <div id="similarCollapse" class="collapse show" data-parent="#accordion2">
+                            <div class="card-body">
+                                <table class="table similar-table">
+                                    <thead>
+                                    <tr>
+                                        <th>YIL</th>
+                                        <th>KM</th>
+                                        <th>MODEL</th>
+                                        <th>FİYAT</th>
+                                        <th>YAKIT</th>
+                                        <th>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>200.060</td>
+                                        <td>C 250 TD Classic</td>
+                                        <td>208.000 TL</td>
+                                        <td>Dizel</td>
+                                        <td>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>200.060</td>
+                                        <td>C 250 TD Classic</td>
+                                        <td>208.000 TL</td>
+                                        <td>Dizel</td>
+                                        <td>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>200.060</td>
+                                        <td>C 250 TD Classic</td>
+                                        <td>208.000 TL</td>
+                                        <td>Dizel</td>
+                                        <td>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>200.060</td>
+                                        <td>C 250 TD Classic</td>
+                                        <td>208.000 TL</td>
+                                        <td>Dizel</td>
+                                        <td>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>200.060</td>
+                                        <td>C 250 TD Classic</td>
+                                        <td>208.000 TL</td>
+                                        <td>Dizel</td>
+                                        <td>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>2019</td>
+                                        <td>200.060</td>
+                                        <td>C 250 TD Classic</td>
+                                        <td>208.000 TL</td>
+                                        <td>Dizel</td>
+                                        <td>
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -1733,209 +1957,6 @@
                                         6 İleri
                                     </li>
                                 </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row mt-30">
-            <div class="col-lg-6">
-                <div class="ads-details-box-sm">
-                    <div id="accordion">
-                        <div class="details-acc-head" data-toggle="collapse" data-target="#creditCollapse"
-                             aria-expanded="true" aria-controls="creditCollapse">
-                            Taşıt Kredisi Hesaplama
-                            <a href="#">
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#information-2"></use>
-                                </svg>
-                            </a>
-                            <svg class="icon arrow">
-                                <use href="../assets/icons/sprite.svg#down-angle"></use>
-                            </svg>
-                        </div>
-
-                        <div id="creditCollapse" class="collapse show" data-parent="#accordion">
-                            <div class="card-body">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-box">
-                                            <label for="creditType">Kredi Tipi</label>
-                                            <select name="type" id="creditType">
-                                                <option value="0">Taşıt Kredisi</option>
-                                                <option value="1">İhtiyaç Kredisi</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-box">
-                                            <label for="creditAmount">Almak İstediği Kredi Tutarı</label>
-                                            <select name="type" id="creditAmount">
-                                                <option value="0">10.000 TL</option>
-                                                <option value="1">20.000 TL</option>
-                                                <option value="2">30.000 TL</option>
-                                                <option value="3">40.000 TL</option>
-                                                <option value="4">50.000 TL</option>
-                                                <option value="5">60.000 TL</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-box">
-                                            <label for="time">Vade</label>
-                                            <select name="type" id="time">
-                                                <option value="0">6 Ay</option>
-                                                <option value="1">12 Ay</option>
-                                                <option value="2">18 Ay</option>
-                                                <option value="3">24 Ay</option>
-                                                <option value="4">36 Ay</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <div class="form-box">
-                                            <label for="percent">Faiz Oranı</label>
-                                            <select name="type" id="percent">
-                                                <option value="0">% 1.06</option>
-                                                <option value="1">% 1.16</option>
-                                                <option value="2">% 1.26</option>
-                                                <option value="3">% 1.30</option>
-                                                <option value="4">% 1.36</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="form-box">
-                                            <label for="mail">E-Posta Adresiniz</label>
-                                            <input type="text" id="mail" name="mail" placeholder="E-Posta Adresiniz">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row ">
-                                    <div class="col-lg-4">
-                                        <button class="empty-button dark">
-                                            Hesapla
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="ads-details-box-sm">
-                    <div id="accordion2">
-                        <div class="details-acc-head" data-toggle="collapse" data-target="#similarCollapse"
-                             aria-expanded="true" aria-controls="similarCollapse">
-                            Benzer Araç Fiyatları
-                            <a href="#">
-                                <svg class="icon">
-                                    <use href="../assets/icons/sprite.svg#information-2"></use>
-                                </svg>
-                            </a>
-                            <svg class="icon arrow">
-                                <use href="../assets/icons/sprite.svg#down-angle"></use>
-                            </svg>
-                        </div>
-
-                        <div id="similarCollapse" class="collapse show" data-parent="#accordion2">
-                            <div class="card-body">
-                                <table class="table similar-table">
-                                    <thead>
-                                    <tr>
-                                        <th>YIL</th>
-                                        <th>KM</th>
-                                        <th>MODEL</th>
-                                        <th>FİYAT</th>
-                                        <th>YAKIT</th>
-                                        <th>
-                                            <svg class="icon arrow">
-                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
-                                            </svg>
-                                        </th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>2019</td>
-                                        <td>200.060</td>
-                                        <td>C 250 TD Classic</td>
-                                        <td>208.000 TL</td>
-                                        <td>Dizel</td>
-                                        <td>
-                                            <svg class="icon arrow">
-                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
-                                            </svg>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019</td>
-                                        <td>200.060</td>
-                                        <td>C 250 TD Classic</td>
-                                        <td>208.000 TL</td>
-                                        <td>Dizel</td>
-                                        <td>
-                                            <svg class="icon arrow">
-                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
-                                            </svg>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019</td>
-                                        <td>200.060</td>
-                                        <td>C 250 TD Classic</td>
-                                        <td>208.000 TL</td>
-                                        <td>Dizel</td>
-                                        <td>
-                                            <svg class="icon arrow">
-                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
-                                            </svg>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019</td>
-                                        <td>200.060</td>
-                                        <td>C 250 TD Classic</td>
-                                        <td>208.000 TL</td>
-                                        <td>Dizel</td>
-                                        <td>
-                                            <svg class="icon arrow">
-                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
-                                            </svg>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019</td>
-                                        <td>200.060</td>
-                                        <td>C 250 TD Classic</td>
-                                        <td>208.000 TL</td>
-                                        <td>Dizel</td>
-                                        <td>
-                                            <svg class="icon arrow">
-                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
-                                            </svg>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>2019</td>
-                                        <td>200.060</td>
-                                        <td>C 250 TD Classic</td>
-                                        <td>208.000 TL</td>
-                                        <td>Dizel</td>
-                                        <td>
-                                            <svg class="icon arrow">
-                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
-                                            </svg>
-                                        </td>
-                                    </tr>
-                                    </tbody>
-                                </table>
                             </div>
                         </div>
                     </div>
