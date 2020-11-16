@@ -398,6 +398,11 @@ $(function () {
     const $images = $green.find("img");
     let killit = false;
 
+    for ($i = 0; $i < $images.length; $i++) {
+        $images[$i].classList.remove('active')
+    }
+    $images[0].classList.add('active')
+
     $images.on("click", function (e) {
         if (!killit) {
             e.stopPropagation();
@@ -409,7 +414,12 @@ $(function () {
             e.target.classList.add('active');
         }
     });
-
+    $('.slider-for').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+        for ($i = 0; $i < $images.length; $i++) {
+            $images[$i].classList.remove('active')
+        }
+        $images[currentSlide+1].classList.add('active')
+    });
 // need to register a flag that doesn't let us click the slider
 // as we are trying to swipe it.
 
@@ -464,6 +474,53 @@ $(function () {
                 }, {
                     'src': '../assets/images/cars/aston-martin/aston-martin-12.jpg',
                     'thumb': '../assets/images/cars/aston-martin/aston-martin-12.jpg',
+                },]
+        })
+
+    });
+    $('#lightgalleryHome').on('click', function (e) {
+        e.preventDefault();
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": '../assets/images/homes/home-1.jpg',
+                'thumb': '../assets/images/homes/home-1.jpg',
+            }, {
+                "src": '../assets/images/homes/home-2.jpg',
+                'thumb': '../assets/images/homes/home-2.jpg',
+            }, {
+                "src": '../assets/images/homes/home-3.jpg',
+                'thumb': '../assets/images/homes/home-3.jpg',
+            }, {
+                "src": '../assets/images/homes/home-4.jpg',
+                'thumb': '../assets/images/homes/home-4.jpg',
+            },
+                {
+                    "src": '../assets/images/homes/home-5.jpg',
+                    'thumb': '../assets/images/homes/home-5.jpg',
+                }, {
+                    "src": '../assets/images/homes/home-6.jpg',
+                    'thumb': '../assets/images/homes/home-6.jpg',
+                }, {
+                    "src": '../assets/images/homes/home-7.jpg',
+                    'thumb': '../assets/images/homes/home-7.jpg',
+                },
+                {
+                    "src": '../assets/images/homes/home-8.jpg',
+                    'thumb': '../assets/images/homes/home-8.jpg',
+                }, {
+                    "src": '../assets/images/homes/home-9.jpg',
+                    'thumb': '../assets/images/homes/home-9.jpg',
+                }, {
+                    "src": '../assets/images/homes/home-10.jpg',
+                    'thumb': '../assets/images/homes/home-10.jpg',
+                },
+                {
+                    "src": '../assets/images/homes/home-11.jpg',
+                    'thumb': '../assets/images/homes/home-11.jpg',
+                }, {
+                    "src": '../assets/images/homes/home-12.jpg',
+                    'thumb': '../assets/images/homes/home-12.jpg',
                 },]
         })
 
