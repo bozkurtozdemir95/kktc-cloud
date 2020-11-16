@@ -193,21 +193,12 @@
     left: 2px;
     border-radius: 50%;
     background: #00EB4E;
-    animation: flashBG 2s infinite;
 }
 
 .ads-company-detail-head .logo-wrapper .status.online:after {
     background: #00EB4E;
 }
 
-@keyframes flashBG {
-    0%, 50%, 100% {
-        opacity: 1;
-    }
-    25%, 75% {
-        opacity: 0;
-    }
-}
 
 .ads-company-detail-head h5 {
     font-size: 16px;
