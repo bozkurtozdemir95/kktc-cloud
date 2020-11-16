@@ -485,11 +485,6 @@
     margin-bottom: 20px;
 }
 
-.details-tabset .detail-text {
-    max-height: 190px;
-    overflow-y: auto;
-}
-
 .details-tabset #map {
     height: 410px;
 }
