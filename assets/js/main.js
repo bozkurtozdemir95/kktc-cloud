@@ -414,11 +414,11 @@ $(function () {
             e.target.classList.add('active');
         }
     });
-    $('.slider-for').on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    $('.slider-for').on('afterChange', function (event, slick, currentSlide, nextSlide) {
         for ($i = 0; $i < $images.length; $i++) {
             $images[$i].classList.remove('active')
         }
-        $images[currentSlide+1].classList.add('active')
+        $images[currentSlide].classList.add('active')
     });
 // need to register a flag that doesn't let us click the slider
 // as we are trying to swipe it.

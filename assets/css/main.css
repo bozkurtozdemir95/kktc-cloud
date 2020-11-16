@@ -21,6 +21,7 @@
 @import "ads/ads-table.css";
 @import "ads/ads-list.css";
 @import "ads/ads-details.css";
+@import "ads/search-in-map.css";
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -360,6 +361,10 @@ button:active,
 
 .pt-30 {
     padding-top: 30px;
+}
+
+.pb-50 {
+    padding-bottom: 50px;
 }
 
 .mb-5p {
@@ -1335,6 +1340,13 @@ button:active,
     align-items: center;
 }
 
+.sidebar-custom-checkbox.square-gray .checkmark {
+    background: #9AACB5;
+    border: 0;
+    width: 11px !important;
+    height: 11px !important;;
+}
+
 .sidebar-custom-checkbox.square .checkmark {
     border-radius: 0;
 }
@@ -1347,12 +1359,20 @@ button:active,
     background: rgba(2, 48, 71, .5);
 }
 
+.sidebar-custom-checkbox.square-gray:hover input ~ .checkmark {
+    background: #023047;
+}
+
 .sidebar-custom-checkbox input:checked ~ .checkmark {
     background-color: #0081A7;
 }
 
 .sidebar-custom-checkbox.square-black input:checked ~ .checkmark {
     background-color: #023047;
+}
+
+.sidebar-custom-checkbox.square-gray input:checked ~ .checkmark {
+    background: #023047;
 }
 
 .sidebar-custom-checkbox.without-check input:checked ~ h5 {

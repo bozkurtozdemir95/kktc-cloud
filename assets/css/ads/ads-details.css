@@ -509,25 +509,8 @@
     line-height: 21px;
 }
 
-.map-information li {
-    font-size: 13px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
-.map-information li span {
-    display: flex;
-    width: 11px;
-    height: 11px;
-    background: #9AACB5;
-    margin-right: 6px;
-    transition: all .3s;
-}
-
-.map-information li:hover span {
-    background: #023047;
+.map-information li .sidebar-custom-checkbox {
+    margin: 0;
 }
 
 .ads-details-box-sm {
