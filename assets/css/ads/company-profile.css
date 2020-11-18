@@ -1,0 +1,278 @@
+.ads-company-profile .company-details-subheader {
+    background: url("../../images/ads-images/ads-company-subheade.png") 50% 50%;
+    height: 300px;
+}
+
+.ads-company-profile .company-logo-col {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transform: translateY(-100%);
+}
+
+.ads-company-profile .company-logo-col .logo-wrapper {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background: #4866FC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+.ads-company-profile .company-contact-info {
+    margin-top: -170px;
+    margin-bottom: 10px;
+}
+
+.ads-company-profile .company-contact-row {
+    font-size: 12px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    line-height: 25px;
+    height: 38px;
+    border-top: 2px solid #FAFAFA;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    background: #ffffff;
+}
+
+.ads-company-profile .company-contact-row .icon {
+    width: 15px;
+    height: 15px;
+    margin-right: 10px;
+    fill: #4866FC;
+}
+
+.ads-company-profile .company-message-box h6 {
+    font-size: 12px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    margin-bottom: 10px;
+}
+
+.ads-company-profile .ads-sidemenu {
+    background: transparent;
+}
+
+.ads-company-profile .ads-sidemenu-box.small {
+    background: transparent;
+}
+
+.ads-company-profile .ads-sidemenu-box.small .ads-sidemenu-header {
+    background: #ffffff;
+    margin-bottom: 10px;
+}
+
+.ads-company-profile .ads-sidemenu-box.small .ads-sidemenu-content {
+    padding: 0;
+}
+
+.teammate-box {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    position: relative;
+    background: #ffffff;
+}
+
+.teammate-box img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.teammate-box h5 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.teammate-box h6 {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.teammate-box:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 100%;
+    background: #4866FC;
+}
+
+.address-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 10px 10px;
+    background: #ffffff;
+}
+
+.address-box:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6px;
+    height: 100%;
+    background: #ED535E;
+}
+
+.address-box p {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.company-facilities-list {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.company-facilities-box {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    width: calc(100% / 5 - 20px);
+    height: 125px;
+    padding: 7px;
+}
+
+.company-facilities-box .icon {
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.company-facilities-box h3 {
+    font-size: 12px;
+    line-height: 16px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.company-facilities-box p {
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+}
+
+.company-profile-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.company-profile-tabs .empty-button {
+    height: 29px;
+    background: #ffffff;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 0 21px;
+    transition: all .3s;
+}
+
+.company-profile-tabs .empty-button .icon {
+    width: 6px;
+    height: 6px;
+    stroke: #023047;
+    transition: all .3s;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.company-profile-tabs .empty-button:hover,
+.company-profile-tabs .empty-button.active {
+    background: #3F52E3;
+    color: #ffffff;
+}
+
+.company-profile-tabs .empty-button:hover .icon,
+.company-profile-tabs .empty-button.active .icon {
+    stroke: #ffffff;
+}
+
+.team-dropdown:after {
+    content: none !important;
+}
+
+.team-dropdown img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.team-dropdown a {
+    display: flex !important;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.team-dropdown a h4 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 12px;
+    text-align: left;
+}
+
+.team-dropdown a h5 {
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+}
+
+.about-company {
+    padding: 16px;
+    background: #ffffff;
+}
+
+.about-company p {
+    margin-bottom: 12px;
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.about-company p b {
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.about-company .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-company .logo-wrapper {
+    padding: 25px;
+    background: #4866FC;
+}
+
+@media only screen and (max-width: 992px) {
+    .company-facilities-box {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .company-facilities-box {
+        width: 100%;
+    }
+}

@@ -22,6 +22,7 @@
 @import "ads/ads-list.css";
 @import "ads/ads-details.css";
 @import "ads/search-in-map.css";
+@import "ads/company-profile.css";
 
 ::-webkit-scrollbar {
     width: 5px;
