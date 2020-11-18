@@ -355,6 +355,9 @@ button.no-anim {
     padding-left: 10px;
 }
 
+.py-20 {
+    padding: 20px 0;
+}
 .py-40 {
     padding: 40px 0;
 }

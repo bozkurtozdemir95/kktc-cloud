@@ -193,6 +193,7 @@ function initMap() {
     const map = new google.maps.Map(document.getElementById("map"), {
         zoom: 6,
         center: location,
+        disableDefaultUI: true,
         styles: [
             {
                 "featureType": "all",
