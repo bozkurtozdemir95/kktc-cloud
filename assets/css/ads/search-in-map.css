@@ -1,3 +1,155 @@
+.map-title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
 .map-title img {
     width: 155px;
+    margin: 15px 0;
+}
+
+.map-title h1 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 21px;
+    line-height: 28px;
+}
+
+.map-title p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #9AACB5;
+    text-align: center;
+}
+
+.map-links .col-lg-4 {
+    margin-bottom: 20px;
+}
+
+.map-links a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    position: relative;
+    transition: all .3s;
+    padding: 30px 18px;
+}
+
+.map-links a:hover {
+    box-shadow: 0 0 22px rgba(0, 0, 0, .16);
+}
+
+.map-links a h4 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 20px;
+    line-height: 18px;
+    color: #023047;
+    margin-bottom: 8px;
+}
+
+.map-links a p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #9AACB5;
+    text-align: center;
+}
+
+.map-links a img {
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.map-links a .circle {
+    width: 20px;
+    height: 20px;
+    border: 3px solid #FAFAFA;
+    background: #9AACB5;
+    border-radius: 50%;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.map-links a:hover .circle {
+    background: #4866FC;
+}
+
+.map-small-video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.map-small-video #map-video {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 0;
+}
+
+.map-small-video #play-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    cursor: pointer;
+    z-index: 99;
+    opacity: 1;
+    transition: all .3s;
+}
+
+.map-small-video #play-button.hide {
+    opacity: 0;
+}
+
+.map-text {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 30px 0;
+}
+
+.map-text h4 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 21px;
+    line-height: 28px;
+    margin-bottom: 20px;
+}
+
+.map-text p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #9AACB5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.more-comment-2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 19px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    height: 50px;
+}
+
+.more-comment-2 .icon {
+    width: 8px;
+    height: 8px;
+    stroke: #023047;
+    margin-left: 10px;
+}
+.more-comment-2[aria-expanded='true'] .icon{
+    transform: rotate(180deg);
 }

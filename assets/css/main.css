@@ -105,6 +105,10 @@ button:active,
     transform: scale3d(0.9, 0.9, 0.9);
 }
 
+button.no-anim {
+    animation: none;
+    transform: none;
+}
 
 .fs-9 {
     font-size: 9px;

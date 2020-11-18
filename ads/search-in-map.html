@@ -8,20 +8,10 @@
 
     <!--- LIBRARIES --->
     <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
-    <link rel="stylesheet" href="../assets/libs/slick-carousel/slick.css">
-    <link rel="stylesheet" href="../assets/libs/light-gallery/lightgallery.min.css">
 
     <script src="../assets/libs/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
-    <script src="../assets/libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="../assets/libs/slick-carousel/slick.min.js"></script>
-    <script src="../assets/libs/light-gallery/lightgallery.min.js"></script>
-    <script src="../assets/libs/light-gallery/lg-thumbnail.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWP3Q6SElBhRoC1Wf8BBj-Q9VWdOawqyY&callback=initMap&libraries=&v=weekly"
-            defer></script>
-
 
     <script src="../assets/js/main.js"></script>
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -475,15 +465,100 @@
     </div>
 </div>
 
-<div class="page-wrapper bg-light">
+<div class="page-wrapper bg-light py-50">
     <div class="container">
-        <div class="map-title">
-            <h1>Haritada istediğin gibi çiz, İstediğini incele!</h1>
-            <img src="../assets/images/border-dashed.png" alt="KKTC">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet tempor scelerisque. Nulla
-                facilisi. Ut ac molestie tellus. Maecenas suscipit, nunc et congue posuere, tellus tellus hendrerit
-                dolor, a venenatis nulla ipsum ac elit. Proin erat enim, dapibus eu purus quis, finibus imperdiet
-                eros.</p>
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="map-title">
+                    <h1>Haritada istediğin gibi çiz, İstediğini incele!</h1>
+                    <img src="../assets/images/border-dashed.png" alt="KKTC">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet tempor scelerisque.
+                        Nulla
+                        facilisi. Ut ac molestie tellus. Maecenas suscipit, nunc et congue posuere, tellus tellus
+                        hendrerit
+                        dolor, a venenatis nulla ipsum ac elit. Proin erat enim, dapibus eu purus quis, finibus</p>
+                </div>
+            </div>
+        </div>
+        <div class="map-links mb-30">
+            <div class="row">
+                <div class="col-lg-4">
+                    <a href="search-in-map-home.html">
+                        <span class="circle"></span>
+                        <img src="../assets/icons/search-house.svg" alt="KKTC">
+                        <h4>Emlak Ara</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet tempor scelerisque.
+                            Nulla facilisi.
+                        </p>
+                    </a>
+                </div>
+                <div class="col-lg-4">
+                    <div class="map-small-video">
+                        <button id="play-button" class="empty-button no-anim">
+                            <img src="../assets/icons/play-button.svg" alt="KKTC">
+                        </button>
+                        <video id="map-video" controls>
+                            <source src="../assets/video/example-video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <a href="search-in-map-car.html">
+                        <span class="circle"></span>
+                        <img src="../assets/icons/search-car.svg" alt="KKTC">
+                        <h4>Emlak Ara</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet tempor scelerisque.
+                            Nulla
+                            facilisi. Ut ac molestie tellus. Maecenas suscipit, nunc et congue posuere, tellus tellus
+                            hendrerit
+                            dolor
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="map-text">
+            <h4>Harita Kılavuzu</h4>
+            <div class="text-wrapper">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet tempor scelerisque. Nulla
+                    facilisi. Ut ac molestie tellus. Maecenas suscipit, nunc et congue posuere, tellus tellus hendrerit
+                    dolor, a venenatis nulla ipsum ac elit. Proin erat enim, dapibus eu purus quis, finibus imperdiet
+                    eros.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet tempor scelerisque. Nulla
+                    facilisi. Ut ac molestie tellus. Maecenas suscipit, nunc et congue posuere, tellus tellus hendrerit
+                    dolor, a venenatis nulla ipsum ac elit. Proin erat enim, dapibus eu purus quis, finibus imperdiet
+                    eros.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet tempor scelerisque. Nulla
+                    facilisi. Ut ac molestie tellus. Maecenas suscipit, nunc et congue posuere, tellus tellus hendrerit
+                    dolor, a venenatis nulla ipsum ac elit. Proin erat enim, dapibus eu purus quis, finibus imperdiet
+                    eros.</p>
+                <div class="collapse" id="moreAbout">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet tempor scelerisque.
+                        Nulla
+                        facilisi. Ut ac molestie tellus. Maecenas suscipit, nunc et congue posuere, tellus tellus
+                        hendrerit
+                        dolor, a venenatis nulla ipsum ac elit. Proin erat enim, dapibus eu purus quis, finibus
+                        imperdiet
+                        eros.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce imperdiet tempor scelerisque.
+                        Nulla
+                        facilisi. Ut ac molestie tellus. Maecenas suscipit, nunc et congue posuere, tellus tellus
+                        hendrerit
+                        dolor, a venenatis nulla ipsum ac elit. Proin erat enim, dapibus eu purus quis, finibus
+                        imperdiet
+                        eros.</p>
+                </div>
+
+            </div>
+            <button class="empty-button more-comment-2" type="button" data-toggle="collapse" data-target="#moreAbout"
+                    aria-expanded="false" aria-controls="moreAbout">
+                <h6>
+                    Tamamını Göster
+                </h6>
+                <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#down-angle"></use>
+                </svg>
+            </button>
         </div>
     </div>
 </div>
@@ -631,6 +706,21 @@
     </div>
 </div>
 
+<script>
 
+    $(document).ready(function () {
+        const playButton = document.getElementById("play-button");
+        const video = document.getElementById("map-video");
+        playButton.addEventListener("click", function () {
+            if (video.paused === true) {
+                playButton.classList.toggle('hide');
+                video.play();
+            } else {
+                playButton.classList.toggle('hide');
+                video.pause();
+            }
+        });
+    });
+</script>
 </body>
 </html>
