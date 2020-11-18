@@ -210,6 +210,11 @@
     stroke: #ffffff;
 }
 
+.company-profile-tabs .h-dropdown-content h4 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 12px;
+}
+
 .team-dropdown:after {
     content: none !important;
 }
