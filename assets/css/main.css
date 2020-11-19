@@ -2211,6 +2211,19 @@ button.no-anim {
     background: rgba(154, 172, 181, .1);
 }
 
+.cke_top,
+.cke_contents {
+    background: rgba(154, 172, 181, .05) !important;
+}
+
+.cke_top {
+    border-color: rgba(2, 48, 71, .1) !important;
+}
+
+#cke_editor1 {
+    border: 0 !important;
+}
+
 .form-box.gray label {
     font-family: 'Proxima Nova Sb', sans-serif;
     font-size: 16px;

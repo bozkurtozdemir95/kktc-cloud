@@ -12,6 +12,8 @@
     <script src="../assets/libs/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/libs/ckeditor/ckeditor.js"></script>
+
 
     <script src="../assets/js/main.js"></script>
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -549,7 +551,8 @@
                 </div>
                 <div class="add-container-subheader mb-20">
                     <h4>İlan Detayları</h4>
-                    <p>Aracınızın renk, motor gücü, vites tipi gibi belirleyici özelliklerini eksiksiz girmeniz satış performansınızı arttırır.</p>
+                    <p>Aracınızın renk, motor gücü, vites tipi gibi belirleyici özelliklerini eksiksiz girmeniz satış
+                        performansınızı arttırır.</p>
                 </div>
                 <div class="add-content-box pad mb-20">
                     <form action="#" class="add-ads-form w-100">
@@ -559,138 +562,165 @@
                                 <input id="title" name="title" type="text">
                             </div>
                         </div>
-                        <div class="form-box gray mb-0">
-                            <label>Adres</label>
+                        <div class="row">
+                            <div class="form-box gray col-lg-12">
+                                <label>Açıklama*</label>
+                                <textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>
+                            </div>
                         </div>
                         <div class="row">
-                            <div class="form-box gray col-lg-4">
+                            <div class="form-box gray col-lg-6">
+                                <label>Fiyat*</label>
+                                <input id="price" name="price" type="text">
+                            </div>
+                            <div class="form-box gray col-lg-6">
+                                <label>Araç Durumu*</label>
+                                <select name="status" id="status">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">Satılık</option>
+                                    <option value="2">Kiralık</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-6">
+                                <label>Kilometre*</label>
+                                <input id="km" name="km" type="text">
+                            </div>
+                            <div class="form-box gray col-lg-6">
+                                <label>Kasa Tipi*</label>
+                                <select name="type" id="type">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">Coupe</option>
+                                    <option value="2">Sedan</option>
+                                    <option value="3">Hatchback (3 Kapı)</option>
+                                    <option value="4">Hatchback (5 Kapı)</option>
+                                    <option value="5">Station Vagon</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-6">
+                                <label>Vites Tipi*</label>
+                                <select name="transmission" id="transmission">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">Otomatik</option>
+                                    <option value="2">Manuel</option>
+                                    <option value="3">Tiptronik</option>
+                                </select>
+                            </div>
+                            <div class="form-box gray col-lg-6">
+                                <label>Model Yılı*</label>
+                                <select name="year" id="year">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">2021</option>
+                                    <option value="2">2020</option>
+                                    <option value="3">2018</option>
+                                    <option value="4">2017</option>
+                                    <option value="5">2016</option>
+                                    <option value="6">2015</option>
+                                    <option value="7">2014</option>
+                                    <option value="8">2013</option>
+                                    <option value="9">2012</option>
+                                    <option value="10">2011</option>
+                                    <option value="11">2010</option>
+                                    <option value="12">2009</option>
+                                    <option value="13">2008</option>
+                                    <option value="14">2007</option>
+                                    <option value="15">2006</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-6">
+                                <label>Motor Hacmi*</label>
+                                <select name="cc" id="cc">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">1200cc</option>
+                                    <option value="2">1300cc</option>
+                                    <option value="3">1400cc</option>
+                                    <option value="4">1500cc</option>
+                                    <option value="5">1600cc</option>
+                                    <option value="6">1800cc</option>
+                                    <option value="7">2000cc</option>
+                                    <option value="8">3000cc</option>
+                                </select>
+                            </div>
+                            <div class="form-box gray col-lg-6">
+                                <label>Yakıt Türü*</label>
+                                <select name="fuel" id="fuel">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">Benzin</option>
+                                    <option value="2">Dizel</option>
+                                    <option value="3">Elektrik</option>
+                                    <option value="4">Hybrid</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-6">
+                                <label>Renk*</label>
+                                <select name="color" id="color">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">Siyah</option>
+                                    <option value="2">Beyaz</option>
+                                    <option value="3">Gri</option>
+                                    <option value="4">Mavi</option>
+                                    <option value="5">Kırmızı</option>
+                                    <option value="6">Yeşil</option>
+                                    <option value="7">Sarı</option>
+                                    <option value="8">Lacivert</option>
+                                </select>
+                            </div>
+                            <div class="form-box gray col-lg-6">
+                                <label>Motor Gücü*</label>
+                                <select name="hp" id="hp">
+                                    <option value="0">60hp</option>
+                                    <option value="1">75hp</option>
+                                    <option value="2">90hp</option>
+                                    <option value="3">110hp</option>
+                                    <option value="4">150hp</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-6">
+                                <label>Boya*</label>
+                                <select name="painted" id="painted">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">Var</option>
+                                    <option value="2">Yok</option>
+                                </select>
+                            </div>
+                            <div class="form-box gray col-lg-6">
+                                <label>Ülke*</label>
                                 <select name="country" id="country">
-                                    <option value="0">Kıbrıs</option>
+                                    <option value="0">Kıbrs</option>
                                     <option value="1">Türkiye</option>
                                 </select>
                             </div>
-                            <div class="form-box gray col-lg-4">
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-6">
+                                <label>Şehir*</label>
                                 <select name="city" id="city">
-                                    <option value="0">Lefkoşa</option>
-                                    <option value="1">İstanbul</option>
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">Lefkoşa</option>
+                                    <option value="2">İstanbul</option>
                                 </select>
                             </div>
-                            <div class="form-box gray col-lg-4">
+                            <div class="form-box gray col-lg-6">
+                                <label>İlçe / Bölge*</label>
                                 <select name="district" id="district">
                                     <option value="0">Cumhuriyet Mah.</option>
-                                    <option value="1">Cumhuriyet Mah.</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-box gray mb-0">
-                            <label>Fiyat</label>
-                        </div>
-                        <div class="row">
-                            <div class="form-box gray col-lg-4 minprice-wrapper">
-                                <input id="min" name="min" type="text" placeholder="Min TL">
-                            </div>
-                            <div class="form-box gray col-lg-4">
-                                <input id="max" name="max" type="text" placeholder="Max TL">
-                            </div>
-                            <div class="form-box gray col-lg-4">
-                                <select name="currency" id="currency">
-                                    <option value="0">TL</option>
-                                    <option value="1">USD</option>
-                                    <option value="2">EUR</option>
+                                    <option value="1">Atatürk Cad.</option>
                                 </select>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="form-box gray col-lg-6">
-                                <label>Min m² (Brüt)</label>
-                                <select name="m2" id="m2">
-                                    <option value="0">Seçiniz</option>
-                                    <option value="1">60 m2</option>
-                                    <option value="2">60 m2 - 70 m2</option>
-                                    <option value="3">70 m2 - 80 m2</option>
-                                    <option value="4">80 m2 - 90 m2</option>
-                                    <option value="5">90 m2 - 100 m2</option>
-                                    <option value="6">100 m2 - 110 m2</option>
-                                    <option value="7">110 m2 - 130 m2</option>
-                                </select>
-                            </div>
-                            <div class="form-box gray col-lg-6">
-                                <label>Bina Yaşı</label>
-                                <select name="buildAge" id="buildAge">
-                                    <option value="0">Seçiniz</option>
-                                    <option value="1">0</option>
-                                    <option value="2">1</option>
-                                    <option value="3">2</option>
-                                    <option value="4">3</option>
-                                    <option value="5">4</option>
-                                    <option value="6">5</option>
-                                    <option value="7">5-10</option>
-                                    <option value="8">10+</option>
-                                    <option value="9">20+</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-box gray col-lg-6">
-                                <label>Kat Sayısı</label>
-                                <select name="floor" id="floor">
-                                    <option value="0">Seçiniz</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </div>
-                            <div class="form-box gray col-lg-6">
-                                <label>Bulunduğu Kat</label>
-                                <select name="floor2" id="floor2">
-                                    <option value="0">Seçiniz</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-box gray col-lg-6">
-                                <label>Banyo Sayısı</label>
-                                <select name="bath" id="bath">
-                                    <option value="0">Seçiniz</option>
-                                    <option value="1">1</option>
-                                    <option value="2">2</option>
-                                    <option value="3">3</option>
-                                    <option value="4">4</option>
-                                    <option value="5">5</option>
-                                </select>
-                            </div>
-                            <div class="form-box gray col-lg-6">
-                                <label>Eşyalı</label>
-                                <select name="furniture" id="furniture">
-                                    <option value="0">Seçiniz</option>
-                                    <option value="1">Evet</option>
-                                    <option value="2">Hayır</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="form-box gray col-lg-6">
-                                <label>Site İçerisinde</label>
-                                <select name="site" id="site">
-                                    <option value="0">Seçiniz</option>
-                                    <option value="1">Evet</option>
-                                    <option value="2">Hayır</option>
-                                </select>
-                            </div>
-                            <div class="form-box gray col-lg-6">
-                                <label>Krediye Uygun</label>
-                                <select name="availableCredit" id="availableCredit">
-                                    <option value="0">Seçiniz</option>
-                                    <option value="1">Evet</option>
-                                    <option value="2">Hayır</option>
-                                </select>
+                            <div class="form-box gray col-lg-12">
+                                <label>Adres*</label>
+                                <textarea name="address" id="address" rows="4"></textarea>
                             </div>
                         </div>
                     </form>
@@ -1843,5 +1873,8 @@
         </div>
     </div>
 </div>
+<script>
+    CKEDITOR.replace('editor1');
+</script>
 </body>
 </html>
