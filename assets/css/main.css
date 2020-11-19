@@ -48,6 +48,18 @@
     background: #3F52E3;
 }
 
+.purple::-webkit-scrollbar {
+    width: 5px;
+}
+
+.purple::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.purple::-webkit-scrollbar-thumb {
+    background: #3F52E3;
+}
+
 body {
     font-family: 'Proxima Nova Rg', sans-serif !important;
     color: #023047;
@@ -99,7 +111,7 @@ p {
 img {
     width: 100%;
 }
-
+.form-button:active,
 button:active,
 .main-button:active {
     animation: bounceIn 1s;
@@ -450,6 +462,10 @@ button.no-anim {
 
 .mt-120 {
     margin-top: 120px;
+}
+
+.ml-20 {
+    margin-left: 20px !important;
 }
 
 .mr-5p {
@@ -858,6 +874,10 @@ button.no-anim {
 
 .form-button.bg-purple {
     background: #4866FC;
+}
+
+.form-button.bg-gray {
+    background: #9AACB5;
 }
 
 .form-button:focus {
@@ -1293,6 +1313,11 @@ button.no-anim {
     margin-bottom: 10px;
 }
 
+.custom-checkbox.purple {
+    position: relative;
+}
+
+.custom-checkbox.purple input,
 .sidebar-custom-checkbox input {
     position: absolute;
     opacity: 0;
@@ -1302,6 +1327,7 @@ button.no-anim {
     appearance: none;
 }
 
+.custom-checkbox.purple label,
 .sidebar-custom-checkbox label {
     margin-bottom: 0;
     padding-left: 30px;
@@ -1309,6 +1335,11 @@ button.no-anim {
     font-size: 12px;
     line-height: 16px;
     color: #023047;
+}
+
+.custom-checkbox.purple label {
+    display: flex;
+    align-items: center;
 }
 
 .sidebar-custom-checkbox.without-check label {
@@ -1332,6 +1363,7 @@ button.no-anim {
     color: #4866FC;
 }
 
+.custom-checkbox.purple .checkmark,
 .sidebar-custom-checkbox .checkmark {
     position: absolute;
     top: 50%;
@@ -1343,6 +1375,7 @@ button.no-anim {
     border-radius: 50%;
     border: 1px solid rgba(2, 48, 71, .2);
 }
+
 
 .sidebar-custom-checkbox.square-black .checkmark {
     width: 11px;
@@ -1368,6 +1401,11 @@ button.no-anim {
     border-radius: 0;
 }
 
+.custom-checkbox.purple:hover input ~ .checkmark {
+    border-width: 1px;
+    border-color: #4866FC;
+}
+
 .sidebar-custom-checkbox:hover input ~ .checkmark {
     background-color: rgba(0, 129, 167, .5);
 }
@@ -1382,6 +1420,11 @@ button.no-anim {
 
 .sidebar-custom-checkbox input:checked ~ .checkmark {
     background-color: #0081A7;
+}
+
+.custom-checkbox.purple input:checked + .checkmark {
+    border-width: 2px;
+    border-color: #4866FC;
 }
 
 .sidebar-custom-checkbox.square-black input:checked ~ .checkmark {
@@ -2102,6 +2145,20 @@ button.no-anim {
     line-height: 16px;
 }
 
+.add-container-subheader .button-list {
+    position: absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.add-container-subheader .button-list button {
+    padding: 0 16px;
+    margin-left: 20px;
+    white-space: nowrap;
+    height: 56px;
+}
+
 .add-container-content {
     width: 100%;
 }
@@ -2264,6 +2321,7 @@ button.no-anim {
     padding: 0 20px;
     transition: all .3s;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .add-content-box.feature-select #accordion button h4 {
@@ -2271,11 +2329,27 @@ button.no-anim {
     font-family: 'Proxima Nova Bo', sans-serif;
 }
 
+.add-content-box.feature-select #accordion button h4 span {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    margin-left: 3px;
+}
+
 .add-content-box.feature-select #accordion button .icon {
     width: 10px;
     height: 10px;
     stroke: #023047;
     transition: all .3s;
+}
+
+.add-content-box.feature-select #accordion button .icon.check {
+    width: 16px;
+    height: 16px;
+    fill: #00A344;
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translateY(-50%) !important;
+    stroke: none;
 }
 
 .add-content-box.feature-select #accordion button[aria-expanded='true'] .icon {
@@ -2291,6 +2365,400 @@ button.no-anim {
     max-width: 220px;
 }
 
+.add-adds-top-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.add-adds-top-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex: 1;
+}
+
+.add-adds-top-link + .borderr {
+    width: 100%;
+    height: 1px;
+    border: 1px dashed #023047;
+    flex: 1;
+    margin: 0 12px;
+}
+
+.add-adds-top-link .number,
+.add-adds-top-link .icon-wrapper {
+    width: 53px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    min-width: 53px;
+}
+
+.add-adds-top-link .number {
+    border: 1px solid #023047;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 18px;
+    color: #023047;
+}
+
+.add-adds-top-link .icon-wrapper {
+    background: #00A84F;
+}
+
+.add-adds-top-link .icon-wrapper .icon {
+    width: 18px;
+    height: 18px;
+    fill: #ffffff;
+}
+
+.add-adds-top-link .icon-wrapper,
+.add-adds-top-link.checked .number {
+    display: none;
+}
+
+.add-adds-top-link .number,
+.add-adds-top-link.checked .icon-wrapper {
+    display: flex;
+}
+
+.add-adds-top-link h4 {
+    font-size: 16px;
+    font-family: 'Proxima Nova Rg', sans-serif;
+    margin-left: 11px;
+    color: #023047;
+    white-space: nowrap;
+}
+
+.add-photo-wrapper.white .addPhoto-input-wrapper {
+    border: 0;
+    background: #ffffff;
+}
+
+.add-photo-wrapper.white .last-added-photos .photo-box {
+    border: 0;
+    background: #ffffff;
+}
+
+.add-adds-check-line {
+    height: 52px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.add-adds-check-line h4 {
+    font-size: 16px;
+    font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+.add-adds-check-line h4 b {
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.add-adds-check-line .custom-checkbox.purple input {
+    background: #4866FC;
+}
+
+.add-photo-sm {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 190px;
+    height: 190px;
+}
+
+.add-photo-sm input {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+}
+
+.add-photo-sm .icon-wrapper {
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #4866FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.add-photo-sm .icon-wrapper p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.add-photo-sm .icon-wrapper .icon {
+    width: 45px;
+    height: 45px;
+    fill: #4866FC;
+}
+
+.add-photo-info {
+    margin-left: 18px;
+}
+
+.add-photo-info h5 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.add-photo-info ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.add-photo-info ul li {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.add-adds-contact-checks {
+    display: flex;
+    width: 100%;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.simple-table table {
+    border: 1px solid rgba(154, 172, 181, .2);
+}
+
+.simple-table td {
+    border-color: rgba(154, 172, 181, .2);
+    border-right: 1px solid rgba(154, 172, 181, .2);
+    font-family: 'Proxima Nova Rg', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.doping-box-list {
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.doping-box {
+    border: 2px solid rgba(154, 172, 181, .2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4 - 20px);
+    margin: 60px 10px 10px;
+    height: 290px;
+    position: relative;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.doping-box .title {
+    height: 82px;
+    width: 80%;
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -41px;
+    padding: 0 20px;
+}
+
+.doping-box .title .text {
+    border: 2px solid rgba(2, 48, 71, .2);
+    width: 100%;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.doping-box .title .text h2 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 30px;
+}
+
+.doping-box .title .text .icon {
+    width: 42px;
+    height: 42px;
+    fill: #023047;
+    transition: all .3s;
+}
+
+.doping-box .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -20px;
+}
+
+.doping-box h3 {
+    font-size: 18px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    margin-bottom: 10px;
+}
+
+.doping-box p {
+    color: #9AACB5;
+    font-size: 12px;
+    padding: 10px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 5; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.doping-box a {
+    font-size: 14px;
+    color: #023047;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.doping-box h4 {
+    font-size: 16px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.doping-box h5 {
+    font-size: 14px;
+    font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+.doping-box h3 span {
+    font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+.doping-box .price-wrapper {
+    border: 1px solid rgba(2, 48, 71, .2);
+    height: 40px;
+    padding: 0 18px;
+}
+
+.doping-box h4.overline {
+    text-decoration: line-through;
+}
+
+.doping-box .content li {
+    font-size: 12px;
+    line-height: 30px;
+}
+
+.doping-box .content li .icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    fill: #00A344;
+}
+
+.doping-box .bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+}
+
+.doping-box:hover,
+.doping-box.active {
+    border-color: #4866FC;
+}
+
+.doping-box:hover .title .text,
+.doping-box.active .title .text {
+    background: #4866FC;
+    color: #ffffff;
+    border-color: #4866FC;
+}
+
+.doping-box:hover .title .text .icon,
+.doping-box.active .title .text .icon {
+    fill: #ffffff;
+}
+
+.congrats-border {
+    border: 2px solid rgba(2, 48, 71, .5);
+    width: 100%;
+    height: 60px;
+}
+
+.congrats-border.top {
+    border-bottom: 0;
+}
+
+.congrats-border.bottom {
+    border-top: 0;
+}
+
+.adds-congrats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.adds-congrats img {
+    max-width: 330px;
+    margin-bottom: 30px;
+}
+
+.adds-congrats h1 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 8px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.adds-congrats h1 span {
+    font-family: 'Proxima Nova Rg', sans-serif;
+    color: #4866FC;
+}
+
+.adds-congrats p {
+    text-align: center;
+    font-size: 18px;
+    line-height: 36px;
+    margin-bottom: 30px;
+}
+
+.adds-congrats .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.adds-congrats .buttons a {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 250px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
 @media only screen and (max-width: 1200px) {
     .add-content-box .gray-box {
         width: calc(100% / 3 - 20px);
@@ -2302,6 +2770,10 @@ button.no-anim {
 }
 
 @media only screen and (max-width: 992px) {
+    .add-content-box.feature-select #accordion button .icon.check {
+        left: 80%;
+    }
+
     .sidebar-wrapper {
         max-width: 100%;
     }
@@ -2335,6 +2807,44 @@ button.no-anim {
     .slick-slide img {
         height: auto;
     }
+
+    .add-adds-top-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .add-adds-top-link {
+        width: 50%;
+        min-width: 50%;
+        max-width: 50%;
+        justify-content: flex-start;
+        margin-bottom: 10px;
+    }
+
+    .add-adds-top-link .number,
+    .add-adds-top-link .icon-wrapper {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+    }
+
+    .add-adds-top-link .icon-wrapper .icon {
+        width: 12px;
+        height: 12px;
+    }
+
+    .add-adds-top-link h4 {
+        font-size: 12px;
+        margin-left: 5px;
+    }
+
+    .add-adds-top-link + .borderr {
+        display: none;
+    }
+
+    .doping-box {
+        width: calc(100% / 2 - 20px);
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -2344,6 +2854,33 @@ button.no-anim {
 
     .add-content-box.feature-select li {
         width: calc(100% / 2);
+    }
+
+    .add-photo-sm {
+        width: 100px;
+        height: 100px;
+    }
+
+    .add-photo-sm .icon-wrapper p {
+        display: none;
+    }
+
+    .add-photo-info h5 {
+        font-size: 14px;
+        line-height: 16px;
+        margin-bottom: 10px;
+    }
+
+    .add-photo-info ul li {
+        font-size: 12px;
+        line-height: 14px;
+    }
+
+    .add-container-subheader .button-list {
+        display: none;
+    }
+    .adds-congrats .buttons{
+        flex-direction: column;
     }
 }
 
@@ -2365,5 +2902,9 @@ button.no-anim {
 
     .add-content-box.feature-select li {
         width: 100%;
+    }
+
+    .doping-box {
+        width: calc(100% - 20px);
     }
 }

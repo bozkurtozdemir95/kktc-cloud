@@ -469,10 +469,76 @@
 
 <div class="page-wrapper bg-light py-30">
     <div class="container">
+        <div class="row mx-0 mb-10">
+            <div class="add-adds-top-links">
+                <a href="add-ads-category.html" class="add-adds-top-link checked">
+                    <div class="icon-wrapper">
+                        <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        1
+                    </div>
+                    <h4>Kategori Seçimi</h4>
+                </a>
+                <div class="borderr"></div>
+                <a href="add-ads-category.html" class="add-adds-top-link checked">
+                    <div class="icon-wrapper">
+                        <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        2
+                    </div>
+                    <h4>İlan Detayları</h4>
+                </a>
+                <div class="borderr"></div>
+                <a href="add-ads-category.html" class="add-adds-top-link">
+                    <div class="icon-wrapper">
+                        <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        3
+                    </div>
+                    <h4>Önizleme</h4>
+                </a>
+                <div class="borderr"></div>
+                <a href="add-adds-doping.html" class="add-adds-top-link">
+                    <div class="icon-wrapper">
+                        <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        4
+                    </div>
+                    <h4>Doping</h4>
+                </a>
+                <div class="borderr"></div>
+                <a href="add-ads-category.html" class="add-adds-top-link">
+                    <div class="icon-wrapper">
+                        <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                    </div>
+                    <div class="number">
+                        5
+                    </div>
+                    <h4>Tebrikler!</h4>
+                </a>
+            </div>
+        </div>
         <div class="row mx-0 mt-20">
             <div class="add-container-subheader mb-20">
                 <h4>Adım Adım Kategori Seç</h4>
                 <p>Aşağıdaki alandan ilan kategorisini seç.</p>
+                <div class="button-list">
+                    <button class="form-button big bg-purple f-bold fs-24">DEVAM ET</button>
+                </div>
             </div>
             <div class="add-container-content">
                 <div class="add-content-box mb-20">
@@ -724,6 +790,47 @@
                             </div>
                         </div>
                     </form>
+                </div>
+                <div class="add-photo-wrapper white mb-20">
+                    <div class="add-container-subheader mb-20">
+                        <h4>Önizleme*</h4>
+                        <p>İlanınızın kaliteli fotoğraflarını eklemeniz ilanınızı öne çıkartmanızı sağlar.</p>
+                    </div>
+                    <div class="addPhoto-input-wrapper">
+                        <input type="file">
+                        <div class="icon-wrapper">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#plus"></use>
+                            </svg>
+                        </div>
+                        <h4>Fotoğraf Ekle</h4>
+                        <p>50 MB'yi geçmeyen maksimum 50 Fotoğraf Yükleyebilirsiniz.</p>
+                    </div>
+                    <div class="last-added-photos mb-20">
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                    </div>
+                    <div class="add-adds-check-line">
+                        <div class="custom-checkbox purple">
+                            <label>
+                                <input type="checkbox" id="listDoping" name="listDoping">
+                                <span class="checkmark"></span>
+                                <h4><b>İLANINIZ LİSTELERDE FOTOĞRAFIYLA GÖRÜNSÜN:</b> Küçük Fotoğraf Dopingi (29,00 TL)
+                                </h4>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-container-subheader mb-20">
+                    <h4>Detaylı Bilgi*</h4>
+                    <p>Seçtiğiniz aracın standart donanımları aşağıda işaretlenmiştir. İsterseniz aracınızın özellikleri
+                        ile karşılaştırarak ekleme ve düzeltme yapabilirsiniz.</p>
                 </div>
                 <div class="add-content-box feature-select mb-20 pad">
                     <ul class="horizontal">
@@ -1093,7 +1200,10 @@
                     <div id="accordion">
                         <button class="empty-button no-anim" data-toggle="collapse" data-target="#feature-select-1"
                                 aria-expanded="true" aria-controls="feature-select-1">
-                            <h4>İç Özellikler</h4>
+                            <h4>İç Donanım* <span>(1 Seçili)</span></h4>
+                            <svg class="icon check">
+                                <use href="../assets/icons/sprite.svg#check"></use>
+                            </svg>
                             <svg class="icon">
                                 <use href="../assets/icons/sprite.svg#down-angle"></use>
                             </svg>
@@ -1250,7 +1360,10 @@
                         </div>
                         <button class="empty-button no-anim" data-toggle="collapse" data-target="#feature-select-2"
                                 aria-expanded="false" aria-controls="feature-select-2">
-                            <h4>Dış Özellikler</h4>
+                            <h4>Dış Donanım* <span>(1 Seçili)</span></h4>
+                            <svg class="icon check">
+                                <use href="../assets/icons/sprite.svg#check"></use>
+                            </svg>
                             <svg class="icon">
                                 <use href="../assets/icons/sprite.svg#down-angle"></use>
                             </svg>
@@ -1407,7 +1520,10 @@
                         </div>
                         <button class="empty-button no-anim" data-toggle="collapse" data-target="#feature-select-3"
                                 aria-expanded="false" aria-controls="feature-select-3">
-                            <h4>Muhit</h4>
+                            <h4>Multimedya* <span>(1 Seçili)</span></h4>
+                            <svg class="icon check">
+                                <use href="../assets/icons/sprite.svg#check"></use>
+                            </svg>
                             <svg class="icon">
                                 <use href="../assets/icons/sprite.svg#down-angle"></use>
                             </svg>
@@ -1564,7 +1680,10 @@
                         </div>
                         <button class="empty-button no-anim" data-toggle="collapse" data-target="#feature-select-4"
                                 aria-expanded="false" aria-controls="feature-select-4">
-                            <h4>Manzara</h4>
+                            <h4>Boyalı veya Değişen Parça*<span>(1 Seçili)</span></h4>
+                            <svg class="icon check">
+                                <use href="../assets/icons/sprite.svg#check"></use>
+                            </svg>
                             <svg class="icon">
                                 <use href="../assets/icons/sprite.svg#down-angle"></use>
                             </svg>
@@ -1721,8 +1840,248 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-2 ml-auto">
+                <div class="add-container-subheader mb-20">
+                    <h4>Ekspertiz Raporu</h4>
+                    <p>Aracınıza ait ekspertiz firmaları tarafından yapılan ekspertiz raporu varsa seçebilir veya
+                        bilgisayarınızdan dosya ekleyebilirsiniz.</p>
+                </div>
+                <div class="add-content-box mb-20 pad">
+                    <div class="d-flex">
+                        <div class="add-photo-sm">
+                            <input type="file">
+                            <div class="icon-wrapper">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#plus"></use>
+                                </svg>
+                            </div>
+
+                        </div>
+                        <div class="add-photo-info">
+                            <h5>Fotoğraf Ekle</h5>
+                            <ul class="vertical">
+                                <li>Ekleyeceğiniz ekspertiz dosyası pdf formatında olmalıdır.</li>
+                                <li>Dosyanın boyutu en fazla 25 MB olabilir.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-container-subheader mb-20">
+                    <h4>Video</h4>
+                    <p>Aracınıza ait video görüntüleri varsa seçebilir veya
+                        bilgisayarınızdan dosya ekleyebilirsiniz.</p>
+                </div>
+                <div class="add-content-box mb-20 pad">
+                    <div class="d-flex">
+                        <div class="add-photo-sm">
+                            <input type="file">
+                            <div class="icon-wrapper">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#plus"></use>
+                                </svg>
+                                <p>Bilgisayardan Video Ekle
+                                    veya sürükle bırak</p>
+                            </div>
+
+                        </div>
+                        <div class="add-photo-info">
+                            <h5>Video Ekle</h5>
+                            <ul class="vertical">
+                                <li>Ekleyeceğiniz video avi, mpg, 3gp, mp4 veya mov formatında olmalıdır.</li>
+                                <li>Videonun boyutu en fazla 25MB olabilir.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-container-subheader mb-20">
+                    <h4>İletişim Bilgileri</h4>
+                    <p>Bu kısımdan ilanınızda görüntülenmesini istediğiniz iletişim bilgilerini seçebilirsiniz.</p>
+                </div>
+                <div class="add-content-box mb-20 pad">
+                    <div class="add-adds-contact-checks">
+                        <div class="custom-checkbox purple mr-20">
+                            <label>
+                                <input type="radio" id="mynumber" name="mynumbers" checked>
+                                <span class="checkmark"></span>
+                                Telefon numaralarım ile
+                            </label>
+                        </div>
+                        <div class="custom-checkbox purple mr-20">
+                            <label>
+                                <input type="radio" id="mynumbers2" name="mynumbers">
+                                <span class="checkmark"></span>
+                                Geçici numara ile (Ücretsiz)
+                            </label>
+                        </div>
+                        <div class="custom-checkbox purple">
+                            <label>
+                                <input type="radio" id="nonumber" name="mynumbers">
+                                <span class="checkmark"></span>
+                                Telefon ile ulaşılmak istemiyorum
+                            </label>
+                        </div>
+                    </div>
+                    <div class="simple-table">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>Adı Soyad</td>
+                                <td>Bilal DUMAN</td>
+                            </tr>
+                            <tr>
+                                <td>Cep Telefonu</td>
+                                <td>+90 545 444 55 55</td>
+                            </tr>
+                            <tr>
+                                <td>2. Telefon</td>
+                                <td>+90 545 444 55 55</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="add-container-subheader mb-20">
+                    <h4>İlan Süresi</h4>
+                    <p>İlanınızın ne kadar süre yayında kalacağını buradan seçebilirsiniz.</p>
+                </div>
+                <div class="doping-box-list">
+                    <div class="doping-box">
+                        <div class="title">
+                            <div class="text">
+                                <h2>1 AYLIK</h2>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>(30 GÜN <span>YAYIN SÜRESİ</span>)</h3>
+                            <ul class="vertical">
+                                <li>
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#check"></use>
+                                    </svg>
+                                    Küçük Fotoğraf (60 Gün Boyunca)
+                                </li>
+                                <li>
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#check"></use>
+                                    </svg>
+                                    Küçük Fotoğraf (60 Gün Boyunca)
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                <h4 class="overline">129 TL</h4>
+                                <h4>ÜCRETSİZ</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="doping-box">
+                        <div class="title">
+                            <div class="text">
+                                <h2>2 AYLIK</h2>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>(30 GÜN <span>YAYIN SÜRESİ</span>)</h3>
+                            <ul class="vertical">
+                                <li>
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#check"></use>
+                                    </svg>
+                                    Küçük Fotoğraf (60 Gün Boyunca)
+                                </li>
+                                <li>
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#check"></use>
+                                    </svg>
+                                    Küçük Fotoğraf (60 Gün Boyunca)
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                <h4 class="overline">129 TL</h4>
+                                <h4>49 TL</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="doping-box">
+                        <div class="title">
+                            <div class="text">
+                                <h2>3 AYLIK</h2>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>(30 GÜN <span>YAYIN SÜRESİ</span>)</h3>
+                            <ul class="vertical">
+                                <li>
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#check"></use>
+                                    </svg>
+                                    Küçük Fotoğraf (60 Gün Boyunca)
+                                </li>
+                                <li>
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#check"></use>
+                                    </svg>
+                                    Küçük Fotoğraf (60 Gün Boyunca)
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                <h4 class="overline">129 TL</h4>
+                                <h4>59 TL</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="doping-box">
+                        <div class="title">
+                            <div class="text">
+                                <h2>4 AYLIK</h2>
+                            </div>
+                        </div>
+                        <div class="content">
+                            <h3>(30 GÜN <span>YAYIN SÜRESİ</span>)</h3>
+                            <ul class="vertical">
+                                <li>
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#check"></use>
+                                    </svg>
+                                    Küçük Fotoğraf (60 Gün Boyunca)
+                                </li>
+                                <li>
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#check"></use>
+                                    </svg>
+                                    Küçük Fotoğraf (60 Gün Boyunca)
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bottom">
+                            <div class="w-100 d-flex justify-content-between align-items-center">
+                                <h4 class="overline">129 TL</h4>
+                                <h4>69 TL</h4>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="row mx-0 mt-30">
+                    <div class="col-lg-5 ml-auto">
+                        <div class="add-adds-check-line">
+                            <div class="custom-checkbox purple">
+                                <label>
+                                    <input type="checkbox" id="terms" name="terms">
+                                    <span class="checkmark"></span>
+                                    <h4>İlan verme kurallarını okudum, kabul ediyorum</h4>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 pr-0">
                         <button class="form-button big bg-purple f-bold fs-24">DEVAM</button>
                     </div>
                 </div>
