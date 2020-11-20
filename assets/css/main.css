@@ -23,6 +23,7 @@
 @import "ads/ads-details.css";
 @import "ads/search-in-map.css";
 @import "ads/company-profile.css";
+@import "ads/get.css";
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -111,6 +112,7 @@ p {
 img {
     width: 100%;
 }
+
 .form-button:active,
 button:active,
 .main-button:active {
@@ -364,6 +366,14 @@ button.no-anim {
     background: #F8F9FA;
 }
 
+.pad-20 {
+    padding: 20px;
+}
+
+.padx-20 {
+    padding: 0 20px;
+}
+
 .pr-10 {
     padding-right: 10px;
 }
@@ -394,6 +404,10 @@ button.no-anim {
 
 .pb-50 {
     padding-bottom: 50px;
+}
+
+.ml-5p {
+    margin-left: 5px;
 }
 
 .mb-5p {
@@ -486,6 +500,10 @@ button.no-anim {
 
 .mr-25 {
     margin-right: 25px !important;
+}
+
+.mr-30 {
+    margin-right: 30px;
 }
 
 .page-wrapper {
@@ -1048,6 +1066,10 @@ button.no-anim {
     fill: #FFFFFF;
 }
 
+.main-button.md {
+    height: 34px;
+}
+
 .datetimepicker {
     position: relative;
 }
@@ -1342,6 +1364,11 @@ button.no-anim {
     align-items: center;
 }
 
+.custom-checkbox.purple.sm {
+    font-size: 12px;
+    font-family: 'Proxima Nova Rg', sans-serif;
+}
+
 .sidebar-custom-checkbox.without-check label {
     padding: 0;
     display: flex;
@@ -1395,6 +1422,11 @@ button.no-anim {
     border: 0;
     width: 11px !important;
     height: 11px !important;;
+}
+
+.sidebar-custom-checkbox.big.square-gray .checkmark {
+    width: 18px !important;
+    height: 18px !important;;
 }
 
 .sidebar-custom-checkbox.square .checkmark {
@@ -1886,6 +1918,35 @@ button.no-anim {
     color: #011627;
     font-family: 'Proxima Nova Bo', sans-serif;
     margin-top: 10px;
+}
+
+.add-ads-form h4 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 16px;
+    line-height: 21px;
+    color: #011627;
+    white-space: nowrap;
+}
+
+.add-ads-form a.underline {
+    margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration: underline;
+    color: #023047;
+}
+
+.add-ads-form a.underline.sm {
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+}
+
+.add-ads-form a.underline.sm .icon {
+    width: 19px;
+    height: 19px;
+    margin-right: 10px;
+    fill: #023047;
 }
 
 .form-box {
@@ -2759,6 +2820,53 @@ button.no-anim {
     color: #ffffff;
 }
 
+.information-banner {
+    padding: 18px;
+}
+
+.information-banner.purple {
+    background: rgba(72, 102, 252, .1);
+}
+
+.information-banner h5 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 16px;
+    color: #023047;
+    line-height: 21px;
+    margin-bottom: 10px;
+}
+
+.information-banner ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.information-banner ul li {
+    font-size: 14px;
+    line-height: 19px;
+}
+
+.notification-form-text {
+    border: 1px dashed #9AACB5;
+    padding: 25px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.notification-form-text h4 {
+    color: #9AACB5;
+    font-size: 16px;
+    line-height: 21px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    margin-bottom: 15px;
+}
+
+.notification-form-text p {
+    color: #9AACB5;
+    font-size: 14px;
+    line-height: 21px;
+}
+
 @media only screen and (max-width: 1200px) {
     .add-content-box .gray-box {
         width: calc(100% / 3 - 20px);
@@ -2879,7 +2987,8 @@ button.no-anim {
     .add-container-subheader .button-list {
         display: none;
     }
-    .adds-congrats .buttons{
+
+    .adds-congrats .buttons {
         flex-direction: column;
     }
 }

@@ -1,0 +1,1274 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--- LIBRARIES --->
+    <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
+
+    <script src="../assets/libs/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/libs/ckeditor/ckeditor.js"></script>
+
+
+    <script src="../assets/js/main.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>KKTC - İlan</title>
+</head>
+<body class="purple">
+<div id="Header">
+    <div class="header-top">
+        <div class="container h-100">
+            <div class="d-flex justify-content-between align-items-center h-100">
+                <div class="header-top-left">
+                    <a href="#">
+                        <img src="../assets/images/logo-sm.svg" alt="KKTC">
+                    </a>
+                    <ul class="top-navigation no-mobile horizontal h-100">
+                        <li><a href="#" class="color-dark fs-12 blue">İlan</a></li>
+                        <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
+                        <li><a href="#" class="color-dark fs-12 orange">Firma</a></li>
+                        <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
+                        <li><a href="#" class="color-dark fs-12 green">Sipariş</a></li>
+                        <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
+                        <li><a href="#" class="color-dark fs-12 darkblue">Fatura</a></li>
+                        <li><a href="#" class="color-dark fs-12 darkblue">Alışveriş</a></li>
+                        <li><a href="#" class="color-dark fs-12 darkblue">Fotoğraf</a></li>
+                        <li><a href="#" class="color-dark fs-12 blue">İlan</a></li>
+                        <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
+                        <li class="more h-dropdown">
+                            <div class="color-dark fs-12 mr-2">Daha fazla</div>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#more"></use>
+                            </svg>
+
+                            <div class="h-dropdown-content">
+                                <a href="#">Şans Oyunları</a>
+                                <a href="#">Alışveriş</a>
+                                <a href="#">Diğer</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="dropdown text-center show-mobile ml-auto">
+                        <div class="dropdown-toggler d-flex align-items-center" id="leftNav"
+                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="more">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#more"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-center no-close p-0" aria-labelledby="leftNav">
+                            <ul class="top-navigation show-mobile vertical h-100">
+                                <li><a href="#" class="color-dark fs-12 blue">İlan</a></li>
+                                <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
+                                <li><a href="#" class="color-dark fs-12 orange">Firma</a></li>
+                                <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
+                                <li><a href="#" class="color-dark fs-12 green">Sipariş</a></li>
+                                <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
+                                <li><a href="#" class="color-dark fs-12 darkblue">Fatura</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-top-right">
+                    <ul class="horizontal h-100 right-menu">
+                        <li class="after-login small-buttons">
+                            <button class="empty-button notified h-dropdown">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#mail-2"></use>
+                                </svg>
+                                <div class="h-dropdown-content">
+                                    <div class="message-list-top">
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle readable"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="empty-button more-comment">Tüm Mesajları Gör</a>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="empty-button">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#moon"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <div class="dropdown text-center">
+                                <div class="dropdown-toggler d-flex align-items-center" id="currencyDropdown"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon currency">
+                                        <use href="../assets/icons/sprite.svg#turkish-lira"></use>
+                                    </svg>
+                                    <span class="fs-12 color-dark no-mobile">Para Birimi</span>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-center no-close"
+                                     aria-labelledby="currencyDropdown">
+                                    <h5>Para Birimi</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#dollar"></use>
+                                            </svg>
+                                            Amerikan Doları (USD)
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#dollar"></use>
+                                                    </svg>
+                                                    Amerikan Doları (USD)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#yuan"></use>
+                                                    </svg>
+                                                    Çin Yuanı (CNY)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#sterlin"></use>
+                                                    </svg>
+                                                    Sterlin (GBP)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#euro"></use>
+                                                    </svg>
+                                                    Euro (EUR)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#dollar"></use>
+                                                    </svg>
+                                                    Avustralya Doları (AUD)
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="form-button bg-blue">Değiştir</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown text-center">
+                                <div class="dropdown-toggler d-flex align-items-center" id="languageDropdown"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon language">
+                                        <use href="../assets/icons/sprite.svg#turkey"></use>
+                                    </svg>
+                                    <span class="fs-12 color-dark no-mobile">TR-TR</span>
+                                </div>
+                                <div class="dropdown-menu no-close dropdown-menu-center"
+                                     aria-labelledby="languageDropdown">
+                                    <h5>Ülke/bölge seçin</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#turkey"></use>
+                                            </svg>
+                                            Türkiye
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#brazil"></use>
+                                                    </svg>
+                                                    Brazil
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#china"></use>
+                                                    </svg>
+                                                    China
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#france"></use>
+                                                    </svg>
+                                                    France
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#germany"></use>
+                                                    </svg>
+                                                    Germany
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#united-kingdom"></use>
+                                                    </svg>
+                                                    United Kingdom
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <h5>Dil seçin</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#translation"></use>
+                                            </svg>
+                                            Türkçe
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#translation"></use>
+                                                    </svg>
+                                                    English
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#translation"></use>
+                                                    </svg>
+                                                    Arabic
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="form-button bg-blue">Değiştir</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="after-login user-menu-wrapper h-dropdown">
+                            <img src="../assets/images/avatar.png" alt="KKTC" class="avatar">
+                            <span class="fs-12 color-dark no-mobile">John Doe</span>
+                            <svg class="icon arrow">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                            <div class="h-dropdown-content">
+                                <h5>John Doe</h5>
+                                <ul class="user-menu vertical-menu">
+                                    <li><a href="#" class="fs-14 color-dark">İlanlarım</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Favorilerim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Sepetim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Siparişlerim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Satış İşlemlerim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Üyeliğim</a></li>
+                                    <li><a href="#" class="fs-14 color-red">Çıkış Yap</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container h-100">
+            <div class="d-flex justify-content-between align-items-center h-100">
+                <div class="header-main-left w-100">
+                    <a href="#" class="logo">
+                        <img src="../assets/images/logo-purple.svg" alt="KKTC">
+                    </a>
+                    <ul class="horizontal no-mobile">
+                        <li class="col-lg-8">
+                            <div class="search-input custom-input">
+                                <input type="text" placeholder="Arama yapınız..">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#search"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-14 color-dark">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#search"></use>
+                                </svg>
+                                Detaylı Arama
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-14 color-dark">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#map-3"></use>
+                                </svg>
+                                Haritada Ara
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="header-main-right">
+                    <ul class="horizontal">
+                        <li>
+                            <a href="add-company.html" class="main-button purple animated-icon">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#plus"></use>
+                                </svg>
+                                Ücretsiz İlan Ver
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="main-button white">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#enter"></use>
+                                </svg>
+                                Kayıt Ol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="main-button dark">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#user-key"></use>
+                                </svg>
+                                Giriş Yap
+                            </a>
+                        </li>
+                        <li class="after-login">
+                            <a href="#" class="main-button white">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#plus"></use>
+                                </svg>
+                                Kontrol Paneli
+                                <svg class="icon arrow">
+                                    <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="show-mobile">
+                            <div class="dropdown text-center main-menu">
+                                <div class="dropdown-toggler d-flex align-items-center" id="mainMenu"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <button class="main-button white">
+                                        <svg class="icon m-0">
+                                            <use href="../assets/icons/sprite.svg#menu"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right no-close p-0" aria-labelledby="mainMenu">
+                                    <ul class="main-navigation show-mobile vertical h-100">
+                                        <li>
+                                            <a href="#" class="fs-14 color-dark">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#search"></use>
+                                                </svg>
+                                                Detaylı Arama
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="fs-14 color-dark">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#map-3"></use>
+                                                </svg>
+                                                Haritada Ara
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-wrapper bg-light py-30">
+    <div class="container">
+        <div class="row mx-0 mt-20">
+            <div class="add-container-subheader mb-20">
+                <h4>Adım Adım Kategori Seç</h4>
+                <p>Aşağıdaki alandan ilan kategorisini seç.</p>
+                <div class="button-list">
+                    <button class="form-button big bg-purple f-bold fs-24">DEVAM ET</button>
+                </div>
+            </div>
+            <div class="add-container-content">
+                <div class="add-content-box mb-20">
+                    <ul class="horizontal selected-categories w-100 mb-20">
+                        <li>İş Makineleri & Sanayi</li>
+                        <li>İş Makineleri</li>
+                        <li>Satılık</li>
+                        <li>Beton Dağıtıcı</li>
+                        <li>Boom Makine</li>
+                    </ul>
+                    <div class="gray-box">
+                        <ul class="vertical">
+                            <li>Emlak</li>
+                            <li>Vasıta</li>
+                            <li>Yedek Parça, Aksesuar</li>
+                            <li>İkinci El ve Sıfır Alışveriş</li>
+                            <li class="active">İş Makineleri & Sanayi</li>
+                            <li>Ustalar ve Hizmetler</li>
+                            <li>Özel Ders Verenler</li>
+                            <li>Yardımcı Arayanlar</li>
+                            <li>Hayvanlar Alemi</li>
+                            <li>Emlak</li>
+                            <li>Vasıta</li>
+                            <li>Yedek Parça, Aksesuar</li>
+                            <li>İkinci El ve Sıfır Alışveriş</li>
+                            <li>İş Makineleri & Sanayi</li>
+                            <li>Ustalar ve Hizmetler</li>
+                            <li>Özel Ders Verenler</li>
+                            <li>Yardımcı Arayanlar</li>
+                            <li>Hayvanlar Alemi</li>
+                        </ul>
+                    </div>
+                    <div class="gray-box">
+                        <ul class="vertical">
+                            <li>İş Makineleri</li>
+                            <li class="active">Tarım Makineleri</li>
+                            <li>Sanayi</li>
+                            <li>Elektrik & Enerji</li>
+                        </ul>
+                    </div>
+                    <div class="gray-box">
+                        <ul class="vertical">
+                            <li>Satılık</li>
+                            <li>Kiralık</li>
+                            <li class="active">Ataşman</li>
+                        </ul>
+                    </div>
+                    <div class="gray-box">
+                        <ul class="vertical">
+                            <li>Asfalt Makinesi</li>
+                            <li>Beko Loder</li>
+                            <li class="active">Boom Makine</li>
+                            <li>Çöp Kompaktörü</li>
+                            <li>Demiryolu Makinesi</li>
+                            <li>Dizel Çekiç</li>
+                            <li>Dozer</li>
+                            <li>Ekskavatör</li>
+                            <li>Finişer Fore Kazık Makinesi</li>
+                        </ul>
+                    </div>
+                    <div class="gray-box">
+                        <ul class="vertical">
+                            <li>Atabey Makine</li>
+                            <li class="active">Boom Makine</li>
+                            <li>Rotal Makine</li>
+                            <li>Diğer</li>
+                        </ul>
+                    </div>
+                    <div class="gray-box d-flex justify-content-center flex-column p-0">
+                        <div class="d-flex flex-column pad-20">
+                            <button class="main-button dark fs-14 lh-21 f-bold color-white justify-content-center md mb-10">
+                                İLAN VER
+                            </button>
+                            <button class="main-button purple fs-14 lh-21 f-bold color-white justify-content-center md">
+                                GET İLE <span class="f-regular ml-5p">SAT</span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-container-subheader mb-20">
+                    <h4>İlan Detayları</h4>
+                    <p>Aracınızın renk, motor gücü, vites tipi gibi belirleyici özelliklerini eksiksiz girmeniz satış
+                        performansınızı arttırır.</p>
+                </div>
+                <div class="add-content-box pad mb-20">
+                    <form action="#" class="add-ads-form w-100">
+                        <div class="row">
+                            <div class="form-box gray col-lg-12">
+                                <label>İlan Başlığı*</label>
+                                <input id="title" name="title" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-12">
+                                <label>Açıklama*</label>
+                                <textarea name="editor1" id="editor1" rows="10" cols="80"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-12">
+                                <label>Text Input 1*</label>
+                                <input id="text1" name="text1" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-12">
+                                <label>Text Input 2*</label>
+                                <input id="text2" name="text2" type="text">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-12">
+                                <label>Select Input 1*</label>
+                                <select name="select1" id="select1">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">Otomatik</option>
+                                    <option value="2">Manuel</option>
+                                    <option value="3">Tiptronik</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-12">
+                                <label>Select Input 2*</label>
+                                <select name="select2" id="select2">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">Otomatik</option>
+                                    <option value="2">Manuel</option>
+                                    <option value="3">Tiptronik</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-12">
+                                <label>Select Input 3*</label>
+                                <select name="select3" id="select3">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">Otomatik</option>
+                                    <option value="2">Manuel</option>
+                                    <option value="3">Tiptronik</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-12">
+                                <label>Select Input 4*</label>
+                                <select name="select4" id="select4">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">Otomatik</option>
+                                    <option value="2">Manuel</option>
+                                    <option value="3">Tiptronik</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="add-photo-wrapper white mb-20">
+                    <div class="add-container-subheader mb-20">
+                        <h4>Önizleme*</h4>
+                        <p>İlanınızın kaliteli fotoğraflarını eklemeniz ilanınızı öne çıkartmanızı sağlar.</p>
+                    </div>
+                    <div class="addPhoto-input-wrapper">
+                        <input type="file">
+                        <div class="icon-wrapper">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#plus"></use>
+                            </svg>
+                        </div>
+                        <h4>Fotoğraf Ekle</h4>
+                        <p>50 MB'yi geçmeyen maksimum 50 Fotoğraf Yükleyebilirsiniz.</p>
+                    </div>
+                    <div class="last-added-photos mb-20">
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                        <div class="photo-box"></div>
+                    </div>
+                    <div class="add-adds-check-line">
+                        <div class="custom-checkbox purple">
+                            <label>
+                                <input type="checkbox" id="listDoping" name="listDoping">
+                                <span class="checkmark"></span>
+                                <h4><b>İLANINIZ LİSTELERDE FOTOĞRAFIYLA GÖRÜNSÜN:</b> Küçük Fotoğraf Dopingi (29,00 TL)
+                                </h4>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-container-subheader mb-20">
+                    <h4>Ekspertiz Raporu</h4>
+                    <p>Aracınıza ait ekspertiz firmaları tarafından yapılan ekspertiz raporu varsa seçebilir veya
+                        bilgisayarınızdan dosya ekleyebilirsiniz.</p>
+                </div>
+                <div class="add-content-box mb-20 pad">
+                    <div class="d-flex">
+                        <div class="add-photo-sm">
+                            <input type="file">
+                            <div class="icon-wrapper">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#plus"></use>
+                                </svg>
+                            </div>
+
+                        </div>
+                        <div class="add-photo-info">
+                            <h5>Fotoğraf Ekle</h5>
+                            <ul class="vertical">
+                                <li>Ekleyeceğiniz ekspertiz dosyası pdf formatında olmalıdır.</li>
+                                <li>Dosyanın boyutu en fazla 25 MB olabilir.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-container-subheader mb-20">
+                    <h4>Video</h4>
+                    <p>Aracınıza ait video görüntüleri varsa seçebilir veya
+                        bilgisayarınızdan dosya ekleyebilirsiniz.</p>
+                </div>
+                <div class="add-content-box mb-20 pad">
+                    <div class="d-flex">
+                        <div class="add-photo-sm">
+                            <input type="file">
+                            <div class="icon-wrapper">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#plus"></use>
+                                </svg>
+                                <p>Bilgisayardan Video Ekle
+                                    veya sürükle bırak</p>
+                            </div>
+
+                        </div>
+                        <div class="add-photo-info">
+                            <h5>Video Ekle</h5>
+                            <ul class="vertical">
+                                <li>Ekleyeceğiniz video avi, mpg, 3gp, mp4 veya mov formatında olmalıdır.</li>
+                                <li>Videonun boyutu en fazla 25MB olabilir.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-container-subheader mb-20">
+                    <h4>Fiyatlandırma ve Stok Bilgisi</h4>
+                    <p>Ürünün satış adeti ve stok sayınızı burada belirtmelisiniz.</p>
+                </div>
+                <div class="add-content-box mb-20 pad">
+                    <form action="#" class="add-ads-form w-100">
+                        <div class="row">
+                            <div class="col-lg-12 mb-10">
+                                <h4 class="w-100">Ürünün Satış Fiyatı*</h4>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="form-box gray">
+                                    <input id="pricee" name="pricee" type="text">
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-box gray">
+                                    <input id="price2" name="price2" type="text" value="00">
+                                </div>
+                            </div>
+                            <div class="col-lg-2">
+                                <div class="form-box gray">
+                                    <select name="currencySelect" id="currencySelect">
+                                        <option value="0">TL</option>
+                                        <option value="1">EUR</option>
+                                        <option value="2">USD</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 d-flex align-items-center">
+                                <a href="#" class="underline">Taksitlendirme Bilgisi</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="form-box gray col-lg-3">
+                                <label>Stok Adedi *</label>
+                                <input id="stock" name="stock" type="text" value="1">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="information-banner purple">
+                                <h5>Bilgilendirme</h5>
+                                <ul class="vertical">
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt
+                                    </li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                    </li>
+                                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="add-container-subheader mb-20">
+                    <h4>Kargo Seçenekleri</h4>
+                    <p>Ürünün kargo ile alakalı seçenekleri buradan düzenleyebilirsiniz.</p>
+                </div>
+                <div class="add-content-box mb-20 pad">
+                    <form action="#" class="add-ads-form w-100 padx-20">
+                        <div class="row mb-15">
+                            <h4>Kargo Ücreti*</h4>
+                        </div>
+                        <div class="row mb-20">
+                            <div class="custom-checkbox purple sm mr-30">
+                                <label>
+                                    <input type="radio" id="buyerPays1" name="buyerPays">
+                                    <span class="checkmark"></span>
+                                    Satıcı Öder
+                                </label>
+                            </div>
+                            <div class="custom-checkbox purple sm mr-30">
+                                <label>
+                                    <input type="radio" id="buyerPays2" name="buyerPays">
+                                    <span class="checkmark"></span>
+                                    Alıcı Öder
+                                </label>
+                            </div>
+                            <a href="#" class="underline sm m-0">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#box"></use>
+                                </svg>
+                                Ücretsiz Kargo ile Satışlarını Arttır!
+                            </a>
+                        </div>
+                        <div class="row mb-15">
+                            <h4>Kargonun Çıkış Yeri</h4>
+                        </div>
+                        <div class="row mb-20">
+                            <div class="form-box gray col-lg-3">
+                                <label>Ülke</label>
+                                <input id="country" name="country" type="text">
+                            </div>
+                            <div class="form-box gray col-lg-3">
+                                <label>Şehir</label>
+                                <input id="city" name="city" type="text">
+                            </div>
+                        </div>
+                        <div class="row mb-15">
+                            <h4>Kargonun Teslim Yerleri</h4>
+                        </div>
+                        <div class="row mb-20">
+                            <div class="custom-checkbox purple sm mr-30">
+                                <label>
+                                    <input type="radio" id="deliveryPoints1" name="deliveryPoints">
+                                    <span class="checkmark"></span>
+                                    Tüm Türkiye
+                                </label>
+                            </div>
+                            <div class="custom-checkbox purple sm mr-30">
+                                <label>
+                                    <input type="radio" id="deliveryPoints2" name="deliveryPoints">
+                                    <span class="checkmark"></span>
+                                    Sadece Şehiriçi
+                                </label>
+                            </div>
+                            <div class="custom-checkbox purple sm mr-30">
+                                <label>
+                                    <input type="radio" id="deliveryPoints3" name="deliveryPoints">
+                                    <span class="checkmark"></span>
+                                    Dünyanın Her Bölgesi
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row mb-15">
+                            <h4>Gönderi Yapabileceğiniz Kargo Şirketleri</h4>
+                        </div>
+                        <div class="row mb-20">
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck1">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck1">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck1">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck1">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck1">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck1">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck1">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck1">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row mb-15">
+                            <h4>İade Durumunda Tercih Ettiğiniz Kargo Şirketleri</h4>
+                        </div>
+                        <div class="row mb-20">
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck2">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck2">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck2">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck2">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck2">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck2">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck2">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                            <div class="sidebar-custom-checkbox big square square-gray">
+                                <label class="container">
+                                    Yurtiçi Kargo
+                                    <input type="checkbox" name="cargoCheck2">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="row mb-15">
+                            <h4>Kargonun Çıkış Yeri</h4>
+                        </div>
+                        <div class="row mb-20">
+                            <div class="form-box gray col-lg-3 px-0">
+                                <select name="select8" id="select8">
+                                    <option value="0">Seçiniz</option>
+                                    <option value="1">Otomatik</option>
+                                    <option value="2">Manuel</option>
+                                    <option value="3">Tiptronik</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-15">
+                            <h4>Açıklama</h4>
+                        </div>
+                        <div class="row mb-20">
+                            <div class="form-box gray col-lg-12 px-0">
+                                <textarea name="editor2" id="editor2" rows="10" cols="80"
+                                          placeholder="Kargo gönderimi ile ilgili alıcıya daha fazla bilgi vermek için bu bölümü kullanabilirsiniz."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="add-container-subheader mb-20">
+                    <h4>Ön Bilgilendirme Formu ve Mesafeli Sözleşme</h4>
+                    <p>Lütfen formu okuyunuz.</p>
+                </div>
+                <div class="add-content-box mb-20 pad">
+                    <div class="notification-form-text">
+                        <h4>ÖN BİLGİLENDİRME FORMU</h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="add-adds-check-line p-0">
+                            <div class="custom-checkbox purple">
+                                <label>
+                                    <input type="checkbox" id="acceptContract" name="acceptContract">
+                                    <span class="checkmark"></span>
+                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </h4>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="add-container-subheader mb-20">
+                    <h4>İletişim Bilgileri</h4>
+                    <p>Bu kısımdan ilanınızda görüntülenmesini istediğiniz iletişim bilgilerini seçebilirsiniz.</p>
+                </div>
+                <div class="add-content-box mb-20 pad">
+                    <div class="add-adds-contact-checks">
+                        <div class="custom-checkbox purple mr-20">
+                            <label>
+                                <input type="radio" id="mynumber" name="mynumbers" checked>
+                                <span class="checkmark"></span>
+                                Telefon numaralarım ile
+                            </label>
+                        </div>
+                        <div class="custom-checkbox purple mr-20">
+                            <label>
+                                <input type="radio" id="mynumbers2" name="mynumbers">
+                                <span class="checkmark"></span>
+                                Geçici numara ile (Ücretsiz)
+                            </label>
+                        </div>
+                        <div class="custom-checkbox purple">
+                            <label>
+                                <input type="radio" id="nonumber" name="mynumbers">
+                                <span class="checkmark"></span>
+                                Telefon ile ulaşılmak istemiyorum
+                            </label>
+                        </div>
+                    </div>
+                    <div class="simple-table">
+                        <table class="table">
+                            <tbody>
+                            <tr>
+                                <td>Adı Soyad</td>
+                                <td>Bilal DUMAN</td>
+                            </tr>
+                            <tr>
+                                <td>Cep Telefonu</td>
+                                <td>+90 545 444 55 55</td>
+                            </tr>
+                            <tr>
+                                <td>2. Telefon</td>
+                                <td>+90 545 444 55 55</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row mx-0 mt-30">
+                    <div class="col-lg-5 ml-auto">
+                        <div class="add-adds-check-line">
+                            <div class="custom-checkbox purple">
+                                <label>
+                                    <input type="checkbox" id="terms" name="terms">
+                                    <span class="checkmark"></span>
+                                    <h4>İlan verme kurallarını okudum, kabul ediyorum</h4>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 pr-0">
+                        <button class="form-button big bg-purple f-bold fs-24">DEVAM</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="Footer" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 footer-left pr-70">
+                <div class="footer-logo mb-30">
+                    <a href="#"><img src="../assets/images/logo-purple.svg" alt="KKTC"></a>
+                </div>
+                <p class="fs-14 lh-24 mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nisi nisl.
+                    Integer id ex purus. Suspendisse potenti. Cras odio </p>
+                <div class="footer-socials mb-30">
+                    <ul class="horizontal">
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-payments">
+                    <ul class="horizontal">
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#mastercard"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#maestro"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#visa"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 footer-right">
+                <div class="row m-0">
+                    <div class="footer-menu-col col-lg-3">
+                        <ul class="vertical">
+                            <li class="menu-title fs-16 f-bold">Lorem ipsum</li>
+                            <li><a href="#">Nasıl Üye Olabilirim?</a></li>
+                            <li><a href="#">Nasıl İlan Verebilirim?</a></li>
+                            <li><a href="#">Güvenlik İpuçları</a></li>
+                            <li><a href="#">Araç</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-col col-lg-3">
+                        <ul class="vertical">
+                            <li class="menu-title fs-16 f-bold">Lorem ipsum</li>
+                            <li><a href="#">Mercedes</a></li>
+                            <li><a href="#">Audi</a></li>
+                            <li><a href="#">Volkswagen</a></li>
+                            <li><a href="#">Fiat</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-col col-lg-3">
+                        <ul class="vertical">
+                            <li class="menu-title fs-16 f-bold">Lorem ipsum</li>
+                            <li><a href="#">Gizlilik Politikası</a></li>
+                            <li><a href="#">Kullanıcı Sözleşmesi</a></li>
+                            <li><a href="#">Kullanım Koşulları</a></li>
+                            <li><a href="#">Kişisel Verilerin Korunması</a></li>
+                            <li><a href="#">Veriler</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-col mobile-apps col-lg-3">
+                        <ul class="vertical">
+                            <li class="menu-title fs-16 f-bold">Mobil Uygulamalar</li>
+                            <li><a href="#"><img src="../assets/images/mobile-apps/play-store.png" alt="KKTC"></a></li>
+                            <li><a href="#"><img src="../assets/images/mobile-apps/app-store.png" alt="KKTC"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row footer-bottom-menu">
+        <div class="container">
+            <ul class="horizontal">
+                <li><a href="#">SSS</a></li>
+                <li><a href="#">Yardım Merkezi</a></li>
+                <li><a href="#">Bize Ulaşın</a></li>
+                <li><a href="#">Sorumluluk Reddi</a></li>
+                <li><a href="#">Hizmet Şartları</a></li>
+                <li><a href="#">Gizlilik Politikası</a></li>
+            </ul>
+        </div>
+        <div class="row mx-0">
+            <div class="copyright text-center">
+                <p class="fs-14 lh-21 mt-20 mb-20">KKTC.COM | All rights reserved 2020</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
