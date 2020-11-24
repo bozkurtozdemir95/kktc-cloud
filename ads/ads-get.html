@@ -1,0 +1,1381 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--- LIBRARIES --->
+    <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../assets/libs/slick-carousel/slick.css">
+    <link rel="stylesheet" href="../assets/libs/light-gallery/lightgallery.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css"
+          integrity="sha512-/zs32ZEJh+/EO2N1b0PEdoA10JkdC3zJ8L5FTiQu82LR9S/rOQNfQN7U59U9BC12swNeRAz3HSzIL2vpp4fv3w=="
+          crossorigin="anonymous"/>
+
+    <script src="../assets/libs/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="../assets/libs/slick-carousel/slick.min.js"></script>
+    <script src="../assets/libs/light-gallery/lightgallery.min.js"></script>
+    <script src="../assets/libs/light-gallery/lg-video.js"></script>
+    <script src="../assets/libs/light-gallery/lg-thumbnail.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD88MLO0jIV9cPr7iolZPFDbFU4wu_GWRs&callback=initMap&libraries=&v=weekly"
+            defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"
+            integrity="sha512-d9xgZrVZpmmQlfonhQUvTR7lMPtO7NkZMkA0ABN3PHCbKA5nqylQ/yWlFAyY6hYgdF1Qh6nYiuADWwKB4C2WSw=="
+            crossorigin="anonymous"></script>
+
+    <script src="../assets/js/main.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>KKTC - İlan</title>
+</head>
+<body class="purple">
+<div id="Header">
+    <div class="header-top">
+        <div class="container h-100">
+            <div class="d-flex justify-content-between align-items-center h-100">
+                <div class="header-top-left">
+                    <a href="#">
+                        <img src="../assets/images/logo-sm.svg" alt="KKTC">
+                    </a>
+                    <ul class="top-navigation no-mobile horizontal h-100">
+                        <li><a href="#" class="color-dark fs-12 blue">İlan</a></li>
+                        <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
+                        <li><a href="#" class="color-dark fs-12 orange">Firma</a></li>
+                        <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
+                        <li><a href="#" class="color-dark fs-12 green">Sipariş</a></li>
+                        <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
+                        <li><a href="#" class="color-dark fs-12 darkblue">Fatura</a></li>
+                        <li><a href="#" class="color-dark fs-12 darkblue">Alışveriş</a></li>
+                        <li><a href="#" class="color-dark fs-12 darkblue">Fotoğraf</a></li>
+                        <li><a href="#" class="color-dark fs-12 blue">İlan</a></li>
+                        <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
+                        <li class="more h-dropdown">
+                            <div class="color-dark fs-12 mr-2">Daha fazla</div>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#more"></use>
+                            </svg>
+
+                            <div class="h-dropdown-content">
+                                <a href="#">Şans Oyunları</a>
+                                <a href="#">Alışveriş</a>
+                                <a href="#">Diğer</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="dropdown text-center show-mobile ml-auto">
+                        <div class="dropdown-toggler d-flex align-items-center" id="leftNav"
+                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="more">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#more"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-center no-close p-0" aria-labelledby="leftNav">
+                            <ul class="top-navigation show-mobile vertical h-100">
+                                <li><a href="#" class="color-dark fs-12 blue">İlan</a></li>
+                                <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
+                                <li><a href="#" class="color-dark fs-12 orange">Firma</a></li>
+                                <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
+                                <li><a href="#" class="color-dark fs-12 green">Sipariş</a></li>
+                                <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
+                                <li><a href="#" class="color-dark fs-12 darkblue">Fatura</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-top-right">
+                    <ul class="horizontal h-100 right-menu">
+                        <li class="after-login small-buttons">
+                            <button class="empty-button notified h-dropdown">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#mail-2"></use>
+                                </svg>
+                                <div class="h-dropdown-content">
+                                    <div class="message-list-top">
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle readable"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="empty-button more-comment">Tüm Mesajları Gör</a>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="empty-button">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#moon"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <div class="dropdown text-center">
+                                <div class="dropdown-toggler d-flex align-items-center" id="currencyDropdown"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon currency">
+                                        <use href="../assets/icons/sprite.svg#turkish-lira"></use>
+                                    </svg>
+                                    <span class="fs-12 color-dark no-mobile">Para Birimi</span>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-center no-close"
+                                     aria-labelledby="currencyDropdown">
+                                    <h5>Para Birimi</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#dollar"></use>
+                                            </svg>
+                                            Amerikan Doları (USD)
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#dollar"></use>
+                                                    </svg>
+                                                    Amerikan Doları (USD)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#yuan"></use>
+                                                    </svg>
+                                                    Çin Yuanı (CNY)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#sterlin"></use>
+                                                    </svg>
+                                                    Sterlin (GBP)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#euro"></use>
+                                                    </svg>
+                                                    Euro (EUR)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#dollar"></use>
+                                                    </svg>
+                                                    Avustralya Doları (AUD)
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="form-button bg-blue">Değiştir</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown text-center">
+                                <div class="dropdown-toggler d-flex align-items-center" id="languageDropdown"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon language">
+                                        <use href="../assets/icons/sprite.svg#turkey"></use>
+                                    </svg>
+                                    <span class="fs-12 color-dark no-mobile">TR-TR</span>
+                                </div>
+                                <div class="dropdown-menu no-close dropdown-menu-center"
+                                     aria-labelledby="languageDropdown">
+                                    <h5>Ülke/bölge seçin</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#turkey"></use>
+                                            </svg>
+                                            Türkiye
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#brazil"></use>
+                                                    </svg>
+                                                    Brazil
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#china"></use>
+                                                    </svg>
+                                                    China
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#france"></use>
+                                                    </svg>
+                                                    France
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#germany"></use>
+                                                    </svg>
+                                                    Germany
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#united-kingdom"></use>
+                                                    </svg>
+                                                    United Kingdom
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <h5>Dil seçin</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#translation"></use>
+                                            </svg>
+                                            Türkçe
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#translation"></use>
+                                                    </svg>
+                                                    English
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#translation"></use>
+                                                    </svg>
+                                                    Arabic
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="form-button bg-blue">Değiştir</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="after-login user-menu-wrapper h-dropdown">
+                            <img src="../assets/images/avatar.png" alt="KKTC" class="avatar">
+                            <span class="fs-12 color-dark no-mobile">John Doe</span>
+                            <svg class="icon arrow">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                            <div class="h-dropdown-content">
+                                <h5>John Doe</h5>
+                                <ul class="user-menu vertical-menu">
+                                    <li><a href="#" class="fs-14 color-dark">İlanlarım</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Favorilerim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Sepetim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Siparişlerim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Satış İşlemlerim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Üyeliğim</a></li>
+                                    <li><a href="#" class="fs-14 color-red">Çıkış Yap</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-main">
+        <div class="container h-100">
+            <div class="d-flex justify-content-between align-items-center h-100">
+                <div class="header-main-left w-100">
+                    <a href="#" class="logo">
+                        <img src="../assets/images/logo-purple.svg" alt="KKTC">
+                    </a>
+                    <ul class="horizontal no-mobile">
+                        <li class="col-lg-8">
+                            <div class="search-input custom-input">
+                                <input type="text" placeholder="Arama yapınız..">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#search"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-14 color-dark">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#search"></use>
+                                </svg>
+                                Detaylı Arama
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-14 color-dark">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#map-3"></use>
+                                </svg>
+                                Haritada Ara
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="header-main-right">
+                    <ul class="horizontal">
+                        <li>
+                            <a href="add-company.html" class="main-button purple animated-icon">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#plus"></use>
+                                </svg>
+                                Ücretsiz İlan Ver
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="main-button white">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#enter"></use>
+                                </svg>
+                                Kayıt Ol
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="main-button dark">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#user-key"></use>
+                                </svg>
+                                Giriş Yap
+                            </a>
+                        </li>
+                        <li class="after-login">
+                            <a href="#" class="main-button white">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#plus"></use>
+                                </svg>
+                                Kontrol Paneli
+                                <svg class="icon arrow">
+                                    <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="show-mobile">
+                            <div class="dropdown text-center main-menu">
+                                <div class="dropdown-toggler d-flex align-items-center" id="mainMenu"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <button class="main-button white">
+                                        <svg class="icon m-0">
+                                            <use href="../assets/icons/sprite.svg#menu"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right no-close p-0" aria-labelledby="mainMenu">
+                                    <ul class="main-navigation show-mobile vertical h-100">
+                                        <li>
+                                            <a href="#" class="fs-14 color-dark">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#search"></use>
+                                                </svg>
+                                                Detaylı Arama
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="fs-14 color-dark">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#map-3"></use>
+                                                </svg>
+                                                Haritada Ara
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="page-wrapper bg-light pb-50">
+    <div class="container">
+        <div class="row m-0">
+            <div class="page-link-nav mt-20">
+                <a class="fs-12 lh-16" href="#">
+                    Anasayfa
+                    <svg class="icon">
+                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                    </svg>
+                </a>
+                <a class="fs-12 lh-16" href="#">
+                    Araçlar
+                    <svg class="icon">
+                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                    </svg>
+                </a>
+                <a class="fs-12 lh-16" href="#">
+                    Clio
+                    <svg class="icon">
+                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="row mt-20">
+            <div class="col-lg-12">
+                <div class="row mx-0 mb-20 d-flex align-items-center justify-content-between">
+                    <div class="ads-detail-header col-lg-6">
+                        <h1>DJI Mavic 2 Pro Fly More Combo! - Çok Az Kullanılmış
+                            Garantili.</h1>
+                    </div>
+                    <div class="ads-detail-buttons col-lg-6">
+                        <span><b>1.458</b> Kişi Favorilere Ekledi.</span>
+                        <button class="empty-button">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#printer"></use>
+                            </svg>
+                        </button>
+                        <button class="empty-button">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#share"></use>
+                            </svg>
+                        </button>
+                        <button class="empty-button">
+                            <svg class="icon heart">
+                                <use href="../assets/icons/sprite.svg#heart-full"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-9">
+                <div class="row mx-0 h-100">
+                    <div class="col-lg-8 d-flex flex-column justify-content-between">
+                        <div class="slider-for">
+                            <div>
+                                <img src="../assets/images/ads-images/drone1.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/ads-images/drone2.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/ads-images/drone3.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/ads-images/drone4.jpg" alt="KKTC">
+                            </div>
+                            <div>
+                                <img src="../assets/images/ads-images/drone5.jpg" alt="KKTC">
+                            </div>
+
+                        </div>
+                        <div class="thumbs-box h-100 mt-20">
+                            <div class="thumbs-box-header">
+                                <div class="d-flex">
+                                    <a href="#" id="lightgalleryGet">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#search"></use>
+                                        </svg>
+                                        Büyük Fotoğraf
+                                    </a>
+                                    <a href="#" id="lightgalleryGetVideo">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#video-camera"></use>
+                                        </svg>
+                                        Video Göster
+                                    </a>
+                                </div>
+                                <div style="display:none;" id="getVideo">
+                                    <video class="lg-video-object lg-html5" controls="" preload="none">
+                                        <source src="../assets/video/example-video-2.mp4" type="video/mp4">
+                                        Your browser does not support HTML5 video.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="thumb-box-content">
+                                <div class="slider-nav">
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/ads-images/drone1.jpg" alt="KKTC"
+                                             data-thumb="1">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/ads-images/drone2.jpg" alt="KKTC"
+                                             data-thumb="2">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/ads-images/drone3.jpg" alt="KKTC"
+                                             data-thumb="3">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/ads-images/drone4.jpg" alt="KKTC"
+                                             data-thumb="4">
+                                    </div>
+                                    <div class="slider-nav-item">
+                                        <img src="../assets/images/ads-images/drone5.jpg" alt="KKTC"
+                                             data-thumb="5">
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex flex-column justify-content-between pr-0">
+                        <div class="ads-detail-table">
+                            <div class="ads-detail-table-head p-0 transparent-border">
+                                <div class="ads-detail-table-head-row">
+                                    <h2>
+                                        <span>$1750</span>
+                                        <a href="#">
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#swap"></use>
+                                            </svg>
+                                        </a>
+                                        <span>(₺13.755,88)</span>
+                                    </h2>
+                                    <svg class="icon get ml-auto">
+                                        <use href="../assets/icons/sprite.svg#get"></use>
+                                    </svg>
+                                </div>
+                                <div class="ads-detail-table-head-row">
+                                    <svg class="icon purple">
+                                        <use href="../assets/icons/sprite.svg#fast"></use>
+                                    </svg>
+                                    <h3>Ücretsiz Kargo</h3>
+                                </div>
+                                <div class="ads-detail-table-head-row big justify-content-between">
+                                    <div class="custom-number-input">
+                                        <button class="empty-button btn-minus">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#minus"></use>
+                                            </svg>
+                                        </button>
+                                        <input min="0" name="quantity" value="1" type="number">
+                                        <button class="empty-button btn-plus">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#plus"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <button class="empty-button table-head-button bg-purple">HEMEN SATIN AL</button>
+                                </div>
+                            </div>
+                            <div class="ads-detail-table-box transparent-border">
+                                <h6 class="mb-15">Peşin Fiyatına Taksit Seçenekleri</h6>
+                                <div class="d-flex flex-wrap">
+                                    <div class="installment-box">
+                                        <img src="../assets/images/worldcard.png" alt="KKTC">
+                                        <span>6 Taksit</span>
+                                    </div>
+                                    <div class="installment-box">
+                                        <img src="../assets/images/worldcard.png" alt="KKTC">
+                                        <span>6 Taksit</span>
+                                    </div>
+                                    <div class="installment-box">
+                                        <img src="../assets/images/worldcard.png" alt="KKTC">
+                                        <span>6 Taksit</span>
+                                    </div>
+                                    <div class="installment-box">
+                                        <img src="../assets/images/worldcard.png" alt="KKTC">
+                                        <span>6 Taksit</span>
+                                    </div>
+                                    <div class="installment-box">
+                                        <img src="../assets/images/worldcard.png" alt="KKTC">
+                                        <span>6 Taksit</span>
+                                    </div>
+                                    <div class="installment-box">
+                                        <img src="../assets/images/worldcard.png" alt="KKTC">
+                                        <span>6 Taksit</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <table class="table transparent-border">
+                                <tbody>
+                                <tr>
+                                    <td>İlan No</td>
+                                    <td>842348416</td>
+                                </tr>
+                                <tr>
+                                    <td>İlan Tarihi</td>
+                                    <td>3 Eylül 2020</td>
+                                </tr>
+                                <tr>
+                                    <td>Kategori</td>
+                                    <td>RC Araçlar</td>
+                                </tr>
+                                <tr>
+                                    <td>Ürün</td>
+                                    <td>Drone</td>
+                                </tr>
+                                <tr>
+                                    <td>Türü</td>
+                                    <td>Satılık</td>
+                                </tr>
+                                <tr>
+                                    <td>Marka</td>
+                                    <td>DJI</td>
+                                </tr>
+                                <tr>
+                                    <td>Kullanım Durumu</td>
+                                    <td>0</td>
+                                </tr>
+                                <tr>
+                                    <td>Kimden</td>
+                                    <td>Sahibinden</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                            <div class="ads-detail-table-box">
+                                <h5 class="mb-15">Durum</h5>
+                                <div class="d-flex align-items-center">
+                                    <svg class="icon purple">
+                                        <use href="../assets/icons/sprite.svg#box"></use>
+                                    </svg>
+                                    <h3>Ambalajında Hiç Açılmamış</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="ads-company-detail h-100 d-flex flex-column justify-content-between">
+                    <div class="ads-company-detail-head">
+                        <div class="logo-wrapper mb-5p">
+                            <div class="status online"></div>
+                            <img src="../assets/images/amblem.png" alt="KKTC">
+                        </div>
+                        <h5 class="mb-5p">KKTC EMLAK</h5>
+                        <div class="rating big yellow mb-5p">
+                            <svg class="icon active">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon active">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon active">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon active">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#star"></use>
+                            </svg>
+                            <h6 class="fs-10 lh-16 color-white">(4.5 / 5)</h6>
+                        </div>
+                        <a href="#">Tüm İlanları Gör</a>
+                    </div>
+                    <div class="ads-company-detail-body">
+                        <div class="ads-company-detail-row">
+                            <div class="row mx-0 ads-company-detail-small">
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#calendar-3"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>20.08.2005</h4>
+                                        <span>Üyelik Tarihi</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#megaphone"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>128</h4>
+                                        <span>İlan Sayısı</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#clock-2"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>28 Dakika</h4>
+                                        <span>Geri Dönüş Ort.</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#star"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>4.5</h4>
+                                        <span>Değerlendirme</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#businessman"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>1.569</h4>
+                                        <span>Satış</span>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-sm-4">
+                                    <svg class="icon arrow">
+                                        <use href="../assets/icons/sprite.svg#receipt"></use>
+                                    </svg>
+                                    <div class="text d-flex flex-column">
+                                        <h4>78.523</h4>
+                                        <span>Kiralama</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ads-company-detail-row">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#phone-call"></use>
+                            </svg>
+                            <h6>0545 888 44 66</h6>
+                        </div>
+                        <div class="ads-company-detail-row">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#old-phone"></use>
+                            </svg>
+                            <h6>0212 659 72 72</h6>
+                        </div>
+                        <div class="company-buttons">
+                            <button class="empty-button">Profile Git</button>
+                            <button class="empty-button purple">Mesaj Gönder</button>
+                            <button class="empty-button full">
+                                <svg class="icon arrow">
+                                    <use href="../assets/icons/sprite.svg#exclamation"></use>
+                                </svg>
+                                İlan ile İlgili Şikayetim Var
+                            </button>
+                        </div>
+                        <div class="company-message-box">
+                            <div class="d-flex align-items-center">
+                                <div class="logo-wrapper mb-5p">
+                                    <div class="status online"></div>
+                                    <img src="../assets/images/amblem.png" alt="KKTC">
+                                </div>
+                                <h5>KKTC OTOMOTİV</h5>
+                            </div>
+                            <p>Satıcıya Mesaj At</p>
+                            <div class="auto-messages">
+                                <a href="#" class="auto-message">Merhaba, Müsait Misiniz?</a>
+                                <a href="#" class="auto-message">Merhaba, Son Fiyat Nedir?</a>
+                                <a href="#" class="auto-message">Merhaba, Satın Almak İstiyorum..</a>
+                            </div>
+                            <div class="message-form-wrapper d-flex align-items-center justify-content-between mt-auto">
+                                <input type="text" placeholder="Satıcı ile Mesajlaş...">
+                                <button class="empty-button purple">GÖNDER</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-0 mt-20">
+            <div class="col-lg-12">
+                <div class="details-tabset">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="pills-details-tab" data-toggle="pill" href="#pills-details"
+                               role="tab" aria-controls="pills-details" aria-selected="true">İlan Detayları</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-details" role="tabpanel"
+                             aria-labelledby="pills-details-tab">
+                            <div class="detail-text">
+                                <p>
+                                    Merhabalar, Cihazımı bilgisayarımı yenilemem gerektiği için satıyorum. Hiç bir
+                                    problemi yoktur ve drone kullanmamış arkadaşlara bir süre yardımcı olurum gerekli
+                                    kullanım özellikleri için. Fly More Combo paketi içinde neler olduğunu aşağıya
+                                    listeleyeceğim. Ürünü GET ile koydum çünkü karşılıklı güven problemi ortadan kalksın
+                                    istedim. Temsili fotoğraflar koydum ilgilenen arkadaşlar mesaj atarlarsa Video ve
+                                    Fotoğraf gönderirim. Kutuları ve Garantisi ile birlikte gönderilecektir.
+                                    Teşekkürler. Şimdiden alana hayırlı olsun. <br><br>
+
+                                    10 Pervane <br> <br>
+
+                                    Araba şarj cihazı <br> <br>
+
+                                    Çoklu şarj cihazı <br> <br>
+
+                                    Usb-C kablo <br> <br>
+
+                                    3 Batarya <br> <br>
+
+                                    Kumanda <br> <br>
+
+                                    Özel DJI Taşıma Çantası <br> <br>
+
+                                    128GB MicroSd Samsung Evo Pro <br> <br>
+
+                                    Bunların dışında bir kaç parça daha şey bulunmakta ama en önemlileri bunlar olduğu
+                                    için bunları yazıyorum.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-0 mt-20">
+            <div class="ads-feature-list">
+                <h4 class="feature-list-header">Özellikler</h4>
+                <ul class="horizontal">
+
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon green">
+                            <use href="../assets/icons/sprite.svg#check"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                    <li>
+                        <svg class="icon red">
+                            <use href="../assets/icons/sprite.svg#close"></use>
+                        </svg>
+                        Elektronik
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row mx-0 mt-20">
+            <div class="ads-feature-list">
+                <h4 class="feature-list-header m-0">Kargo</h4>
+                <p>Satıcının belirlemiş olduğu kargo seçeneği aşağıda yer almaktadır.</p>
+                <div class="cargo-table">
+                    <table class="table table-borderless">
+                        <thead>
+                        <tr>
+                            <th>Ödeme Seçeneği</th>
+                            <th>Kargo Çıkış Yeri</th>
+                            <th>Satıcının Gönderim Yapabileceği Bölgeler</th>
+                            <th>Satıcının Gönderim Yapabileceği Kargo Şirketleri</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>
+                                <div class="cargo-info-box">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#check"></use>
+                                    </svg>
+                                    Ücretsiz Kargo
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cargo-info-box">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#check"></use>
+                                    </svg>
+                                    İstanbul - Avrupa
+                                </div>
+                            </td>
+                            <td>
+                                <div class="cargo-info-box">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#check"></use>
+                                    </svg>
+                                    Tüm Türkiye
+                                </div>
+                            </td>
+                            <td>
+                                <div class="d-flex">
+                                    <div class="cargo-info-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#check"></use>
+                                        </svg>
+                                        Yurtiçi
+                                    </div>
+                                    <div class="cargo-info-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#check"></use>
+                                        </svg>
+                                        MNG
+                                    </div>
+                                    <div class="cargo-info-box">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#check"></use>
+                                        </svg>
+                                        Aras
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-0 mt-20">
+            <div class="w-100 row mx-0">
+                <div class="ads-details-box-sm col-lg-6 br-gray">
+                    <div class="ads-details-box-header big">
+                        <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#get"></use>
+                        </svg>
+                        <h3>Güvenli e-Ticaret</h3>
+                    </div>
+                    <div class="ads-details-box-content">
+                        <h5>DJI Mavic 2 Pro Fly More Combo! - Çok Az Kullanılmış
+                            Garantili</h5>
+                        <div class="d-flex align-items-center">
+                            <img src="../assets/images/ads-images/drone5.jpg" alt="KKTC">
+                            <div class="d-flex flex-column ml-20">
+                                <div class="ads-detail-table-head">
+                                    <div class="ads-detail-table-head-row borderless">
+                                        <h2>
+                                            <span>$1750</span>
+                                            <a href="#">
+                                                <svg class="icon arrow">
+                                                    <use href="../assets/icons/sprite.svg#swap"></use>
+                                                </svg>
+                                            </a>
+                                            <span>(₺13.755,88)</span>
+                                        </h2>
+                                    </div>
+                                    <div class="ads-detail-table-head-row borderless">
+                                        <div class="custom-number-input">
+                                            <button class="empty-button btn-minus">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#minus"></use>
+                                                </svg>
+                                            </button>
+                                            <input min="0" name="quantity" value="1" type="number">
+                                            <button class="empty-button btn-plus">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#plus"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="ads-detail-table-head-row borderless">
+                                        <button class="empty-button table-head-button bg-purple">HEMEN SATIN AL</button>
+                                    </div>
+                                    <div class="ads-detail-table-head-row borderless">
+                                        <p>İncelemiş olduğunuz ürünü şimdi Güvenli e-Ticaret ile satıcının
+                                            belirlemiş olduğu fiyattan satın alabilirsiniz.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="ads-details-box-sm col-lg-6">
+                    <div class="ads-details-box-header big">
+                        <h3>Peşin Fiyatına Taksit Seçenekleri</h3>
+                    </div>
+                    <div class="ads-details-box-content d-flex align-items-center">
+                        <div class="d-flex flex-wrap">
+                            <div class="installment-box-big">
+                                <img src="../assets/images/worldcard.png" alt="KKTC">
+                                <span>3 Taksit x 733 TL</span>
+                            </div>
+                            <div class="installment-box-big">
+                                <img src="../assets/images/worldcard.png" alt="KKTC">
+                                <span>3 Taksit x 733 TL</span>
+                            </div>
+                            <div class="installment-box-big">
+                                <img src="../assets/images/worldcard.png" alt="KKTC">
+                                <span>3 Taksit x 733 TL</span>
+                            </div>
+                            <div class="installment-box-big">
+                                <img src="../assets/images/worldcard.png" alt="KKTC">
+                                <span>3 Taksit x 733 TL</span>
+                            </div>
+                            <div class="installment-box-big">
+                                <img src="../assets/images/worldcard.png" alt="KKTC">
+                                <span>3 Taksit x 733 TL</span>
+                            </div>
+                            <div class="installment-box-big">
+                                <img src="../assets/images/worldcard.png" alt="KKTC">
+                                <span>3 Taksit x 733 TL</span>
+                            </div>
+                            <div class="installment-box-big">
+                                <img src="../assets/images/worldcard.png" alt="KKTC">
+                                <span>3 Taksit x 733 TL</span>
+                            </div>
+                            <div class="installment-box-big">
+                                <img src="../assets/images/worldcard.png" alt="KKTC">
+                                <span>3 Taksit x 733 TL</span>
+                            </div>
+                            <div class="installment-box-big">
+                                <img src="../assets/images/worldcard.png" alt="KKTC">
+                                <span>3 Taksit x 733 TL</span>
+                            </div>
+                            <div class="installment-box-big">
+                                <img src="../assets/images/worldcard.png" alt="KKTC">
+                                <span>3 Taksit x 733 TL</span>
+                            </div>
+                            <div class="installment-box-big">
+                                <img src="../assets/images/worldcard.png" alt="KKTC">
+                                <span>3 Taksit x 733 TL</span>
+                            </div>
+                            <div class="installment-box-big">
+                                <img src="../assets/images/worldcard.png" alt="KKTC">
+                                <span>3 Taksit x 733 TL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mx-0 mt-20">
+            <div class="ads-details-box-sm col-lg-12">
+                <div class="ads-details-box-header big">
+                    <svg class="icon">
+                        <use href="../assets/icons/sprite.svg#get"></use>
+                    </svg>
+                    <h3>Get Sistemi Nedir?</h3>
+                </div>
+                <div class="ads-details-box-content pt-0">
+                    <p class="mb-20 fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="mb-20 fs-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="Footer" class="bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 footer-left pr-70">
+                <div class="footer-logo mb-30">
+                    <a href="#"><img src="../assets/images/logo-purple.svg" alt="KKTC"></a>
+                </div>
+                <p class="fs-14 lh-24 mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nisi nisl.
+                    Integer id ex purus. Suspendisse potenti. Cras odio </p>
+                <div class="footer-socials mb-30">
+                    <ul class="horizontal">
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-payments">
+                    <ul class="horizontal">
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#mastercard"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#maestro"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#visa"></use>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-8 footer-right">
+                <div class="row m-0">
+                    <div class="footer-menu-col col-lg-3">
+                        <ul class="vertical">
+                            <li class="menu-title fs-16 f-bold">Lorem ipsum</li>
+                            <li><a href="#">Nasıl Üye Olabilirim?</a></li>
+                            <li><a href="#">Nasıl İlan Verebilirim?</a></li>
+                            <li><a href="#">Güvenlik İpuçları</a></li>
+                            <li><a href="#">Araç</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-col col-lg-3">
+                        <ul class="vertical">
+                            <li class="menu-title fs-16 f-bold">Lorem ipsum</li>
+                            <li><a href="#">Mercedes</a></li>
+                            <li><a href="#">Audi</a></li>
+                            <li><a href="#">Volkswagen</a></li>
+                            <li><a href="#">Fiat</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-col col-lg-3">
+                        <ul class="vertical">
+                            <li class="menu-title fs-16 f-bold">Lorem ipsum</li>
+                            <li><a href="#">Gizlilik Politikası</a></li>
+                            <li><a href="#">Kullanıcı Sözleşmesi</a></li>
+                            <li><a href="#">Kullanım Koşulları</a></li>
+                            <li><a href="#">Kişisel Verilerin Korunması</a></li>
+                            <li><a href="#">Veriler</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-col mobile-apps col-lg-3">
+                        <ul class="vertical">
+                            <li class="menu-title fs-16 f-bold">Mobil Uygulamalar</li>
+                            <li><a href="#"><img src="../assets/images/mobile-apps/play-store.png" alt="KKTC"></a></li>
+                            <li><a href="#"><img src="../assets/images/mobile-apps/app-store.png" alt="KKTC"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row footer-bottom-menu">
+        <div class="container">
+            <ul class="horizontal">
+                <li><a href="#">SSS</a></li>
+                <li><a href="#">Yardım Merkezi</a></li>
+                <li><a href="#">Bize Ulaşın</a></li>
+                <li><a href="#">Sorumluluk Reddi</a></li>
+                <li><a href="#">Hizmet Şartları</a></li>
+                <li><a href="#">Gizlilik Politikası</a></li>
+            </ul>
+        </div>
+        <div class="row mx-0">
+            <div class="copyright text-center">
+                <p class="fs-14 lh-21 mt-20 mb-20">KKTC.COM | All rights reserved 2020</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

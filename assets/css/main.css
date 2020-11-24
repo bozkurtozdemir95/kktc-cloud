@@ -68,6 +68,10 @@ body {
     overflow-x: hidden;
 }
 
+body.lg-on {
+    overflow: hidden;
+}
+
 a:hover {
     text-decoration: none;
 }
@@ -366,6 +370,10 @@ button.no-anim {
     background: #F8F9FA;
 }
 
+.bg-purple {
+    background: #4866FC !important;
+}
+
 .pad-20 {
     padding: 20px;
 }
@@ -487,7 +495,7 @@ button.no-anim {
 }
 
 .mr-10 {
-    margin-right: 10px;
+    margin-right: 10px !important;
 }
 
 .mr-15 {
@@ -2853,6 +2861,11 @@ button.no-anim {
     overflow-y: auto;
 }
 
+.notification-form-text.borderless {
+    border: 0;
+    max-height: 200px;
+}
+
 .notification-form-text h4 {
     color: #9AACB5;
     font-size: 16px;
@@ -2865,6 +2878,112 @@ button.no-anim {
     color: #9AACB5;
     font-size: 14px;
     line-height: 21px;
+}
+
+.cargo-table th {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 12px;
+    line-height: 28px;
+    padding: 0;
+}
+
+.cargo-table td {
+    padding: 0;
+}
+
+.cargo-info-box {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    margin-right: 20px;
+}
+
+.cargo-info-box .icon {
+    width: 14px;
+    max-height: 14px;
+    fill: #16DF45;
+    margin-right: 5px;
+}
+
+.get-sidebar-box {
+    background: #ffffff;
+    padding: 10px;
+}
+
+.get-sidebar-box h5 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.get-sidebar-box img {
+    border-bottom: 1px solid #023047;
+    margin-bottom: 15px;
+}
+
+.get-sidebar-box .ads-detail-table-head,
+.get-sidebar-box .ads-detail-table-head-row {
+    padding: 0;
+}
+
+.get-sidebar-box .info {
+    display: flex;
+}
+
+.get-sidebar-box .info .icon {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    fill: #9AACB5;
+    margin-right: 10px;
+}
+
+.get-sidebar-box .info p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #9AACB5;
+}
+
+.installment-notification {
+    border: 1px dashed #9AACB5;
+    height: 110px;
+    padding: 20px;
+}
+
+.installment-notification p {
+    font-size: 14px;
+    line-height: 20px;
+    color: #9AACB5;
+}
+
+.address-box-2 {
+    display: flex;
+    flex-direction: column;
+    height: 190px;
+    border: 1px solid #9AACB5;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.address-box-2 h5,
+.address-box-2 p {
+    font-size: 14px;
+    line-height: 16px;
+    color: #023047;
+}
+
+.address-box-2 h5 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+}
+
+.get-sidebar-box .sidebar-custom-checkbox label {
+    padding-left: 25px;
+}
+
+.get-sidebar-box .sidebar-custom-checkbox .checkmark {
+    top: 0;
+    transform: none;
 }
 
 @media only screen and (max-width: 1200px) {

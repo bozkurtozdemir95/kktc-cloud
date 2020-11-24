@@ -29,6 +29,7 @@
 
 .thumb-box-content {
     padding: 5px;
+    min-height: 131px;
 }
 
 .ads-detail-header h1 {
@@ -127,11 +128,155 @@
     margin-right: 3px;
 }
 
+.ads-detail-table-head-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(2, 48, 71, .1);
+    padding: 8px 20px;
+}
+
+.ads-detail-table-head-row.borderless {
+    border: 0;
+}
+
+.ads-detail-table-head-row.big {
+    padding: 20px;
+}
+
+.ads-detail-table-head-row .icon.get {
+    width: 29px;
+    max-height: 16px;
+}
+
+.ads-detail-table-head-row .icon.purple {
+    width: 24px;
+    max-height: 16px;
+    fill: #4866FC;
+    margin-right: 6px;
+}
+
+.ads-detail-table-head-row h3 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 14px;
+}
+
+.ads-detail-table-head-row .custom-number-input {
+    margin: 0;
+}
+
+.ads-detail-table-head-row .custom-number-input button {
+    width: 20px;
+    height: 36px;
+    border: 1px solid rgba(2, 48, 71, .1);
+    border-radius: 0;
+}
+
+.ads-detail-table-head-row .custom-number-input button .icon {
+    width: 8px;
+    height: 8px;
+    fill: #023047;
+    stroke: #023047;
+}
+
+.ads-detail-table-head-row .custom-number-input button:hover .icon {
+    fill: #4866FC;
+    stroke: #4866FC;
+}
+
+.ads-detail-table-head-row .custom-number-input input {
+    border-top: 1px solid rgba(2, 48, 71, .1);
+    border-bottom: 1px solid rgba(2, 48, 71, .1);
+    margin: 0;
+    height: 36px;
+    width: 55px;
+}
+
+.ads-detail-table-head-row .table-head-button {
+    height: 36px;
+    background: rgba(2, 48, 71, .1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    transition: all .3s;
+    color: #ffffff;
+    padding: 0 15px;
+}
+
+.ads-detail-table-head-row:last-child {
+    border-bottom: 0;
+}
+
+.transparent-border {
+    border-bottom: 10px solid #fafafa;
+}
+
+.ads-detail-table-box {
+    padding: 15px;
+}
+
+.ads-detail-table-box .installment-box {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.ads-detail-table-box .installment-box img {
+    max-width: 56px;
+    margin-bottom: 5px;
+}
+
+.ads-detail-table-box .installment-box span {
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.installment-box-big {
+    width: calc(100% / 4);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.installment-box-big img {
+    max-width: 70px;
+    margin-bottom: 5px;
+}
+
+.installment-box-big span {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+.ads-detail-table-box h6 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 12px;
+}
+
 .ads-detail-table table td {
     font-size: 12px;
     line-height: 28px;
     border: 0;
     padding: 0 0 0 20px;
+}
+
+.ads-detail-table-box h5 {
+    font-size: 14px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.ads-detail-table-box .icon {
+    width: 20px;
+    max-height: 20px;
+    fill: #4866FC;
+    margin-right: 10px;
+}
+
+.ads-detail-table-box h3 {
+    font-size: 14px;
+    font-family: 'Proxima Nova Rg', sans-serif;
 }
 
 .ads-detail-table table tr {
@@ -148,6 +293,10 @@
 
 .ads-detail-table table tr:last-child td:first-child {
     line-height: 18px;
+}
+
+.ads-detail-table table.transparent-border tr:last-child td:first-child {
+    line-height: 28px;
 }
 
 .ads-company-detail-head {
@@ -598,6 +747,59 @@
     margin-top: 15px;
 }
 
+.ads-details-box-sm.br-gray {
+    border-right: 1px solid rgba(2, 48, 71, .05);
+}
+
+.ads-details-box-header {
+    width: 100%;
+    border: 0;
+    cursor: pointer;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    padding: 0 16px;
+    position: relative;
+}
+
+.ads-details-box-header.big {
+    height: 50px;
+}
+
+.ads-details-box-header h3 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 20px;
+}
+
+.ads-details-box-header .icon {
+    width: 30px;
+    max-height: 20px;
+    margin-right: 10px;
+}
+
+.ads-details-box-content {
+    padding: 26px 16px;
+}
+
+.ads-details-box-content.pt-0 {
+    padding-top: 0;
+}
+
+.ads-details-box-content img {
+    width: 165px;
+}
+
+.ads-details-box-content h5 {
+    font-size: 14px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    margin-bottom: 20px;
+}
+
+.ads-details-box-content p {
+    color: #9AACB5;
+    font-size: 12px;
+}
+
 .similar-table {
     margin-bottom: 0;
 }
@@ -644,6 +846,11 @@
     line-height: 31px;
     font-family: 'Proxima Nova Bo', sans-serif;
     margin-bottom: 20px;
+}
+
+.ads-feature-list p {
+    font-size: 12px;
+    line-height: 31px;
 }
 
 .ads-feature-list ul,

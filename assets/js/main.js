@@ -526,6 +526,39 @@ $(function () {
         })
 
     });
+    $('#lightgalleryGet').on('click', function (e) {
+        e.preventDefault();
+        $(this).lightGallery({
+            dynamic: true,
+            dynamicEl: [{
+                "src": '../assets/images/ads-images/drone1.jpg',
+                'thumb': '../assets/images/ads-images/drone1.jpg',
+            }, {
+                "src": '../assets/images/ads-images/drone2.jpg',
+                'thumb': '../assets/images/ads-images/drone2.jpg',
+            },  {
+                "src": '../assets/images/ads-images/drone3.jpg',
+                'thumb': '../assets/images/ads-images/drone3.jpg',
+            },  {
+                "src": '../assets/images/ads-images/drone4.jpg',
+                'thumb': '../assets/images/ads-images/drone4.jpg',
+            },  {
+                "src": '../assets/images/ads-images/drone5.jpg',
+                'thumb': '../assets/images/ads-images/drone5.jpg',
+            }
+            ]
+        })
+
+    });
+    $('#lightgalleryCarVideo').on('click', function (e) {
+        $(this).lightGallery({ dynamic: true, dynamicEl: [{ 'html': '#carVideo' }] })
+    });
+    $('#lightgalleryHomeVideo').on('click', function (e) {
+        $(this).lightGallery({ dynamic: true, dynamicEl: [{ 'html': '#homeVideo' }] })
+    });
+    $('#lightgalleryGetVideo').on('click', function (e) {
+        $(this).lightGallery({ dynamic: true, dynamicEl: [{ 'html': '#getVideo' }] })
+    });
 
 });
 
