@@ -146,6 +146,9 @@
     background: #4866FC;
 }
 
+.darkblue2 .header-top-right .dropdown .form-button {
+    background: #0466C8;
+}
 
 .more .icon {
     width: 14px;
@@ -168,6 +171,10 @@
 
 .right-menu li.small-buttons:hover {
     background: none;
+}
+
+.right-menu li.small-buttons .h-dropdown-content:after {
+    content: none;
 }
 
 .right-menu li .icon.currency {
@@ -283,6 +290,10 @@
     fill: #007BFF;
 }
 
+.darkblue2 .right-menu .small-buttons button:hover .icon {
+    fill: #0466C8;
+}
+
 .right-menu .small-buttons .icon {
     fill: rgba(2, 48, 71, .3);
     width: 20px;
@@ -357,6 +368,10 @@ div.more {
     white-space: nowrap;
 }
 
+.header-main-left ul li .h-dropdown-content:after {
+    content: none;
+}
+
 .main-navigation li {
     width: 100%;
 }
@@ -377,6 +392,7 @@ div.more {
     display: flex;
     align-items: center;
     height: 100%;
+    color: #023047;
 }
 
 .header-main-left ul li:hover a {
@@ -391,12 +407,37 @@ div.more {
     fill: #0081A7;
 }
 
+.header-main-left ul li:hover a {
+    box-shadow: inset 0 -3px 0 0 #0081A7;
+    color: #0081A7;
+}
+
+.darkblue .header-main-left ul li:hover a {
+    box-shadow: inset 0 -3px 0 0 #007BFF;
+    color: #007BFF;
+}
+
+.purple .header-main-left ul li:hover a {
+    box-shadow: inset 0 -3px 0 0 #4866FC;
+    color: #4866FC;
+}
+
+.darkblue2 .header-main-left ul li:hover a {
+    box-shadow: inset 0 -3px 0 0 #0466C8;
+    color: #0466C8;
+}
+
+
 .darkblue .header-main-left ul li:hover .icon {
     fill: #007BFF;
 }
 
 .purple .header-main-left ul li:hover .icon {
     fill: #4866FC;
+}
+
+.darkblue2 .header-main-left ul li:hover .icon {
+    fill: #0466C8;
 }
 
 .main-navigation li {
