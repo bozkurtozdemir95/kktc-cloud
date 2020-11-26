@@ -76,6 +76,14 @@
     color: #0081A7;
 }
 
+.darkblue #Footer .footer-menu-col ul a:hover {
+    color: #007BFF;
+}
+
+.purple #Footer .footer-menu-col ul a:hover {
+    color: #4866FC;
+}
+
 #Footer .pr-70 {
     padding-right: 70px;
 }

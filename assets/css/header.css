@@ -63,7 +63,7 @@
 }
 
 .top-navigation a:hover {
-    font-family: 'Proxima Nova Bo', sans-serif;
+    font-weight: 800;
 }
 
 .top-navigation a:hover:after {
@@ -133,6 +133,19 @@
     height: 100%;
     white-space: nowrap;
 }
+
+.header-top-right .dropdown .form-button {
+    background: #0081A7;
+}
+
+.darkblue .header-top-right .dropdown .form-button {
+    background: #007BFF;
+}
+
+.purple .header-top-right .dropdown .form-button {
+    background: #4866FC;
+}
+
 
 .more .icon {
     width: 14px;
@@ -262,6 +275,14 @@
     fill: #0081A7;
 }
 
+.purple .right-menu .small-buttons button:hover .icon {
+    fill: #4866FC;
+}
+
+.darkblue .right-menu .small-buttons button:hover .icon {
+    fill: #007BFF;
+}
+
 .right-menu .small-buttons .icon {
     fill: rgba(2, 48, 71, .3);
     width: 20px;
@@ -368,6 +389,10 @@ div.more {
 
 .header-main-left ul li:hover .icon {
     fill: #0081A7;
+}
+
+.darkblue .header-main-left ul li:hover .icon {
+    fill: #007BFF;
 }
 
 .purple .header-main-left ul li:hover .icon {
