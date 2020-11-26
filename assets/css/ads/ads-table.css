@@ -103,6 +103,15 @@
     width: calc(100% + 12px);
     margin-left: -6px !important;
     overflow: hidden;
+    cursor: pointer;
+}
+
+.ads-table tr:hover td {
+    background: rgba(72, 102, 252, .05);
+}
+
+.ads-table td {
+    transition: all .3s;
 }
 
 .ads-table td.img-wrapper {
@@ -120,9 +129,11 @@
     font-size: 11px;
     line-height: 17px;
 }
-.ads-table td b{
+
+.ads-table td b {
     font-family: 'Proxima Nova Bo', sans-serif;
 }
+
 .ads-table td h4 {
     font-size: 12px;
     line-height: 17px;

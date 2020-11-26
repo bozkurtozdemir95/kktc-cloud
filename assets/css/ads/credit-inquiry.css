@@ -1,0 +1,146 @@
+.credit-inquiry-form .form-box select {
+    height: 50px;
+    border: 0;
+    appearance: none;
+}
+
+.credit-inquiry-form .form-box label {
+    font-size: 14px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+}
+
+.credit-inquiry-table tr {
+    background: #ffffff;
+}
+
+.credit-inquiry-table img {
+    max-width: 150px;
+}
+
+.credit-inquiry-table h5 {
+    font-size: 14px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    line-height: 19px;
+}
+
+.credit-inquiry-table h6 {
+    font-size: 12px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    line-height: 19px;
+}
+
+.credit-inquiry-table td {
+    border-top: 0;
+    padding: 0;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.credit-inquiry-table tr td:first-child {
+    padding: 20px;
+    border-right: 1px solid rgba(2, 48, 71, .05);
+}
+
+.credit-inquiry-table tr td:last-child {
+    padding: 20px;
+    border-left: 1px solid rgba(2, 48, 71, .05);
+}
+
+.credit-inquiry-table td button {
+    width: 130px;
+    justify-content: center;
+}
+
+.credit-inquiry-table tr td .text-wrapper {
+    padding: 10px 20px;
+    border-right: 1px solid rgba(2, 48, 71, .05);
+    align-items: center;
+}
+
+.credit-inquiry-table tr td .text-wrapper.borderless {
+    border: 0;
+}
+
+.credit-inquiry-table tr {
+    border-bottom: 20px solid #fafafa;
+}
+
+.credit-inquiry-banners {
+    position: relative;
+    display: flex;
+}
+
+.credit-inquiry-banners .text {
+    background: rgba(72, 102, 252, .1);
+    padding: 40px 150px 40px 40px;
+    position: relative;
+    clip-path: polygon(0 0, 75% 0, 100% 100%, 0% 100%);
+    width: 50%;
+}
+
+.credit-inquiry-banners .text h1 {
+    font-size: 27px;
+    line-height: 31px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.credit-inquiry-banners .custom-checkbox.purple .checkmark {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #023047;
+    border-radius: 0;
+}
+
+.credit-inquiry-banners input[type='text'] {
+    height: 50px;
+    background: rgba(154, 172, 181, .1);
+    border-radius: 5px;
+    border: 0;
+    padding: 15px;
+    width: 100%;
+}
+
+.credit-inquiry-banners button {
+    width: auto;
+    min-width: 120px;
+}
+
+.credit-inquiry-banners .image {
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 20% 100%);
+    width: 60%;
+    right: 0;
+    position: absolute;
+    top: 0;
+    height: 100%;
+    padding-right: 50px;
+    padding-top: 20px;
+}
+
+.credit-inquiry-banners .image img {
+    max-width: 250px;
+}
+
+@media only screen and (max-width: 992px) {
+    .credit-inquiry-banners {
+        flex-direction: column;
+    }
+
+    .credit-inquiry-banners .image,
+    .credit-inquiry-banners .text {
+        position: relative;
+        clip-path: none;
+        width: 100%;
+    }
+
+    .credit-inquiry-banners .image {
+        justify-content: center;
+    }
+
+    .credit-inquiry-form .form-box {
+        margin-bottom: 20px !important;
+    }
+}

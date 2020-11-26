@@ -159,8 +159,22 @@
 
 .search-map-wrapper {
     width: 100%;
-    height: calc(100vh - 134px);
+    height: calc(100vh - 164px);
     position: relative;
+}
+
+.map-sidebar-wrapper {
+    height: calc(100vh - 164px);
+    overflow-y: auto;
+    position: relative;
+}
+
+.map-sidebar-wrapper .sidebar-fixed-button {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
 }
 
 .search-map-wrapper #map {

@@ -145,7 +145,7 @@ $(document).ready(function () {
     })
     $('.owl-carousel-categories').owlCarousel({
         loop: true,
-        margin: 10,
+        margin: 20,
         nav: true,
         navText: ["<svg class='icon'><use href='../assets/icons/sprite.svg#right-angle'></use></svg>", "<svg class='icon'><use href='../assets/icons/sprite.svg#right-angle'></use></svg>"],
         autoplay: false,

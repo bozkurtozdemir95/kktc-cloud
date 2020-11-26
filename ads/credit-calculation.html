@@ -9,19 +9,13 @@
     <!--- LIBRARIES --->
     <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
-    <link rel="stylesheet" href="../assets/libs/slick-carousel/slick.css">
-    <link rel="stylesheet" href="../assets/libs/light-gallery/lightgallery.min.css">
+    <link rel="stylesheet" href="../assets/libs/owl-carousel/owl.carousel.min.css">
 
     <script src="../assets/libs/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
     <script src="../assets/libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
-    <script src="../assets/libs/slick-carousel/slick.min.js"></script>
-    <script src="../assets/libs/light-gallery/lightgallery.min.js"></script>
-    <script src="../assets/libs/light-gallery/lg-thumbnail.min.js"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD88MLO0jIV9cPr7iolZPFDbFU4wu_GWRscallback=initMap&libraries=&v=weekly"
-            defer></script>
-
+    <script src="../assets/libs/owl-carousel/owl.carousel.min.js"></script>
 
     <script src="../assets/js/main.js"></script>
     <link rel="stylesheet" href="../assets/css/main.css">
@@ -475,95 +469,424 @@
     </div>
 </div>
 
-<div class="page-wrapper bg-light py-30">
+<div class="page-wrapper py-50 bg-light">
     <div class="container">
-        <div class="row mx-0 mb-10">
-            <div class="add-adds-top-links">
-                <a href="add-ads-category.html" class="add-adds-top-link checked">
-                    <div class="icon-wrapper">
-                        <svg class="icon">
-                            <use href="../assets/icons/sprite.svg#check"></use>
-                        </svg>
-                    </div>
-                    <div class="number">
-                        1
-                    </div>
-                    <h4>Kategori Seçimi</h4>
-                </a>
-                <div class="borderr"></div>
-                <a href="add-ads-category.html" class="add-adds-top-link checked">
-                    <div class="icon-wrapper">
-                        <svg class="icon">
-                            <use href="../assets/icons/sprite.svg#check"></use>
-                        </svg>
-                    </div>
-                    <div class="number">
-                        2
-                    </div>
-                    <h4>İlan Detayları</h4>
-                </a>
-                <div class="borderr"></div>
-                <a href="add-ads-category.html" class="add-adds-top-link checked">
-                    <div class="icon-wrapper">
-                        <svg class="icon">
-                            <use href="../assets/icons/sprite.svg#check"></use>
-                        </svg>
-                    </div>
-                    <div class="number">
-                        3
-                    </div>
-                    <h4>Önizleme</h4>
-                </a>
-                <div class="borderr"></div>
-                <a href="add-adds-doping.html" class="add-adds-top-link checked">
-                    <div class="icon-wrapper">
-                        <svg class="icon">
-                            <use href="../assets/icons/sprite.svg#check"></use>
-                        </svg>
-                    </div>
-                    <div class="number">
-                        4
-                    </div>
-                    <h4>Doping</h4>
-                </a>
-                <div class="borderr"></div>
-                <a href="add-ads-category.html" class="add-adds-top-link checked">
-                    <div class="icon-wrapper">
-                        <svg class="icon">
-                            <use href="../assets/icons/sprite.svg#check"></use>
-                        </svg>
-                    </div>
-                    <div class="number">
-                        5
-                    </div>
-                    <h4>Tebrikler!</h4>
-                </a>
-            </div>
-        </div>
-        <div class="row mx-0 py-50">
-            <div class="col-lg-12 mx-auto">
-                <div class="add-container-content adds-congrats">
-                    <div class="col-lg-8 d-flex flex-column align-items-center">
-                        <div class="congrats-border top"></div>
-                        <img src="../assets/icons/adds-added.svg" alt="KKTC">
-                        <h1><span>TEBRİKLER!</span> İLANIN YAYINLANDI!</h1>
-                    </div>
-                    <p>elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                        irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
-                    <div class="col-lg-8 d-flex flex-column align-items-center">
-                        <div class="buttons">
-                            <a class="form-button big bg-gray f-bold fs-24">Anasayfaya Git</a>
-                            <a class="form-button big bg-purple f-bold fs-24">İlanına Göz At</a>
-                        </div>
-                        <div class="congrats-border bottom"></div>
+        <form action="#" class="w-100 credit-inquiry-form">
+            <div class="row mb-30">
+                <div class="col-lg">
+                    <div class="form-box m-0">
+                        <label for="type">Kredi Tipi</label>
+                        <select name="type" id="type">
+                            <option value="0">Konut</option>
+                            <option value="1">Taşıt</option>
+                        </select>
                     </div>
                 </div>
+                <div class="col-lg">
+                    <div class="form-box m-0">
+                        <label for="amount">Kredi Tutarı</label>
+                        <select name="amount" id="amount">
+                            <option value="0">50.000</option>
+                            <option value="1">100.000</option>
+                            <option value="2">200.000</option>
+                            <option value="3">300.000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="form-box m-0">
+                        <label for="time">Vade</label>
+                        <select name="time" id="time">
+                            <option value="0">6 Ay</option>
+                            <option value="1">12 Ay</option>
+                            <option value="2">18 Ay</option>
+                            <option value="3">24 Ay</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg">
+                    <div class="form-box m-0">
+                        <label for="intRate">Faiz Oranı</label>
+                        <select name="intRate" id="intRate">
+                            <option value="0">1.06</option>
+                            <option value="1">1.08</option>
+                            <option value="2">1.10</option>
+                            <option value="3">1.12</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-lg d-flex align-items-end">
+                    <button class="form-button big bg-purple fs-17 f-semibold">Değiştir</button>
+                </div>
+            </div>
+        </form>
+        <div class="row mx-0 mb-20">
+            <div class="page-subtitle purple mb-30">
+                <h4>20.000 TL 1 Yıl Vadeli 3 Adet Konut Kredisi Teklifi</h4>
+            </div>
+            <div class="page-content">
+                <table class="table table-responsive credit-inquiry-table">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../assets/icons/payment-icons/yapi-kredi.svg" alt="KKTC">
+                                <h5>Konut Kredisi</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Aylık Taksit</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Faiz Oranı</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper borderless">
+                                <h6>Toplam Ödeme</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="main-button big white fs-17 f-semibold">Başvur</button>
+                                <button class="main-button big purple fs-17 f-semibold ml-20">Hemen Başvur</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../assets/icons/payment-icons/yapi-kredi.svg" alt="KKTC">
+                                <h5>Konut Kredisi</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Aylık Taksit</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Faiz Oranı</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper borderless">
+                                <h6>Toplam Ödeme</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="main-button big white fs-17 f-semibold">Başvur</button>
+                                <button class="main-button big purple fs-17 f-semibold ml-20">Hemen Başvur</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../assets/icons/payment-icons/yapi-kredi.svg" alt="KKTC">
+                                <h5>Konut Kredisi</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Aylık Taksit</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Faiz Oranı</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper borderless">
+                                <h6>Toplam Ödeme</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="main-button big white fs-17 f-semibold">Başvur</button>
+                                <button class="main-button big purple fs-17 f-semibold ml-20">Hemen Başvur</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../assets/icons/payment-icons/yapi-kredi.svg" alt="KKTC">
+                                <h5>Konut Kredisi</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Aylık Taksit</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Faiz Oranı</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper borderless">
+                                <h6>Toplam Ödeme</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="main-button big white fs-17 f-semibold">Başvur</button>
+                                <button class="main-button big purple fs-17 f-semibold ml-20">Hemen Başvur</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../assets/icons/payment-icons/yapi-kredi.svg" alt="KKTC">
+                                <h5>Konut Kredisi</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Aylık Taksit</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Faiz Oranı</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper borderless">
+                                <h6>Toplam Ödeme</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="main-button big white fs-17 f-semibold">Başvur</button>
+                                <button class="main-button big purple fs-17 f-semibold ml-20">Hemen Başvur</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../assets/icons/payment-icons/yapi-kredi.svg" alt="KKTC">
+                                <h5>Konut Kredisi</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Aylık Taksit</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Faiz Oranı</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper borderless">
+                                <h6>Toplam Ödeme</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="main-button big white fs-17 f-semibold">Başvur</button>
+                                <button class="main-button big purple fs-17 f-semibold ml-20">Hemen Başvur</button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="row mx-0 mb-20">
+            <div class="credit-inquiry-banners w-100">
+                    <div class="text">
+                        <h1 class="mb-20">Bankaların kredi tekliflerini
+                            e-posta adresinize gönderelim</h1>
+                        <div class="custom-checkbox purple mb-20">
+                            <label>
+                                <input type="checkbox" id="mailCheck" name="mailCheck">
+                                <span class="checkmark"></span>
+                                kktc.com’a özel indirimli banka kredileri ve
+                                çeşitli fırsatlardan e-posta, sms ve
+                                telefon ile bilgi almak istediğimi onaylıyorum.
+                            </label>
+                        </div>
+                        <div class="d-flex">
+                            <input type="text" id="main" name="mail" placeholder="E-Mail Adresi">
+                            <button class="form-button big bg-purple fs-17 f-semibold ml-20">Gönder</button>
+                        </div>
+                    </div>
+                    <div class="image">
+                        <img src="../assets/icons/mail-announcement.svg" alt="KKTC">
+                    </div>
+                </div>
+        </div>
+        <div class="row mx-0 mb-20">
+            <div class="page-subtitle purple mb-30">
+                <h4>Diğer Krediler</h4>
+            </div>
+            <div class="page-content">
+                <table class="table table-responsive credit-inquiry-table">
+                    <tbody>
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../assets/icons/payment-icons/yapi-kredi.svg" alt="KKTC">
+                                <h5>Konut Kredisi</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Aylık Taksit</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Faiz Oranı</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper borderless">
+                                <h6>Toplam Ödeme</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="main-button big white fs-17 f-semibold">Başvur</button>
+                                <button class="main-button big purple fs-17 f-semibold ml-20">Hemen Başvur</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../assets/icons/payment-icons/yapi-kredi.svg" alt="KKTC">
+                                <h5>Konut Kredisi</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Aylık Taksit</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Faiz Oranı</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper borderless">
+                                <h6>Toplam Ödeme</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="main-button big white fs-17 f-semibold">Başvur</button>
+                                <button class="main-button big purple fs-17 f-semibold ml-20">Hemen Başvur</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../assets/icons/payment-icons/yapi-kredi.svg" alt="KKTC">
+                                <h5>Konut Kredisi</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Aylık Taksit</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Faiz Oranı</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper borderless">
+                                <h6>Toplam Ödeme</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="main-button big white fs-17 f-semibold">Başvur</button>
+                                <button class="main-button big purple fs-17 f-semibold ml-20">Hemen Başvur</button>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="d-flex flex-column align-items-center">
+                                <img src="../assets/icons/payment-icons/yapi-kredi.svg" alt="KKTC">
+                                <h5>Konut Kredisi</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Aylık Taksit</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper">
+                                <h6>Faiz Oranı</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex flex-column text-wrapper borderless">
+                                <h6>Toplam Ödeme</h6>
+                                <h5>1.815,37 TL</h5>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="d-flex align-items-center justify-content-center">
+                                <button class="main-button big white fs-17 f-semibold">Başvur</button>
+                                <button class="main-button big purple fs-17 f-semibold ml-20">Hemen Başvur</button>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
-</div>
 </div>
 
 <div id="Footer" class="bg-light">
@@ -707,8 +1030,7 @@
         </div>
     </div>
 </div>
-<script>
-    CKEDITOR.replace('editor1');
-</script>
+
+
 </body>
 </html>
