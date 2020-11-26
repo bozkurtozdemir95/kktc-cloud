@@ -1,0 +1,117 @@
+.career-subheader {
+    width: 100%;
+    height: 357px;
+    background: rgba(4, 102, 200, .05);
+    padding-top: 50px;
+}
+
+.career-subheader h1 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 35px;
+    line-height: 47px;
+    color: #023047;
+    margin-bottom: 10px;
+}
+
+.career-subheader h1 b {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    text-decoration: underline;
+    color: #00509D;
+    margin-right: 10px;
+}
+
+.career-subheader p {
+    font-size: 12px;
+    line-height: 16px;
+    color: #023047;
+}
+
+.career-subheader p.light {
+    color: rgba(2, 48, 71, .5);
+}
+
+.career-subheader h6 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 10px;
+}
+
+.career-input-wrapper {
+    position: relative;
+    display: flex;
+    height: 60px;
+    cursor: pointer;
+}
+
+.career-input-wrapper .icon {
+    width: 12px;
+    max-height: 15px;
+    fill: #0466C8;
+    position: relative;
+    z-index: 2;
+    margin-left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.career-input-wrapper .icon.arrow {
+    width: 10px;
+    max-height: 10px;
+    stroke: #023047;
+    position: absolute;
+    left: auto;
+    margin-left: 0;
+    right: 20px;
+}
+
+.career-input-wrapper input,
+.career-input-wrapper select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    padding-left: 50px;
+    background: #FFFFFF;
+    border: 0;
+    appearance: none;
+    color: rgba(2, 48, 71, .5);
+    font-size: 14px;
+    line-height: 19px;
+    transition: all .3s;
+}
+
+.career-input-wrapper input:focus,
+.career-input-wrapper select:focus {
+    color: rgba(2, 48, 71, 1);
+    box-shadow: 0 3px 22px rgba(0, 0, 0, 0.09);
+}
+
+.career-input-wrapper select {
+    border-right: 1px solid rgba(2, 48, 71, .1);
+}
+
+.career-main-form .main-button {
+    min-width: 110px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 9;
+    justify-content: center;
+    height: 40px;
+    cursor: pointer;
+}
+
+.career-main-form {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .career-input-wrapper select {
+        border-right: 0;
+        border-bottom: 1px solid rgba(2, 48, 71, .1);
+    }
+}

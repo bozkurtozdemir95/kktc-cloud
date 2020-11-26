@@ -3,6 +3,7 @@
 @import "header.css";
 @import "footer.css";
 @import "add-form.css";
+/** UI ELEMENTS **/
 
 /** Rent a car css files **/
 @import "rent-a-car/home.css";
@@ -25,6 +26,10 @@
 @import "ads/company-profile.css";
 @import "ads/get.css";
 @import "ads/credit-inquiry.css";
+
+/** Career css files **/
+@import "career/index.css";
+
 
 ::-webkit-scrollbar {
     width: 5px;

@@ -120,7 +120,8 @@
 }
 
 .car-box {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    white-space: nowrap;
 }
 
 .car-box-title {
