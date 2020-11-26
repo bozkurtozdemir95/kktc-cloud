@@ -28,6 +28,14 @@
     fill: #0081A7;
 }
 
+.darkblue .footer-socials a:hover .icon {
+    fill: #007BFF;
+}
+
+.purple .footer-socials a:hover .icon {
+    fill: #4866FC;
+}
+
 .footer-payments .icon {
     width: 70px;
     max-height: 40px;
@@ -50,8 +58,12 @@
     border-radius: 2px;
 }
 
+.darkblue #Footer .menu-title:after {
+    background: #007BFF;
+}
+
 .purple #Footer .menu-title:after {
-    background: #023047;
+    background: #4866FC;
 }
 
 #Footer .footer-menu-col ul a {
@@ -100,6 +112,40 @@
 .copyright {
     width: 100%;
     border-top: 2px solid rgba(2, 48, 71, 0.1);
+}
+
+.contact-information {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.contact-information .icon {
+    width: 30px;
+    height: 30px;
+    fill: #0081A7;
+    margin-right: 5px;
+}
+
+.contact-information h6 {
+    color: #B7B7B7;
+    font-size: 8px;
+    line-height: 13px;
+}
+
+.contact-information h4 {
+    color: #023047;
+    font-size: 12px;
+    line-height: 17px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.darkblue .contact-information .icon {
+    fill: #007BFF;
+}
+
+.purple .contact-information .icon {
+    fill: #4866FC;
 }
 
 @media only screen and (max-width: 992px) {
