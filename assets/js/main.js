@@ -203,7 +203,9 @@ $(document).ready(function () {
             $('.companyFormItems').toggleClass('show');
         }
     });
-
+    $('#aniimated-thumbnials').lightGallery({
+        thumbnail:true
+    });
 });
 
 

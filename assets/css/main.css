@@ -5,6 +5,7 @@
 @import "add-form.css";
 /** UI ELEMENTS **/
 @import "UI/switch.css";
+@import "UI/experience-progressbar.css";
 
 /** Rent a car css files **/
 @import "rent-a-car/home.css";

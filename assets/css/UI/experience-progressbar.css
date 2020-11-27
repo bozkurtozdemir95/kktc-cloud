@@ -1,0 +1,49 @@
+.exp-progressbar .progressbar-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 7px;
+}
+
+.exp-progressbar .progressbar-text span {
+    font-size: 12px;
+    line-height: 16px;
+    color: #023047;
+}
+
+.exp-progressbar .bar {
+    background: rgba(2, 48, 71, .1);
+    height: 3px;
+    width: 100%;
+    position: relative;
+}
+
+.exp-progressbar .bar .bar-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: rgba(2, 48, 71, .5);
+}
+
+.exp-progressbar.blue .bar .bar-value {
+    background: #009FE5;
+}
+
+.exp-progressbar.purple .bar .bar-value {
+    background: #5400FF;
+}
+
+.exp-progressbar.green .bar .bar-value {
+    background: #02C39A;
+}
+
+.exp-progressbar.lightblue .bar .bar-value {
+    background: #00BCE5;
+}
+
+.exp-progressbar.yellow .bar .bar-value {
+    background: #E5B000;
+}
+
