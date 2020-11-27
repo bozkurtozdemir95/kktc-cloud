@@ -30,7 +30,7 @@
 }
 
 .search-job-side .nav {
-    max-height: calc(100vh - 343px);
+    max-height: calc(100vh - 390px);
     flex-wrap: nowrap;
     overflow-y: auto;
 }
