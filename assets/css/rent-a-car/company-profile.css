@@ -1,9 +1,11 @@
 .company-top .white-box {
     padding: 0;
 }
-.company-top .about-text{
+
+.company-top .about-text {
     padding: 22px;
 }
+
 .company-top .company-bg {
     width: 100%;
     height: 270px;
@@ -137,6 +139,10 @@
 
 .profile-socials li:hover {
     background: #0081A7;
+}
+
+.darkblue2 .profile-socials li:hover {
+    background: #0466C8;
 }
 
 .profile-socials li:hover .icon {

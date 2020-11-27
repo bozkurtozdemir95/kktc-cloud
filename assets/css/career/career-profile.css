@@ -1,0 +1,153 @@
+.career-sidebar {
+    max-width: 271px;
+    width: 100%;
+}
+
+.career-sidebar-box {
+    padding: 11px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
+    margin-bottom: 20px;
+}
+
+.career-sidebar-box .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px dashed #0466C8;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 5px;
+}
+
+.career-sidebar-box .avatar img {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+}
+
+.career-sidebar-box h1 {
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.career-sidebar-box span {
+    font-size: 14px;
+    line-height: 19px;
+    color: #9AACB5;
+}
+
+.career-sidebar-box.first {
+    padding: 20px 37px;
+}
+
+.career-sidebar-box.first button {
+    width: 100%;
+    justify-content: center;
+}
+
+.career-sidebar-box h4 {
+    font-size: 16px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    line-height: 21px;
+    color: #023047;
+}
+
+.career-sidebar-box h4 span {
+    color: #023047;
+    line-height: 21px;
+}
+
+.career-sidebar-box .company-contact-list {
+    width: 100%;
+}
+
+.career-sidebar-box .company-contact-list li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 14px;
+    line-height: 19px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.career-sidebar-box .company-contact-list li .icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    fill: #0466C8;
+}
+
+.career-sidebar-box .company-contact-list li:last-child {
+    margin-bottom: 0;
+}
+
+.career-sidebar-box table {
+    width: 100%;
+}
+
+.career-sidebar-box table tr td:first-child {
+    color: #023047;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.career-sidebar-box table tr td {
+    font-size: 14px;
+    line-height: 30px;
+    color: #9AACB5;
+}
+
+.career-sidebar-box table tr td a {
+    color: #023047;
+    display: flex;
+    align-items: center;
+}
+
+.career-sidebar-box table tr td a .icon {
+    width: 6px;
+    height: 6px;
+    stroke: #023047;
+    margin-left: 5px;
+}
+
+.career-sidebar-box.with-button button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    font-size: 16px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    transition: all .3s;
+}
+
+.career-sidebar-box.with-button button .icon-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 46px;
+    width: 46px;
+    background: #0466C8;
+}
+
+.career-sidebar-box.with-button button .icon {
+    height: 16px;
+    max-width: 24px;
+    fill: #ffffff;
+}
+
+.career-sidebar-box.with-button button:hover {
+    background: rgba(196, 196, 196, .2);
+}
+
+.career-sidebar #map {
+    width: 100%;
+    height: 271px;
+}

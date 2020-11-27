@@ -16,13 +16,15 @@
     <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
     <script src="../assets/libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
     <script src="../assets/libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD88MLO0jIV9cPr7iolZPFDbFU4wu_GWRs&callback=initMap&libraries=&v=weekly" defer></script>
+
 
     <script src="../assets/js/main.js"></script>
     <link rel="stylesheet" href="../assets/css/main.css">
     <title>KKTC - Kariyer</title>
 </head>
 <body class="darkblue2">
-<div id="Header" >
+<div id="Header">
     <div class="header-top">
         <div class="container h-100">
             <div class="d-flex justify-content-between align-items-center h-100">
@@ -67,7 +69,8 @@
                             <ul class="top-navigation show-mobile vertical h-100">
                                 <li><a href="../ads/index.html" class="color-dark fs-12 blue">İlan</a></li>
                                 <li><a href="../company/index.html" class="color-dark fs-12 orange">Firma</a></li>
-                                <li><a href="../rent-a-car/index.html" class="color-dark fs-12 blue">Araç Kiralama</a></li>
+                                <li><a href="../rent-a-car/index.html" class="color-dark fs-12 blue">Araç Kiralama</a>
+                                </li>
                                 <li><a href="index.html" class="color-dark fs-12 purple">Kariyer</a></li>
                                 <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
                                 <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
@@ -513,6 +516,146 @@
 <div class="page-wrapper py-50 bg-light">
     <div class="container">
         <div class="row">
+            <div class="col-lg career-sidebar">
+                <div class="career-sidebar-box d-flex flex-column first">
+                    <div class="avatar">
+                        <img src="../assets/images/avatar-5.png" alt="KKTC">
+                    </div>
+                    <h1>sigortam.net</h1>
+                    <span>UI/UX, Logo, Banner</span>
+                    <div class="rating darkblue mb-20">
+                        <svg class="icon active">
+                            <use href="../assets/icons/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="icon active">
+                            <use href="../assets/icons/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="icon active">
+                            <use href="../assets/icons/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="icon active">
+                            <use href="../assets/icons/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#star"></use>
+                        </svg>
+                        <h6 class="fs-15 lh-20 color-dark">4.2/5</h6>
+                    </div>
+                    <button class="main-button dark big f-semibold fs-16 lh-21">Mesaj At</button>
+                </div>
+                <div class="career-sidebar-box">
+                    <h4>1.236 <span class="f-regular">Takipçi</span></h4>
+                </div>
+                <div class="career-sidebar-box with-button p-0">
+                    <button class="empty-button">
+                        Takip Et
+                        <div class="icon-wrapper">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#followers"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <ul class="horizontal profile-socials">
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="career-sidebar-box flex-column align-items-start">
+                    <h4 class="mb-20">İletişim</h4>
+                    <ul class="vertical company-contact-list">
+                        <li>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#phone-3"></use>
+                            </svg>
+                            +90 545 444 55 55
+                        </li>
+                        <li>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#location-slim"></use>
+                            </svg>
+                            Kıbrıs, Lefkoşa
+                        </li>
+                        <li>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#mail-3"></use>
+                            </svg>
+                            info@bilalduman.com.tr
+                        </li>
+                        <li>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#globe-3"></use>
+                            </svg>
+                            www.bilalduman.com.tr
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="career-sidebar-box">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Sektör</td>
+                            <td>Ambalaj</td>
+                        </tr>
+                        <tr>
+                            <td>Kuruluş Yılı</td>
+                            <td>2019</td>
+                        </tr>
+                        <tr>
+                            <td>Çalışan Sayısı</td>
+                            <td>450 - 549</td>
+                        </tr>
+                        <tr>
+                            <td>Adres</td>
+                            <td>
+                                <a href="#">
+                                    Adrese Git
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div id="map"></div>
+            </div>
+            <div class="col-lg career-content"></div>
         </div>
     </div>
 </div>
