@@ -4,6 +4,7 @@
 @import "footer.css";
 @import "add-form.css";
 /** UI ELEMENTS **/
+@import "UI/switch.css";
 
 /** Rent a car css files **/
 @import "rent-a-car/home.css";
@@ -29,6 +30,7 @@
 
 /** Career css files **/
 @import "career/index.css";
+@import "career/career-search.css";
 
 
 ::-webkit-scrollbar {
@@ -219,7 +221,7 @@ button.no-anim {
 }
 
 .lh-14 {
-    line-height: 14px;
+    line-height: 14px !important;
 }
 
 .lh-16 {
@@ -227,7 +229,7 @@ button.no-anim {
 }
 
 .lh-19 {
-    line-height: 19px;
+    line-height: 19px !important;
 }
 
 .lh-21 {
@@ -244,6 +246,9 @@ button.no-anim {
 
 .lh-27 {
     line-height: 27px;
+}
+.lh-28 {
+    line-height: 28px;
 }
 
 .lh-30 {
@@ -521,7 +526,7 @@ button.no-anim {
 .white-box {
     background: #FFFFFF;
     box-shadow: 0 3px 22px rgba(0, 0, 0, .05);
-    padding: 22px;
+    padding: 20px;
     transition: all .25s;
 }
 
@@ -1085,14 +1090,17 @@ button.no-anim {
 
 .purple .main-button.primary {
     background: #4866FC;
+    border-color: #4866FC;
 }
 
 .darkblue .main-button.primary {
     background: #007BFF;
+    border-color: #007BFF;
 }
 
 .darkblue2 .main-button.primary {
     background: #0466C8;
+    border-color: #0466C8;
 }
 
 .main-button.md {

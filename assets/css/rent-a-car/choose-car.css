@@ -94,6 +94,14 @@
     color: #007BFF;
 }
 
+.darkblue2 .selected-filter-box.clear:hover {
+    color: #0466C8;
+}
+
+.purple .selected-filter-box.clear:hover {
+    color: #4866FC;
+}
+
 .list-filter-row {
     display: flex;
     align-items: center;

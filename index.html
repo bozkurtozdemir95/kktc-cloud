@@ -15,6 +15,7 @@
     <script src="assets/libs/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="assets/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/aede4151d0.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/main.css">
     <title>KKTC</title>
     <style>
@@ -28,6 +29,20 @@
 
         .btn {
             border-bottom: 1px solid rgba(0, 0, 0, .1);
+        }
+        .collapse li a{
+            position: relative;
+        }
+        .collapse li.done a:after{
+            content: "\f058";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+            position: absolute;
+            right: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 12px;
+            color: #14D8AE;
         }
     </style>
 </head>
@@ -46,11 +61,11 @@
             <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
                 <div class="card-body">
                     <ul>
-                        <li class="ml-3 mb-3"><a href="rent-a-car/index.html">Anasayfa</a></li>
-                        <li class="ml-3 mb-3"><a href="rent-a-car/choose-car.html">Araç Seçim</a></li>
-                        <li class="ml-3 mb-3"><a href="rent-a-car/car-payment.html">Araç Ödeme</a></li>
-                        <li class="ml-3 mb-3"><a href="rent-a-car/driver-info.html">Sürücü Bilgileri</a></li>
-                        <li class="ml-3 mb-3"><a href="rent-a-car/company-profile.html">Firma Profili</a></li>
+                        <li class="ml-3 mb-3 done"><a href="rent-a-car/index.html">Anasayfa</a></li>
+                        <li class="ml-3 mb-3 done"><a href="rent-a-car/choose-car.html">Araç Seçim</a></li>
+                        <li class="ml-3 mb-3 done"><a href="rent-a-car/car-payment.html">Araç Ödeme</a></li>
+                        <li class="ml-3 mb-3 done"><a href="rent-a-car/driver-info.html">Sürücü Bilgileri</a></li>
+                        <li class="ml-3 mb-3 done"><a href="rent-a-car/company-profile.html">Firma Profili</a></li>
                     </ul>
                 </div>
             </div>
@@ -64,14 +79,14 @@
             <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
                 <div class="card-body">
                     <ul>
-                        <li class="ml-3 mb-3"><a href="company/index.html">Anasayfa</a></li>
-                        <li class="ml-3 mb-3"><a href="company/company-list.html">Firma Listesi</a></li>
-                        <li class="ml-3 mb-3"><a href="company/company-map.html">Firma Harita</a></li>
-                        <li class="ml-3 mb-3"><a href="company/company-details.html">Firma Detayları</a></li>
-                        <li class="ml-3 mb-3"><a href="company/add-company.html">Firma Ekle - Firma Bilgileri</a></li>
-                        <li class="ml-3 mb-3"><a href="company/select-usertype.html">Firma Ekle - Üyelik Tercihi</a></li>
-                        <li class="ml-3 mb-3"><a href="company/choose-photo.html">Firma Ekle - Fotoğraf Ekle</a></li>
-                        <li class="ml-3 mb-3"><a href="company/company-payment.html">Firma Ekle - Ödeme</a></li>
+                        <li class="ml-3 mb-3 done"><a href="company/index.html">Anasayfa</a></li>
+                        <li class="ml-3 mb-3 done"><a href="company/company-list.html">Firma Listesi</a></li>
+                        <li class="ml-3 mb-3 done"><a href="company/company-map.html">Firma Harita</a></li>
+                        <li class="ml-3 mb-3 done"><a href="company/company-details.html">Firma Detayları</a></li>
+                        <li class="ml-3 mb-3 done"><a href="company/add-company.html">Firma Ekle - Firma Bilgileri</a></li>
+                        <li class="ml-3 mb-3 done"><a href="company/select-usertype.html">Firma Ekle - Üyelik Tercihi</a></li>
+                        <li class="ml-3 mb-3 done"><a href="company/choose-photo.html">Firma Ekle - Fotoğraf Ekle</a></li>
+                        <li class="ml-3 mb-3 done"><a href="company/company-payment.html">Firma Ekle - Ödeme</a></li>
                     </ul>
                 </div>
             </div>
@@ -85,28 +100,28 @@
             <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
                     <ul>
-                        <li class="ml-3 mb-3"><a href="ads/index.html">Anasayfa</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/car-table.html">Araç - Tablo</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/car-list.html">Araç - Liste</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/car-details.html">Araç - Detay</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/home-table.html">Ev - Tablo</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/home-list.html">Ev - Liste</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/home-details.html">Ev - Detay</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/search-in-map.html">Haritada Ara</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/search-in-map-car.html">Haritada Ara - Araç</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/search-in-map-home.html">Haritada Ara - Ev</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/detailed-search.html">Detaylı Arama</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/ads-company-details.html">Firma Profili</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/add-ads-category.html">İlan Ekle - Kategori</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/add-adds-preview.html">İlan Ekle - Önizleme</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/add-adds-doping.html">İlan Ekle - Doping</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/add-adds-congrats.html">İlan Ekle - Tebrikler!</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/add-adds-get.html">GET - İlan Ekle</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/ads-get.html">GET - İlan</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/ads-get-delivery-info.html">GET - Teslimat Bilgileri</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/ads-get-payment-info.html">GET - Ödeme Bilgileri</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/ads-get-congrats.html">GET - Tebrikler</a></li>
-                        <li class="ml-3 mb-3"><a href="ads/credit-calculation.html">Kredi Sorgulama</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/index.html">Anasayfa</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/car-table.html">Araç - Tablo</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/car-list.html">Araç - Liste</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/car-details.html">Araç - Detay</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/home-table.html">Ev - Tablo</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/home-list.html">Ev - Liste</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/home-details.html">Ev - Detay</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/search-in-map.html">Haritada Ara</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/search-in-map-car.html">Haritada Ara - Araç</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/search-in-map-home.html">Haritada Ara - Ev</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/detailed-search.html">Detaylı Arama</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/ads-company-details.html">Firma Profili</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/add-ads-category.html">İlan Ekle - Kategori</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/add-adds-preview.html">İlan Ekle - Önizleme</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/add-adds-doping.html">İlan Ekle - Doping</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/add-adds-congrats.html">İlan Ekle - Tebrikler!</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/add-adds-get.html">GET - İlan Ekle</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/ads-get.html">GET - İlan</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/ads-get-delivery-info.html">GET - Teslimat Bilgileri</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/ads-get-payment-info.html">GET - Ödeme Bilgileri</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/ads-get-congrats.html">GET - Tebrikler</a></li>
+                        <li class="ml-3 mb-3 done"><a href="ads/credit-calculation.html">Kredi Sorgulama</a></li>
                     </ul>
                 </div>
             </div>
@@ -120,7 +135,7 @@
             <div id="collapseFour" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
                 <div class="card-body">
                     <ul>
-                        <li class="ml-3 mb-3"><a href="career/index.html">Anasayfa</a></li>
+                        <li class="ml-3 mb-3 done"><a href="career/index.html">Anasayfa</a></li>
                         <li class="ml-3 mb-3"><a href="career/career-about-us.html">Hakkımızda</a></li>
                         <li class="ml-3 mb-3"><a href="career/career-contact.html">İletişim</a></li>
                         <li class="ml-3 mb-3"><a href="career/career-company-profile.html">Firma Profili</a></li>

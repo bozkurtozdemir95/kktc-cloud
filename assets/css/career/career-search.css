@@ -1,0 +1,469 @@
+.search-job-side {
+    width: 368px;
+    max-width: 368px;
+}
+
+.search-job-side .title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    background: #ffffff;
+    padding: 6px 15px;
+}
+
+.search-job-side .title h5 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #023047;
+}
+
+.search-job-side .title p {
+    font-size: 14px;
+    line-height: 28px;
+}
+
+.search-job-side .title .switch-wrapper {
+    height: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.search-job-side .nav {
+    max-height: calc(100vh - 343px);
+    flex-wrap: nowrap;
+    overflow-y: auto;
+}
+
+.search-job-side .nav::-webkit-scrollbar-thumb {
+    background: rgba(0, 80, 157, .2);
+}
+
+.search-job-side .nav-link {
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 3px 22px rgba(0, 0, 0, 0.03);
+}
+
+.search-job-side .nav-link img {
+    width: 49px;
+    height: 49px;
+    margin-right: 13px;
+}
+
+.search-job-side .nav-link h6 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #023047;
+}
+
+.search-job-side .nav-link span {
+    font-size: 12px;
+    color: rgba(2, 48, 71, .5);
+}
+
+.search-job-side .nav-link .info span {
+    position: relative;
+}
+
+.search-job-side .nav-link .info span:first-child {
+    margin-right: 11px;
+}
+
+.search-job-side .nav-link .info span:first-child:after {
+    content: "";
+    position: absolute;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: rgba(51, 65, 92, .5);
+}
+
+.search-job-side .nav-link .favourite .icon {
+    width: 17px;
+    height: 17px;
+    fill: #9AACB5;
+}
+
+.search-job-side .nav-link .favourite:hover .icon {
+    fill: #F80044;
+}
+
+.search-job-side .nav-link {
+    border-radius: 0;
+    margin-top: 10px;
+    background: #ffffff;
+}
+
+.search-job-side .nav-link:hover,
+.search-job-side .nav-link.active {
+    background: rgba(196, 196, 196, .2);
+}
+
+.job-content-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.job-content-title .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px dashed #0466C8;
+    width: 100px;
+    height: 100px;
+    margin-right: 16px;
+}
+
+.job-content-title .avatar img {
+    width: 84px;
+    height: 84px;
+    border-radius: 50%;
+}
+
+.job-content-title button {
+    min-width: 133px;
+    justify-content: center;
+}
+
+.job-content-title h6 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #023047;
+}
+
+.job-content-title span {
+    font-size: 14px;
+    color: rgba(2, 48, 71, .5);
+}
+
+.job-content-title .info span {
+    position: relative;
+}
+
+.job-content-title .info span:first-child {
+    margin-right: 11px;
+}
+
+.job-content-title .info span:first-child:after {
+    content: "";
+    position: absolute;
+    right: -9px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background: rgba(51, 65, 92, .5);
+}
+
+.job-content-badges {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.job-content-badges .badge {
+    background: #ffffff;
+    box-shadow: 0 3px 22px rgba(0, 0, 0, 0.06);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 8px 11px;
+    height: 58px;
+    margin-bottom: 10px;
+}
+
+.job-content-badges .badge h6 {
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 5px;
+    color: rgba(2, 48, 71, .5);
+}
+
+.job-content-badges .badge span {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.job-information-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.job-information-list h4 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 14px;
+    line-height: 28px;
+    margin-bottom: 15px;
+}
+
+.job-information-list ul {
+    padding-left: 7px;
+}
+
+.job-information-list ul li {
+    font-size: 12px;
+    line-height: 28px;
+    position: relative;
+    padding-left: 10px;
+}
+
+.job-information-list ul li:before {
+    content: "";
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #023047;
+    position: absolute;
+    left: 0;
+    top: calc(50% - 1px);
+    transform: translateY(-50%);
+}
+
+.other-ads-box {
+    padding: 10px 16px;
+    background: #ffffff;
+    box-shadow: 0 3px 22px rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.other-ads-box:hover {
+    background: rgba(154, 172, 181, .3);
+    box-shadow: 0 3px 22px rgba(0, 0, 0, 0.08);
+}
+
+.other-ads-box h6 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: #023047;
+}
+
+.other-ads-box span {
+    font-size: 12px;
+    color: rgba(2, 48, 71, .5);
+}
+
+.job-content-about .title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.job-content-about .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px dashed #0466C8;
+    width: 77px;
+    height: 77px;
+    margin-right: 8px;
+}
+
+.job-content-about .avatar img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.job-content-about h6 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #023047;
+}
+
+.job-content-about span {
+    font-size: 14px;
+    color: rgba(2, 48, 71, .5);
+}
+
+.job-content-about p {
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.job-content-about a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+    line-height: 28px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    color: #023047;
+    transition: all .3s;
+}
+
+.job-content-about a:hover {
+    color: #0466C8;
+}
+
+.job-search-form {
+    width: 100%;
+}
+
+.job-search-form .check-wrapper {
+    max-width: 100px;
+}
+
+.job-form-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: all .3s;
+    margin-bottom: 10px;
+}
+
+.job-form-box input,
+.job-form-box select {
+    height: 54px;
+    border: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all .3s;
+}
+
+.job-form-box select {
+    appearance: none;
+}
+
+.job-form-box select:focus {
+    background: rgba(196, 196, 196, .2);
+    box-shadow: 0 3px 22px rgba(0, 0, 0, 0.03);
+}
+
+.job-form-box.search button {
+    width: 54px;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.job-form-box.search button .icon {
+    margin: 0;
+}
+
+.job-search-form .col-lg {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.job-form-box.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    appearance: none;
+}
+
+.job-form-box label {
+    width: 100%;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+.job-form-box.checkbox label {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    font-size: 14px;
+    color: #023047;
+}
+
+.job-form-box.checkbox input:checked + label {
+    background: #0466C8;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.job-form-box.checkbox label {
+    margin: 0;
+}
+
+.job-form-box.all-filters {
+    width: 100%;
+    height: 54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.job-form-box.all-filters h5 {
+    font-size: 16px;
+    color: #023047;
+}
+
+.job-form-box.all-filters:hover {
+    background: #0466C8;
+}
+
+.job-form-box.all-filters:hover h5 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    color: #ffffff;
+}
+
+.job-form-box .icon.arrow {
+    width: 12px;
+    max-height: 8px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    stroke: #023047;
+}
+
+@media only screen and (max-width: 992px) {
+    .search-job-side {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .job-content-title .buttons {
+        margin-left: 0 !important;
+        flex-direction: row !important;
+        margin-top: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .job-content-title .buttons button:first-child {
+        margin-bottom: 0;
+        margin-right: 10px;
+    }
+
+    .job-search-form .check-wrapper {
+        width: 50%;
+        max-width: 50%;
+    }
+}
