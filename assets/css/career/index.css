@@ -1,8 +1,9 @@
 .career-subheader {
     width: 100%;
-    height: 357px;
+    height: 387px;
     background: rgba(4, 102, 200, .05);
     padding-top: 50px;
+    margin-bottom: 100px;
 }
 
 .career-subheader h1 {
@@ -109,9 +110,197 @@
     margin-bottom: 20px;
 }
 
+.owl-carousel-career-categories {
+    margin-top: 30px;
+}
+
+.owl-carousel-career-categories .owl-stage-outer {
+    z-index: 2;
+}
+
+.owl-carousel-career-categories .owl-nav .owl-prev {
+    z-index: 2;
+    left: -20px;
+}
+
+.owl-carousel-career-categories .owl-nav .owl-next {
+    right: -20px;
+    z-index: 2;
+}
+
+.owl-carousel-career-categories .owl-nav .owl-prev .icon {
+    transform: rotate(180deg);
+}
+
+.owl-carousel-career-categories .owl-nav button {
+    background: #0466C8 !important;
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 6px solid #F8F9FA !important;
+    position: absolute;
+    top: calc(50% - 30px);
+}
+
+.owl-carousel-career-categories .owl-nav .icon {
+    width: 10px;
+    height: 10px;
+    stroke: #ffffff;
+    transition: all .25s;
+}
+
+.owl-carousel-career-categories .owl-nav button:hover .icon {
+    fill: #007BFF;
+}
+
+.owl-carousel-career-categories .slider-category-box:hover h6, .owl-carousel-career-categories .slider-category-box.active h6 {
+    color: #ffffff;
+}
+
+.career-populars {
+    background: #FFFFFF;
+    box-shadow: 0 3px 22px rgba(0, 0, 0, 0.03);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.career-home-title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.career-home-title h3 {
+    color: #023047;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.career-home-title a {
+    font-size: 14px;
+    line-height: 19px;
+    color: #023047;
+}
+
+.career-popular-list {
+    margin: 0 -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.career-popular-box {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 4 - 20px);
+    box-shadow: 0 3px 22px rgba(0, 0, 0, 0.09);
+    background: #ffffff;
+    padding: 10px;
+    margin: 10px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.career-popular-box:hover {
+    box-shadow: 0 3px 22px rgba(0, 0, 0, 0.3);
+}
+
+.career-popular-box .box-top {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.career-popular-box .box-top img {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+}
+
+.career-popular-box p {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.career-popular-box p.light {
+    color: rgba(2, 48, 71, .5);
+}
+
+.career-popular-box h4 {
+    font-size: 14px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    line-height: 19px;
+    color: rgba(2, 48, 71, 1);
+}
+
+.career-popular-box .box-top .favourite .icon {
+    width: 19px;
+    height: 19px;
+    fill: #9AACB5;
+}
+
+.career-popular-box .box-top .favourite:hover .icon {
+    fill: #F80044;
+}
+
+.career-popular-box .info {
+    margin: 10px 0;
+}
+
+.career-popular-box .info p {
+    padding: 0 5px;
+    display: flex;
+    font-size: 11px;
+    align-items: center;
+    border-right: 1px solid rgba(2, 48, 71, .1);
+}
+
+.career-popular-box .info p b {
+    color: #023047;
+    margin-left: 3px;
+}
+
+.career-popular-box .info p:last-child {
+    border-right: 0;
+}
+
+.career-popular-box .location .icon {
+    width: 14px;
+    height: 14px;
+    fill: #0466C8;
+    margin-right: 4px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .career-popular-box {
+        width: calc(100% / 3 - 20px);
+    }
+
+}
+
 @media only screen and (max-width: 992px) {
+    .career-subheader {
+        height: 460px;
+    }
+
     .career-input-wrapper select {
         border-right: 0;
         border-bottom: 1px solid rgba(2, 48, 71, .1);
+    }
+
+    .career-popular-box {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .career-popular-box {
+        width: 100%;
     }
 }

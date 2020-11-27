@@ -162,6 +162,25 @@ $(document).ready(function () {
             }
         }
     })
+    $('.owl-carousel-career-categories').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        navText: ["<svg class='icon'><use href='../assets/icons/sprite.svg#right-angle'></use></svg>", "<svg class='icon'><use href='../assets/icons/sprite.svg#right-angle'></use></svg>"],
+        autoplay: false,
+        autoplayTimeout: 3000,
+        responsive: {
+            0: {
+                items: 3
+            },
+            600: {
+                items: 4
+            },
+            1000: {
+                items: 8
+            }
+        }
+    })
     $('.owl-carousel-company-banners').owlCarousel({
         loop: true,
         margin: 10,
