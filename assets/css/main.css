@@ -3230,7 +3230,7 @@ button.no-anim {
         position: -webkit-sticky;
         position: sticky;
         top: 12vh;
-        height: 88vh;
+        height: 85vh;
         overflow-y: auto;
     }
 
