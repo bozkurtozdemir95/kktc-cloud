@@ -755,6 +755,7 @@ button.no-anim {
 .currency-select.custom-selectbox .custom-select-toggler .icon,
 .currency-select.custom-selectbox .custom-select-menu .icon {
     width: 20px;
+    min-width: 20px;
     height: 20px;
     margin-right: 10px;
     fill: #023047;
