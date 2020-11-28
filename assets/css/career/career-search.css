@@ -30,9 +30,9 @@
 }
 
 .search-job-side .nav {
-    max-height: calc(100vh - 335px);
     flex-wrap: nowrap;
     overflow-y: auto;
+    height: 100%;
 }
 
 .search-job-side .nav::-webkit-scrollbar-thumb {
