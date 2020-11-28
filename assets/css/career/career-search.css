@@ -30,7 +30,7 @@
 }
 
 .search-job-side .nav {
-    max-height: calc(100vh - 390px);
+    max-height: calc(100vh - 335px);
     flex-wrap: nowrap;
     overflow-y: auto;
 }
@@ -120,12 +120,17 @@
     width: 100px;
     height: 100px;
     margin-right: 16px;
+    transition: all .3s;
 }
 
 .job-content-title .avatar img {
     width: 84px;
     height: 84px;
     border-radius: 50%;
+}
+
+.job-content-title .avatar:hover {
+    background: rgba(4, 102, 200, .05);
 }
 
 .job-content-title button {
@@ -140,9 +145,19 @@
     color: #023047;
 }
 
+.job-content-title span a,
 .job-content-title span {
     font-size: 14px;
     color: rgba(2, 48, 71, .5);
+}
+
+.job-content-title span a {
+    transition: all .3s;
+}
+
+.job-content-title span a:hover {
+    color: #023047;
+    text-decoration: underline;
 }
 
 .job-content-title .info span {
@@ -210,6 +225,10 @@
     margin-bottom: 15px;
 }
 
+.job-information-list.big h4 {
+    font-size: 16px;
+}
+
 .job-information-list ul {
     padding-left: 7px;
 }
@@ -219,6 +238,10 @@
     line-height: 28px;
     position: relative;
     padding-left: 10px;
+}
+
+.job-information-list.big ul li {
+    font-size: 14px;
 }
 
 .job-information-list ul li:before {
@@ -231,6 +254,36 @@
     left: 0;
     top: calc(50% - 1px);
     transform: translateY(-50%);
+}
+
+.job-information-list.blue ul li:before {
+    background: #0466C8;
+}
+
+.job-information-list table {
+    margin-bottom: 0;
+}
+
+.job-information-list table td {
+    font-size: 12px;
+    line-height: 28px;
+    padding: 0;
+    text-align: left;
+}
+
+.job-information-list table tr td:last-child {
+    color: #9AACB5;
+    text-align: right;
+}
+
+.job-information-list p {
+    line-height: 28px;
+    font-size: 12px;
+}
+
+.job-information-list.with-max-height {
+    max-height: 323px;
+    overflow-y: auto;
 }
 
 .other-ads-box {
@@ -444,14 +497,16 @@
     stroke: #023047;
 }
 
-.freelancer-portfoy {
+.job-detail-gallery {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
-.freelancer-portfoy-thumbs {
-    margin: 5px;
-    width: calc(100% / 5 - 10px);
+.job-detail-gallery-thumbs {
+    margin: 10px;
+    width: calc(100% / 4 - 20px);
 }
 
 .freelancer-experiences .exp-progressbar {
@@ -493,5 +548,9 @@
     .job-search-form .check-wrapper {
         width: 50%;
         max-width: 50%;
+    }
+
+    .job-detail-gallery-thumbs {
+        width: calc(100% / 2 - 20px);
     }
 }

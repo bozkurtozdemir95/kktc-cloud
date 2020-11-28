@@ -175,7 +175,7 @@ button.no-anim {
 }
 
 .fs-20 {
-    font-size: 20px;
+    font-size: 20px !important;
 }
 
 .fs-21 {
@@ -547,6 +547,10 @@ button.no-anim {
     box-shadow: none;
 }
 
+.white-box.no-shadow-hover:hover {
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .05);
+}
+
 .white-box-md {
     border: 1px solid rgba(2, 48, 71, .1);
     padding: 16px 0;
@@ -656,6 +660,23 @@ button.no-anim {
 
 .white-box-sm:hover {
     box-shadow: 0 0 6px rgba(0, 0, 0, .2);
+}
+
+.white-box-title {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.white-box-title a {
+    color: #023047;
+    font-size: 12px;
+    line-height: 28px;
+    transition: all .3s;
+}
+
+.white-box-title a:hover {
+    color: #0466C8;
 }
 
 .bordered-box {
@@ -1117,6 +1138,11 @@ button.no-anim {
 
 .main-button.big {
     height: 41px;
+}
+
+.main-button.huge {
+    min-width: 170px;
+    height: 52px;
 }
 
 .datetimepicker {

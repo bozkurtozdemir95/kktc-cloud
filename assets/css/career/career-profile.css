@@ -151,3 +151,209 @@
     width: 100%;
     height: 271px;
 }
+
+.job-detail-top h3 {
+    font-size: 16px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+
+.job-detail-top h4 {
+    font-size: 14px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    line-height: 21px;
+    margin-top: 5px;
+}
+
+.job-detail-top span {
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.job-detail-top span.light {
+    color: #9AACB5;
+}
+
+.detail-top-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 85px;
+    width: 100%;
+    background: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
+}
+
+.job-detail-top .row {
+    margin-left: -2.5px;
+    margin-right: -2.5px;
+}
+
+.job-detail-top .col-lg-4,
+.job-detail-top .col-lg-2 {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+
+.job-detail-top .location {
+    margin-top: 8px;
+}
+
+.job-detail-top .location .icon {
+    width: 14px;
+    height: 14px;
+    fill: #0466C8;
+    margin-right: 4px;
+}
+
+.job-detail-bars {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.job-detail-bar {
+    display: flex;
+    align-items: center;
+    height: 53px;
+    background: #ffffff;
+    padding: 11px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
+}
+
+.job-detail-bars .job-detail-bar:first-child {
+    margin-left: 0;
+}
+
+.job-detail-bar .icon {
+    height: 13px;
+    max-width: 18px;
+    fill: #023047;
+    margin-right: 10px;
+}
+
+.job-detail-bar h4 {
+    font-size: 14px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    line-height: 19px;
+}
+
+.job-detail-bar h4 span {
+    font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+.job-detail-bar button {
+    min-width: 175px;
+}
+
+.freelancer-portfoy {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.freelancer-portfoy-thumbs {
+    margin: 5px;
+    width: calc(100% / 5 - 10px);
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
+}
+
+.job-detail-populars .career-popular-box .box-top .favourite .icon {
+    fill: rgba(154, 172, 181, .3);
+    width: 13px;
+    height: 13px;
+}
+
+.job-detail-populars .career-popular-box .box-top .favourite:hover .icon {
+    fill: #F80044;
+}
+
+.job-detail-populars .career-popular-box {
+    padding: 15px;
+    width: calc(100% / 4 - 20px);
+}
+
+.job-detail-populars .career-popular-box .box-top img {
+    margin-right: 5px;
+}
+
+.job-detail-populars .career-popular-box h5 {
+    font-size: 14px;
+    line-height: 19px;
+    color: #023047;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.job-detail-populars .career-popular-box p {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(2, 48, 71, .5);
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .detail-top-box {
+        padding: 10px;
+    }
+
+    .detail-top-box:first-child {
+        align-items: center !important;
+    }
+
+    .job-detail-top h3 {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    .job-detail-top h4 {
+        font-size: 12px;
+    }
+
+    .job-detail-top span {
+        font-size: 10px;
+    }
+
+    .job-detail-bar h4 {
+        font-size: 12px;
+    }
+
+    .job-detail-populars .career-popular-box {
+        width: calc(100% / 2 - 20px);
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    .career-sidebar {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .job-detail-bars {
+        flex-direction: column;
+    }
+
+    .job-detail-bar {
+        margin-left: 0 !important;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .job-detail-bars .job-detail-bar:last-child {
+        background: transparent;
+        box-shadow: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .job-detail-populars .career-popular-box {
+        width: 100%
+    }
+}
