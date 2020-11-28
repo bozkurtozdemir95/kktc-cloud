@@ -29,12 +29,6 @@
     align-items: center;
 }
 
-.search-job-side .nav {
-    flex-wrap: nowrap;
-    overflow-y: auto;
-    height: 100%;
-}
-
 .search-job-side .nav::-webkit-scrollbar-thumb {
     background: rgba(0, 80, 157, .2);
 }

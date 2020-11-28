@@ -3224,3 +3224,14 @@ button.no-anim {
         width: calc(100% - 20px);
     }
 }
+
+@media only screen and (min-width: 992px) {
+    .job-side {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 12vh;
+        height: 88vh;
+        overflow-y: auto;
+    }
+
+}
