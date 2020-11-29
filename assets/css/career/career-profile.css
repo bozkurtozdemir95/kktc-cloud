@@ -13,6 +13,10 @@
     margin-bottom: 20px;
 }
 
+.career-sidebar-box.transparent {
+    background: #FAFAFA;
+}
+
 .career-sidebar-box .avatar {
     display: flex;
     align-items: center;
@@ -257,10 +261,24 @@
     flex-wrap: wrap;
 }
 
+.freelancer-detail-portfoy {
+    margin: -10px;
+}
+
 .freelancer-portfoy-thumbs {
     margin: 5px;
     width: calc(100% / 5 - 10px);
     box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
+}
+
+.freelancer-detail-portfoy .freelancer-portfoy-thumbs {
+    margin: 10px;
+    width: calc(100% / 5 - 20px);
+}
+
+.freelancer-detail-portfoy .collapse .freelancer-portfoy-thumbs {
+    margin: 10px;
+    width: calc(100% / 5 - 20px);
 }
 
 .job-detail-populars .career-popular-box .box-top .favourite .icon {
@@ -296,6 +314,388 @@
     line-height: 16px;
     color: rgba(2, 48, 71, .5);
     margin-bottom: 10px;
+}
+
+.verification-list li {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+
+.verification-list li .icon {
+    width: 11px;
+    height: 11px;
+    fill: #02C39A;
+    margin-right: 7px;
+}
+
+.experiences-list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.experiences-list li img {
+    width: 46px;
+    height: 46px;
+    margin-right: 10px;
+}
+
+.experiences-list li .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.experiences-list li .text span {
+    font-size: 10px;
+    line-height: 14px;
+    color: #9AACB5;
+}
+
+.experiences-list li .text h5 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.experiences-list li:last-child {
+    margin-bottom: 0;
+}
+
+.tag-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -5px -5px;
+}
+
+.tag-list a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    background: rgba(154, 172, 181, .1);
+    padding: 0 15px;
+    font-size: 12px;
+    line-height: 14px;
+    color: #023047;
+    margin: 5px;
+    transition: all .3s;
+}
+
+.tag-list a:hover {
+    background: rgba(154, 172, 181, .3);
+}
+
+.show-more {
+    width: 100%;
+    font-size: 12px;
+    line-height: 28px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    color: #023047;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.show-more .icon {
+    width: 6px;
+    height: 6px;
+    stroke: #023047;
+    margin-left: 5px;
+    transition: all .3s;
+}
+
+.show-more[aria-expanded='true'] .icon {
+    transform: rotate(-180deg);
+}
+
+.experiences-list-big {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px;
+}
+
+.experience-big {
+    width: calc(100% / 5 - 20px);
+    margin: 10px;
+}
+
+.experience-big img {
+    margin-bottom: 10px;
+}
+
+.experience-big .text {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.experience-big .text span {
+    font-size: 12px;
+    line-height: 16px;
+    color: #9AACB5;
+}
+
+.experience-big .text h5 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.experience-big .text .popover-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #9AACB5;
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-big .text .popover-button .icon {
+    fill: #ffffff;
+    width: 11px;
+    max-height: 11px;
+}
+
+.experience-big .text .popover-button.active {
+    background: #00A84F;
+}
+
+.experience-big .text .popover-button.active .icon {
+    transform: rotate(180deg);
+}
+
+.experience-big {
+    cursor: pointer;
+}
+
+.experience-big .show-comment {
+    padding: 0;
+    font-size: 12px;
+    line-height: 16px;
+    color: #9AACB5;
+    transition: all .3s;
+    margin-top: 5px;
+}
+
+.experience-big:hover .show-comment,
+.experience-big .active .show-comment {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    color: #023047;
+}
+
+.experience-big:hover .show-comment {
+    text-decoration: underline;
+}
+
+.experience-tab-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience-tab-content .title {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.experience-tab-content .title .text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.experience-tab-content .title img {
+    width: 65px;
+    margin-right: 12px;
+}
+
+.experience-tab-content .title h4 {
+    font-size: 13px;
+    line-height: 17px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.experience-tab-content .title span {
+    font-size: 12px;
+    color: rgba(2, 48, 71, .5);
+}
+
+.experience-tab-content .content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.experience-tab-content .content h3 {
+    font-size: 12px;
+    line-height: 35px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.experience-tab-content .content p {
+    font-size: 12px;
+    line-height: 19px;
+}
+
+.evaluations img {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.evaluations h5 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.evaluations span {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.evaluation-top {
+    border-top: 1px solid rgba(2, 48, 71, .1);
+    border-bottom: 1px solid rgba(2, 48, 71, .1);
+    display: flex;
+}
+
+.evaluation-top .left {
+    padding: 10px 0;
+}
+
+.evaluations .icon {
+    width: 8px;
+    height: 8px;
+    fill: #0466C8;
+}
+
+.evaluations .box {
+    display: flex;
+    border-left: 1px solid rgba(2, 48, 71, .1);
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 15px;
+}
+
+.evaluations .box span {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.evaluations .box h4 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.evaluation-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.evaluation-list-item {
+    padding: 10px 0;
+}
+
+.evaluation-list-item .title {
+    display: flex;
+    align-items: center;
+}
+
+.evaluation-list-item .title .ratio {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 21px;
+}
+
+.evaluation-list-item .title .ratio .icon {
+    margin-right: 5px;
+}
+
+.evaluation-list-item .title .time {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgba(2, 48, 71, .5);
+    margin-left: 20px;
+}
+
+.evaluation-list-item .comment-text {
+    font-size: 12px;
+    line-height: 16px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* number of lines to show */
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    margin-top: 3px;
+}
+
+.career-person-list {
+    margin: -10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.career-person-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 4 - 20px);
+    margin: 10px;
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .08);
+    background: #ffffff;
+    padding: 13px 30px;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.career-person-box:hover {
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .2);
+}
+
+.career-person-box .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px dashed #0466C8;
+    width: 65px;
+    height: 65px;
+    margin-bottom: 5px;
+}
+
+.career-person-box .avatar img {
+    width: 55px;
+    height: 55px;
+}
+
+.career-person-box h4 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.career-person-box span {
+    color: #9AACB5;
+    font-size: 12px;
+    line-height: 16px;
+    margin-bottom: 4px;
+}
+
+.career-person-box button {
+    justify-content: center;
+    width: 100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -350,10 +750,26 @@
         background: transparent;
         box-shadow: none;
     }
+
+    .experience-big {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .career-person-box {
+        width: calc(100% / 2 - 20px);
+    }
 }
 
 @media only screen and (max-width: 600px) {
     .job-detail-populars .career-popular-box {
+        width: 100%
+    }
+
+    .experience-big {
+        width: 100%
+    }
+
+    .career-person-box {
         width: 100%
     }
 }

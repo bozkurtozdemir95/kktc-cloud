@@ -941,6 +941,22 @@ button.no-anim {
     background: #9AACB5;
 }
 
+.form-button.primary {
+    background: #0081A7;
+}
+
+.purple .form-button.primary {
+    background: #4866FC;
+}
+
+.darkblue .form-button.primary {
+    background: #007BFF;
+}
+
+.darkblue2 .form-button.primary {
+    background: #0466C8;
+}
+
 .form-button:focus {
     box-shadow: none;
     outline: 0;
@@ -1159,11 +1175,12 @@ button.no-anim {
 }
 
 .popover {
-    border-color: #023047;
+    border-color: rgba(2, 48, 71, .2);
 }
 
 .popover-body {
-    padding: 0 5px;
+    padding: 5px 10px;
+    border-radius: 0;
 }
 
 .popover .arrow::after {
@@ -1719,6 +1736,10 @@ button.no-anim {
     border: 1px solid rgba(2, 59, 80, .1);
 }
 
+.rating-bar.borderless {
+    border: 0;
+}
+
 .rating-bar .rating-bar-box {
     height: 50px;
     display: flex;
@@ -1785,11 +1806,19 @@ button.no-anim {
     justify-content: center;
 }
 
+.more-comment.borderless {
+    border: 0;
+}
+
 .more-comment .icon {
     width: 12px;
     height: 12px;
     stroke: #023047;
     transition: all .3s;
+}
+
+.more-comment span {
+    text-decoration: underline;
 }
 
 .more-comment:hover,
@@ -1825,6 +1854,10 @@ button.no-anim {
     font-size: 14px;
     line-height: 19px;
     color: #023047;
+}
+
+.comment-form-input.borderless textarea {
+    border: 0;
 }
 
 .comment-form-input textarea::placeholder {
