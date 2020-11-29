@@ -698,6 +698,69 @@
     width: 100%;
 }
 
+.company-profile-populars .career-popular-box {
+    width: calc(100% / 3 - 20px);
+}
+
+.active-ads {
+    max-height: 460px;
+    overflow-y: auto;
+    max-width: 100%;
+    width: 100%;
+}
+
+.active-ads::-webkit-scrollbar {
+    width: 2px;
+}
+
+.active-ads::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.active-ads::-webkit-scrollbar-thumb {
+    background: rgba(2, 48, 71, .2) !important;
+    border-radius: 2px;
+}
+
+.active-ads-content .avatar {
+    margin-right: 15px;
+    border: 0;
+    border-radius: 0;
+    padding: 0;
+}
+
+.active-ads-content .avatar img {
+    border-radius: 0;
+    width: 102px;
+    height: 102px;
+}
+
+.active-ads-content .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.active-ads-content .bottom button {
+    min-width: 130px;
+    justify-content: center;
+}
+
+.active-ads-content .bottom a {
+    color: #023047;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.active-ads-content .bottom a .icon {
+    width: 5px;
+    height: 5px;
+    stroke: #023047;
+    margin-left: 5px;
+}
+
 @media only screen and (max-width: 1200px) {
     .detail-top-box {
         padding: 10px;
@@ -725,6 +788,10 @@
     }
 
     .job-detail-populars .career-popular-box {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .company-profile-populars .career-popular-box {
         width: calc(100% / 2 - 20px);
     }
 }
@@ -758,6 +825,10 @@
     .career-person-box {
         width: calc(100% / 2 - 20px);
     }
+
+    .company-profile-populars .career-popular-box {
+        width: 100%
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -772,4 +843,6 @@
     .career-person-box {
         width: 100%
     }
+
+
 }

@@ -280,6 +280,19 @@
     overflow-y: auto;
 }
 
+.job-information-list.with-max-height::-webkit-scrollbar {
+    width: 2px;
+}
+
+.job-information-list.with-max-height::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.job-information-list.with-max-height::-webkit-scrollbar-thumb {
+    background: rgba(2, 48, 71, .2) !important;
+    border-radius: 2px;
+}
+
 .other-ads-box {
     padding: 10px 16px;
     background: #ffffff;

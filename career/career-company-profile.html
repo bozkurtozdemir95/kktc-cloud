@@ -10,19 +10,25 @@
     <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
     <link rel="stylesheet" href="../assets/libs/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="../assets/libs/light-gallery/lightgallery.min.css">
 
     <script src="../assets/libs/jquery.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
     <script src="../assets/libs/bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js"></script>
     <script src="../assets/libs/owl-carousel/owl.carousel.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD88MLO0jIV9cPr7iolZPFDbFU4wu_GWRs&callback=initMap&libraries=&v=weekly"
+            defer></script>
+
+    <script src="../assets/libs/light-gallery/lightgallery.min.js"></script>
+    <script src="../assets/libs/light-gallery/lg-thumbnail.min.js"></script>
 
     <script src="../assets/js/main.js"></script>
     <link rel="stylesheet" href="../assets/css/main.css">
     <title>KKTC - Kariyer</title>
 </head>
 <body class="darkblue2">
-<div id="Header" >
+<div id="Header">
     <div class="header-top">
         <div class="container h-100">
             <div class="d-flex justify-content-between align-items-center h-100">
@@ -67,7 +73,8 @@
                             <ul class="top-navigation show-mobile vertical h-100">
                                 <li><a href="../ads/index.html" class="color-dark fs-12 blue">İlan</a></li>
                                 <li><a href="../company/index.html" class="color-dark fs-12 orange">Firma</a></li>
-                                <li><a href="../rent-a-car/index.html" class="color-dark fs-12 blue">Araç Kiralama</a></li>
+                                <li><a href="../rent-a-car/index.html" class="color-dark fs-12 blue">Araç Kiralama</a>
+                                </li>
                                 <li><a href="index.html" class="color-dark fs-12 purple">Kariyer</a></li>
                                 <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
                                 <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
@@ -513,6 +520,1125 @@
 <div class="page-wrapper py-50 bg-light">
     <div class="container">
         <div class="row">
+            <div class="col-lg career-sidebar">
+                <div class="career-sidebar-box d-flex flex-column first">
+                    <div class="avatar">
+                        <img src="../assets/images/avatar-5.png" alt="KKTC">
+                    </div>
+                    <h1>sigortam.net</h1>
+                    <span>UI/UX, Logo, Banner</span>
+                    <div class="rating darkblue mb-20">
+                        <svg class="icon active">
+                            <use href="../assets/icons/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="icon active">
+                            <use href="../assets/icons/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="icon active">
+                            <use href="../assets/icons/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="icon active">
+                            <use href="../assets/icons/sprite.svg#star"></use>
+                        </svg>
+                        <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#star"></use>
+                        </svg>
+                        <h6 class="fs-15 lh-20 color-dark">4.2/5</h6>
+                    </div>
+                    <button class="main-button dark big f-semibold fs-16 lh-21">Mesaj At</button>
+                </div>
+                <div class="career-sidebar-box">
+                    <h4>1.236 <span class="f-regular">Takipçi</span></h4>
+                </div>
+                <div class="career-sidebar-box with-button p-0 transparent">
+                    <button class="empty-button">
+                        Staj Başvurusu Yap
+                        <div class="icon-wrapper">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#businessman-3"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <div class="career-sidebar-box with-button p-0 transparent">
+                    <button class="empty-button">
+                        Takip Et
+                        <div class="icon-wrapper">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#followers"></use>
+                            </svg>
+                        </div>
+                    </button>
+                </div>
+                <ul class="horizontal profile-socials">
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#whatsapp"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#linkedin"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+                <div class="career-sidebar-box flex-column align-items-start">
+                    <h4 class="mb-20">İletişim</h4>
+                    <ul class="vertical company-contact-list">
+                        <li>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#phone-3"></use>
+                            </svg>
+                            +90 545 444 55 55
+                        </li>
+                        <li>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#location-slim"></use>
+                            </svg>
+                            Kıbrıs, Lefkoşa
+                        </li>
+                        <li>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#mail-3"></use>
+                            </svg>
+                            info@bilalduman.com.tr
+                        </li>
+                        <li>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#globe-3"></use>
+                            </svg>
+                            www.bilalduman.com.tr
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="career-sidebar-box">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td>Sektör</td>
+                            <td>Ambalaj</td>
+                        </tr>
+                        <tr>
+                            <td>Kuruluş Yılı</td>
+                            <td>2019</td>
+                        </tr>
+                        <tr>
+                            <td>Çalışan Sayısı</td>
+                            <td>450 - 549</td>
+                        </tr>
+                        <tr>
+                            <td>Adres</td>
+                            <td>
+                                <a href="#">
+                                    Adrese Git
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                    </svg>
+                                </a>
+                            </td>
+                        </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+                <div id="map"></div>
+            </div>
+            <div class="col-lg career-content">
+                <div class="white-box no-shadow-hover mb-20">
+                    <h5 class="fs-16 lh-21 f-bold mb-15">Hakkında</h5>
+                    <div class="job-content-about">
+                        <div class="text">
+                            <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                                culpa qui officia deserunt
+                            </p>
+                            <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor</p>
+                            <p class="mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor
+                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                Duis aute irure dolor in reprehenderit
+                            </p>
+                            <p class="collapse mb-20" id="collapseMore">
+                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
+                                anderson cred nesciunt sapiente ea proident.
+                            </p>
+                            <a href="#" data-toggle="collapse" data-target="#collapseMore"
+                               aria-expanded="false" aria-controls="collapseMore">Daha Fazla Göster</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="white-box no-shadow-hover mb-20">
+                    <div class="white-box-title">
+                        <h6 class="f-bold fs-16 lh-28 mb-15">Aktif Olan İlanlar</h6>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-5">
+                            <div class="search-job-side active-ads">
+                                <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+                                     aria-orientation="vertical">
+                                    <a class="nav-link active" id="active-ads-tab1" data-toggle="pill"
+                                       href="#active-ads-content-1" role="tab" aria-selected="true">
+                                        <img src="../assets/images/career-images/comp-sm-1.png" alt="KKTC">
+                                        <div class="d-flex flex-column">
+                                            <h6>sigortam.net</h6>
+                                            <span>Enrich Games</span>
+                                            <span>Yavuz Sultan Selim, İstanbul, Türkiye</span>
+                                            <div class="info">
+                                                <span>1 Hafta Önce</span>
+                                                <span>1861 Değerlendirme</span>
+                                            </div>
+                                        </div>
+                                        <button class="empty-button favourite ml-auto">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#heart-full"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                    <a class="nav-link" id="active-ads-tab2" data-toggle="pill"
+                                       href="#active-ads-content-2" role="tab" aria-selected="false">
+                                        <img src="../assets/images/career-images/comp-sm-2.png" alt="KKTC">
+                                        <div class="d-flex flex-column">
+                                            <h6>sigortam.net</h6>
+                                            <span>Enrich Games</span>
+                                            <span>Yavuz Sultan Selim, İstanbul, Türkiye</span>
+                                            <div class="info">
+                                                <span>1 Hafta Önce</span>
+                                                <span>1861 Değerlendirme</span>
+                                            </div>
+                                        </div>
+                                        <button class="empty-button favourite ml-auto">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#heart-full"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                    <a class="nav-link" id="active-ads-tab3" data-toggle="pill"
+                                       href="#active-ads-content-3" role="tab" aria-selected="false">
+                                        <img src="../assets/images/career-images/comp-sm-3.png" alt="KKTC">
+                                        <div class="d-flex flex-column">
+                                            <h6>sigortam.net</h6>
+                                            <span>Enrich Games</span>
+                                            <span>Yavuz Sultan Selim, İstanbul, Türkiye</span>
+                                            <div class="info">
+                                                <span>1 Hafta Önce</span>
+                                                <span>1861 Değerlendirme</span>
+                                            </div>
+                                        </div>
+                                        <button class="empty-button favourite ml-auto">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#heart-full"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                    <a class="nav-link" id="active-ads-tab4" data-toggle="pill"
+                                       href="#active-ads-content-4" role="tab" aria-selected="false">
+                                        <img src="../assets/images/career-images/comp-sm-4.png" alt="KKTC">
+                                        <div class="d-flex flex-column">
+                                            <h6>sigortam.net</h6>
+                                            <span>Enrich Games</span>
+                                            <span>Yavuz Sultan Selim, İstanbul, Türkiye</span>
+                                            <div class="info">
+                                                <span>1 Hafta Önce</span>
+                                                <span>1861 Değerlendirme</span>
+                                            </div>
+                                        </div>
+                                        <button class="empty-button favourite ml-auto">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#heart-full"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                    <a class="nav-link" id="active-ads-tab5" data-toggle="pill"
+                                       href="#active-ads-content-5" role="tab" aria-selected="false">
+                                        <img src="../assets/images/career-images/comp-sm-5.png" alt="KKTC">
+                                        <div class="d-flex flex-column">
+                                            <h6>sigortam.net</h6>
+                                            <span>Enrich Games</span>
+                                            <span>Yavuz Sultan Selim, İstanbul, Türkiye</span>
+                                            <div class="info">
+                                                <span>1 Hafta Önce</span>
+                                                <span>1861 Değerlendirme</span>
+                                            </div>
+                                        </div>
+                                        <button class="empty-button favourite ml-auto">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#heart-full"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                    <a class="nav-link" id="active-ads-tab6" data-toggle="pill"
+                                       href="#active-ads-content-6" role="tab" aria-selected="false">
+                                        <img src="../assets/images/career-images/comp-sm-1.png" alt="KKTC">
+                                        <div class="d-flex flex-column">
+                                            <h6>sigortam.net</h6>
+                                            <span>Enrich Games</span>
+                                            <span>Yavuz Sultan Selim, İstanbul, Türkiye</span>
+                                            <div class="info">
+                                                <span>1 Hafta Önce</span>
+                                                <span>1861 Değerlendirme</span>
+                                            </div>
+                                        </div>
+                                        <button class="empty-button favourite ml-auto">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#heart-full"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-7">
+                            <div class="tab-content active-ads-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade show active" id="active-ads-content-1" role="tabpanel" aria-labelledby="active-ads-tab1">
+                                    <div class="job-content-title mb-20">
+                                        <a href="#" class="avatar"><img src="../assets/images/career-images/comp-sm-1.png" alt="KKTC"></a>
+                                        <div class="d-flex flex-column">
+                                            <h6>UI/UX Designer</h6>
+                                            <span><a href="#">Bilal DUMAN</a></span>
+                                            <span>Doğrulanmış Profil</span>
+                                            <div class="info">
+                                                <span>1 Hafta Önce</span>
+                                                <span>1861 Değerlendirme</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="job-information-list mb-20">
+                                        <h4 class="m-0">Requirements</h4>
+                                        <ul class="vertical">
+                                            <li>Experience with game industry</li>
+                                            <li>Renewing him/herself by following the game industry and global trends
+                                            </li>
+                                            <li>Experience on Photoshop, Illustrator, XD, Sketch, Figma or similar
+                                                programs
+                                            </li>
+                                            <li>Having mobile game interface design in his/ her portfolio is a must</li>
+                                            <li>Knowledge of terms of Flowchart, Wireframe, UX, UI</li>
+                                            <li>Likes to play games</li>
+                                            <li>Passion for working in a fast, dynamic working environment</li>
+                                            <li>Having a portfolio in digital environment</li>
+                                            <li>Ability for teamwork</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bottom">
+                                        <button class="main-button big primary fs-12 lh-16 f-bold color-white">BAŞVUR
+                                        </button>
+                                        <a href="#">
+                                            Daha Fazla Bilgi Al
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="active-ads-content-2" role="tabpanel" aria-labelledby="active-ads-tab2">
+                                    <div class="job-content-title mb-20">
+                                        <a href="#" class="avatar"><img src="../assets/images/career-images/comp-sm-2.png" alt="KKTC"></a>
+                                        <div class="d-flex flex-column">
+                                            <h6>UI/UX Designer</h6>
+                                            <span><a href="#">Bilal DUMAN</a></span>
+                                            <span>Doğrulanmış Profil</span>
+                                            <div class="info">
+                                                <span>1 Hafta Önce</span>
+                                                <span>1861 Değerlendirme</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="job-information-list mb-20">
+                                        <h4 class="m-0">Requirements</h4>
+                                        <ul class="vertical">
+                                            <li>Experience with game industry</li>
+                                            <li>Renewing him/herself by following the game industry and global trends
+                                            </li>
+                                            <li>Experience on Photoshop, Illustrator, XD, Sketch, Figma or similar
+                                                programs
+                                            </li>
+                                            <li>Having mobile game interface design in his/ her portfolio is a must</li>
+                                            <li>Knowledge of terms of Flowchart, Wireframe, UX, UI</li>
+                                            <li>Likes to play games</li>
+                                            <li>Passion for working in a fast, dynamic working environment</li>
+                                            <li>Having a portfolio in digital environment</li>
+                                            <li>Ability for teamwork</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bottom">
+                                        <button class="main-button big primary fs-12 lh-16 f-bold color-white">BAŞVUR
+                                        </button>
+                                        <a href="#">
+                                            Daha Fazla Bilgi Al
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="active-ads-content-3" role="tabpanel" aria-labelledby="active-ads-tab3">
+                                    <div class="job-content-title mb-20">
+                                        <a href="#" class="avatar"><img src="../assets/images/career-images/comp-sm-3.png" alt="KKTC"></a>
+                                        <div class="d-flex flex-column">
+                                            <h6>UI/UX Designer</h6>
+                                            <span><a href="#">Bilal DUMAN</a></span>
+                                            <span>Doğrulanmış Profil</span>
+                                            <div class="info">
+                                                <span>1 Hafta Önce</span>
+                                                <span>1861 Değerlendirme</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="job-information-list mb-20">
+                                        <h4 class="m-0">Requirements</h4>
+                                        <ul class="vertical">
+                                            <li>Experience with game industry</li>
+                                            <li>Renewing him/herself by following the game industry and global trends
+                                            </li>
+                                            <li>Experience on Photoshop, Illustrator, XD, Sketch, Figma or similar
+                                                programs
+                                            </li>
+                                            <li>Having mobile game interface design in his/ her portfolio is a must</li>
+                                            <li>Knowledge of terms of Flowchart, Wireframe, UX, UI</li>
+                                            <li>Likes to play games</li>
+                                            <li>Passion for working in a fast, dynamic working environment</li>
+                                            <li>Having a portfolio in digital environment</li>
+                                            <li>Ability for teamwork</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bottom">
+                                        <button class="main-button big primary fs-12 lh-16 f-bold color-white">BAŞVUR
+                                        </button>
+                                        <a href="#">
+                                            Daha Fazla Bilgi Al
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="active-ads-content-4" role="tabpanel" aria-labelledby="active-ads-tab4">
+                                    <div class="job-content-title mb-20">
+                                        <a href="#" class="avatar"><img src="../assets/images/career-images/comp-sm-4.png" alt="KKTC"></a>
+                                        <div class="d-flex flex-column">
+                                            <h6>UI/UX Designer</h6>
+                                            <span><a href="#">Bilal DUMAN</a></span>
+                                            <span>Doğrulanmış Profil</span>
+                                            <div class="info">
+                                                <span>1 Hafta Önce</span>
+                                                <span>1861 Değerlendirme</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="job-information-list mb-20">
+                                        <h4 class="m-0">Requirements</h4>
+                                        <ul class="vertical">
+                                            <li>Experience with game industry</li>
+                                            <li>Renewing him/herself by following the game industry and global trends
+                                            </li>
+                                            <li>Experience on Photoshop, Illustrator, XD, Sketch, Figma or similar
+                                                programs
+                                            </li>
+                                            <li>Having mobile game interface design in his/ her portfolio is a must</li>
+                                            <li>Knowledge of terms of Flowchart, Wireframe, UX, UI</li>
+                                            <li>Likes to play games</li>
+                                            <li>Passion for working in a fast, dynamic working environment</li>
+                                            <li>Having a portfolio in digital environment</li>
+                                            <li>Ability for teamwork</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bottom">
+                                        <button class="main-button big primary fs-12 lh-16 f-bold color-white">BAŞVUR
+                                        </button>
+                                        <a href="#">
+                                            Daha Fazla Bilgi Al
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="active-ads-content-5" role="tabpanel" aria-labelledby="active-ads-tab5">
+                                    <div class="job-content-title mb-20">
+                                        <a href="#" class="avatar"><img src="../assets/images/career-images/comp-sm-5.png" alt="KKTC"></a>
+                                        <div class="d-flex flex-column">
+                                            <h6>UI/UX Designer</h6>
+                                            <span><a href="#">Bilal DUMAN</a></span>
+                                            <span>Doğrulanmış Profil</span>
+                                            <div class="info">
+                                                <span>1 Hafta Önce</span>
+                                                <span>1861 Değerlendirme</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="job-information-list mb-20">
+                                        <h4 class="m-0">Requirements</h4>
+                                        <ul class="vertical">
+                                            <li>Experience with game industry</li>
+                                            <li>Renewing him/herself by following the game industry and global trends
+                                            </li>
+                                            <li>Experience on Photoshop, Illustrator, XD, Sketch, Figma or similar
+                                                programs
+                                            </li>
+                                            <li>Having mobile game interface design in his/ her portfolio is a must</li>
+                                            <li>Knowledge of terms of Flowchart, Wireframe, UX, UI</li>
+                                            <li>Likes to play games</li>
+                                            <li>Passion for working in a fast, dynamic working environment</li>
+                                            <li>Having a portfolio in digital environment</li>
+                                            <li>Ability for teamwork</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bottom">
+                                        <button class="main-button big primary fs-12 lh-16 f-bold color-white">BAŞVUR
+                                        </button>
+                                        <a href="#">
+                                            Daha Fazla Bilgi Al
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="active-ads-content-6" role="tabpanel" aria-labelledby="active-ads-tab6">
+                                    <div class="job-content-title mb-20">
+                                        <a href="#" class="avatar"><img src="../assets/images/career-images/comp-sm-1.png" alt="KKTC"></a>
+                                        <div class="d-flex flex-column">
+                                            <h6>UI/UX Designer</h6>
+                                            <span><a href="#">Bilal DUMAN</a></span>
+                                            <span>Doğrulanmış Profil</span>
+                                            <div class="info">
+                                                <span>1 Hafta Önce</span>
+                                                <span>1861 Değerlendirme</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="job-information-list mb-20">
+                                        <h4 class="m-0">Requirements</h4>
+                                        <ul class="vertical">
+                                            <li>Experience with game industry</li>
+                                            <li>Renewing him/herself by following the game industry and global trends
+                                            </li>
+                                            <li>Experience on Photoshop, Illustrator, XD, Sketch, Figma or similar
+                                                programs
+                                            </li>
+                                            <li>Having mobile game interface design in his/ her portfolio is a must</li>
+                                            <li>Knowledge of terms of Flowchart, Wireframe, UX, UI</li>
+                                            <li>Likes to play games</li>
+                                            <li>Passion for working in a fast, dynamic working environment</li>
+                                            <li>Having a portfolio in digital environment</li>
+                                            <li>Ability for teamwork</li>
+                                        </ul>
+                                    </div>
+                                    <div class="bottom">
+                                        <button class="main-button big primary fs-12 lh-16 f-bold color-white">BAŞVUR
+                                        </button>
+                                        <a href="#">
+                                            Daha Fazla Bilgi Al
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="white-box no-shadow-hover no-shadow-hover mb-20">
+                    <div class="white-box-title">
+                        <h6 class="f-bold fs-16 lh-28 mb-15">Şirket Personelleri</h6>
+                        <a href="#">Daha Fazla</a>
+                    </div>
+                    <div class="career-person-list">
+                        <div class="career-person-box">
+                            <div class="avatar">
+                                <img src="../assets/images/avatar-4.png" alt="KKTC">
+                            </div>
+                            <h4>Bilal Duman</h4>
+                            <span>CEO</span>
+                            <div class="rating darkblue mb-20">
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <h6 class="fs-15 lh-20 color-dark">4.2/5</h6>
+                            </div>
+                            <button class="main-button white f-semibold fs-11 lh-15">Profili Gör</button>
+                        </div>
+                        <div class="career-person-box">
+                            <div class="avatar">
+                                <img src="../assets/images/avatar-2.png" alt="KKTC">
+                            </div>
+                            <h4>Bilal Duman</h4>
+                            <span>CEO</span>
+                            <div class="rating darkblue mb-20">
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <h6 class="fs-15 lh-20 color-dark">4.2/5</h6>
+                            </div>
+                            <button class="main-button white f-semibold fs-11 lh-15">Profili Gör</button>
+                        </div>
+                        <div class="career-person-box">
+                            <div class="avatar">
+                                <img src="../assets/images/avatar-5.png" alt="KKTC">
+                            </div>
+                            <h4>Bilal Duman</h4>
+                            <span>CEO</span>
+                            <div class="rating darkblue mb-20">
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <h6 class="fs-15 lh-20 color-dark">4.2/5</h6>
+                            </div>
+                            <button class="main-button white f-semibold fs-11 lh-15">Profili Gör</button>
+                        </div>
+                        <div class="career-person-box">
+                            <div class="avatar">
+                                <img src="../assets/images/avatar-4.png" alt="KKTC">
+                            </div>
+                            <h4>Bilal Duman</h4>
+                            <span>CEO</span>
+                            <div class="rating darkblue mb-20">
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon active">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                </svg>
+                                <h6 class="fs-15 lh-20 color-dark">4.2/5</h6>
+                            </div>
+                            <button class="main-button white f-semibold fs-11 lh-15">Profili Gör</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="white-box no-shadow-hover mb-20">
+                    <h5 class="fs-16 lh-21 f-bold mb-15">Değerlendirmeler</h5>
+                    <div class="evaluations">
+                        <div class="evaluation-top">
+                            <div class="left d-flex mr-auto">
+                                <img src="../assets/images/avatar-4.png" alt="KKTC">
+                                <div class="d-flex flex-column">
+                                    <h5>Bilal Duman</h5>
+                                    <span>2105 Değerlendirme</span>
+                                </div>
+                            </div>
+                            <div class="box">
+                                <span>Memnuniyet</span>
+                                <h4>
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#star"></use>
+                                    </svg>
+                                    4.5/5
+                                </h4>
+                            </div>
+                            <div class="box">
+                                <span>Hizmet</span>
+                                <h4>
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#star"></use>
+                                    </svg>
+                                    4.5/5
+                                </h4>
+                            </div>
+                            <div class="box">
+                                <span>Teslimat Hızı</span>
+                                <h4>
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#star"></use>
+                                    </svg>
+                                    4.5/5
+                                </h4>
+                            </div>
+                        </div>
+                        <div class="evaluation-list">
+                            <div class="evaluation-list-item d-flex mr-auto">
+                                <img src="../assets/images/avatar-4.png" alt="KKTC">
+                                <div class="d-flex flex-column">
+                                    <div class="title">
+                                        <h5 class="mr-auto">Bilal Duman</h5>
+                                        <div class="ratio">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            4.5/5
+                                        </div>
+                                        <div class="time">1S</div>
+                                    </div>
+                                    <p class="comment-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="evaluation-list-item d-flex mr-auto">
+                                <img src="../assets/images/avatar-4.png" alt="KKTC">
+                                <div class="d-flex flex-column">
+                                    <div class="title">
+                                        <h5 class="mr-auto">Bilal Duman</h5>
+                                        <div class="ratio">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            4.5/5
+                                        </div>
+                                        <div class="time">1S</div>
+                                    </div>
+                                    <p class="comment-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="evaluation-list-item d-flex mr-auto">
+                                <img src="../assets/images/avatar-4.png" alt="KKTC">
+                                <div class="d-flex flex-column">
+                                    <div class="title">
+                                        <h5 class="mr-auto">Bilal Duman</h5>
+                                        <div class="ratio">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            4.5/5
+                                        </div>
+                                        <div class="time">1S</div>
+                                    </div>
+                                    <p class="comment-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="evaluation-list-item d-flex mr-auto">
+                                <img src="../assets/images/avatar-4.png" alt="KKTC">
+                                <div class="d-flex flex-column">
+                                    <div class="title">
+                                        <h5 class="mr-auto">Bilal Duman</h5>
+                                        <div class="ratio">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            4.5/5
+                                        </div>
+                                        <div class="time">1S</div>
+                                    </div>
+                                    <p class="comment-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="evaluation-list-item d-flex mr-auto">
+                                <img src="../assets/images/avatar-4.png" alt="KKTC">
+                                <div class="d-flex flex-column">
+                                    <div class="title">
+                                        <h5 class="mr-auto">Bilal Duman</h5>
+                                        <div class="ratio">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            4.5/5
+                                        </div>
+                                        <div class="time">1S</div>
+                                    </div>
+                                    <p class="comment-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="collapse flex-column mb-20" id="collapseMore3">
+                                <div class="evaluation-list-item d-flex mr-auto">
+                                    <img src="../assets/images/avatar-4.png" alt="KKTC">
+                                    <div class="d-flex flex-column">
+                                        <div class="title">
+                                            <h5 class="mr-auto">Bilal Duman</h5>
+                                            <div class="ratio">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                                </svg>
+                                                4.5/5
+                                            </div>
+                                            <div class="time">1S</div>
+                                        </div>
+                                        <p class="comment-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="evaluation-list-item d-flex mr-auto">
+                                    <img src="../assets/images/avatar-4.png" alt="KKTC">
+                                    <div class="d-flex flex-column">
+                                        <div class="title">
+                                            <h5 class="mr-auto">Bilal Duman</h5>
+                                            <div class="ratio">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                                </svg>
+                                                4.5/5
+                                            </div>
+                                            <div class="time">1S</div>
+                                        </div>
+                                        <p class="comment-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="evaluation-list-item d-flex mr-auto">
+                                    <img src="../assets/images/avatar-4.png" alt="KKTC">
+                                    <div class="d-flex flex-column">
+                                        <div class="title">
+                                            <h5 class="mr-auto">Bilal Duman</h5>
+                                            <div class="ratio">
+                                                <svg class="icon">
+                                                    <use href="../assets/icons/sprite.svg#star"></use>
+                                                </svg>
+                                                4.5/5
+                                            </div>
+                                            <div class="time">1S</div>
+                                        </div>
+                                        <p class="comment-text">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                            tempor
+                                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="empty-button show-more" data-toggle="collapse" data-target="#collapseMore3"
+                                aria-expanded="false" aria-controls="collapseMore3">
+                            Tümünü Göster
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="d-flex flex-column mb-20">
+                    <div class="comment-form mt-20 w-100">
+                        <div class="rating-bar borderless bg-white">
+                            <div class="d-flex flex-wrap">
+                                <div class="col-lg-3 rating-bar-box">
+                                    <h5 class="fs-16 f-bold lh-21">Bizi Değerlendirin</h5>
+                                </div>
+                                <div class="col-lg-3 rating-bar-box">
+                                    <div class="rating darkblue">
+                                        <svg class="icon active">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="icon active">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="icon active">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="icon active">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                    </div>
+                                    <h6 class="fs-16 lh-21 f-bold color-dark ml-20">Memnuniyet</h6>
+                                </div>
+                                <div class="col-lg-3 rating-bar-box">
+                                    <div class="rating darkblue">
+                                        <svg class="icon active">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="icon active">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="icon active">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="icon active">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                    </div>
+                                    <h6 class="fs-16 lh-21 f-bold color-dark ml-20">Hizmet</h6>
+                                </div>
+                                <div class="col-lg-3 rating-bar-box">
+                                    <div class="rating darkblue">
+                                        <svg class="icon active">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="icon active">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="icon active">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="icon active">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#star"></use>
+                                        </svg>
+                                    </div>
+                                    <h6 class="fs-16 lh-21 f-bold color-dark ml-20">Teslimat Hızı</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="comment-form-input borderless">
+                            <img src="../assets/images/avatar-2.png" alt="KKTC">
+                            <textarea name="comment" id="comment" maxlength="150"
+                                      placeholder="Firma Hakkında Düşüncelerinizi Paylaşın..."></textarea>
+                            <button class="form-button big primary f-bold">Gönder</button>
+                        </div>
+                    </div>
+                    <a href="#" class="empty-button more-comment color-dark bg-white borderless">
+                        <h6 class="fs-16 lh-21 mr-5p">
+                            Değerlendirme yapmak için lütfen
+                        </h6>
+                        <span class="fs-16 lh-21 f-bold">Giriş Yapınız</span>
+                    </a>
+                </div>
+                <div class="white-box no-shadow-hover no-shadow-hover">
+                    <div class="white-box-title">
+                        <h6 class="f-bold fs-16 lh-28 mb-15">Popüler İlanlar</h6>
+                        <a href="#">Daha Fazla</a>
+                    </div>
+                    <div class="career-popular-list company-profile-populars">
+                        <div class="career-popular-box">
+                            <div class="box-top">
+                                <img src="../assets/images/ads-brands/sm-popular-icon.png" alt="KKTC">
+                                <div class="d-flex flex-column">
+                                    <h4>Turkcell Global</h4>
+                                    <p class="light">12.005 Takipçi</p>
+                                </div>
+                                <button class="empty-button favourite ml-auto">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#heart-full"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="w-100">
+                                <div class="d-flex align-items-center info">
+                                    <p class="light">Ortalama Maaş <b>1250$</b></p>
+                                    <p class="light">Çalışan Sayısı <b>6000+</b></p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex align-items-center location">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#location-checked"></use>
+                                </svg>
+                                <p>Kıbrıs, Lefkoşa</p>
+                            </div>
+                        </div>
+                        <div class="career-popular-box">
+                            <div class="box-top">
+                                <img src="../assets/images/ads-brands/sm-popular-icon.png" alt="KKTC">
+                                <div class="d-flex flex-column">
+                                    <h4>Turkcell Global</h4>
+                                    <p class="light">12.005 Takipçi</p>
+                                </div>
+                                <button class="empty-button favourite ml-auto">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#heart-full"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="w-100">
+                                <div class="d-flex align-items-center info">
+                                    <p class="light">Ortalama Maaş <b>1250$</b></p>
+                                    <p class="light">Çalışan Sayısı <b>6000+</b></p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex align-items-center location">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#location-checked"></use>
+                                </svg>
+                                <p>Kıbrıs, Lefkoşa</p>
+                            </div>
+                        </div>
+                        <div class="career-popular-box">
+                            <div class="box-top">
+                                <img src="../assets/images/ads-brands/sm-popular-icon.png" alt="KKTC">
+                                <div class="d-flex flex-column">
+                                    <h4>Turkcell Global</h4>
+                                    <p class="light">12.005 Takipçi</p>
+                                </div>
+                                <button class="empty-button favourite ml-auto">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#heart-full"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="w-100">
+                                <div class="d-flex align-items-center info">
+                                    <p class="light">Ortalama Maaş <b>1250$</b></p>
+                                    <p class="light">Çalışan Sayısı <b>6000+</b></p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex align-items-center location">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#location-checked"></use>
+                                </svg>
+                                <p>Kıbrıs, Lefkoşa</p>
+                            </div>
+                        </div>
+                        <div class="career-popular-box">
+                            <div class="box-top">
+                                <img src="../assets/images/ads-brands/sm-popular-icon.png" alt="KKTC">
+                                <div class="d-flex flex-column">
+                                    <h4>Turkcell Global</h4>
+                                    <p class="light">12.005 Takipçi</p>
+                                </div>
+                                <button class="empty-button favourite ml-auto">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#heart-full"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="w-100">
+                                <div class="d-flex align-items-center info">
+                                    <p class="light">Ortalama Maaş <b>1250$</b></p>
+                                    <p class="light">Çalışan Sayısı <b>6000+</b></p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex align-items-center location">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#location-checked"></use>
+                                </svg>
+                                <p>Kıbrıs, Lefkoşa</p>
+                            </div>
+                        </div>
+                        <div class="career-popular-box">
+                            <div class="box-top">
+                                <img src="../assets/images/ads-brands/sm-popular-icon.png" alt="KKTC">
+                                <div class="d-flex flex-column">
+                                    <h4>Turkcell Global</h4>
+                                    <p class="light">12.005 Takipçi</p>
+                                </div>
+                                <button class="empty-button favourite ml-auto">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#heart-full"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="w-100">
+                                <div class="d-flex align-items-center info">
+                                    <p class="light">Ortalama Maaş <b>1250$</b></p>
+                                    <p class="light">Çalışan Sayısı <b>6000+</b></p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex align-items-center location">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#location-checked"></use>
+                                </svg>
+                                <p>Kıbrıs, Lefkoşa</p>
+                            </div>
+                        </div>
+                        <div class="career-popular-box">
+                            <div class="box-top">
+                                <img src="../assets/images/ads-brands/sm-popular-icon.png" alt="KKTC">
+                                <div class="d-flex flex-column">
+                                    <h4>Turkcell Global</h4>
+                                    <p class="light">12.005 Takipçi</p>
+                                </div>
+                                <button class="empty-button favourite ml-auto">
+                                    <svg class="icon">
+                                        <use href="../assets/icons/sprite.svg#heart-full"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="w-100">
+                                <div class="d-flex align-items-center info">
+                                    <p class="light">Ortalama Maaş <b>1250$</b></p>
+                                    <p class="light">Çalışan Sayısı <b>6000+</b></p>
+                                </div>
+                            </div>
+                            <div class="w-100 d-flex align-items-center location">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#location-checked"></use>
+                                </svg>
+                                <p>Kıbrıs, Lefkoşa</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
