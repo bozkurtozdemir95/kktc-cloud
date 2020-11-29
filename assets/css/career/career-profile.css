@@ -418,6 +418,10 @@
     margin: -10px;
 }
 
+.experiences-list-big .nav-tabs {
+    border: 0;
+}
+
 .experience-big {
     width: calc(100% / 5 - 20px);
     margin: 10px;
