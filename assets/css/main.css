@@ -3,6 +3,7 @@
 @import "header.css";
 @import "footer.css";
 @import "add-form.css";
+@import "message.css";
 /** UI ELEMENTS **/
 @import "UI/switch.css";
 @import "UI/experience-progressbar.css";

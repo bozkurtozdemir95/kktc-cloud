@@ -1,0 +1,339 @@
+.career-message-left .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 0 12px;
+  width: calc(100% - 10px);
+}
+
+.career-message-left .title h3 {
+  font-size: 14px;
+  line-height: 30px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.career-message-left .title .icon {
+  width: 14px;
+  height: 14px;
+  fill: #023047;
+}
+
+.career-message-left .message-search {
+  position: relative;
+  width: calc(100% - 10px);
+}
+
+.career-message-left .message-search input {
+  border: 0;
+  background: rgba(2, 48, 71, .05);
+  width: 100%;
+  height: 30px;
+  padding-left: 12px;
+  padding-right: 30px;
+  font-size: 12px;
+  color: #023047;
+}
+
+.career-message-left .message-search input::placeholder {
+  color: #023047;
+}
+
+.career-message-left .message-search .icon {
+  width: 13px;
+  height: 13px;
+  fill: #023047;
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.career-message-left {
+  width: 285px;
+  max-width: 285px;
+}
+
+.career-message-left .nav {
+  height: calc(100vh - 256px);
+  flex-wrap: nowrap;
+  overflow-y: auto;
+  padding-right: 6px;
+}
+
+.career-message-left .nav::-webkit-scrollbar {
+  width: 4px;
+}
+
+.career-message-left .nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.career-message-left .nav::-webkit-scrollbar-thumb {
+  background: #9AACB5 !important;
+  border-radius: 0px;
+}
+
+.career-message-left .nav-link {
+  background: #ffffff;
+  display: flex;
+  align-items: flex-start;
+  padding: 20px 12px;
+  border-radius: 0;
+  transition: all .3s;
+  border-bottom: 1px solid rgba(2, 48, 71, .1);
+}
+
+.career-message-left .nav-link:hover,
+.career-message-left .nav-link.active {
+  background: rgba(154, 172, 181, .2);
+}
+
+.career-message-left .nav-link img {
+  width: 57px;
+  min-width: 57px;
+  height: 57px;
+  margin-right: 8px
+}
+
+.career-message-left .nav-link h4 {
+  font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #023047;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.career-message-left .nav-link h4 span {
+  font-size: 10px;
+  color: #9AACB5;
+  line-height: 19px;
+}
+
+.career-message-left .nav-link span.read-notification {
+  width: 7px;
+  height: 7px;
+  background: #F8102D;
+  border-radius: 50%;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  display: none;
+}
+
+.career-message-left .nav-link span.read-notification.active {
+  display: block;
+}
+
+.career-message-left .nav-link p {
+  color: #9AACB5;
+  font-size: 12px;
+  line-height: 13px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+  white-space: normal;
+}
+
+.career-message-left .nav-link h4.category {
+  position: relative;
+  width: fit-content;
+}
+
+.career-message-left .nav-link h4.category:after {
+  width: 4px;
+  height: 4px;
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 4px;
+  border-radius: 50%;
+  background: #4866FC;
+}
+
+.career-message-left .nav-link h4.category.blue:after {
+  background: #0081A7;
+}
+
+.career-message-left .nav-link h4.category.red:after {
+  background: #FF0505;
+}
+
+.career-message-left .nav-link h4.category.darkblue:after {
+  background: #4866FC;
+}
+
+.career-message-left .nav-link h4.category.lightblue:after {
+  background: #05CCFF;
+}
+
+.career-message-right {
+  width: calc(100% - 305px);
+  padding-left: 20px;
+}
+
+.career-message-right .message-wrapper {
+  background: #ffffff;
+}
+
+.career-message-right .message-wrapper .title {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.career-message-right .message-wrapper .title img {
+  width: 33px;
+  height: 33px;
+  margin-right: 6px
+}
+
+.career-message-right .message-wrapper .title h5 {
+  font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.career-message-right .message-wrapper .title span {
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(2, 48, 71, .5);
+}
+
+.career-message-right .message-form {
+  border-top: 1px solid rgba(2, 48, 71, .1);
+  position: relative;
+}
+
+.career-message-right .message-form button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 30px;
+}
+
+.career-message-right .message-wrapper .title .icon {
+  width: 23px;
+  height: 23px;
+  fill: #023047;
+}
+
+.career-message-right .message-wrapper .cke_top {
+  background: #fff !important;
+  border-color: rgba(2, 48, 71, .1) !important;
+}
+
+.career-message-right .message-wrapper .cke_contents {
+  height: 120px !important;
+}
+
+.career-message-right .message-content {
+  padding: 25px 20px;
+  height: calc(100vh - 420px);
+  border-top: 1px solid rgba(2, 48, 71, .1);
+  overflow-y: auto;
+}
+
+.career-message-right .message-content::-webkit-scrollbar {
+  width: 4px;
+}
+
+.career-message-right .message-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.career-message-right .message-content::-webkit-scrollbar-thumb {
+  background: #9AACB5 !important;
+  border-radius: 0px;
+}
+
+.career-message-right .message-content .message-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.career-message-right .message-box {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  padding: 0;
+  border: 0;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.career-message-right .message-box:hover {
+  background: transparent;
+}
+
+.career-message-right .message-box .text {
+  padding: 8px 15px;
+  padding-right: 20px;
+  transition: all .3s;
+}
+
+.career-message-right .message-box .text p {
+  font-size: 12px;
+  line-height: 19px;
+}
+
+.career-message-right .message-box .text span {
+  font-size: 10px;
+  line-height: 19px;
+}
+
+.career-message-right .message-box.received img {
+  margin-right: 10px;
+}
+
+.career-message-right .message-box.received .text {
+  background: rgba(2, 48, 71, .05);
+  border-radius: 0 0 10px 0;
+}
+
+.career-message-right .message-box.received:hover .text {
+  background: rgba(2, 48, 71, .1);
+}
+
+.career-message-right .message-box.received .text p {
+  color: #023047;
+}
+
+.career-message-right .message-box.received .text span {
+  color: #9AACB5;
+}
+
+.career-message-right .message-box.sent {
+  flex-direction: row-reverse;
+}
+
+.career-message-right .message-box.sent img {
+  margin-right: 0;
+  margin-left: 10px;
+}
+
+.career-message-right .message-box.sent .text {
+  background: #0466C8;
+  border-radius: 0 0 0 10px;
+  text-align: right;
+}
+
+.career-message-right .message-box.sent .text p {
+  color: #ffffff;
+}
+
+.career-message-right .message-box.sent .text span {
+  color: rgba(255, 255, 255, .8)
+}
+
+.career-message-right .message-box img {
+  width: 33px;
+  height: 33px;
+}

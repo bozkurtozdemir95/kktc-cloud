@@ -1,449 +1,448 @@
 .form-links {
-    display: flex;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    position: relative;
-    margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 50px;
 }
 
 .form-link-bg {
-    position: absolute;
-    width: 100%;
-    height: 14px;
-    background: #ffffff;
-    z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 14px;
+  background: #ffffff;
+  z-index: 1;
 }
 
 .form-links .form-link {
-    position: relative;
-    z-index: 2;
-    width: 52px;
-    height: 52px;
-    background: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  z-index: 2;
+  width: 52px;
+  height: 52px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .form-links .form-link span {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgba(2, 48, 71, .1);
-    font-size: 16px;
-    color: #000000;
-    font-family: 'Proxima Nova Bo', sans-serif;
-    transition: all .25s;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(2, 48, 71, .1);
+  font-size: 16px;
+  color: #000000;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  transition: all .25s;
 }
 
 .form-links .form-link:hover span,
 .form-links .form-link.active span {
-    background: #007BFF;
-    color: #FFFFFF;
+  background: #007BFF;
+  color: #FFFFFF;
 }
 
 .form-links .form-link h4 {
-    font-size: 14px;
-    line-height: 19px;
-    color: #023047;
-    position: absolute;
-    left: 50%;
-    bottom: -30px;
-    white-space: nowrap;
-    transform: translateX(-50%);
+  font-size: 14px;
+  line-height: 19px;
+  color: #023047;
+  position: absolute;
+  left: 50%;
+  bottom: -30px;
+  white-space: nowrap;
+  transform: translateX(-50%);
 }
 
 .form-title {
-    width: calc(100% - 50px);
-    height: 60px;
-    background: #FFFFFF;
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 20px;
+  width: calc(100% - 50px);
+  height: 60px;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .form-title .icon-wrapper {
-    width: 60px;
-    height: 60px;
-    min-width: 60px;
-    background: #007BFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  background: #007BFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
 }
 
 .form-title .icon-wrapper .icon {
-    width: 30px;
-    height: 30px;
-    fill: #FFFFFF;
+  width: 30px;
+  height: 30px;
+  fill: #FFFFFF;
 }
 
 .form-title h3 {
-    font-family: 'Proxima Nova Sb', sans-serif;
-    font-size: 18px;
-    line-height: 22px;
-    color: #023047;
-    padding-right: 20px;
-    margin-right: 20px;
-    border-right: 1px solid rgba(2, 48, 71, .2);
+  font-family: 'Proxima Nova Sb', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #023047;
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid rgba(2, 48, 71, .2);
 }
 
 .form-title p {
-    font-size: 14px;
-    line-height: 22px;
+  font-size: 14px;
+  line-height: 22px;
 }
 
 .form-title-borders {
-    position: absolute;
-    top: 0;
-    right: -45px;
-    height: 100%;
-    display: flex;
-    align-items: center;
+  position: absolute;
+  top: 0;
+  right: -45px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .form-title-border {
-    height: 100%;
-    background: #FFFFFF;
-    margin-left: 5px;
+  height: 100%;
+  background: #FFFFFF;
+  margin-left: 5px;
 }
 
 .form-title-border:nth-child(1) {
-    width: 15px;
+  width: 15px;
 }
 
 .form-title-border:nth-child(2) {
-    width: 10px;
+  width: 10px;
 }
 
 .form-title-border:nth-child(3) {
-    width: 5px;
+  width: 5px;
 }
 
 .simple-form .form-box {
-    width: 100%;
+  width: 100%;
 }
 
 .simple-form .form-box input,
 .simple-form .form-box select,
 .simple-form .form-box textarea {
-    border: 1px solid rgba(2, 48, 71, .3);
-    background: transparent;
+  border: 1px solid rgba(2, 48, 71, .3);
+  background: transparent;
 }
 
 .banner-wrapper {
-    background: #FFFFFF;
-    padding-bottom: 20px;
-    border: 1px solid rgba(2, 48, 71, .3);
-    max-width: 300px;
-    margin-bottom: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    transition: all .25s;
-    cursor: pointer;
+  background: #FFFFFF;
+  padding-bottom: 20px;
+  border: 1px solid rgba(2, 48, 71, .3);
+  max-width: 300px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: all .25s;
+  cursor: pointer;
 }
 
 .banner-wrapper:hover {
-    box-shadow: 0 0 22px rgba(0, 0, 0, .16);
+  box-shadow: 0 0 22px rgba(0, 0, 0, .16);
 }
 
 .banner-wrapper .title {
-    font-size: 18px;
-    color: #FFFFFF;
-    background: #007BFF;
-    padding: 16px 0;
-    text-align: center;
-    margin-bottom: 20px;
-    border-radius: 0 0 20px 20px;
+  font-size: 18px;
+  color: #FFFFFF;
+  background: #007BFF;
+  padding: 16px 0;
+  text-align: center;
+  margin-bottom: 20px;
+  border-radius: 0 0 20px 20px;
 }
 
 .banner-wrapper .title.gray {
-    background: rgba(2, 48, 71, .5);
+  background: rgba(2, 48, 71, .5);
 }
 
 .banner-wrapper .title.yellow {
-    background: #D9A700;
+  background: #D9A700;
 }
 
 .banner-wrapper .title.red {
-    background: #ED0723;
+  background: #ED0723;
 }
 
-
 .banner-wrapper .title h4 {
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .banner-wrapper .title h4 b {
-    font-family: 'Proxima Nova Bo', sans-serif;
-    margin-right: 5px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  margin-right: 5px;
 }
 
 .banner-wrapper ul .icon {
-    width: 11px;
-    height: 11px;
-    fill: rgba(2, 48, 71, .5);
-    margin-right: 10px;
+  width: 11px;
+  height: 11px;
+  fill: rgba(2, 48, 71, .5);
+  margin-right: 10px;
 }
 
 .banner-wrapper ul li {
-    font-size: 14px;
-    line-height: 26px;
-    color: rgba(2, 48, 71, .5);
-    padding: 0 13px;
+  font-size: 14px;
+  line-height: 26px;
+  color: rgba(2, 48, 71, .5);
+  padding: 0 13px;
 }
 
 .banner-wrapper ul li.active {
-    color: #000000;
+  color: #000000;
 }
 
 .banner-wrapper ul li.active .icon {
-    fill: #007BFF;
+  fill: #007BFF;
 }
 
 .banner-wrapper .price {
-    padding: 0 13px;
-    font-size: 20px;
-    line-height: 22px;
-    color: #023047;
-    font-family: 'Proxima Nova Bo', sans-serif;
-    margin-top: 15px;
-    margin-bottom: 20px;
-    display: flex;
-    align-items: flex-start;
+  padding: 0 13px;
+  font-size: 20px;
+  line-height: 22px;
+  color: #023047;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
 }
 
 .banner-wrapper .price span {
-    font-family: 'Proxima Nova Rg', sans-serif;
-    margin-left: 5px;
-    font-size: 16px;
+  font-family: 'Proxima Nova Rg', sans-serif;
+  margin-left: 5px;
+  font-size: 16px;
 }
 
 .banner-wrapper .banner-button {
-    border: 1px solid rgba(2, 48, 71, .3);
-    height: 50px;
-    width: calc(100% - 26px);
-    margin-left: 13px;
-    font-size: 20px;
-    line-height: 22px;
-    color: #023047;
-    font-family: 'Proxima Nova Bo', sans-serif;
-    transition: all .25s;
+  border: 1px solid rgba(2, 48, 71, .3);
+  height: 50px;
+  width: calc(100% - 26px);
+  margin-left: 13px;
+  font-size: 20px;
+  line-height: 22px;
+  color: #023047;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  transition: all .25s;
 }
 
 .banner-wrapper .banner-button:hover {
-    border-color: #007BFF;
-    background: #007BFF;
-    color: #FFFFFF;
+  border-color: #007BFF;
+  background: #007BFF;
+  color: #FFFFFF;
 }
 
 @media only screen and (max-width: 992px) {
-    .form-title p {
-        font-size: 10px;
-    }
+  .form-title p {
+    font-size: 10px;
+  }
 }
 
 .addPhoto-input-wrapper {
-    width: 100%;
-    height: 420px;
-    border: 1px solid rgba(2, 48, 71, .3);
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  width: 100%;
+  height: 420px;
+  border: 1px solid rgba(2, 48, 71, .3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .addPhoto-input-wrapper input {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    position: absolute;
-    cursor: pointer;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
 }
 
 .addPhoto-input-wrapper .icon-wrapper {
-    width: 120px;
-    height: 120px;
-    border: 2px dashed #007BFF;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 22px;
+  width: 120px;
+  height: 120px;
+  border: 2px dashed #007BFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 22px;
 }
 
 .addPhoto-input-wrapper .icon-wrapper .icon {
-    width: 45px;
-    height: 45px;
-    fill: #007BFF;
+  width: 45px;
+  height: 45px;
+  fill: #007BFF;
 }
 
 .addPhoto-input-wrapper h4 {
-    font-size: 18px;
-    line-height: 24px;
-    font-family: 'Proxima Nova Bo', sans-serif;
-    margin-bottom: 60px;
+  font-size: 18px;
+  line-height: 24px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  margin-bottom: 60px;
 }
 
 .addPhoto-input-wrapper p {
-    font-size: 16px;
-    line-height: 21px;
+  font-size: 16px;
+  line-height: 21px;
 }
 
 .last-added-photos {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 100%;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
 }
 
 .last-added-photos .photo-box {
-    width: calc(100% / 8 - 10px);
-    border: 1px solid rgba(2, 48, 71, .3);
+  width: calc(100% / 8 - 10px);
+  border: 1px solid rgba(2, 48, 71, .3);
 }
 
 .last-added-photos .photo-box:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
 .payment-sidebox {
-    border: 1px solid rgba(2, 48, 71, .3);
+  border: 1px solid rgba(2, 48, 71, .3);
 }
 
 .payment-sidebox .title {
-    padding: 15px 20px;
+  padding: 15px 20px;
 }
 
 .payment-sidebox .title h4 {
-    font-size: 20px;
-    font-family: 'Proxima Nova Bo', sans-serif;
-    margin-bottom: 10px;
+  font-size: 20px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  margin-bottom: 10px;
 }
 
 .payment-sidebox .title p {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #paymentTypeTab.nav-tabs .nav-link {
-    border-radius: 0;
-    background: transparent;
-    border: 0;
-    border-top: 1px solid rgba(2, 48, 71, .3);
-    font-size: 16px;
-    color: #023047;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    transition: all .25s;
-    padding: 15px 20px;
+  border-radius: 0;
+  background: transparent;
+  border: 0;
+  border-top: 1px solid rgba(2, 48, 71, .3);
+  font-size: 16px;
+  color: #023047;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  transition: all .25s;
+  padding: 15px 20px;
 }
 
 #paymentTypeTab.nav-tabs .nav-link:hover,
 #paymentTypeTab.nav-tabs .nav-link.active {
-    background: #023047;
-    color: #FFFFFF;
+  background: #023047;
+  color: #FFFFFF;
 }
 
 .payment-sidebox .summary li {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 15px 20px;
-    border-top: 1px solid rgba(2, 48, 71, .3);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-top: 1px solid rgba(2, 48, 71, .3);
 }
 
 .payment-sidebox .summary li h5 {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .payment-sidebox .summary li h4 {
-    font-size: 18px;
-    font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 18px;
+  font-family: 'Proxima Nova Bo', sans-serif;
 }
 
 .subTabs {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-    margin: 0 -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  margin: 0 -10px;
 }
 
 .subTabs .nav-link {
-    height: 57px;
-    border-radius: 0;
-    font-size: 16px;
-    font-family: 'Proxima Nova Sb', sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #023047;
-    border: 1px solid rgba(2, 48, 71, .3);
-    transition: all .25s;
+  height: 57px;
+  border-radius: 0;
+  font-size: 16px;
+  font-family: 'Proxima Nova Sb', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #023047;
+  border: 1px solid rgba(2, 48, 71, .3);
+  transition: all .25s;
 }
 
 .subTabs .nav-link:hover,
 .subTabs .nav-link.active {
-    background: #007BFF;
-    color: #FFFFFF;
-    border-color: #007BFF;
+  background: #007BFF;
+  color: #FFFFFF;
+  border-color: #007BFF;
 }
 
 .subTabs .nav-item {
-    width: 100%;
-    margin: 0 10px;
+  width: 100%;
+  margin: 0 10px;
 }
 
 .subTabs .nav-link img {
-    max-width: 50px;
-    margin-right: 5px;
+  max-width: 50px;
+  margin-right: 5px;
 }
 
 .subTabsContent .form-box {
-    width: 100%;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 0;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 0;
 }
 
 .subTabsContent .form-box input {
-    background: transparent;
-    border-color: rgba(2, 48, 71, .3);
-    padding-left: 50px;
+  background: transparent;
+  border-color: rgba(2, 48, 71, .3);
+  padding-left: 50px;
 }
 
 .subTabsContent .form-box input::placeholder {
-    color: rgba(2, 48, 71, .5);
+  color: rgba(2, 48, 71, .5);
 }
 
 .subTabsContent .form-box input:focus {
-    border-color: rgba(2, 48, 71, .5);
+  border-color: rgba(2, 48, 71, .5);
 }
 
 .subTabsContent .form-box .icon {
-    width: 20px;
-    max-height: 25px;
-    fill: rgba(2, 48, 71, .3);
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+  width: 20px;
+  max-height: 25px;
+  fill: rgba(2, 48, 71, .3);
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.subTabsContent .form-box input:focus + .icon {
-    fill: rgba(2, 48, 71, .5);
+.subTabsContent .form-box input:focus+.icon {
+  fill: rgba(2, 48, 71, .5);
 }
