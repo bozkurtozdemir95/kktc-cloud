@@ -1,0 +1,358 @@
+.about-text .text-buttons {
+  width: 100%;
+  padding-right: 100px;
+  margin: 20px -10px;
+  margin-bottom: 0;
+}
+
+.about-text .text-buttons button {
+  margin: 10px;
+  width: calc(50% - 10px);
+  justify-content: center;
+  height: 45px
+}
+
+.about-text h2 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 38px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.about-text h2 .blue {
+  color: #0466C8;
+}
+
+.about-spaced-title,
+.about-text h4 {
+  font-size: 18px;
+  line-height: 32px;
+  color: rgba(2, 48, 71, .5);
+  margin-bottom: 15px;
+  letter-spacing: 5px;
+}
+
+.about-text p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+.about-row {
+  margin-bottom: 50px;
+}
+
+.about-row .image {
+  position: relative;
+}
+
+.about-row .image.pad-left {
+  padding-left: 100px;
+}
+
+.about-row .image.pad-right {
+  padding-right: 100px;
+}
+
+.quote-row {
+  background: rgba(4, 102, 200, .05);
+  padding: 50px;
+}
+
+.quote-row img {
+  width: 65px;
+  margin-bottom: 20px;
+}
+
+.quote-row p {
+  font-size: 16px;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.quote-row h5 {
+  font-size: 14px;
+  line-height: 32px;
+  color: rgba(2, 48, 71, .5);
+  letter-spacing: 5px;
+}
+
+.about-spaced-title {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-person-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.about-person-box {
+  width: calc(100% / 5 - 20px);
+  background: #ffffff;
+  box-shadow: 0 3px 22px rgba(0, 0, 0, .05);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  margin: 10px;
+  transition: all .3s;
+}
+
+.about-person-box:hover {
+  background: rgba(2, 48, 71, .05);
+  box-shadow: 0 3px 22px rgba(0, 0, 0, .15);
+}
+
+.about-person-box h6 {
+  font-size: 12px;
+  line-height: 32px;
+  letter-spacing: 3px;
+}
+
+.about-person-box h6.light {
+  color: rgba(2, 48, 71, .5);
+}
+
+.about-person-box .avatar {
+  width: 108px;
+  height: 108px;
+  border: 1px dashed #0466C8;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.about-person-box .avatar img {
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+}
+
+.career-page-links {
+  height: 50px;
+  border-bottom: 1px solid rgba(2, 48, 71, .1);
+  margin-bottom: 20px;
+}
+
+.career-page-links .container,
+.career-page-links ul,
+.career-page-links li,
+.career-page-links a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.career-page-links a {
+  font-size: 12px;
+  color: #023047;
+  padding-right: 20px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.career-page-links a:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  height: 4px;
+  width: 100%;
+  max-width: 0;
+  background: #0466C8;
+  transition: all .3s;
+}
+
+.career-page-links li:hover a:after,
+.career-page-links .active a:after {
+  max-width: 100%;
+}
+
+.contact-info-box {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.contact-info-box:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 0;
+  height: 100%;
+  background: #fff;
+  transition: all .3s;
+}
+
+.contact-info-box:hover:before {
+  max-width: 100%;
+}
+
+.contact-info-box .icon-wrapper {
+  width: 50px;
+  height: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 3;
+  transition: all .3s;
+}
+
+.contact-info-box .icon-wrapper .icon {
+  width: 21px;
+  height: 21px;
+  fill: #0466C8;
+  transition: all .3s;
+}
+
+.contact-info-box:hover .icon-wrapper {
+  background: #0466C8;
+}
+
+.contact-info-box:hover .icon-wrapper .icon {
+  fill: #fff;
+}
+
+.contact-info-box .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 15px;
+  position: relative;
+  z-index: 3;
+}
+
+.contact-info-box .text .horizontal-border {
+  width: 28px;
+  height: 1px;
+  background: #0466C8;
+  margin-bottom: 5px;
+  transition: all .3s;
+}
+
+.contact-info-box:hover .horizontal-border {
+  width: 50px;
+}
+
+.contact-info-box .text h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "Proxima Nova Sb", sans-serif;
+}
+
+.contact-info-box .text p {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.career-about-map-wrapper #map {
+  height: 354px;
+}
+
+.career-about-map-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  min-height: 50px;
+  padding: 0 20px;
+}
+
+.career-about-map-bottom .icon {
+  width: 15px;
+  max-height: 18px;
+  fill: #0466C8;
+  margin-right: 10px;
+}
+
+.career-about-map-bottom p {
+  font-size: 16px;
+  line-height: 48px;
+}
+
+.contact-form-title h2 {
+  font-family: "Proxima Nova Bo", sans-serif;
+  font-size: 30px;
+  line-height: 33px;
+  margin-bottom: 15px;
+}
+
+.contact-form-title p {
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .about-person-box {
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+@media only screen and (max-width: 992px) {
+
+  .about-text .text-buttons,
+  .about-row .image.pad-right,
+  .about-row .image.pad-left {
+    padding: 0;
+  }
+
+  .about-text .text-buttons {
+    justify-content: center;
+    margin: 20px 0;
+    margin-bottom: 0;
+  }
+
+  .about-text,
+  .about-text.text-right {
+    text-align: center !important;
+  }
+
+  .about-row .image {
+    margin-bottom: 30px;
+  }
+
+  .about-row.reverse-mobil {
+    flex-direction: column-reverse;
+  }
+
+  .about-person-box {
+    width: calc(100% / 2 - 20px);
+  }
+
+  .career-page-links ul {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .career-page-links a {
+    font-size: 10px;
+    padding-right: 0;
+  }
+
+  .career-about-map-bottom p {
+    font-size: 10px;
+    line-height: 14px;
+  }
+}
+
+@media only screen and (max-width: 662px) {
+  .about-person-box {
+    width: 100%;
+  }
+}
