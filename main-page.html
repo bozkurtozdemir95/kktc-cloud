@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--- LIBRARIES --->
+  <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
+
+  <script src="../assets/libs/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
+
+  <title>KKTC Arama Motoru</title>
+  <style media="screen">
+    @import "assets/fonts/fonts.css";
+
+    body {
+      font-family: 'Proxima Nova Rg', sans-serif !important;
+      color: #023047;
+      background: #FFFFFF;
+    }
+
+    ul {
+      padding: 0;
+      margin: 0
+    }
+
+    ul.vertical {
+      flex-direction: column;
+    }
+
+    .color-dark {
+      color: #023047 !important;
+    }
+
+    .color-dark:hover {
+      color: #023047;
+    }
+
+    .fs-12 {
+      font-size: 12px;
+    }
+
+    #Header.no-shadow {
+      box-shadow: none;
+    }
+
+    #Header {
+      display: flex;
+      flex-direction: column;
+      background: #FFFFFF;
+      box-shadow: 0 0 22px rgba(0, 0, 0, .16);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 999;
+    }
+
+    .header-top {
+      height: 34px;
+      border-bottom: 1px solid rgba(2, 48, 71, .1);
+    }
+
+    .header-top-left {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+    }
+
+    .header-top-left img {
+      max-width: 61px;
+      min-width: 61px;
+    }
+
+    .top-navigation {
+      padding-left: 15px;
+      width: 100%;
+      display: flex;
+      margin: 0;
+      list-style: none;
+    }
+
+    .top-navigation li {
+      padding: 0 10px;
+      cursor: pointer;
+    }
+
+    .top-navigation li a {
+      position: relative;
+    }
+
+    .top-navigation a {
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .top-navigation {
+      justify-content: space-between;
+    }
+
+    .top-navigation a:after {
+      content: "";
+      position: absolute;
+      top: 10px;
+      right: -6px;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      display: none;
+    }
+
+    .top-navigation a:hover {
+      font-weight: 700;
+      text-decoration: none;
+      color: #ed0723 !important;
+    }
+
+    .top-navigation a:hover:after {
+      display: block;
+    }
+
+    .top-navigation {
+      padding: 0;
+    }
+
+    .top-navigation.vertical a {
+      width: 100%;
+      padding: 7px 20px;
+    }
+
+    .top-navigation.vertical a:after {
+      right: 15px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    .top-navigation.vertical li {
+      padding: 0;
+    }
+
+    .header-top-left ul li.more {
+      display: flex;
+      align-items: center;
+      white-space: nowrap;
+    }
+
+    .header-top-left ul li a.blue:after {
+      background: #0484E1;
+    }
+
+    .header-top-left ul li a.purple:after {
+      background: #4D29C9;
+    }
+
+    .header-top-left ul li a.orange:after {
+      background: #FF9505;
+    }
+
+    .header-top-left ul li a.red:after {
+      background: #FF050D;
+    }
+
+    .header-top-left ul li a.green:after {
+      background: #60D394;
+    }
+
+    .header-top-left ul li a.turquise:after {
+      background: #60D3CF;
+    }
+
+    .header-top-left ul li a.darkblue:after {
+      background: #023047;
+    }
+
+    .header-top-left ul li a:hover {
+      text-decoration: none;
+      color: #000;
+    }
+
+    .header-top-right {
+      height: 100%;
+      white-space: nowrap;
+      display: flex;
+      align-items: center;
+    }
+
+    .more .icon {
+      width: 14px;
+      min-width: 14px;
+      height: 14px;
+      fill: #023047;
+      transition: all .3s;
+    }
+
+    .dropdown-toggler:hover .more .icon,
+    .dropdown-toggler[aria-expanded='true'] .more .icon {
+      fill: #ed0723;
+    }
+
+    .right-menu li {
+      border-left: 1px solid rgba(2, 48, 71, .1);
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      transition: all .25s;
+      height: 100%;
+    }
+
+    .right-menu li:hover {
+      background: rgba(2, 48, 71, .1);
+    }
+
+    .right-menu li .dropdown {
+      height: 100%;
+      padding: 0 9px;
+    }
+
+    .right-menu li.h-dropdown {
+      padding: 0 9px;
+    }
+
+    .user-menu li:hover {
+      background: none;
+    }
+
+    .user-menu-wrapper img.avatar {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+
+    .user-menu-wrapper .icon.arrow {
+      width: 8px;
+      height: 8px;
+      fill: #023047;
+      margin-left: 10px;
+    }
+
+    #Header .dropdown,
+    #Header .dropdown-toggler {
+      height: 100%;
+    }
+
+    #Header .dropdown .dropdown-menu {
+      padding: 15px;
+      border: 0;
+      box-shadow: 0 3px 22px rgba(0, 0, 0, 0.09);
+      border-radius: 0;
+      min-width: 11rem;
+    }
+
+    #Header .dropdown .dropdown-menu:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 21px solid #FFFFFF;
+      top: -21px;
+      left: calc(50% - 5px);
+    }
+
+    .left-nav-mobile.dropdown .dropdown-menu:after {
+      left: calc(50% - 22px);
+    }
+
+    .right-menu li h5 {
+      font-size: 15px;
+      color: rgba(2, 48, 71, .5);
+      margin-bottom: 10px;
+    }
+
+    .h-dropdown-content h5 {
+      font-size: 15px;
+      color: rgba(2, 48, 71, .5);
+      margin-bottom: 10px;
+      margin-top: 10px;
+      padding: 0 10px;
+    }
+
+    .user-menu li {
+      border-left: 0;
+    }
+
+    .user-menu li a {
+      line-height: 35px;
+      padding: 0 10px;
+    }
+
+    .user-menu li a.color-dark:hover {
+      color: #023047;
+    }
+
+    .user-menu li a.color-red:hover {
+      color: #F3031B;
+      text-decoration: none;
+    }
+
+    .left-nav-mobile {
+      display: none;
+    }
+
+    div.more {
+      padding: 0 15px;
+      cursor: pointer;
+      height: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .top-navigation.mobile a {
+      display: flex;
+      width: 100%;
+      padding: 5px 0;
+      position: relative;
+    }
+
+    .top-navigation.mobile li a:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 0;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      transform: translateY(-50%);
+    }
+
+
+    .h-dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .h-dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #FFFFFF;
+      min-width: 160px;
+      box-shadow: 0 6px 19px rgba(0, 0, 0, .2);
+      z-index: 9;
+      right: 0;
+      bottom: 0;
+      transform: translateY(100%);
+    }
+
+    .h-dropdown-content:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 9px solid transparent;
+      border-right: 9px solid transparent;
+      border-bottom: 9px solid #FFFFFF;
+      top: -9px;
+      right: 10px;
+    }
+
+    .h-dropdown-content.no-arrow:after {
+      content: none;
+    }
+
+    .h-dropdown-content a {
+      color: #023047 !important;
+      padding: 9px 14px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+      line-height: 19px;
+      border-bottom: 1px solid rgba(2, 48, 71, .1);
+      width: 100% !important;
+      box-shadow: none !important;
+    }
+
+    .h-dropdown-content.no-arrow a {
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    .h-dropdown-content a.color-red {
+      color: #F3031B !important;
+    }
+
+    .h-dropdown-content a:last-child {
+      border: 0;
+    }
+
+    .h-dropdown-content a:hover {
+      text-shadow: none !important;
+      background: rgba(2, 48, 71, .1);
+      border-color: transparent;
+      font-weight: 400 !important;
+    }
+
+    .h-dropdown:hover .h-dropdown-content {
+      display: block;
+    }
+
+    #Header .show-mobile {
+      display: none !important;
+    }
+
+    .dropdown-menu-center {
+      left: 50% !important;
+      right: auto !important;
+      transform: translate(-50%, 0) !important;
+      top: 50px !important;
+    }
+
+    .dropdown-menu-right {
+      left: 100% !important;
+      right: auto !important;
+      transform: translate(-100%, 0) !important;
+      top: 50px !important;
+    }
+
+    @media only screen and (max-width: 1024px) {
+      #Header .container {
+        max-width: 100%;
+      }
+
+      .header-main-left {
+        padding-left: 15px;
+      }
+
+      .top-navigation.mobile {
+        border: 0;
+        padding: 0;
+      }
+
+      #Header .no-mobile {
+        display: none !important;
+      }
+
+      #Header .show-mobile {
+        display: flex !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="Header" class="no-shadow">
+    <div class="header-top">
+      <div class="container h-100">
+        <div class="d-flex justify-content-between align-items-center h-100">
+          <div class="header-top-left" style="width: auto;">
+            <a href="#">
+              <img src="../assets/images/logo-sm.svg" alt="KKTC">
+            </a>
+          </div>
+          <div class="header-top-right">
+            <ul class="top-navigation no-mobile horizontal h-100">
+              <li><a href="../ads/index.html" class="color-dark fs-12 blue">İlan</a></li>
+              <li><a href="../company/index.html" class="color-dark fs-12 orange">Firma</a></li>
+            </ul>
+            <div class="dropdown text-center ml-auto">
+              <div class="dropdown-toggler d-flex align-items-center" id="leftNav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <div class="more">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#grid"></use>
+                  </svg>
+                </div>
+              </div>
+              <div class="dropdown-menu dropdown-menu-center no-close p-0" aria-labelledby="leftNav">
+                <ul class="top-navigation vertical h-100">
+                  <li><a href="../ads/index.html" class="color-dark fs-12 blue">İlan</a></li>
+                  <li><a href="../company/index.html" class="color-dark fs-12 orange">Firma</a></li>
+                  <li><a href="../rent-a-car/index.html" class="color-dark fs-12 blue">Araç Kiralama</a></li>
+                  <li><a href="index.html" class="color-dark fs-12 purple">Kariyer</a></li>
+                  <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
+                  <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
+                  <li><a href="#" class="color-dark fs-12 green">Sipariş</a></li>
+                  <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
+                  <li><a href="#" class="color-dark fs-12 darkblue">Alışveriş</a></li>
+                  <li><a href="#" class="color-dark fs-12 darkblue">Fotoğraf</a></li>
+                </ul>
+              </div>
+            </div>
+            <ul class="horizontal h-100 right-menu">
+              <li class="after-login user-menu-wrapper h-dropdown">
+                <img src="../assets/images/avatar.png" alt="KKTC" class="avatar">
+                <span class="fs-12 color-dark no-mobile">John Doe</span>
+                <svg class="icon arrow">
+                  <use href="../assets/icons/sprite.svg#down-angle"></use>
+                </svg>
+                <div class="h-dropdown-content">
+                  <h5>John Doe</h5>
+                  <ul class="user-menu vertical-menu">
+                    <li><a href="#" class="fs-14 color-dark">İlanlarım</a></li>
+                    <li><a href="#" class="fs-14 color-dark">Favorilerim</a></li>
+                    <li><a href="#" class="fs-14 color-dark">Sepetim</a></li>
+                    <li><a href="#" class="fs-14 color-dark">Siparişlerim</a></li>
+                    <li><a href="#" class="fs-14 color-dark">Satış İşlemlerim</a></li>
+                    <li><a href="#" class="fs-14 color-dark">Üyeliğim</a></li>
+                    <li><a href="#" class="fs-14 color-red">Çıkış Yap</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="page-wrapper">
+
+  </div>
+</body>
+
+</html>

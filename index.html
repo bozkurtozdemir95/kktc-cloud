@@ -1,155 +1,171 @@
 <!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="KKTC'de aradığınız herşeyi bulmanız çok kolay! Sizin için yaptığınız aramaları filtreler ve en uygun sonuçları karşınıza çıkartır." />
-    <meta name="keywords" content="arama, arama motoru, kktc, kıbrıs, otel, firma, araba, araba kiralama, araç kiralama, rent a car, rentacar, haber, sipariş" />
-    <Meta name="robots" Content="index, follow">
-    <link rel="icon" href="favicon.ico">
-    <!--- LIBRARIES --->
-    <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="KKTC'de aradığınız herşeyi bulmanız çok kolay! Sizin için yaptığınız aramaları filtreler ve en uygun sonuçları karşınıza çıkartır." />
+  <meta name="keywords" content="arama, arama motoru, kktc, kıbrıs, otel, firma, araba, araba kiralama, araç kiralama, rent a car, rentacar, haber, sipariş" />
+  <Meta name="robots" Content="index, follow">
+  <link rel="icon" href="favicon.ico">
+  <!--- LIBRARIES --->
+  <link rel="stylesheet" href="assets/libs/bootstrap/bootstrap.min.css">
 
-    <script src="assets/libs/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="assets/libs/bootstrap/bootstrap.min.js"></script>
-    <script src="https://kit.fontawesome.com/aede4151d0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/css/main.css">
-    <title>KKTC</title>
-    <style>
-        img {
-            max-width: 200px;
-        }
+  <script src="assets/libs/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="assets/libs/bootstrap/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/aede4151d0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>KKTC</title>
+  <style>
+    img {
+      max-width: 200px;
+    }
 
-        a {
-            color: #1b1e21;
-        }
+    a {
+      color: #1b1e21;
+    }
 
-        .btn {
-            border-bottom: 1px solid rgba(0, 0, 0, .1);
-        }
-        .collapse li a{
-            position: relative;
-        }
-        .collapse li.done a:after{
-            content: "\f058";
-            font-family: "Font Awesome 5 Free";
-            font-weight: 900;
-            position: absolute;
-            right: -20px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 12px;
-            color: #14D8AE;
-        }
-    </style>
+    .btn {
+      border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
+
+    .collapse li a {
+      position: relative;
+    }
+
+    .collapse li.done a:after {
+      content: "\f058";
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 12px;
+      color: #14D8AE;
+    }
+  </style>
 </head>
+
 <body class="py-50">
-<div class="col-lg-6 mx-auto d-flex flex-column align-items-center">
+  <div class="col-lg-6 mx-auto d-flex flex-column align-items-center">
     <img class="mb-30" src="./assets/images/logo-blue.svg" alt="KKTC">
     <a class="btn btn-primary mb-30" href="Documentations">Documentation</a>
     <h5 class="card-title f-bold">Sayfalar</h5>
+
+    <a href="main-page.html">Arama Sayfası</a>
     <div class="accordion w-100" id="accordionExample">
-        <div class="card">
-            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                Araç Kiralama
-            </button>
+      <div class="card">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Araç Kiralama
+        </button>
 
-            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                    <ul>
-                        <li class="ml-3 mb-3 done"><a href="rent-a-car/index.html">Anasayfa</a></li>
-                        <li class="ml-3 mb-3 done"><a href="rent-a-car/choose-car.html">Araç Seçim</a></li>
-                        <li class="ml-3 mb-3 done"><a href="rent-a-car/car-payment.html">Araç Ödeme</a></li>
-                        <li class="ml-3 mb-3 done"><a href="rent-a-car/driver-info.html">Sürücü Bilgileri</a></li>
-                        <li class="ml-3 mb-3 done"><a href="rent-a-car/company-profile.html">Firma Profili</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+          <div class="card-body">
+            <ul>
+              <li class="ml-3 mb-3 done"><a href="rent-a-car/index.html">Anasayfa</a></li>
+              <li class="ml-3 mb-3 done"><a href="rent-a-car/choose-car.html">Araç Seçim</a></li>
+              <li class="ml-3 mb-3 done"><a href="rent-a-car/car-payment.html">Araç Ödeme</a></li>
+              <li class="ml-3 mb-3 done"><a href="rent-a-car/driver-info.html">Sürücü Bilgileri</a></li>
+              <li class="ml-3 mb-3 done"><a href="rent-a-car/company-profile.html">Firma Profili</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                Firma
-            </button>
+      </div>
+      <div class="card">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+          Firma
+        </button>
 
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                    <ul>
-                        <li class="ml-3 mb-3 done"><a href="company/index.html">Anasayfa</a></li>
-                        <li class="ml-3 mb-3 done"><a href="company/company-list.html">Firma Listesi</a></li>
-                        <li class="ml-3 mb-3 done"><a href="company/company-map.html">Firma Harita</a></li>
-                        <li class="ml-3 mb-3 done"><a href="company/company-details.html">Firma Detayları</a></li>
-                        <li class="ml-3 mb-3 done"><a href="company/add-company.html">Firma Ekle - Firma Bilgileri</a></li>
-                        <li class="ml-3 mb-3 done"><a href="company/select-usertype.html">Firma Ekle - Üyelik Tercihi</a></li>
-                        <li class="ml-3 mb-3 done"><a href="company/choose-photo.html">Firma Ekle - Fotoğraf Ekle</a></li>
-                        <li class="ml-3 mb-3 done"><a href="company/company-payment.html">Firma Ekle - Ödeme</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+          <div class="card-body">
+            <ul>
+              <li class="ml-3 mb-3 done"><a href="company/index.html">Anasayfa</a></li>
+              <li class="ml-3 mb-3 done"><a href="company/company-list.html">Firma Listesi</a></li>
+              <li class="ml-3 mb-3 done"><a href="company/company-map.html">Firma Harita</a></li>
+              <li class="ml-3 mb-3 done"><a href="company/company-details.html">Firma Detayları</a></li>
+              <li class="ml-3 mb-3 done"><a href="company/add-company.html">Firma Ekle - Firma Bilgileri</a></li>
+              <li class="ml-3 mb-3 done"><a href="company/select-usertype.html">Firma Ekle - Üyelik Tercihi</a></li>
+              <li class="ml-3 mb-3 done"><a href="company/choose-photo.html">Firma Ekle - Fotoğraf Ekle</a></li>
+              <li class="ml-3 mb-3 done"><a href="company/company-payment.html">Firma Ekle - Ödeme</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseThree"
-                    aria-expanded="false" aria-controls="collapseThree">
-                İlan
-            </button>
+      </div>
+      <div class="card">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          İlan
+        </button>
 
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                    <ul>
-                        <li class="ml-3 mb-3 done"><a href="ads/index.html">Anasayfa</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/car-table.html">Araç - Tablo</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/car-list.html">Araç - Liste</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/car-details.html">Araç - Detay</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/home-table.html">Ev - Tablo</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/home-list.html">Ev - Liste</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/home-details.html">Ev - Detay</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/search-in-map.html">Haritada Ara</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/search-in-map-car.html">Haritada Ara - Araç</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/search-in-map-home.html">Haritada Ara - Ev</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/detailed-search.html">Detaylı Arama</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/ads-company-details.html">Firma Profili</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/add-ads-category.html">İlan Ekle - Kategori</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/add-adds-preview.html">İlan Ekle - Önizleme</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/add-adds-doping.html">İlan Ekle - Doping</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/add-adds-congrats.html">İlan Ekle - Tebrikler!</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/add-adds-get.html">GET - İlan Ekle</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/ads-get.html">GET - İlan</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/ads-get-delivery-info.html">GET - Teslimat Bilgileri</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/ads-get-payment-info.html">GET - Ödeme Bilgileri</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/ads-get-congrats.html">GET - Tebrikler</a></li>
-                        <li class="ml-3 mb-3 done"><a href="ads/credit-calculation.html">Kredi Sorgulama</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+          <div class="card-body">
+            <ul>
+              <li class="ml-3 mb-3 done"><a href="ads/index.html">Anasayfa</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/car-table.html">Araç - Tablo</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/car-list.html">Araç - Liste</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/car-details.html">Araç - Detay</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/home-table.html">Ev - Tablo</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/home-list.html">Ev - Liste</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/home-details.html">Ev - Detay</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/search-in-map.html">Haritada Ara</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/search-in-map-car.html">Haritada Ara - Araç</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/search-in-map-home.html">Haritada Ara - Ev</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/detailed-search.html">Detaylı Arama</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/ads-company-details.html">Firma Profili</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/add-ads-category.html">İlan Ekle - Kategori</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/add-adds-preview.html">İlan Ekle - Önizleme</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/add-adds-doping.html">İlan Ekle - Doping</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/add-adds-congrats.html">İlan Ekle - Tebrikler!</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/add-adds-get.html">GET - İlan Ekle</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/ads-get.html">GET - İlan</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/ads-get-delivery-info.html">GET - Teslimat Bilgileri</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/ads-get-payment-info.html">GET - Ödeme Bilgileri</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/ads-get-congrats.html">GET - Tebrikler</a></li>
+              <li class="ml-3 mb-3 done"><a href="ads/credit-calculation.html">Kredi Sorgulama</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="card">
-            <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFour"
-                    aria-expanded="true" aria-controls="collapseFour">
-                Kariyer
-            </button>
+      </div>
+      <div class="card">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Kariyer
+        </button>
 
-            <div id="collapseFour" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
-                <div class="card-body">
-                    <ul>
-                        <li class="ml-3 mb-3 done"><a href="career/index.html">Anasayfa</a></li>
-                        <li class="ml-3 mb-3 done"><a href="career/career-about-us.html">Hakkımızda</a></li>
-                        <li class="ml-3 mb-3 done"><a href="career/career-contact.html">İletişim</a></li>
-                        <li class="ml-3 mb-3 done"><a href="career/career-company-profile.html">Firma Profili</a></li>
-                        <li class="ml-3 mb-3 done"><a href="career/career-freelancer-profile.html">Freelancer Profili</a></li>
-                        <li class="ml-3 mb-3 done"><a href="career/career-search-jobs.html">İş Arama</a></li>
-                        <li class="ml-3 mb-3 done"><a href="career/career-search-freelancers.html">Freelancer Arama</a></li>
-                        <li class="ml-3 mb-3 done"><a href="career/career-job-details.html">İş İlanı Detayı</a></li>
-                        <li class="ml-3 mb-3 done"><a href="career/career-messages.html">Mesajlar</a></li>
-                    </ul>
-                </div>
-            </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+          <div class="card-body">
+            <ul>
+              <li class="ml-3 mb-3 done"><a href="career/index.html">Anasayfa</a></li>
+              <li class="ml-3 mb-3 done"><a href="career/career-about-us.html">Hakkımızda</a></li>
+              <li class="ml-3 mb-3 done"><a href="career/career-contact.html">İletişim</a></li>
+              <li class="ml-3 mb-3 done"><a href="career/career-company-profile.html">Firma Profili</a></li>
+              <li class="ml-3 mb-3 done"><a href="career/career-freelancer-profile.html">Freelancer Profili</a></li>
+              <li class="ml-3 mb-3 done"><a href="career/career-search-jobs.html">İş Arama</a></li>
+              <li class="ml-3 mb-3 done"><a href="career/career-search-freelancers.html">Freelancer Arama</a></li>
+              <li class="ml-3 mb-3 done"><a href="career/career-job-details.html">İş İlanı Detayı</a></li>
+              <li class="ml-3 mb-3 done"><a href="career/career-messages.html">Mesajlar</a></li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="card">
+        <button class="btn" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+          Finans
+        </button>
+
+        <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-parent="#accordionExample">
+          <div class="card-body">
+            <ul>
+              <li class="ml-3 mb-3"><a href="finance/index.html">Anasayfa</a></li>
+              <li class="ml-3 mb-3"><a href="finance/index2.html">İç Sayfa</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
-</div>
+  </div>
 
 </body>
+
 </html>

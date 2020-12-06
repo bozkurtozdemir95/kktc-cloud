@@ -1,171 +1,180 @@
 .company-top .white-box {
-    padding: 0;
+  padding: 0;
 }
 
 .company-top .about-text {
-    padding: 22px;
+  padding: 22px;
 }
 
 .company-top .company-bg {
-    width: 100%;
-    height: 270px;
-    background-size: cover;
-    background-position: 50% 50%;
-    margin-bottom: 20px;
+  width: 100%;
+  height: 270px;
+  background-size: cover;
+  background-position: 50% 50%;
+  margin-bottom: 20px;
 }
 
 .company-top p {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .company-top p:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .company-logo {
-    height: 200px;
-    width: 100%;
-    background: #0081A7;
-    padding: 50px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 13px;
+  height: 200px;
+  width: 100%;
+  background: #0081A7;
+  padding: 50px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 13px;
 }
 
 .company-logo img {
-    max-width: 200px;
+  max-width: 200px;
 }
 
 .company-left .white-box {
-    padding: 0 20px;
-    height: 48px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
-    margin-bottom: 20px;
+  padding: 0 20px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .company-left .white-box.h-big {
-    height: 58px;
+  height: 58px;
 }
 
 .company-left .blue-bordered-left {
-    position: relative;
+  position: relative;
 }
 
 .company-left .blue-bordered-left .border {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 6px;
-    height: 100%;
-    background: #0081A7;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6px;
+  height: 100%;
+  background: #0081A7;
 }
 
 .company-left .white-box .status {
-    width: 12px;
-    height: 12px;
-    background: #0081A7;
-    border-radius: 50%;
-    animation: flash 2s infinite;
+  width: 12px;
+  height: 12px;
+  background: #0081A7;
+  border-radius: 50%;
+  animation: flash 2s infinite;
 }
 
 .company-left .white-box .status.online {
-    background: #1CDF5D;
+  background: #1CDF5D;
 }
 
 @keyframes flash {
-    from,
-    50%,
-    to {
-        opacity: 1;
-    }
 
-    25%,
-    75% {
-        opacity: 0;
-    }
+  from,
+  50%,
+  to {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
 }
 
 .company-left .white-box .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-    fill: #0081A7;
+  width: 20px;
+  height: 20px;
+  margin-right: 15px;
+  fill: #0081A7;
 }
 
 .company-left .white-box .icon.arrow {
-    margin-right: 0;
-    width: 10px;
-    height: 10px;
-    fill: none;
-    stroke: #023047;
+  margin-right: 0;
+  width: 10px;
+  height: 10px;
+  fill: none;
+  stroke: #023047;
 }
 
 .company-left .white-box .rating .icon {
-    margin: 1px !important;
+  margin: 1px !important;
 }
 
 .profile-socials {
-    justify-content: space-between;
-    margin-bottom: 20px;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .profile-socials li {
-    width: calc(100% / 5 - 10px);
-    background: #FFFFFF;
-    box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
-    cursor: pointer;
-    transition: all .25s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  width: calc(100% / 5 - 10px);
+  background: #FFFFFF;
+  box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
+  cursor: pointer;
+  transition: all .25s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .profile-socials li:after {
-    content: "";
-    display: block;
-    padding-bottom: 100%;
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
 .profile-socials .icon {
-    width: 20px;
-    height: 20px;
-    fill: rgba(154, 172, 181, .5);
-    transition: all .25s;
+  width: 20px;
+  height: 20px;
+  fill: rgba(154, 172, 181, .5);
+  transition: all .25s;
 }
 
 .profile-socials li:hover {
-    background: #0081A7;
+  background: #0081A7;
 }
 
 .darkblue2 .profile-socials li:hover {
-    background: #0466C8;
+  background: #0466C8;
+}
+
+.green .profile-socials li:hover {
+  background: #28CC67;
+}
+
+.yellow .profile-socials li:hover {
+  background: #FFC107;
 }
 
 .profile-socials li:hover .icon {
-    fill: #FFFFFF;
+  fill: #FFFFFF;
 }
 
 .company-left .white-box-content {
-    margin-top: -20px;
-    box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
-    padding: 20px;
-    cursor: pointer;
-    margin-bottom: 20px;
+  margin-top: -20px;
+  box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
 .company-left .white-box-content .icon {
-    width: 20px;
-    height: 20px;
-    fill: #0081A7;
-    margin-right: 11px;
+  width: 20px;
+  height: 20px;
+  fill: #0081A7;
+  margin-right: 11px;
 }
 
 .company-left .white-box-content ul li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
 }

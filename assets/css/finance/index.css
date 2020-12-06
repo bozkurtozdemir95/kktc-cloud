@@ -1,0 +1,83 @@
+.finance-top-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.finance-top-box {
+  padding: 10px 15px;
+  background: #fff;
+  border: 1px solid rgba(2, 48, 71, .1);
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: all .3s;
+}
+
+.finance-top-box:hover {
+  background: rgba(2, 48, 71, .05);
+}
+
+.finance-top-box span,
+.finance-top-box h5 {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.finance-top-box h4 {
+  font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.finance-top-box span {
+  padding-left: 10px;
+  position: relative;
+}
+
+.finance-top-box .green span:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 5px solid #28CC67;
+}
+
+.finance-top-box .red span:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-top: 5px solid #FF0000;
+}
+
+.finance-top-box .green span {
+  color: #28CC67;
+}
+
+.finance-top-box .red span {
+  color: #FF0000;
+}
+
+.finance-top-box .icon {
+  width: 17px;
+  height: 9px;
+  margin-left: 5px;
+}
+
+.finance-top-box .green .icon {
+  stroke: #28CC67;
+}
+
+.finance-top-box .red .icon {
+  stroke: #FF0000;
+}

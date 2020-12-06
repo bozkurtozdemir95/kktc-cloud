@@ -31,6 +31,8 @@
 @import "career/career-search.css";
 @import "career/career-profile.css";
 @import "career/career-about.css";
+/** Finance css files **/
+@import "finance/index.css";
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -57,6 +59,16 @@
 .darkblue2::-webkit-scrollbar-thumb,
 .darkblue2 ::-webkit-scrollbar-thumb {
   background: #0466C8;
+}
+
+.green::-webkit-scrollbar-thumb,
+.green ::-webkit-scrollbar-thumb {
+  background: #28CC67;
+}
+
+.yellow::-webkit-scrollbar-thumb,
+.yellow ::-webkit-scrollbar-thumb {
+  background: #FFC107;
 }
 
 body {
@@ -422,6 +434,10 @@ button.no-anim {
 
 .pb-50 {
   padding-bottom: 50px;
+}
+
+.pt-20 {
+  padding-top: 20px;
 }
 
 .ml-5p {
@@ -956,6 +972,14 @@ button.no-anim {
   background: #0466C8;
 }
 
+.green .form-button.primary {
+  background: #28CC67;
+}
+
+.yellow .form-button.primary {
+  background: #FFC107;
+}
+
 .form-button:focus {
   box-shadow: none;
   outline: 0;
@@ -1167,6 +1191,16 @@ button.no-anim {
   border-color: #0466C8;
 }
 
+.green .main-button.primary {
+  background: #28CC67;
+  border-color: #28CC67;
+}
+
+.yellow .main-button.primary {
+  background: #FFC107;
+  border-color: #FFC107;
+}
+
 .main-button.md {
   height: 34px;
 }
@@ -1220,6 +1254,12 @@ button.no-anim {
   right: 0;
   bottom: 0;
   transform: translateY(100%);
+}
+
+.h-dropdown.left .h-dropdown-content {
+  left: 0;
+  right: auto;
+  transform: translateY(100%) translateX(30px);
 }
 
 .h-dropdown-content:after {
@@ -2267,6 +2307,21 @@ button.no-anim {
   outline: 2px solid #4866FC;
 }
 
+.finance-slider-nav {
+  margin-top: 10px;
+}
+
+.finance-slider-nav .slider-nav-item {
+  padding: 10px;
+}
+
+.finance-slider-nav .slick-slide div:not([class]) {
+  display: flex;
+  margin: 0 -10px;
+  width: calc(100% + 16px);
+}
+
+.finance-slider-nav .slick-arrow,
 .slider-nav .slick-arrow {
   position: absolute;
   top: -30px;
@@ -2279,11 +2334,13 @@ button.no-anim {
   transition: all .25s;
 }
 
+.finance-slider-nav .slick-arrow.prev,
 .slider-nav .slick-arrow.prev {
   transform: rotate(180deg);
   right: 85px;
 }
 
+.finance-nav .slick-arrow:hover,
 .slider-nav .slick-arrow:hover {
   stroke: #4866FC;
 }
@@ -2292,22 +2349,82 @@ button.no-anim {
   height: 400px;
 }
 
+.slider-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.slider-caption {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  padding: 20px 25px;
+}
+
+.slider-caption h2 {
+  font-size: 26px;
+  line-height: 35px;
+  font-family: 'Proxima Nova Sb', sans-serif;
+  color: #fff;
+  margin: 10px 0
+}
+
+.slider-caption p {
+  font-size: 14px;
+  line-height: 19px;
+  color: rgba(255, 255, 255, .5)
+}
+
 .prevBig.slick-arrow {
   position: absolute;
   width: 50%;
   height: 100%;
-  z-index: 9999;
+  z-index: 998;
   top: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
 }
 
 .nextBig.slick-arrow {
   position: absolute;
   width: 50%;
   height: 100%;
-  z-index: 9999;
+  z-index: 998;
   top: 0;
   right: 0;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+.prevBig.slick-arrow svg,
+.nextBig.slick-arrow svg {
+  width: 25px;
+  height: 40px;
+  stroke: #fff;
+  transition: all .3s;
+}
+
+.prevBig.slick-arrow:hover svg,
+.nextBig.slick-arrow:hover svg {
+  stroke: #28CC67;
+}
+
+.prevBig.slick-arrow svg {
+  transform: rotate(180deg);
 }
 
 .price-list {
