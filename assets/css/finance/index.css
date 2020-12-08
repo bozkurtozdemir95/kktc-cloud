@@ -164,6 +164,11 @@
   display: flex;
   align-items: center;
   padding-left: 16px;
+  transition: all .3s;
+}
+
+.finance-links a:hover {
+  background: rgba(2, 48, 71, .1);
 }
 
 .finance-links a h4 {
