@@ -1,852 +1,853 @@
 .career-sidebar {
-    max-width: 271px;
-    width: 100%;
+  max-width: 271px;
+  width: 100%;
 }
 
 .career-sidebar-box {
-    padding: 11px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #ffffff;
-    box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
-    margin-bottom: 20px;
+  padding: 11px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+  box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
+  margin-bottom: 20px;
 }
 
 .career-sidebar-box.transparent {
-    background: #FAFAFA;
+  background: #FAFAFA;
 }
 
 .career-sidebar-box .avatar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px dashed #0466C8;
-    width: 100px;
-    height: 100px;
-    margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px dashed #0466C8;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 5px;
 }
 
 .career-sidebar-box .avatar img {
-    width: 84px;
-    height: 84px;
-    border-radius: 50%;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
 }
 
 .career-sidebar-box h1 {
-    font-size: 22px;
-    line-height: 30px;
-    font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: 'Proxima Nova Bo', sans-serif;
 }
 
 .career-sidebar-box span {
-    font-size: 14px;
-    line-height: 19px;
-    color: #9AACB5;
+  font-size: 14px;
+  line-height: 19px;
+  color: #9AACB5;
 }
 
 .career-sidebar-box.first {
-    padding: 20px 37px;
+  padding: 20px 37px;
 }
 
 .career-sidebar-box.first button {
-    width: 100%;
-    justify-content: center;
+  width: 100%;
+  justify-content: center;
 }
 
 .career-sidebar-box h4 {
-    font-size: 16px;
-    font-family: 'Proxima Nova Bo', sans-serif;
-    line-height: 21px;
-    color: #023047;
+  font-size: 16px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  line-height: 21px;
+  color: #023047;
 }
 
 .career-sidebar-box h4 span {
-    color: #023047;
-    line-height: 21px;
+  color: #023047;
+  line-height: 21px;
 }
 
 .career-sidebar-box .company-contact-list {
-    width: 100%;
+  width: 100%;
 }
 
 .career-sidebar-box .company-contact-list li {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    font-size: 14px;
-    line-height: 19px;
-    width: 100%;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 14px;
+  line-height: 19px;
+  width: 100%;
+  margin-bottom: 20px;
 }
 
 .career-sidebar-box .company-contact-list li .icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    fill: #0466C8;
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  fill: #0466C8;
 }
 
 .career-sidebar-box .company-contact-list li:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .career-sidebar-box table {
-    width: 100%;
+  width: 100%;
 }
 
 .career-sidebar-box table tr td:first-child {
-    color: #023047;
-    font-family: 'Proxima Nova Bo', sans-serif;
+  color: #023047;
+  font-family: 'Proxima Nova Bo', sans-serif;
 }
 
 .career-sidebar-box table tr td {
-    font-size: 14px;
-    line-height: 30px;
-    color: #9AACB5;
+  font-size: 14px;
+  line-height: 30px;
+  color: #9AACB5;
 }
 
 .career-sidebar-box table tr td a {
-    color: #023047;
-    display: flex;
-    align-items: center;
+  color: #023047;
+  display: flex;
+  align-items: center;
 }
 
 .career-sidebar-box table tr td a .icon {
-    width: 6px;
-    height: 6px;
-    stroke: #023047;
-    margin-left: 5px;
+  width: 6px;
+  height: 6px;
+  stroke: #023047;
+  margin-left: 5px;
 }
 
 .career-sidebar-box.with-button button {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    padding-left: 15px;
-    font-size: 16px;
-    font-family: 'Proxima Nova Bo', sans-serif;
-    transition: all .3s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding-left: 15px;
+  font-size: 16px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  transition: all .3s;
 }
 
 .career-sidebar-box.with-button button .icon-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 46px;
-    width: 46px;
-    background: #0466C8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 46px;
+  width: 46px;
+  background: #0466C8;
 }
 
 .career-sidebar-box.with-button button .icon {
-    height: 16px;
-    max-width: 24px;
-    fill: #ffffff;
+  height: 16px;
+  max-width: 24px;
+  fill: #ffffff;
 }
 
 .career-sidebar-box.with-button button:hover {
-    background: rgba(196, 196, 196, .2);
+  background: rgba(196, 196, 196, .2);
 }
 
 .career-sidebar #map {
-    width: 100%;
-    height: 271px;
+  width: 100%;
+  height: 271px;
 }
 
 .job-detail-top h3 {
-    font-size: 16px;
-    font-family: 'Proxima Nova Bo', sans-serif;
-    line-height: 21px;
-    margin-bottom: 5px;
+  font-size: 16px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  line-height: 21px;
+  margin-bottom: 5px;
 }
 
 .job-detail-top h4 {
-    font-size: 14px;
-    font-family: 'Proxima Nova Bo', sans-serif;
-    line-height: 21px;
-    margin-top: 5px;
+  font-size: 14px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  line-height: 21px;
+  margin-top: 5px;
 }
 
 .job-detail-top span {
-    font-size: 12px;
-    line-height: 16px;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .job-detail-top span.light {
-    color: #9AACB5;
+  color: #9AACB5;
 }
 
 .detail-top-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 85px;
-    width: 100%;
-    background: #ffffff;
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 85px;
+  width: 100%;
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
 }
 
 .job-detail-top .row {
-    margin-left: -2.5px;
-    margin-right: -2.5px;
+  margin-left: -2.5px;
+  margin-right: -2.5px;
 }
 
 .job-detail-top .col-lg-4,
 .job-detail-top .col-lg-2 {
-    padding-left: 2.5px;
-    padding-right: 2.5px;
+  padding-left: 2.5px;
+  padding-right: 2.5px;
 }
 
 .job-detail-top .location {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 
 .job-detail-top .location .icon {
-    width: 14px;
-    height: 14px;
-    fill: #0466C8;
-    margin-right: 4px;
+  width: 14px;
+  height: 14px;
+  fill: #0466C8;
+  margin-right: 4px;
 }
 
 .job-detail-bars {
-    display: flex;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 .job-detail-bar {
-    display: flex;
-    align-items: center;
-    height: 53px;
-    background: #ffffff;
-    padding: 11px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
+  display: flex;
+  align-items: center;
+  height: 53px;
+  background: #ffffff;
+  padding: 11px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
 }
 
 .job-detail-bars .job-detail-bar:first-child {
-    margin-left: 0;
+  margin-left: 0;
 }
 
 .job-detail-bar .icon {
-    height: 13px;
-    max-width: 18px;
-    fill: #023047;
-    margin-right: 10px;
+  height: 13px;
+  max-width: 18px;
+  fill: #023047;
+  margin-right: 10px;
 }
 
 .job-detail-bar h4 {
-    font-size: 14px;
-    font-family: 'Proxima Nova Bo', sans-serif;
-    line-height: 19px;
+  font-size: 14px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  line-height: 19px;
 }
 
 .job-detail-bar h4 span {
-    font-family: 'Proxima Nova Rg', sans-serif;
+  font-family: 'Proxima Nova Rg', sans-serif;
 }
 
 .job-detail-bar button {
-    min-width: 175px;
+  min-width: 175px;
 }
 
 .freelancer-portfoy {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .freelancer-detail-portfoy {
-    margin: -10px;
+  margin: -10px;
 }
 
 .freelancer-portfoy-thumbs {
-    margin: 5px;
-    width: calc(100% / 5 - 10px);
-    box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
+  margin: 5px;
+  width: calc(100% / 5 - 10px);
+  box-shadow: 0 3px 22px rgba(0, 0, 0, .03);
 }
 
 .freelancer-detail-portfoy .freelancer-portfoy-thumbs {
-    margin: 10px;
-    width: calc(100% / 5 - 20px);
+  margin: 10px;
+  width: calc(100% / 5 - 20px);
 }
 
 .freelancer-detail-portfoy .collapse .freelancer-portfoy-thumbs {
-    margin: 10px;
-    width: calc(100% / 5 - 20px);
+  margin: 10px;
+  width: calc(100% / 5 - 20px);
 }
 
 .job-detail-populars .career-popular-box .box-top .favourite .icon {
-    fill: rgba(154, 172, 181, .3);
-    width: 13px;
-    height: 13px;
+  fill: rgba(154, 172, 181, .3);
+  width: 13px;
+  height: 13px;
 }
 
 .job-detail-populars .career-popular-box .box-top .favourite:hover .icon {
-    fill: #F80044;
+  fill: #F80044;
 }
 
 .job-detail-populars .career-popular-box {
-    padding: 15px;
-    width: calc(100% / 4 - 20px);
+  padding: 15px;
+  width: calc(100% / 4 - 20px);
 }
 
 .job-detail-populars .career-popular-box .box-top img {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .job-detail-populars .career-popular-box h5 {
-    font-size: 14px;
-    line-height: 19px;
-    color: #023047;
-    font-family: 'Proxima Nova Bo', sans-serif;
-    margin-top: 10px;
-    margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 19px;
+  color: #023047;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
 .job-detail-populars .career-popular-box p {
-    font-size: 12px;
-    line-height: 16px;
-    color: rgba(2, 48, 71, .5);
-    margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(2, 48, 71, .5);
+  margin-bottom: 10px;
 }
 
 .verification-list li {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    line-height: 22px;
-    margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 22px;
+  margin-bottom: 18px;
 }
 
 .verification-list li .icon {
-    width: 11px;
-    height: 11px;
-    fill: #02C39A;
-    margin-right: 7px;
+  width: 11px;
+  height: 11px;
+  fill: #02C39A;
+  margin-right: 7px;
 }
 
 .experiences-list li {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .experiences-list li img {
-    width: 46px;
-    height: 46px;
-    margin-right: 10px;
+  width: 46px;
+  height: 46px;
+  margin-right: 10px;
 }
 
 .experiences-list li .text {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .experiences-list li .text span {
-    font-size: 10px;
-    line-height: 14px;
-    color: #9AACB5;
+  font-size: 10px;
+  line-height: 14px;
+  color: #9AACB5;
 }
 
 .experiences-list li .text h5 {
-    font-family: 'Proxima Nova Bo', sans-serif;
-    font-size: 12px;
-    line-height: 16px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .experiences-list li:last-child {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .tag-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -5px -5px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -5px -5px;
 }
 
 .tag-list a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 30px;
-    background: rgba(154, 172, 181, .1);
-    padding: 0 15px;
-    font-size: 12px;
-    line-height: 14px;
-    color: #023047;
-    margin: 5px;
-    transition: all .3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  background: rgba(154, 172, 181, .1);
+  padding: 0 15px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #023047;
+  margin: 5px;
+  transition: all .3s;
 }
 
 .tag-list a:hover {
-    background: rgba(154, 172, 181, .3);
+  background: rgba(154, 172, 181, .3);
 }
 
 .show-more {
-    width: 100%;
-    font-size: 12px;
-    line-height: 28px;
-    font-family: 'Proxima Nova Bo', sans-serif;
-    color: #023047;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
+  width: 100%;
+  font-size: 12px;
+  line-height: 28px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  color: #023047;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
 }
 
 .show-more .icon {
-    width: 6px;
-    height: 6px;
-    stroke: #023047;
-    margin-left: 5px;
-    transition: all .3s;
+  width: 6px;
+  height: 6px;
+  stroke: #023047;
+  margin-left: 5px;
+  transition: all .3s;
 }
 
 .show-more[aria-expanded='true'] .icon {
-    transform: rotate(-180deg);
+  transform: rotate(-180deg);
 }
 
 .experiences-list-big {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -10px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -10px;
 }
 
 .experiences-list-big .nav-tabs {
-    border: 0;
+  border: 0;
 }
 
 .experience-big {
-    width: calc(100% / 5 - 20px);
-    margin: 10px;
+  width: calc(100% / 5 - 20px);
+  margin: 10px;
 }
 
 .experience-big img {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .experience-big .text {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+  display: flex;
+  flex-direction: column;
+  position: relative;
 }
 
 .experience-big .text span {
-    font-size: 12px;
-    line-height: 16px;
-    color: #9AACB5;
+  font-size: 12px;
+  line-height: 16px;
+  color: #9AACB5;
 }
 
 .experience-big .text h5 {
-    font-family: 'Proxima Nova Bo', sans-serif;
-    font-size: 12px;
-    line-height: 16px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 12px;
+  line-height: 16px;
 }
 
 .experience-big .text .popover-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background: #9AACB5;
-    border-radius: 50%;
-    width: 21px;
-    height: 21px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #9AACB5;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .experience-big .text .popover-button .icon {
-    fill: #ffffff;
-    width: 11px;
-    max-height: 11px;
+  fill: #ffffff;
+  width: 11px;
+  max-height: 11px;
 }
 
 .experience-big .text .popover-button.active {
-    background: #00A84F;
+  background: #00A84F;
 }
 
 .experience-big .text .popover-button.active .icon {
-    transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .experience-big {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .experience-big .show-comment {
-    padding: 0;
-    font-size: 12px;
-    line-height: 16px;
-    color: #9AACB5;
-    transition: all .3s;
-    margin-top: 5px;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #9AACB5;
+  transition: all .3s;
+  margin-top: 5px;
 }
 
 .experience-big:hover .show-comment,
 .experience-big .active .show-comment {
-    font-family: 'Proxima Nova Bo', sans-serif;
-    color: #023047;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  color: #023047;
 }
 
 .experience-big:hover .show-comment {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .experience-tab-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-tab-content .title {
-    display: flex;
-    margin-bottom: 20px;
+  display: flex;
+  margin-bottom: 20px;
 }
 
 .experience-tab-content .title .text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .experience-tab-content .title img {
-    width: 65px;
-    margin-right: 12px;
+  width: 65px;
+  margin-right: 12px;
 }
 
 .experience-tab-content .title h4 {
-    font-size: 13px;
-    line-height: 17px;
-    font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 13px;
+  line-height: 17px;
+  font-family: 'Proxima Nova Bo', sans-serif;
 }
 
 .experience-tab-content .title span {
-    font-size: 12px;
-    color: rgba(2, 48, 71, .5);
+  font-size: 12px;
+  color: rgba(2, 48, 71, .5);
 }
 
 .experience-tab-content .content {
-    display: flex;
-    flex-direction: column;
-
+  display: flex;
+  flex-direction: column;
 }
 
 .experience-tab-content .content h3 {
-    font-size: 12px;
-    line-height: 35px;
-    font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 12px;
+  line-height: 35px;
+  font-family: 'Proxima Nova Bo', sans-serif;
 }
 
 .experience-tab-content .content p {
-    font-size: 12px;
-    line-height: 19px;
+  font-size: 12px;
+  line-height: 19px;
 }
 
 .evaluations img {
-    width: 39px;
-    height: 39px;
-    border-radius: 50%;
-    margin-right: 15px;
+  width: 39px;
+  height: 39px;
+  border-radius: 50%;
+  margin-right: 15px;
 }
 
 .evaluations h5 {
-    font-family: 'Proxima Nova Bo', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .evaluations span {
-    font-size: 12px;
-    line-height: 20px;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .evaluation-top {
-    border-top: 1px solid rgba(2, 48, 71, .1);
-    border-bottom: 1px solid rgba(2, 48, 71, .1);
-    display: flex;
+  border-top: 1px solid rgba(2, 48, 71, .1);
+  border-bottom: 1px solid rgba(2, 48, 71, .1);
+  display: flex;
 }
 
 .evaluation-top .left {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .evaluations .icon {
-    width: 8px;
-    height: 8px;
-    fill: #0466C8;
+  width: 8px;
+  height: 8px;
+  fill: #0466C8;
 }
 
 .evaluations .box {
-    display: flex;
-    border-left: 1px solid rgba(2, 48, 71, .1);
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 15px;
+  display: flex;
+  border-left: 1px solid rgba(2, 48, 71, .1);
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
 }
 
 .evaluations .box span {
-    font-size: 12px;
-    line-height: 20px;
+  font-size: 12px;
+  line-height: 20px;
 }
 
 .evaluations .box h4 {
-    font-family: 'Proxima Nova Bo', sans-serif;
-    font-size: 14px;
-    line-height: 20px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .evaluation-list {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .evaluation-list-item {
-    padding: 10px 0;
+  padding: 10px 0;
 }
 
 .evaluation-list-item .title {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .evaluation-list-item .title .ratio {
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-    line-height: 21px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 21px;
 }
 
 .evaluation-list-item .title .ratio .icon {
-    margin-right: 5px;
+  margin-right: 5px;
 }
 
 .evaluation-list-item .title .time {
-    font-size: 12px;
-    line-height: 16px;
-    color: rgba(2, 48, 71, .5);
-    margin-left: 20px;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(2, 48, 71, .5);
+  margin-left: 20px;
 }
 
 .evaluation-list-item .comment-text {
-    font-size: 12px;
-    line-height: 16px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* number of lines to show */
-    -webkit-box-orient: vertical;
-    white-space: normal;
-    margin-top: 3px;
+  font-size: 12px;
+  line-height: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* number of lines to show */
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  margin-top: 3px;
 }
 
 .career-person-list {
-    margin: -10px;
-    display: flex;
-    flex-wrap: wrap;
+  margin: -10px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .career-person-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(100% / 4 - 20px);
-    margin: 10px;
-    box-shadow: 0 3px 22px rgba(0, 0, 0, .08);
-    background: #ffffff;
-    padding: 13px 30px;
-    transition: all .3s;
-    cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% / 4 - 20px);
+  margin: 10px;
+  box-shadow: 0 3px 22px rgba(0, 0, 0, .08);
+  background: #ffffff;
+  padding: 13px 30px;
+  transition: all .3s;
+  cursor: pointer;
 }
 
 .career-person-box:hover {
-    box-shadow: 0 3px 22px rgba(0, 0, 0, .2);
+  box-shadow: 0 3px 22px rgba(0, 0, 0, .2);
 }
 
 .career-person-box .avatar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: 1px dashed #0466C8;
-    width: 65px;
-    height: 65px;
-    margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px dashed #0466C8;
+  width: 65px;
+  height: 65px;
+  margin-bottom: 5px;
 }
 
 .career-person-box .avatar img {
-    width: 55px;
-    height: 55px;
+  width: 55px;
+  height: 55px;
 }
 
 .career-person-box h4 {
-    font-family: 'Proxima Nova Bo', sans-serif;
-    font-size: 16px;
-    line-height: 20px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .career-person-box span {
-    color: #9AACB5;
-    font-size: 12px;
-    line-height: 16px;
-    margin-bottom: 4px;
+  color: #9AACB5;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 4px;
 }
 
 .career-person-box button {
-    justify-content: center;
-    width: 100%;
+  justify-content: center;
+  width: 100%;
 }
 
 .company-profile-populars .career-popular-box {
-    width: calc(100% / 3 - 20px);
+  width: calc(100% / 3 - 20px);
 }
 
 .active-ads {
-    max-height: 460px;
-    overflow-y: auto;
-    max-width: 100%;
-    width: 100%;
+  max-height: 460px;
+  overflow-y: auto;
+  max-width: 100%;
+  width: 100%;
 }
 
+.finance-comment-list::-webkit-scrollbar,
 .active-ads::-webkit-scrollbar {
-    width: 2px;
+  width: 2px;
 }
 
+.finance-comment-list::-webkit-scrollbar-track,
 .active-ads::-webkit-scrollbar-track {
-    background: transparent;
+  background: transparent;
 }
 
+.finance-comment-list::-webkit-scrollbar-thumb,
 .active-ads::-webkit-scrollbar-thumb {
-    background: rgba(2, 48, 71, .2) !important;
-    border-radius: 2px;
+  background: rgba(2, 48, 71, .2) !important;
+  border-radius: 2px;
 }
 
 .active-ads-content .avatar {
-    margin-right: 15px;
-    border: 0;
-    border-radius: 0;
-    padding: 0;
+  margin-right: 15px;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
 }
 
 .active-ads-content .avatar img {
-    border-radius: 0;
-    width: 102px;
-    height: 102px;
+  border-radius: 0;
+  width: 102px;
+  height: 102px;
 }
 
 .active-ads-content .bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .active-ads-content .bottom button {
-    min-width: 130px;
-    justify-content: center;
+  min-width: 130px;
+  justify-content: center;
 }
 
 .active-ads-content .bottom a {
-    color: #023047;
-    font-size: 12px;
-    line-height: 16px;
-    display: flex;
-    align-items: center;
+  color: #023047;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
 }
 
 .active-ads-content .bottom a .icon {
-    width: 5px;
-    height: 5px;
-    stroke: #023047;
-    margin-left: 5px;
+  width: 5px;
+  height: 5px;
+  stroke: #023047;
+  margin-left: 5px;
 }
 
 @media only screen and (max-width: 1200px) {
-    .detail-top-box {
-        padding: 10px;
-    }
+  .detail-top-box {
+    padding: 10px;
+  }
 
-    .detail-top-box:first-child {
-        align-items: center !important;
-    }
+  .detail-top-box:first-child {
+    align-items: center !important;
+  }
 
-    .job-detail-top h3 {
-        font-size: 14px;
-        white-space: nowrap;
-    }
+  .job-detail-top h3 {
+    font-size: 14px;
+    white-space: nowrap;
+  }
 
-    .job-detail-top h4 {
-        font-size: 12px;
-    }
+  .job-detail-top h4 {
+    font-size: 12px;
+  }
 
-    .job-detail-top span {
-        font-size: 10px;
-    }
+  .job-detail-top span {
+    font-size: 10px;
+  }
 
-    .job-detail-bar h4 {
-        font-size: 12px;
-    }
+  .job-detail-bar h4 {
+    font-size: 12px;
+  }
 
-    .job-detail-populars .career-popular-box {
-        width: calc(100% / 2 - 20px);
-    }
+  .job-detail-populars .career-popular-box {
+    width: calc(100% / 2 - 20px);
+  }
 
-    .company-profile-populars .career-popular-box {
-        width: calc(100% / 2 - 20px);
-    }
+  .company-profile-populars .career-popular-box {
+    width: calc(100% / 2 - 20px);
+  }
 }
 
 @media only screen and (max-width: 992px) {
-    .career-sidebar {
-        width: 100%;
-        max-width: 100%;
-        margin-bottom: 20px;
-    }
+  .career-sidebar {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
 
-    .job-detail-bars {
-        flex-direction: column;
-    }
+  .job-detail-bars {
+    flex-direction: column;
+  }
 
-    .job-detail-bar {
-        margin-left: 0 !important;
-        width: 100%;
-        justify-content: center;
-    }
+  .job-detail-bar {
+    margin-left: 0 !important;
+    width: 100%;
+    justify-content: center;
+  }
 
-    .job-detail-bars .job-detail-bar:last-child {
-        background: transparent;
-        box-shadow: none;
-    }
+  .job-detail-bars .job-detail-bar:last-child {
+    background: transparent;
+    box-shadow: none;
+  }
 
-    .experience-big {
-        width: calc(100% / 2 - 20px);
-    }
+  .experience-big {
+    width: calc(100% / 2 - 20px);
+  }
 
-    .career-person-box {
-        width: calc(100% / 2 - 20px);
-    }
+  .career-person-box {
+    width: calc(100% / 2 - 20px);
+  }
 
-    .company-profile-populars .career-popular-box {
-        width: 100%
-    }
+  .company-profile-populars .career-popular-box {
+    width: 100%
+  }
 }
 
 @media only screen and (max-width: 600px) {
-    .job-detail-populars .career-popular-box {
-        width: 100%
-    }
+  .job-detail-populars .career-popular-box {
+    width: 100%
+  }
 
-    .experience-big {
-        width: 100%
-    }
+  .experience-big {
+    width: 100%
+  }
 
-    .career-person-box {
-        width: 100%
-    }
-
-
+  .career-person-box {
+    width: 100%
+  }
 }

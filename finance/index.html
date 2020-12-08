@@ -16,6 +16,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
   <script src="../assets/libs/slick-carousel/slick.min.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   <script src="../assets/js/main.js"></script>
   <link rel="stylesheet" href="../assets/css/main.css">
@@ -621,7 +622,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-lg-8">
+        <div class="col-lg-8 d-flex flex-column justify-content-between">
           <div class="finance-slider-for">
             <div>
               <img src="../assets/images/finance/slider-1.png" alt="KKTC">
@@ -724,6 +725,1269 @@
           </div>
         </div>
         <div class="col-lg-4">
+          <div class="exchange-wrapper">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="pills-exchange-tab" data-toggle="pill" href="#pills-exchange" role="tab" aria-controls="pills-exchange" aria-selected="true">Döviz Çevirici</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-gold-tab" data-toggle="pill" href="#pills-gold" role="tab" aria-controls="pills-gold" aria-selected="false">Altın Hesaplama</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="pills-crypto-tab" data-toggle="pill" href="#pills-crypto" role="tab" aria-controls="pills-crypto" aria-selected="false">Kripto Çevirici</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-exchange-tab">
+                <form class="finance-form" action="index.html" method="post">
+                  <div class="finance-form-row">
+                    <input type="text" name="exchangeInput1">
+                    <select name="exchangeSelect1">
+                      <option value="1">TRY</option>
+                      <option value="2">USD</option>
+                      <option value="3">EUR</option>
+                      <option value="4">CHF</option>
+                      <option value="5">GBP</option>
+                    </select>
+                  </div>
+                  <div class="finance-form-row">
+                    <input type="text" name="exchangeInput2">
+                    <select name="exchangeSelect2">
+                      <option value="1">USD</option>
+                      <option value="2">turkey</option>
+                      <option value="3">EUR</option>
+                      <option value="4">CHF</option>
+                      <option value="5">GBP</option>
+                    </select>
+                  </div>
+                  <div class="finance-form-row">
+                    <input type="text" name="exchangeInput3">
+                    <select name="exchangeSelect3">
+                      <option value="1">EUR</option>
+                      <option value="2">USD</option>
+                      <option value="3">TRY</option>
+                      <option value="4">CHF</option>
+                      <option value="5">GBP</option>
+                    </select>
+                  </div>
+                  <div class="finance-form-row">
+                    <input type="text" name="exchangeInput4">
+                    <select name="exchangeSelect4">
+                      <option value="1">GBP</option>
+                      <option value="2">USD</option>
+                      <option value="3">EUR</option>
+                      <option value="4">CHF</option>
+                      <option value="5">TRY</option>
+                    </select>
+                  </div>
+                  <div class="finance-form-row">
+                    <div class="custom-checkbox finance-checkbox">
+                      <label for="exchangeRadio1">
+                        <input type="radio" name="exchangeRadio" id="exchangeRadio1">
+                        <span class="checkmark"></span>
+                        Alış
+                      </label>
+                    </div>
+                    <div class="custom-checkbox finance-checkbox">
+                      <label for="exchangeRadio2">
+                        <input type="radio" name="exchangeRadio" id="exchangeRadio2">
+                        <span class="checkmark"></span>
+                        Satış
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-gold-tab">...</div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-crypto-tab">...</div>
+            </div>
+          </div>
+          <div class="finance-links">
+            <a href="#" class="empty-button">
+              <img src="../assets/icons/finance-search.svg" alt="KKTC">
+              <h4>Anlık Borsa</h4>
+            </a>
+            <a href="#" class="empty-button">
+              <img src="../assets/icons/finance-signal.svg" alt="KKTC">
+              <h4>Canlı Borsa</h4>
+            </a>
+            <a href="#" class="empty-button">
+              <img src="../assets/icons/finance-company.svg" alt="KKTC">
+              <h4>Hisseler</h4>
+            </a>
+            <a href="#" class="empty-button">
+              <img src="../assets/icons/finance-calendar.svg" alt="KKTC">
+              <h4>Ekonomik Takvim</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row mx-0">
+        <img class="ads" src="../assets/images/finance/ads-banner.png" alt="KKTC">
+      </div>
+      <div class="row mb-20">
+        <a href="#" class="finance-news-box">
+          <div class="bg"></div>
+          <div class="img-wrapper" style="background-image: url('../assets/images/finance/slider-1.png')"></div>
+          <div class="title">
+            <h5>FİNANS</h5>
+            <span>6 Saat Önce</span>
+          </div>
+          <h2>Dolar/TL fiyatı geriledi</h2>
+        </a>
+        <a href="#" class="finance-news-box">
+          <div class="bg"></div>
+          <div class="img-wrapper" style="background-image: url('../assets/images/finance/slider-2.png')"></div>
+          <div class="title">
+            <h5>ALTIN</h5>
+            <span>6 Saat Önce</span>
+          </div>
+          <h2>Dolar/TL fiyatı geriledi</h2>
+        </a>
+        <a href="#" class="finance-news-box">
+          <div class="bg"></div>
+          <div class="img-wrapper" style="background-image: url('../assets/images/finance/slider-3.png')"></div>
+          <div class="title">
+            <h5>FİNANS</h5>
+            <span>6 Saat Önce</span>
+          </div>
+          <h2>Dolar/TL fiyatı geriledi</h2>
+        </a>
+        <a href="#" class="finance-news-box">
+          <div class="bg"></div>
+          <div class="img-wrapper" style="background-image: url('../assets/images/finance/slider-4.png')"></div>
+          <div class="title">
+            <h5>ALTIN</h5>
+            <span>6 Saat Önce</span>
+          </div>
+          <h2>Dolar/TL fiyatı geriledi</h2>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="row">
+            <div class="col-lg-6">
+              <h4 class="finance-subtitle">Döviz Kurları</h4>
+              <table class="table table-borderless finance-table">
+                <thead>
+                  <th>Sembol</th>
+                  <th>Satış</th>
+                  <th>Değişim</th>
+                  <th></th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h5>USD</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="green">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>EUR</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="red">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>GBP</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="green">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>CHF</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="red">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>CAD</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="green">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-lg-6">
+              <h4 class="finance-subtitle">Altın Kurları</h4>
+              <table class="table table-borderless finance-table">
+                <thead>
+                  <th>Sembol</th>
+                  <th>Satış</th>
+                  <th>Değişim</th>
+                  <th></th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h5>Ons Altın</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="green">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Gram Altın</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="red">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Çeyrek Altın</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="green">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Yarım Altın</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="red">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Tam Altın</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="green">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row mb-20">
+            <h4 class="finance-subtitle w-100 pad">Kripto Paralar</h4>
+            <div class="col-lg">
+              <div class="chart-wrapper">
+                <div class="title">
+                  <div class="d-flex align-items-center mb-10">
+                    <img src="../assets/images/finance/finance-1.png" alt="KKTC">
+                    <div class="d-flex flex-column">
+                      <h5>Tron</h5>
+                      <span>BTC/USD</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h2>$19.188</h2>
+                    <h6 class="green">%-0,24</h6>
+                  </div>
+                </div>
+                <div id="chart_green" style="height: 65px;"></div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="chart-wrapper">
+                <div class="title">
+                  <div class="d-flex align-items-center mb-10">
+                    <img src="../assets/images/finance/finance-2.png" alt="KKTC">
+                    <div class="d-flex flex-column">
+                      <h5>Tron</h5>
+                      <span>BTC/USD</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h2>$19.188</h2>
+                    <h6 class="green">%-0,24</h6>
+                  </div>
+                </div>
+                <div id="chart_red" style="height: 65px;"></div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="chart-wrapper">
+                <div class="title">
+                  <div class="d-flex align-items-center mb-10">
+                    <img src="../assets/images/finance/finance-3.png" alt="KKTC">
+                    <div class="d-flex flex-column">
+                      <h5>Tron</h5>
+                      <span>BTC/USD</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h2>$19.188</h2>
+                    <h6 class="green">%-0,24</h6>
+                  </div>
+                </div>
+                <div id="chart_red" style="height: 65px;"></div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="chart-wrapper">
+                <div class="title">
+                  <div class="d-flex align-items-center mb-10">
+                    <img src="../assets/images/finance/finance-1.png" alt="KKTC">
+                    <div class="d-flex flex-column">
+                      <h5>Tron</h5>
+                      <span>BTC/USD</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h2>$19.188</h2>
+                    <h6 class="green">%-0,24</h6>
+                  </div>
+                </div>
+                <div id="chart_red" style="height: 65px;"></div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="chart-wrapper">
+                <div class="title">
+                  <div class="d-flex align-items-center mb-10">
+                    <img src="../assets/images/finance/finance-2.png" alt="KKTC">
+                    <div class="d-flex flex-column">
+                      <h5>Tron</h5>
+                      <span>BTC/USD</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h2>$19.188</h2>
+                    <h6 class="green">%-0,24</h6>
+                  </div>
+                </div>
+                <div id="chart_green" style="height: 65px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-20">
+            <h4 class="finance-subtitle w-100 pad">En Çok İşlem Gören Hisseler</h4>
+            <div class="col-lg">
+              <div class="chart-wrapper">
+                <div class="title">
+                  <div class="d-flex align-items-center mb-10">
+                    <img src="../assets/images/finance/finance-1.png" alt="KKTC">
+                    <div class="d-flex flex-column">
+                      <h5>Tron</h5>
+                      <span>BTC/USD</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h2>$19.188</h2>
+                    <h6 class="green">%-0,24</h6>
+                  </div>
+                </div>
+                <div id="chart_green" style="height: 65px;"></div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="chart-wrapper">
+                <div class="title">
+                  <div class="d-flex align-items-center mb-10">
+                    <img src="../assets/images/finance/finance-2.png" alt="KKTC">
+                    <div class="d-flex flex-column">
+                      <h5>Tron</h5>
+                      <span>BTC/USD</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h2>$19.188</h2>
+                    <h6 class="green">%-0,24</h6>
+                  </div>
+                </div>
+                <div id="chart_red" style="height: 65px;"></div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="chart-wrapper">
+                <div class="title">
+                  <div class="d-flex align-items-center mb-10">
+                    <img src="../assets/images/finance/finance-3.png" alt="KKTC">
+                    <div class="d-flex flex-column">
+                      <h5>Tron</h5>
+                      <span>BTC/USD</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h2>$19.188</h2>
+                    <h6 class="green">%-0,24</h6>
+                  </div>
+                </div>
+                <div id="chart_red" style="height: 65px;"></div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="chart-wrapper">
+                <div class="title">
+                  <div class="d-flex align-items-center mb-10">
+                    <img src="../assets/images/finance/finance-1.png" alt="KKTC">
+                    <div class="d-flex flex-column">
+                      <h5>Tron</h5>
+                      <span>BTC/USD</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h2>$19.188</h2>
+                    <h6 class="green">%-0,24</h6>
+                  </div>
+                </div>
+                <div id="chart_red" style="height: 65px;"></div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="chart-wrapper">
+                <div class="title">
+                  <div class="d-flex align-items-center mb-10">
+                    <img src="../assets/images/finance/finance-2.png" alt="KKTC">
+                    <div class="d-flex flex-column">
+                      <h5>Tron</h5>
+                      <span>BTC/USD</span>
+                    </div>
+                  </div>
+                  <div class="d-flex align-items-center justify-content-between">
+                    <h2>$19.188</h2>
+                    <h6 class="green">%-0,24</h6>
+                  </div>
+                </div>
+                <div id="chart_green" style="height: 65px;"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row mb-20">
+            <div class="col-lg-6">
+              <h4 class="finance-subtitle">Pariteler</h4>
+              <table class="table table-borderless finance-table">
+                <thead>
+                  <th>Sembol</th>
+                  <th>Satış</th>
+                  <th>Değişim</th>
+                  <th></th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h5>USD</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="green">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>EUR</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="red">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>GBP</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="green">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>CHF</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="red">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>CAD</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="green">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="col-lg-6">
+              <h4 class="finance-subtitle">Emtialar</h4>
+              <table class="table table-borderless finance-table">
+                <thead>
+                  <th>Sembol</th>
+                  <th>Satış</th>
+                  <th>Değişim</th>
+                  <th></th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h5>Ons Altın</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="green">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Gram Altın</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="red">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Çeyrek Altın</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="green">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Yarım Altın</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="red">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <h5>Tam Altın</h5>
+                    </td>
+                    <td>
+                      <span>7,9859</span>
+                    </td>
+                    <td>
+                      <h5 class="green">%-0,24</h5>
+                    </td>
+                    <td>
+                      <span class="light">17.33</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="row mb-20">
+            <div class="col-lg-6">
+              <h4 class="finance-subtitle">Bugün 1000TL Ne Oldu? (Piyasa)</h4>
+              <div class="finance-progress-wrapper">
+                <a href="#">
+                  <div class="finance-progressbar">
+                    <div class="value" style="width: 60%">
+                      <h5>DOLAR</h5>
+                    </div>
+                  </div>
+                  <div class="finance-progressbar-value">
+                    560
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="finance-progressbar">
+                    <div class="value" style="width: 90%">
+                      <h5>EURO</h5>
+                    </div>
+                  </div>
+                  <div class="finance-progressbar-value">
+                    968
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="finance-progressbar">
+                    <div class="value" style="width: 30%">
+                      <h5>GBP</h5>
+                    </div>
+                  </div>
+                  <div class="finance-progressbar-value">
+                    120
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="finance-progressbar">
+                    <div class="value" style="width: 98%">
+                      <h5>CHF</h5>
+                    </div>
+                  </div>
+                  <div class="finance-progressbar-value">
+                    998
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="finance-progressbar">
+                    <div class="value" style="width: 25%">
+                      <h5>ALTIN</h5>
+                    </div>
+                  </div>
+                  <div class="finance-progressbar-value">
+                    140
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="finance-progressbar">
+                    <div class="value" style="width: 80%">
+                      <h5>BORSA</h5>
+                    </div>
+                  </div>
+                  <div class="finance-progressbar-value">
+                    680
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <h4 class="finance-subtitle">Bugün 1000TL Ne Oldu? (Kripto)</h4>
+              <div class="finance-progress-wrapper">
+                <a href="#">
+                  <div class="finance-progressbar">
+                    <div class="value" style="width: 60%">
+                      <h5>BITCOIN</h5>
+                    </div>
+                  </div>
+                  <div class="finance-progressbar-value">
+                    560
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="finance-progressbar">
+                    <div class="value" style="width: 90%">
+                      <h5>ETHEREUM</h5>
+                    </div>
+                  </div>
+                  <div class="finance-progressbar-value">
+                    968
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="finance-progressbar">
+                    <div class="value" style="width: 30%">
+                      <h5>TETHER</h5>
+                    </div>
+                  </div>
+                  <div class="finance-progressbar-value">
+                    120
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="finance-progressbar">
+                    <div class="value" style="width: 98%">
+                      <h5>LITECOIN</h5>
+                    </div>
+                  </div>
+                  <div class="finance-progressbar-value">
+                    998
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="finance-progressbar">
+                    <div class="value" style="width: 25%">
+                      <h5>CARDANO</h5>
+                    </div>
+                  </div>
+                  <div class="finance-progressbar-value">
+                    140
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="finance-progressbar">
+                    <div class="value" style="width: 80%">
+                      <h5>STELLAR</h5>
+                    </div>
+                  </div>
+                  <div class="finance-progressbar-value">
+                    680
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0 mb-20 d-flex flex-column">
+            <div class="title w-100 d-flex align-items-center mb-20">
+              <h4 class="finance-subtitle m-0">En Çok Yorumlananlar</h4>
+              <ul class="nav nav-pills" id="comments-tab" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="pills-comment-1-tab" data-toggle="pill" href="#pills-comment-1" role="tab" aria-controls="pills-comment-1" aria-selected="true">Döviz</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-comment-2-tab" data-toggle="pill" href="#pills-comment-2" role="tab" aria-controls="pills-comment-2" aria-selected="false">Borsa</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-comment-3-tab" data-toggle="pill" href="#pills-comment-3" role="tab" aria-controls="pills-comment-3" aria-selected="false">Kripto</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-comment-4-tab" data-toggle="pill" href="#pills-comment-4" role="tab" aria-controls="pills-comment-4" aria-selected="false">Altın</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-content" id="pills-tabContent">
+              <div class="tab-pane fade show active" id="pills-comment-1" role="tabpanel" aria-labelledby="pills-comment-1-tab">
+                <div class="finance-comment-list">
+                  <div class="finance-comment-box pro">
+                    <div class="top">
+                      <div class="user">
+                        <div class="img-wrapper">
+                          <img src="../assets/images/finance/user-1.png" alt="KKTC">
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h5>@Anetsh</h5>
+                          <span>6dk Önce</span>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="badges">
+                          <a href="#" class="badge red">PRO</a>
+                          <a href="#" class="badge green">EURO</a>
+                        </div>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#user-add"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#block"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#warning-2"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p>Artık şuna emin oldum. Yorumlardan, beğenilen ve beğenilmeyen yorumlardan anlaşılıyor ki bu platformu kullananların çoğunun vatanla, milletle, dinle, imanla alakası yok. Nerde devletini milletini kötüleyen, paraya tapan varsa
+                      buraya doluşmuş. Ülke yansa gitse saçını taramakla meşgul olacak, yangından ne kâr elde ederim derdine düşecek nice kansızların yorumunu okuyunca nefret ettim bu platformdan. Uygulamayı siliyor, vatan millet sevdalılarına,
+                      vatanını canından çok sevenlere selamlarımı sunuyorum.</p>
+                    <div class="bottom">
+                      <a href="#" class="green">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#like"></use>
+                        </svg>
+                        5 Kişi
+                      </a>
+                      <a href="#" class="red">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#like"></use>
+                        </svg>
+                        0 Kişi
+                      </a>
+                      <a href="#" class="gray">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#chat-3"></use>
+                        </svg>
+                        0 Yorum
+                      </a>
+                    </div>
+                  </div>
+                  <div class="finance-comment-box">
+                    <div class="top">
+                      <div class="user">
+                        <div class="img-wrapper">
+                          <img src="../assets/images/finance/user-1.png" alt="KKTC">
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h5>@Anetsh</h5>
+                          <span>6dk Önce</span>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="badges">
+                          <a href="#" class="badge green">EURO</a>
+                        </div>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#user-add"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#block"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#warning-2"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p>Artık şuna emin oldum. Yorumlardan, beğenilen ve beğenilmeyen yorumlardan anlaşılıyor ki bu platformu kullananların çoğunun vatanla, milletle, dinle, imanla alakası yok. Nerde devletini milletini kötüleyen, paraya tapan varsa
+                      buraya doluşmuş. Ülke yansa gitse saçını taramakla meşgul olacak, yangından ne kâr elde ederim derdine düşecek nice kansızların yorumunu okuyunca nefret ettim bu platformdan. Uygulamayı siliyor, vatan millet sevdalılarına,
+                      vatanını canından çok sevenlere selamlarımı sunuyorum.</p>
+                    <div class="bottom">
+                      <a href="#" class="green">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#like"></use>
+                        </svg>
+                        5 Kişi
+                      </a>
+                      <a href="#" class="red">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#like"></use>
+                        </svg>
+                        0 Kişi
+                      </a>
+                      <a href="#" class="gray">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#chat-3"></use>
+                        </svg>
+                        0 Yorum
+                      </a>
+                    </div>
+                  </div>
+                  <div class="finance-comment-box">
+                    <div class="top">
+                      <div class="user">
+                        <div class="img-wrapper">
+                          <img src="../assets/images/finance/user-1.png" alt="KKTC">
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h5>@Anetsh</h5>
+                          <span>6dk Önce</span>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="badges">
+                          <a href="#" class="badge green">EURO</a>
+                        </div>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#user-add"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#block"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#warning-2"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p>Artık şuna emin oldum. Yorumlardan, beğenilen ve beğenilmeyen yorumlardan anlaşılıyor ki bu platformu kullananların çoğunun vatanla, milletle, dinle, imanla alakası yok. Nerde devletini milletini kötüleyen, paraya tapan varsa
+                      buraya doluşmuş. Ülke yansa gitse saçını taramakla meşgul olacak, yangından ne kâr elde ederim derdine düşecek nice kansızların yorumunu okuyunca nefret ettim bu platformdan. Uygulamayı siliyor, vatan millet sevdalılarına,
+                      vatanını canından çok sevenlere selamlarımı sunuyorum.</p>
+                    <div class="bottom">
+                      <a href="#" class="green">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#like"></use>
+                        </svg>
+                        5 Kişi
+                      </a>
+                      <a href="#" class="red">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#like"></use>
+                        </svg>
+                        0 Kişi
+                      </a>
+                      <a href="#" class="gray">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#chat-3"></use>
+                        </svg>
+                        0 Yorum
+                      </a>
+                    </div>
+                  </div>
+                  <div class="finance-comment-box">
+                    <div class="top">
+                      <div class="user">
+                        <div class="img-wrapper">
+                          <img src="../assets/images/finance/user-1.png" alt="KKTC">
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h5>@Anetsh</h5>
+                          <span>6dk Önce</span>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="badges">
+                          <a href="#" class="badge green">EURO</a>
+                        </div>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#user-add"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#block"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#warning-2"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p>Artık şuna emin oldum. Yorumlardan, beğenilen ve beğenilmeyen yorumlardan anlaşılıyor ki bu platformu kullananların çoğunun vatanla, milletle, dinle, imanla alakası yok. Nerde devletini milletini kötüleyen, paraya tapan varsa
+                      buraya doluşmuş. Ülke yansa gitse saçını taramakla meşgul olacak, yangından ne kâr elde ederim derdine düşecek nice kansızların yorumunu okuyunca nefret ettim bu platformdan. Uygulamayı siliyor, vatan millet sevdalılarına,
+                      vatanını canından çok sevenlere selamlarımı sunuyorum.</p>
+                    <div class="bottom">
+                      <a href="#" class="green">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#like"></use>
+                        </svg>
+                        5 Kişi
+                      </a>
+                      <a href="#" class="red">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#like"></use>
+                        </svg>
+                        0 Kişi
+                      </a>
+                      <a href="#" class="gray">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#chat-3"></use>
+                        </svg>
+                        0 Yorum
+                      </a>
+                    </div>
+                  </div>
+                  <div class="finance-comment-box pro">
+                    <div class="top">
+                      <div class="user">
+                        <div class="img-wrapper">
+                          <img src="../assets/images/finance/user-1.png" alt="KKTC">
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h5>@Anetsh</h5>
+                          <span>6dk Önce</span>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="badges">
+                          <a href="#" class="badge red">PRO</a>
+                          <a href="#" class="badge green">EURO</a>
+                        </div>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#user-add"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#block"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#warning-2"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p>Artık şuna emin oldum. Yorumlardan, beğenilen ve beğenilmeyen yorumlardan anlaşılıyor ki bu platformu kullananların çoğunun vatanla, milletle, dinle, imanla alakası yok. Nerde devletini milletini kötüleyen, paraya tapan varsa
+                      buraya doluşmuş. Ülke yansa gitse saçını taramakla meşgul olacak, yangından ne kâr elde ederim derdine düşecek nice kansızların yorumunu okuyunca nefret ettim bu platformdan. Uygulamayı siliyor, vatan millet sevdalılarına,
+                      vatanını canından çok sevenlere selamlarımı sunuyorum.</p>
+                    <div class="bottom">
+                      <a href="#" class="green">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#like"></use>
+                        </svg>
+                        5 Kişi
+                      </a>
+                      <a href="#" class="red">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#like"></use>
+                        </svg>
+                        0 Kişi
+                      </a>
+                      <a href="#" class="gray">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#chat-3"></use>
+                        </svg>
+                        0 Yorum
+                      </a>
+                    </div>
+                  </div>
+                  <div class="finance-comment-box pro">
+                    <div class="top">
+                      <div class="user">
+                        <div class="img-wrapper">
+                          <img src="../assets/images/finance/user-1.png" alt="KKTC">
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h5>@Anetsh</h5>
+                          <span>6dk Önce</span>
+                        </div>
+                      </div>
+                      <div class="right">
+                        <div class="badges">
+                          <a href="#" class="badge red">PRO</a>
+                          <a href="#" class="badge green">EURO</a>
+                        </div>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#user-add"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#block"></use>
+                          </svg>
+                        </a>
+                        <a href="#" class="empty-button">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#warning-2"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </div>
+                    <p>Artık şuna emin oldum. Yorumlardan, beğenilen ve beğenilmeyen yorumlardan anlaşılıyor ki bu platformu kullananların çoğunun vatanla, milletle, dinle, imanla alakası yok. Nerde devletini milletini kötüleyen, paraya tapan varsa
+                      buraya doluşmuş. Ülke yansa gitse saçını taramakla meşgul olacak, yangından ne kâr elde ederim derdine düşecek nice kansızların yorumunu okuyunca nefret ettim bu platformdan. Uygulamayı siliyor, vatan millet sevdalılarına,
+                      vatanını canından çok sevenlere selamlarımı sunuyorum.</p>
+                    <div class="bottom">
+                      <a href="#" class="green">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#like"></use>
+                        </svg>
+                        5 Kişi
+                      </a>
+                      <a href="#" class="red">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#like"></use>
+                        </svg>
+                        0 Kişi
+                      </a>
+                      <a href="#" class="gray">
+                        <svg class="icon">
+                          <use href="../assets/icons/sprite.svg#chat-3"></use>
+                        </svg>
+                        0 Yorum
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="row mx-0 mt-30 mb-30 pagination-row d-flex justify-content-end">
+                    <nav>
+                        <ul class="pagination finance">
+                            <li class="page-item prev">
+                                <a href="#" class="page-link">Önceki</a>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link" href="#">6</a></li>
+                            <li class="page-item"><a class="page-link" href="#">7</a></li>
+                            <li class="page-item next">
+                                <a href="#" class="page-link">Sonraki</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+              </div>
+              <div class="tab-pane fade" id="pills-comment-2" role="tabpanel" aria-labelledby="pills-comment-2-tab">...</div>
+              <div class="tab-pane fade" id="pills-comment-3" role="tabpanel" aria-labelledby="pills-comment-3-tab">...</div>
+              <div class="tab-pane fade" id="pills-comment-4" role="tabpanel" aria-labelledby="pills-comment-4-tab">...</div>
+            </div>
+          </div>
+          <div class="row mb-20">
+            <div class="finance-page-subtitle">
+              <h4>Dikkatinizi Çekecek Haberler</h4>
+              <a href="#">Daha Fazlası İçin</a>
+            </div>
+            <div class="row mx-0">
+              <a href="#" class="finance-news-box">
+                <div class="bg"></div>
+                <div class="img-wrapper" style="background-image: url('../assets/images/finance/slider-1.png')"></div>
+                <div class="title">
+                  <h5>FİNANS</h5>
+                  <span>6 Saat Önce</span>
+                </div>
+                <h2>Dolar/TL fiyatı geriledi</h2>
+              </a>
+              <a href="#" class="finance-news-box">
+                <div class="bg"></div>
+                <div class="img-wrapper" style="background-image: url('../assets/images/finance/slider-2.png')"></div>
+                <div class="title">
+                  <h5>ALTIN</h5>
+                  <span>6 Saat Önce</span>
+                </div>
+                <h2>Dolar/TL fiyatı geriledi</h2>
+              </a>
+              <a href="#" class="finance-news-box">
+                <div class="bg"></div>
+                <div class="img-wrapper" style="background-image: url('../assets/images/finance/slider-3.png')"></div>
+                <div class="title">
+                  <h5>FİNANS</h5>
+                  <span>6 Saat Önce</span>
+                </div>
+                <h2>Dolar/TL fiyatı geriledi</h2>
+              </a>
+              <a href="#" class="finance-news-box">
+                <div class="bg"></div>
+                <div class="img-wrapper" style="background-image: url('../assets/images/finance/slider-4.png')"></div>
+                <div class="title">
+                  <h5>ALTIN</h5>
+                  <span>6 Saat Önce</span>
+                </div>
+                <h2>Dolar/TL fiyatı geriledi</h2>
+              </a>
+              <a href="#" class="finance-news-box">
+                <div class="bg"></div>
+                <div class="img-wrapper" style="background-image: url('../assets/images/finance/slider-1.png')"></div>
+                <div class="title">
+                  <h5>FİNANS</h5>
+                  <span>6 Saat Önce</span>
+                </div>
+                <h2>Dolar/TL fiyatı geriledi</h2>
+              </a>
+              <a href="#" class="finance-news-box">
+                <div class="bg"></div>
+                <div class="img-wrapper" style="background-image: url('../assets/images/finance/slider-2.png')"></div>
+                <div class="title">
+                  <h5>ALTIN</h5>
+                  <span>6 Saat Önce</span>
+                </div>
+                <h2>Dolar/TL fiyatı geriledi</h2>
+              </a>
+              <a href="#" class="finance-news-box">
+                <div class="bg"></div>
+                <div class="img-wrapper" style="background-image: url('../assets/images/finance/slider-3.png')"></div>
+                <div class="title">
+                  <h5>FİNANS</h5>
+                  <span>6 Saat Önce</span>
+                </div>
+                <h2>Dolar/TL fiyatı geriledi</h2>
+              </a>
+              <a href="#" class="finance-news-box">
+                <div class="bg"></div>
+                <div class="img-wrapper" style="background-image: url('../assets/images/finance/slider-4.png')"></div>
+                <div class="title">
+                  <h5>ALTIN</h5>
+                  <span>6 Saat Önce</span>
+                </div>
+                <h2>Dolar/TL fiyatı geriledi</h2>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
 
         </div>
       </div>

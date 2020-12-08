@@ -1486,7 +1486,7 @@ button.no-anim {
   margin-bottom: 10px;
 }
 
-.custom-checkbox.purple {
+.custom-checkbox {
   position: relative;
 }
 
@@ -1578,7 +1578,6 @@ button.no-anim {
 .sidebar-custom-checkbox.big.square-gray .checkmark {
   width: 18px !important;
   height: 18px !important;
-  ;
 }
 
 .sidebar-custom-checkbox.square .checkmark {
@@ -1639,6 +1638,66 @@ button.no-anim {
 
 .sidebar-custom-checkbox input:checked~.checkmark:after {
   display: block;
+}
+
+.custom-checkbox.finance-checkbox {
+  margin-right: 25px;
+}
+
+.custom-checkbox.finance-checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+  appearance: none;
+}
+
+.custom-checkbox.finance-checkbox label {
+  margin-bottom: 0;
+  padding-left: 0;
+  cursor: pointer;
+  font-size: 19px;
+  line-height: 26px;
+  color: #023047;
+}
+
+.custom-checkbox.finance-checkbox label {
+  display: flex;
+  align-items: center;
+}
+
+.custom-checkbox.finance-checkbox input~.checkmark:after {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background: #28CC67;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  display: none;
+}
+
+.custom-checkbox.finance-checkbox input:checked~.checkmark:after,
+.custom-checkbox.finance-checkbox:hover input~.checkmark:after {
+  display: block;
+}
+
+.custom-checkbox.finance-checkbox .checkmark {
+  border: 0;
+  width: 19px !important;
+  height: 19px !important;
+  background: #fff;
+  border: 1px solid #023047;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 5px;
+}
+
+.custom-checkbox.finance-checkbox input:checked~.checkmark,
+.custom-checkbox.finance-checkbox:hover input~.checkmark {
+  border: 1px solid #28CC67;
 }
 
 .sidebar-input {
@@ -1961,6 +2020,18 @@ button.no-anim {
   height: 42px;
 }
 
+.pagination.finance .prev .page-link,
+.pagination.finance .next .page-link {
+  width: 67px;
+  height: 34px;
+}
+
+.pagination.finance .page-link {
+  width: 34px;
+  height: 34px;
+  border: 1px solid rgba(2, 48, 71, .1);
+}
+
 .pagination .page-item.prev .icon {
   transform: rotate(180deg);
 }
@@ -1982,6 +2053,7 @@ button.no-anim {
   stroke: #FFFFFF;
 }
 
+.green .pagination .page-link,
 .darkblue .pagination .page-link,
 .purple .pagination .page-link {
   background: #FFFFFF;
@@ -1996,6 +2068,12 @@ button.no-anim {
 .purple .pagination .page-item.active .page-link,
 .purple .pagination .page-item:hover .page-link {
   background: #4866FC;
+  color: #FFFFFF;
+}
+
+.green .pagination .page-item.active .page-link,
+.green .pagination .page-item:hover .page-link {
+  background: #28CC67;
   color: #FFFFFF;
 }
 
@@ -2318,7 +2396,13 @@ button.no-anim {
 .finance-slider-nav .slick-slide div:not([class]) {
   display: flex;
   margin: 0 -10px;
-  width: calc(100% + 16px);
+  width: calc(100% + 19px);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+.finance-slider-nav .slider-nav-item img.active {
+  outline-color: #28CC67;
 }
 
 .finance-slider-nav .slick-arrow,

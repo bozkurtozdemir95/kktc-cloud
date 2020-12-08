@@ -582,13 +582,12 @@ $(function() {
     arrows: false,
     infinite: false,
     responsive: [{
-        breakpoint: 992,
-        settings: {
-          slidesPerRow: 4,
-          rows: 2,
-        }
-      },
-    ]
+      breakpoint: 992,
+      settings: {
+        slidesPerRow: 4,
+        rows: 2,
+      }
+    }, ]
   });
 
   const $parentFinance = $(".finance-slider-for");
@@ -627,4 +626,154 @@ $(function() {
       killit2 = false;
     });
 
+
+  google.charts.load('current', {
+    'packages': ['corechart']
+  });
+  google.charts.setOnLoadCallback(drawGreen);
+  google.charts.setOnLoadCallback(drawRed);
+
+  function drawGreen() {
+
+    var data = new google.visualization.DataTable();
+    data.addColumn('date', 'Date');
+    data.addColumn('number', '$');
+    data.addRows([
+      [new Date(2020, 7, 5), 14000],
+      [new Date(2020, 7, 6), 14000],
+      [new Date(2020, 7, 7), 15000],
+      [new Date(2020, 7, 8), 13000],
+      [new Date(2020, 7, 9), 13500],
+      [new Date(2020, 7, 10), 13500],
+      [new Date(2020, 7, 11), 10000],
+      [new Date(2020, 7, 12), 13500],
+      [new Date(2020, 7, 13), 13500],
+      [new Date(2020, 7, 14), 15000],
+      [new Date(2020, 7, 15), 13000],
+      [new Date(2020, 7, 16), 14000],
+      [new Date(2020, 7, 17), 12000],
+      [new Date(2020, 7, 18), 14000],
+      [new Date(2020, 7, 19), 11000],
+      [new Date(2020, 7, 20), 11000],
+      [new Date(2020, 7, 21), 11000],
+
+    ]);
+
+    var options = {
+      legend: {
+        position: 'none'
+      },
+      timeline: {
+        groupByRowLabel: true
+      },
+      hAxis: {
+        textPosition: 'none',
+        gridlines: {
+          color: 'transparent'
+        },
+        minorGridlines: {
+          color: 'transparent'
+        }
+      },
+      vAxis: {
+        textPosition: 'none',
+        gridlines: {
+          color: 'transparent'
+        },
+        minorGridlines: {
+          color: 'transparent'
+        }
+      },
+      backgroundColor: {
+        stroke: '#fff',
+        strokeWidth: 0
+      },
+      chartArea: {
+        width: '100%',
+        height: '100%',
+      },
+      colors: ['#28CC67'],
+      series: {
+        0: {
+          // set options for the first data series
+          color: '#28CC67'
+        }
+      }
+    };
+
+    var chart = new google.visualization.AreaChart(document.getElementById('chart_green'));
+
+    chart.draw(data, options);
+  }
+  function drawRed() {
+
+    var data = new google.visualization.DataTable();
+    data.addColumn('date', 'Date');
+    data.addColumn('number', '$');
+    data.addRows([
+      [new Date(2020, 7, 5), 14000],
+      [new Date(2020, 7, 6), 14000],
+      [new Date(2020, 7, 7), 15000],
+      [new Date(2020, 7, 8), 13000],
+      [new Date(2020, 7, 9), 13500],
+      [new Date(2020, 7, 10), 13500],
+      [new Date(2020, 7, 11), 10000],
+      [new Date(2020, 7, 12), 13500],
+      [new Date(2020, 7, 13), 13500],
+      [new Date(2020, 7, 14), 15000],
+      [new Date(2020, 7, 15), 13000],
+      [new Date(2020, 7, 16), 14000],
+      [new Date(2020, 7, 17), 12000],
+      [new Date(2020, 7, 18), 14000],
+      [new Date(2020, 7, 19), 11000],
+      [new Date(2020, 7, 20), 11000],
+      [new Date(2020, 7, 21), 11000],
+
+    ]);
+
+    var options = {
+      legend: {
+        position: 'none'
+      },
+      timeline: {
+        groupByRowLabel: true
+      },
+      hAxis: {
+        textPosition: 'none',
+        gridlines: {
+          color: 'transparent'
+        },
+        minorGridlines: {
+          color: 'transparent'
+        }
+      },
+      vAxis: {
+        textPosition: 'none',
+        gridlines: {
+          color: 'transparent'
+        },
+        minorGridlines: {
+          color: 'transparent'
+        }
+      },
+      backgroundColor: {
+        stroke: '#fff',
+        strokeWidth: 0
+      },
+      chartArea: {
+        width: '100%',
+        height: '100%',
+      },
+      colors: ['#FF0000'],
+      series: {
+        0: {
+          color: '#FF0000'
+        }
+      }
+    };
+
+    var chart = new google.visualization.AreaChart(document.getElementById('chart_red'));
+
+    chart.draw(data, options);
+  }
 });
