@@ -940,6 +940,77 @@ img.ads {
   box-shadow: 0 3px 22px rgba(0, 0, 0, .05);
 }
 
+.finance-comment-input-wrapper .title {
+  height: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.finance-comment-input-wrapper .title .icon-wrapper {
+  width: 50px;
+  background: #28CC67;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.finance-comment-input-wrapper .title .icon-wrapper .icon {
+  fill: #fff;
+  width: 22px;
+  height: 22px;
+}
+
+.finance-comment-input-wrapper .title h3 {
+  font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.finance-comment-input-wrapper textarea {
+  padding: 10px !important;
+  border: 0 !important;
+}
+
+.finance-comment-input-wrapper .comment-form-input .bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-left: 10px;
+}
+
+.finance-comment-input-wrapper .sidebar-custom-checkbox label {
+  display: flex;
+  align-items: center;
+  padding-left: 20px !important;
+}
+
+.finance-comment-input-wrapper .sidebar-custom-checkbox:hover input~.checkmark,
+.finance-comment-input-wrapper .sidebar-custom-checkbox input:checked~.checkmark {
+  background: #28CC67 !important;
+}
+
+.finance-show-all {
+  background: #fff !important;
+  height: 43px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Proxima Nova Sb', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  transition: all .3s;
+}
+
+.finance-show-all:hover,
+.finance-show-all[aria-expanded='true'] {
+  background: rgba(2, 48, 71, .1) !important;
+}
+
 @media only screen and (max-width: 992px) {
   .finance-news-box {
     width: calc(100% / 2 - 20px);

@@ -918,6 +918,11 @@ button.no-anim {
   height: 45px;
 }
 
+.form-button.sm {
+  height: 35px;
+  max-width: 100px;
+}
+
 .form-button.big .icon {
   width: 23px;
   height: 23px;
@@ -950,6 +955,10 @@ button.no-anim {
 
 .form-button.bg-purple {
   background: #4866FC;
+}
+
+.form-button.bg-green {
+  background: #28CC67;
 }
 
 .form-button.bg-gray {
