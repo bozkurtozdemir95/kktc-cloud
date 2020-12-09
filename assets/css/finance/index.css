@@ -291,7 +291,7 @@ img.ads {
 
 .finance-table th,
 .finance-table td {
-  padding: 10px 12px;
+  padding: 6px 12px;
 }
 
 .finance-table tbody tr:nth-child(even) {
@@ -322,6 +322,18 @@ img.ads {
   color: rgba(2, 48, 71, .5);
 }
 
+.finance-table .icon.more {
+  transform: rotate(90deg);
+  width: 13px;
+  height: 3px;
+  fill: #023047;
+  transform-origin: top center;
+}
+.finance-table a{
+  display: inline-block;
+  height: 13px;
+  height: 3px;
+}
 .chart-wrapper {
   background: #fff;
   border: 1px solid rgba(2, 48, 71, .1);
@@ -940,6 +952,10 @@ img.ads {
   box-shadow: 0 3px 22px rgba(0, 0, 0, .05);
 }
 
+.finance-comment-input-wrapper {
+  width: 100%;
+}
+
 .finance-comment-input-wrapper .title {
   height: 50px;
   background: #fff;
@@ -1009,6 +1025,45 @@ img.ads {
 .finance-show-all:hover,
 .finance-show-all[aria-expanded='true'] {
   background: rgba(2, 48, 71, .1) !important;
+}
+
+.finance-article {
+  display: flex;
+  flex-direction: column;
+}
+
+.finance-article h2,
+.finance-article h3,
+.finance-article span {
+  margin-bottom: 12px;
+}
+
+.finance-article h2 {
+  font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.finance-article h3 {
+  font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.finance-article span {
+  color: rgba(2, 48, 71, .5);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.finance-article p {
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+}
+
+.finance-article img {
+  margin-bottom: 20px;
 }
 
 @media only screen and (max-width: 992px) {
