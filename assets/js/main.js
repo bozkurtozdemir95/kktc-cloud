@@ -9,6 +9,21 @@ $(document).ready(function() {
   $('.custom-select-menu-item').click(function(e) {
     $(e.target).parents().closest('.custom-select-menu').toggleClass('open');
   });
+
+  $('#financedatepicker1 input').datepicker({
+    clearBtn: true,
+    todayHighlight: true,
+    toggleActive: true,
+    pickerPosition: "bottom-left",
+    container: '#financedatepicker1'
+  });
+  $('#financedatepicker2 input').datepicker({
+    clearBtn: true,
+    todayHighlight: true,
+    toggleActive: true,
+    pickerPosition: "bottom-left",
+    container: '#financedatepicker2'
+  });
 });
 $(function() {
   $('.datetimepicker.date').datetimepicker({
@@ -849,4 +864,6 @@ $(function() {
 
     chart.draw(data, options);
   }
+
+
 });

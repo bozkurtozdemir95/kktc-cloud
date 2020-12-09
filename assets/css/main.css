@@ -3350,6 +3350,10 @@ button.no-anim {
   transform: none;
 }
 
+.datepickerr {
+  position: relative;
+}
+
 @media only screen and (max-width: 1200px) {
   .add-content-box .gray-box {
     width: calc(100% / 3 - 20px);

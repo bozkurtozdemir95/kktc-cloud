@@ -8,14 +8,12 @@
 
   <!--- LIBRARIES --->
   <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
-  <link rel="stylesheet" href="../assets/libs/slick-carousel/slick.css">
-  <script src="https://kit.fontawesome.com/aede4151d0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css">
 
   <script src="../assets/libs/jquery.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
   <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
-  <script src="../assets/libs/slick-carousel/slick.min.js"></script>
+  <script src="../assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
   <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
   <script src="../assets/js/main.js"></script>
@@ -623,6 +621,114 @@
       </div>
       <div class="row">
         <div class="col-lg-8">
+          <div class="row mx-0">
+            <div class="selected-parite">
+              <div class="title">
+                <h1>USD / Amerikan Doları</h1>
+                <div class="buttons">
+                  <a href="#" class="empty-button dark">
+                    <svg class="icon">
+                      <use href="../assets/icons/sprite.svg#share"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="empty-button dark">
+                    <svg class="icon">
+                      <use href="../assets/icons/sprite.svg#alarm-clock"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="empty-button light">
+                    <svg class="icon">
+                      <use href="../assets/icons/sprite.svg#minus-circle-empty"></use>
+                    </svg>
+                    <span>Portföyden Çıkar</span>
+                  </a>
+                </div>
+              </div>
+              <ul class="horizontal">
+                <li>
+                  <h6>Alış</h6>
+                  <span>$2.788 B</span>
+                </li>
+                <li>
+                  <h6>Satış</h6>
+                  <span>$2.788 B</span>
+                </li>
+                <li>
+                  <h6>Fark</h6>
+                  <span>0.5%</span>
+                </li>
+                <li>
+                  <h6>Önceki Kapanış</h6>
+                  <span>$2.788 B</span>
+                </li>
+                <li>
+                  <h6>Günün En Düşük Değeri</h6>
+                  <span>$2.788 B</span>
+                </li>
+                <li>
+                  <h6>Günün En Yüksek Değeri</h6>
+                  <span>$2.788 B</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <div class="parite-option-box">
+              <div class="text">
+                <h5>Yarınki Beklenti ( Ne Olur ? )</h5>
+                <span>Gün içerisinde 09:00 - 15:00 arasındaki sonuçlar</span>
+              </div>
+              <div class="option-progress">
+                <div class="progress-title">
+                  <span>%22 Artar</span>
+                  <span>10.678 Oy</span>
+                </div>
+                <div class="progressbar-bg">
+                  <div class="value" style="width: 22%"></div>
+                </div>
+              </div>
+              <div class="option-buttons">
+                <a href="#" class="empty-button green"><span>Artar</span> </a>
+                <a href="#" class="empty-button red"><span>Azalır</span></a>
+              </div>
+            </div>
+          </div>
+          <div class="row mx-0">
+            <h6 class="finance-subtitle w-100">DOLAR GRAFİĞİ</h6>
+            <div class="parite-chart-top">
+              <div class="left">
+                <a href="#" class="empty-button">
+                  <svg class="icon green">
+                    <use href="../assets/icons/sprite.svg#plus-circle"></use>
+                  </svg>
+                </a>
+                <a href="#" class="empty-button">1d</a>
+                <a href="#" class="empty-button">30d</a>
+                <a href="#" class="empty-button">1s</a>
+                <a href="#" class="empty-button">1g</a>
+                <a href="#" class="empty-button">7g</a>
+                <a href="#" class="empty-button">30g</a>
+                <a href="#" class="empty-button">90g</a>
+              </div>
+              <div class="right">
+                <div class="datepickerr" id="financedatepicker1wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww">
+                  <input type="text" value="09-12-2020">
+                </div>
+                <span class="datepicker-divider">Arası</span>
+                <div class="datepickerr" id="financedatepicker2">
+                  <input type="text" value="09-12-2020">
+                </div>
+                <a href="#" class="empty-button">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#fullsize"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div id="chart_big">
+
+            </div>
+          </div>
           <div class="row">
             <div class="col-lg-12">
               <h4 class="finance-subtitle">Dolar (USD) Banka Kurları</h4>
@@ -2041,7 +2147,76 @@
     </div>
   </div>
 
+  <script type="text/javascript">
+  google.charts.load('current', {
+    'packages': ['corechart']
+  });
+  google.charts.setOnLoadCallback(drawBigChart);
 
+  function drawBigChart() {
+
+    var data = google.visualization.arrayToDataTable([
+      ['Year', 'Sales'],
+      ['00:00', 1000],
+      ['00:00', 1170],
+      ['00:00', 660],
+      ['00:00', 130],
+      ['00:00', 030],
+      ['00:00', 2030],
+      ['00:00', 730],
+      ['00:00', 50],
+      ['00:00', 1030],
+      ['00:00', 780],
+      ['00:00', 790],
+      ['00:00', 730],
+      ['00:00', 810],
+      ['00:00', 850],
+      ['00:00', 800],
+      ['00:00', 780],
+      ['00:00', 780],
+      ['00:00', 780],
+      ['00:00', 780],
+      ['00:00', 780],
+      ['00:00', 780],
+      ['00:00', 780],
+
+
+    ]);
+
+    var options = {
+      legend: {
+        position: 'none'
+      },
+      hAxis: {
+        title: 'test',
+        gridlines: {
+          color: 'transparent'
+        },
+        minorGridlines: {
+          color: 'transparent'
+        }
+      },
+
+      vAxis: {
+        textPosition: 'in',
+        title: 'test'
+      },
+      backgroundColor: {
+        stroke: '#fff',
+        strokeWidth: 0
+      },
+      chartArea: {
+        width: '100%',
+        height: '100%',
+      },
+        colors: ['#28CC67'],
+
+    };
+
+    var chart = new google.visualization.AreaChart(document.getElementById('chart_big'));
+    chart.draw(data, options);
+  }
+  </script>
 </body>
 
 </html>

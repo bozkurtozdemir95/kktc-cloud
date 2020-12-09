@@ -273,6 +273,12 @@ img.ads {
   padding-left: 10px;
 }
 
+h6.finance-subtitle {
+  font-family: 'Proxima Nova Sb', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+
 .finance-table {
   background: #fff;
 }
@@ -329,11 +335,13 @@ img.ads {
   fill: #023047;
   transform-origin: top center;
 }
-.finance-table a{
+
+.finance-table a {
   display: inline-block;
   height: 13px;
   height: 3px;
 }
+
 .chart-wrapper {
   background: #fff;
   border: 1px solid rgba(2, 48, 71, .1);
@@ -1064,6 +1072,347 @@ img.ads {
 
 .finance-article img {
   margin-bottom: 20px;
+}
+
+.selected-parite {
+  background: #fff;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.selected-parite .title {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(2, 48, 71, .1);
+  height: 50px;
+  justify-content: space-between;
+  padding-right: 16px;
+}
+
+.selected-parite .title h1 {
+  font-size: 20px;
+  line-height: 27px;
+  position: relative;
+  padding-left: 35px;
+}
+
+.selected-parite .title h1:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  transform: translateY(-50%);
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #FF0000;
+}
+
+.selected-parite .title .buttons {
+  display: flex;
+  align-items: center;
+}
+
+.selected-parite .title .empty-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  transition: all .3s;
+  color: #023047;
+}
+
+.selected-parite .title .empty-button.dark {
+  width: 27px;
+  height: 27px;
+  background: #023047;
+}
+
+.selected-parite .title .empty-button.light {
+  height: 27px;
+  padding: 0 10px;
+  background: #fff;
+  border: 1px solid rgba(2, 48, 71, .1);
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.selected-parite .title .empty-button.light:hover {
+  background: rgba(2, 48, 71, .05);
+}
+
+.selected-parite .title .empty-button.dark .icon {
+  fill: #fff;
+  width: 13px;
+  height: 13px;
+  transition: all .3s;
+}
+
+.selected-parite .title .empty-button.dark:hover .icon {
+  fill: #28CC67;
+}
+
+.selected-parite .title .empty-button.light .icon {
+  width: 13px;
+  height: 13px;
+  fill: #FF0000;
+  margin-right: 5px;
+}
+
+.selected-parite ul {
+  padding: 17px 0;
+  justify-content: space-between;
+}
+
+.selected-parite li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 16px;
+  position: relative;
+}
+
+.selected-parite li:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  background: rgba(2, 48, 71, .1);
+  width: 1px;
+  height: 18px;
+}
+
+.selected-parite li:last-child:after {
+  content: none;
+}
+
+.selected-parite li h6 {
+  color: rgba(2, 48, 71, .5);
+  font-size: 14px;
+  line-height: 19px;
+  white-space: nowrap;
+}
+
+.selected-parite li span {
+  font-family: 'Proxima Nova Sb', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  white-space: nowrap;
+}
+
+.parite-option-box {
+  background: #fff;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  margin-bottom: 30px;
+}
+
+.parite-option-box .text {
+  display: flex;
+  flex-direction: column;
+}
+
+.parite-option-box .text h5 {
+  font-family: 'Proxima Nova Sb', sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.parite-option-box .text span {
+  color: rgba(2, 48, 71, .5);
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.parite-option-box .option-progress {
+  display: flex;
+  flex-direction: column;
+}
+
+.parite-option-box .option-progress .progress-title {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 6px;
+}
+
+.parite-option-box .option-progress .progress-title span {
+  color: rgba(2, 48, 71, .5);
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.parite-option-box .option-progress .progressbar-bg {
+  min-width: 250px;
+  height: 4px;
+  background: rgba(2, 48, 71, .2);
+  position: relative;
+  border-radius: 2px;
+}
+
+.parite-option-box .option-progress .progressbar-bg .value {
+  height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+  background: #FF0000;
+}
+
+.option-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.option-buttons .empty-button {
+  width: 80px;
+  height: 30px;
+  background: transparent;
+  font-size: 14px;
+  line-height: 19px;
+  color: #023047;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+  position: relative;
+}
+
+.option-buttons .empty-button span {
+  position: relative;
+  z-index: 2;
+}
+
+.option-buttons .empty-button.green {
+  border: 1px solid #28CC67;
+}
+
+.option-buttons .empty-button:before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 0;
+  height: 100%;
+  transition: all .2s;
+}
+
+.option-buttons .empty-button.green:before {
+  background: #28CC67;
+}
+
+.option-buttons .empty-button.red:before {
+  background: #FF0000;
+}
+
+.option-buttons .empty-button:hover:before {
+  max-width: 100%;
+}
+
+.option-buttons .empty-button:hover {
+  color: #fff;
+}
+
+.option-buttons .empty-button.red {
+  border: 1px solid #FF0000;
+}
+
+.parite-chart-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.parite-chart-top .left {
+  display: flex;
+  align-items: center;
+}
+
+.parite-chart-top .right {
+  display: flex;
+  align-items: center;
+}
+
+.parite-chart-top .empty-button {
+  width: 32px;
+  height: 32px;
+  margin-right: 5px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #023047;
+  font-size: 12px;
+}
+
+.parite-chart-top .empty-button:hover,
+.parite-chart-top .empty-button.active {
+  background: rgba(2, 48, 71, .1);
+}
+
+.parite-chart-top .empty-button .icon {
+  width: 15px;
+  height: 15px;
+  fill: #023047;
+}
+
+.parite-chart-top .empty-button .icon.green {
+  fill: #28CC67;
+}
+
+.parite-chart-top .right .datepickerr input {
+  width: 80px;
+  height: 32px;
+  background: #fff;
+  border: 0;
+  outline: 0;
+  font-size: 12px;
+  padding: 0 5px;
+  text-align: center;
+}
+
+.parite-chart-top .right .empty-button {
+  margin-right: 0;
+  margin-left: 5px;
+}
+
+.parite-chart-top .right span {
+  font-size: 12px;
+  line-height: 29px;
+  margin: 0 15px;
+}
+
+.datepicker td, .datepicker th {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+
+#chart_big {
+  height: 240px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .selected-parite li {
+    padding: 0 10px;
+  }
+
+  .selected-parite li h6,
+  .selected-parite li span {
+    font-size: 12px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
