@@ -705,6 +705,7 @@ $(function() {
 
     chart.draw(data, options);
   }
+
   function drawRed() {
 
     var data = new google.visualization.DataTable();
@@ -773,6 +774,78 @@ $(function() {
     };
 
     var chart = new google.visualization.AreaChart(document.getElementById('chart_red'));
+
+    chart.draw(data, options);
+  }
+
+  google.charts.load('current', {
+    packages: ['corechart', 'line']
+  });
+  google.charts.setOnLoadCallback(drawBasic);
+
+  function drawBasic() {
+
+    var data = new google.visualization.DataTable();
+    data.addColumn('number', 'X');
+    data.addColumn('number', 'USD');
+
+    data.addRows([
+      [0, 0],
+      [1, 10],
+      [2, 23],
+      [3, 17],
+      [4, 18],
+      [5, 9],
+      [6, 11],
+      [7, 27],
+      [8, 33],
+      [9, 40],
+      [10, 32],
+      [11, 35],
+      [12, 30],
+      [13, 40],
+      [14, 42],
+      [15, 47],
+      [16, 44],
+      [17, 48],
+      [18, 52],
+      [19, 54],
+      [20, 42],
+      [21, 55],
+      [22, 56],
+      [23, 57],
+    ]);
+
+    var options = {
+      legend: {
+        position: 'none'
+      },
+      hAxis: {
+        title: 'test',
+        textPosition: 'in',
+        gridlines: {
+          color: 'transparent'
+        },
+        minorGridlines: {
+          color: 'transparent'
+        }
+      },
+
+      vAxis: {
+        textPosition: 'in',
+        title: 'test'
+      },
+      backgroundColor: {
+        stroke: 'red',
+      },
+      colors: ['#28CC67'],
+      chartArea: {
+        width: '100%',
+        height: '100%',
+      },
+    };
+
+    var chart = new google.visualization.LineChart(document.getElementById('chart_markets'));
 
     chart.draw(data, options);
   }
