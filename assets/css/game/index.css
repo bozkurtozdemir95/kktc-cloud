@@ -1,0 +1,202 @@
+/** THEME VARIABLES **/
+.light {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: rgba(36, 40, 50, .05);
+  --bg-third: rgba(87, 93, 109, .2);
+  --text-primary: #242832;
+  --text-secondary: rgba(36, 40, 50, .5);
+  --text-light: rgba(36, 40, 50, .2);
+  --border-primary-color: rgba(36, 40, 50, .1);
+  --header-icon-color: rgba(2, 48, 71, .3);
+}
+
+.dark {
+  --bg-primary: #1F2027;
+  --bg-secondary: #242832;
+  --bg-third: #575D6D;
+  --text-primary: #FFFFFF;
+  --text-secondary: rgba(255, 255, 255, .5);
+  --text-light: rgba(255, 255, 255, .2);
+  --border-primary-color: rgba(255, 255, 255, .1);
+  --header-icon-color: rgba(255, 255, 255, .3);
+}
+
+.game-page #Header {
+  background: var(--bg-primary) !important;
+}
+
+.game-page .header-top {
+  padding: 0 60px;
+}
+
+.game-page .h-dropdown-content a,
+.game-page .color-dark {
+  color: var(--text-primary) !important;
+}
+
+.game-page .header-top-left {
+  max-width: 45%;
+}
+
+.game-page .currency-select.custom-selectbox .custom-select-toggler .icon,
+.game-page .currency-select.custom-selectbox .custom-select-menu .icon,
+.game-page .more .icon,
+.game-page .right-menu .small-buttons .icon,
+.game-page .right-menu li .icon.currency,
+.game-page .user-menu-wrapper .icon.arrow {
+  fill: var(--header-icon-color) !important;
+}
+
+.game-page .dropdown-menu,
+.game-page .h-dropdown-content {
+  background: var(--bg-secondary);
+}
+
+.game-page .h-dropdown-content a:hover {
+  background: var(--bg-third);
+}
+
+.game-page .h-dropdown-content:after,
+.game-page .dropdown .dropdown-menu:after {
+  border-bottom-color: var(--bg-secondary);
+}
+
+.game-page .right-menu li h5 {
+  color: var(--text-primary) !important;
+}
+
+.game-page .custom-selectbox .custom-select-toggler {
+  border: 1px solid var(--border-primary-color);
+}
+
+.game-page input:checked+.slider {
+  background: #FFC107;
+}
+.game-page .contact-information h4,
+.game-page .color-primary {
+  color: var(--text-primary);
+}
+
+.game-page #Footer {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.footer-bottom-menu li a,
+#Footer .footer-menu-col ul a {
+  color: var(--text-primary);
+}
+.game-page .right-menu li,
+.game-page .header-top,
+.game-page .copyright,
+.game-page .footer-bottom-menu {
+  border-color: var(--border-primary-color);
+}
+
+.game-page .footer-socials .icon {
+  fill: var(--bg-third);
+}
+
+.game-wrapper {
+  margin-top: 34px;
+  background: var(--bg-primary);
+}
+
+#GameSidebar {
+  width: 360px;
+  padding-left: 60px
+}
+
+.game-sidebar-top {
+  height: 105px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid var(--border-primary-color);
+}
+
+.game-sidebar-top .logo {
+  max-width: 180px;
+}
+
+.game-page #Header {
+  box-shadow: none;
+}
+
+.game-sidebar-block h4 {
+  font-family: 'Proxima Nova Bo', sans-serif;
+  font-size: 14px;
+  line-height: 65px;
+  letter-spacing: 3px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.game-sidebar-block ul li a {
+  font-size: 18px;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  line-height: 65px;
+  transition: all .3s;
+}
+
+.game-sidebar-block ul li a img {
+  width: 32px;
+  height: 32px;
+  margin-right: 13px;
+}
+
+.game-sidebar-block ul li a .icon {
+  width: 22px;
+  height: 22px;
+  fill: var(--text-secondary);
+  margin-right: 23px;
+  transition: all .3s;
+}
+
+.game-sidebar-block ul li a .icon.arrow {
+  width: 12px;
+  height: 6px;
+  stroke: var(--text-secondary);
+  margin-right: 0;
+  margin-left: 11px;
+}
+
+.game-sidebar-block ul li a[aria-expanded='true'] .icon {
+  transform: rotate(-180deg);
+  fill: #FFC107;
+}
+
+.game-sidebar-block ul li a[aria-expanded='true'] .icon.arrow {
+  stroke: #FFC107;
+}
+
+.game-sidebar-block ul li.active a,
+.game-sidebar-block ul li:hover a {
+  color: var(--text-primary);
+}
+
+.game-sidebar-block ul li.active a .icon,
+.game-sidebar-block ul li:hover a .icon {
+  fill: #FFC107;
+}
+
+.game-sidebar-block ul li.new a .icon {
+  fill: inherit !important;
+}
+
+.game-sidebar-block .all-games-list-item a {
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.game-sidebar-block .all-games-list-item a:hover {
+  color: #FFC107;
+}
+
+.game-sidebar-block .small-game-list li a,
+.game-sidebar-block .game-friend-list li a {
+  color: var(--text-light);
+}

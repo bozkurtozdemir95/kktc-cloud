@@ -33,6 +33,8 @@
 @import "career/career-about.css";
 /** Finance css files **/
 @import "finance/index.css";
+/** Game css files **/
+@import "game/index.css";
 
 ::-webkit-scrollbar {
   width: 5px;
