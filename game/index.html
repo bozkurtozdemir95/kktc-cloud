@@ -358,8 +358,13 @@
     </div>
   </div>
   <div class="game-wrapper pt-20 pb-40">
-
+    <div id="sidebar-toggler" class="game-sidebar-toggler" onclick="toggleSidebar()">
+      <svg class="icon">
+        <use href="../assets/icons/sprite.svg#menu"></use>
+      </svg>
+    </div>
     <div id="GameSidebar">
+
       <div class="game-sidebar-top">
         <a href="#" class="logo">
           <img id="logo-1" src="../assets/images/logo-yellow.svg" alt="KKTC">
@@ -610,7 +615,7 @@
                 </svg>
                 Sıralama Tablosu
               </a>
-              <p class="light">
+              <p class="lightt">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
               </p>
               <div class="users">
@@ -640,7 +645,7 @@
                 </svg>
                 Sıralama Tablosu
               </a>
-              <p class="light">
+              <p class="lightt">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam
               </p>
               <div class="users">
@@ -770,8 +775,100 @@
           </a>
         </div>
       </div>
-
-      <div class="row">
+      <div class="row mx-0 mb-40">
+        <div class="game-subtitle">
+          <h5>Yeni Katılan Oyuncular</h5>
+          <a href="#">Daha Fazlası</a>
+        </div>
+        <div class="new-users-list">
+          <a href="#" class="new-user-box bg-secondaryy">
+            <div class="avatar">
+              <img src="../assets/images/game/users/user-1.png" alt="KKTC">
+            </div>
+            <span>bilal.dmn</span>
+          </a>
+          <a href="#" class="new-user-box bg-secondaryy">
+            <div class="avatar">
+              <img src="../assets/images/game/users/user-2.png" alt="KKTC">
+            </div>
+            <span>bilal.dmn</span>
+          </a>
+          <a href="#" class="new-user-box bg-secondaryy">
+            <div class="avatar">
+              <img src="../assets/images/game/users/user-3.png" alt="KKTC">
+            </div>
+            <span>bilal.dmn</span>
+          </a>
+          <a href="#" class="new-user-box bg-secondaryy">
+            <div class="avatar">
+              <img src="../assets/images/game/users/user-4.png" alt="KKTC">
+            </div>
+            <span>bilal.dmn</span>
+          </a>
+          <a href="#" class="new-user-box bg-secondaryy">
+            <div class="avatar">
+              <img src="../assets/images/game/users/user-5.png" alt="KKTC">
+            </div>
+            <span>bilal.dmn</span>
+          </a>
+          <a href="#" class="new-user-box bg-secondaryy">
+            <div class="avatar">
+              <img src="../assets/images/game/users/user-6.png" alt="KKTC">
+            </div>
+            <span>bilal.dmn</span>
+          </a>
+          <a href="#" class="new-user-box bg-secondaryy">
+            <div class="avatar">
+              <img src="../assets/images/game/users/user-7.png" alt="KKTC">
+            </div>
+            <span>bilal.dmn</span>
+          </a>
+        </div>
+      </div>
+      <div class="row mx-0 mb-40">
+        <div class="game-subtitle">
+          <h5>Popüler Oyunlar</h5>
+          <a href="#">Daha Fazlası</a>
+        </div>
+        <div class="home-games-list">
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-1.png" alt="KKTC">
+            <h4>Okey</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-2.png" alt="KKTC">
+            <h4>Coin Master</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-3.png" alt="KKTC">
+            <h4>Tavla Plus</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-4.png" alt="KKTC">
+            <h4>Poker</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-5.png" alt="KKTC">
+            <h4>Pişti Club</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-6.png" alt="KKTC">
+            <h4>Tavla Classic</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-7.png" alt="KKTC">
+            <h4>Satranç</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+        </div>
+      </div>
+      <div class="row mb-40">
         <div class="col-lg-6">
           <div class="game-banner bg-secondaryy">
             <div class="text">
@@ -799,6 +896,49 @@
               <img src="../assets/images/game/banners/banner-4.svg" alt="KKTC">
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row mx-0 mb-40">
+        <div class="game-subtitle">
+          <h5>Yeni Oyunlar</h5>
+          <a href="#">Daha Fazlası</a>
+        </div>
+        <div class="home-games-list">
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-8.png" alt="KKTC">
+            <h4>Bilardo</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-9.png" alt="KKTC">
+            <h4>Pişti</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-10.png" alt="KKTC">
+            <h4>Yapboz</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-11.png" alt="KKTC">
+            <h4>Domino</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-12.png" alt="KKTC">
+            <h4>Kelime Bul</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-13.png" alt="KKTC">
+            <h4>Satranç</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
+          <a href="#" class="home-games-box">
+            <img src="../assets/images/game/games/game-14.png" alt="KKTC">
+            <h4>Tavla</h4>
+            <span>1.289 Kişi Oyunda</span>
+          </a>
         </div>
       </div>
     </div>
@@ -979,6 +1119,17 @@
         document.getElementById("logo-1").src = "../assets/images/logo-yellow.svg";
         document.getElementById("logo-2").src = "../assets/images/logo-yellow.svg";
         document.getElementById("logo-sm-1").src = "../assets/images/logo-sm.svg";
+      }
+    }
+
+    function toggleSidebar() {
+      var toggler = document.getElementById('sidebar-toggler');
+      var sidebarDiv = document.getElementById('GameSidebar');
+      var hasClass = sidebarDiv.classList.contains('hide');
+      if (hasClass) {
+        sidebarDiv.classList.remove('hide');
+      } else {
+        sidebarDiv.classList.add('hide');
       }
     }
   </script>
