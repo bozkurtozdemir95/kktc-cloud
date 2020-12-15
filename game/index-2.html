@@ -1,0 +1,1919 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!--- LIBRARIES --->
+  <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+  <script src="https://kit.fontawesome.com/aede4151d0.js" crossorigin="anonymous"></script>
+
+  <script src="../assets/libs/jquery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
+  <script src="../assets/libs/slick-carousel/slick.min.js"></script>
+
+  <script src="../assets/js/main.js"></script>
+  <link rel="stylesheet" href="../assets/css/main.css">
+  <title>KKTC - Oyun</title>
+</head>
+
+<body class="yellow light game-page">
+  <div id="Header">
+    <div class="header-top">
+      <div class="d-flex justify-content-between align-items-center h-100">
+        <div class="header-top-left">
+          <a href="#">
+            <img id="logo-sm-1" src="../assets/images/logo-sm.svg" alt="KKTC">
+          </a>
+          <ul class="top-navigation no-mobile horizontal h-100">
+            <li><a href="../ads/index.html" class="color-dark fs-12 blue">İlan</a></li>
+            <li><a href="../company/index.html" class="color-dark fs-12 orange">Firma</a></li>
+            <li><a href="../rent-a-car/index.html" class="color-dark fs-12 blue">Araç Kiralama</a></li>
+            <li><a href="index.html" class="color-dark fs-12 purple">Kariyer</a></li>
+            <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
+            <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
+            <li><a href="#" class="color-dark fs-12 green">Sipariş</a></li>
+            <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
+            <li><a href="#" class="color-dark fs-12 darkblue">Alışveriş</a></li>
+            <li><a href="#" class="color-dark fs-12 darkblue">Fotoğraf</a></li>
+            <li class="more h-dropdown">
+              <div class="color-dark fs-12 mr-2">Daha fazla</div>
+              <svg class="icon">
+                <use href="../assets/icons/sprite.svg#more"></use>
+              </svg>
+
+              <div class="h-dropdown-content">
+                <a href="#">Şans Oyunları</a>
+                <a href="#">Alışveriş</a>
+                <a href="#">Diğer</a>
+              </div>
+            </li>
+          </ul>
+          <div class="dropdown text-center show-mobile ml-auto">
+            <div class="dropdown-toggler d-flex align-items-center" id="leftNav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="more">
+                <svg class="icon">
+                  <use href="../assets/icons/sprite.svg#more"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu dropdown-menu-center no-close p-0" aria-labelledby="leftNav">
+              <ul class="top-navigation show-mobile vertical h-100">
+                <li><a href="../ads/index.html" class="color-dark fs-12 blue">İlan</a></li>
+                <li><a href="../company/index.html" class="color-dark fs-12 orange">Firma</a></li>
+                <li><a href="../rent-a-car/index.html" class="color-dark fs-12 blue">Araç Kiralama</a>
+                </li>
+                <li><a href="index.html" class="color-dark fs-12 purple">Kariyer</a></li>
+                <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
+                <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
+                <li><a href="#" class="color-dark fs-12 green">Sipariş</a></li>
+                <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
+                <li><a href="#" class="color-dark fs-12 darkblue">Alışveriş</a></li>
+                <li><a href="#" class="color-dark fs-12 darkblue">Fotoğraf</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header-top-right">
+          <ul class="horizontal h-100 right-menu">
+            <li>
+              <h6 class="fs-12 lh-16 mr-10 color-primary">Tema Değiştir:</h6>
+              <label class="switch big ml-10">
+                <input id="theme-switch" type="checkbox" onchange="changeTheme()">
+                <span class="slider round"></span>
+              </label>
+            </li>
+            <li class="after-login small-buttons">
+              <button class="empty-button notified h-dropdown no-anim">
+                <svg class="icon">
+                  <use href="../assets/icons/sprite.svg#mail-2"></use>
+                </svg>
+                <div class="h-dropdown-content">
+                  <div class="message-list-top">
+                    <div class="message-box">
+                      <div class="message-avatar"><img src="../assets/images/avatar-2.png" alt="KKTC"></div>
+                      <div class="message-text">
+                        <div class="message-user">
+                          <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                          <span class="read-circle readable"></span>
+                        </div>
+                        <p class="fs-12 lh-19">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                          dolor velit,
+                          ultricies
+                          at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                          iaculis
+                        </p>
+                      </div>
+                    </div>
+                    <div class="message-box">
+                      <div class="message-avatar"><img src="../assets/images/avatar-2.png" alt="KKTC"></div>
+                      <div class="message-text">
+                        <div class="message-user">
+                          <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                          <span class="read-circle"></span>
+                        </div>
+                        <p class="fs-12 lh-19">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                          dolor velit,
+                          ultricies
+                          at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                          iaculis
+                        </p>
+                      </div>
+                    </div>
+                    <div class="message-box">
+                      <div class="message-avatar"><img src="../assets/images/avatar-2.png" alt="KKTC"></div>
+                      <div class="message-text">
+                        <div class="message-user">
+                          <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                          <span class="read-circle"></span>
+                        </div>
+                        <p class="fs-12 lh-19">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                          dolor velit,
+                          ultricies
+                          at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                          iaculis
+                        </p>
+                      </div>
+                    </div>
+                    <div class="message-box">
+                      <div class="message-avatar"><img src="../assets/images/avatar-2.png" alt="KKTC"></div>
+                      <div class="message-text">
+                        <div class="message-user">
+                          <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                          <span class="read-circle"></span>
+                        </div>
+                        <p class="fs-12 lh-19">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                          dolor velit,
+                          ultricies
+                          at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                          iaculis
+                        </p>
+                      </div>
+                    </div>
+                    <div class="message-box">
+                      <div class="message-avatar"><img src="../assets/images/avatar-2.png" alt="KKTC"></div>
+                      <div class="message-text">
+                        <div class="message-user">
+                          <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                          <span class="read-circle"></span>
+                        </div>
+                        <p class="fs-12 lh-19">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                          dolor velit,
+                          ultricies
+                          at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                          iaculis
+                        </p>
+                      </div>
+                    </div>
+                    <a href="#" class="empty-button more-comment">Tüm Mesajları Gör</a>
+                  </div>
+                </div>
+              </button>
+              <button class="empty-button">
+                <svg class="icon">
+                  <use href="../assets/icons/sprite.svg#moon"></use>
+                </svg>
+              </button>
+            </li>
+            <li>
+              <div class="dropdown text-center">
+                <div class="dropdown-toggler d-flex align-items-center" id="currencyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <svg class="icon currency">
+                    <use href="../assets/icons/sprite.svg#turkish-lira"></use>
+                  </svg>
+                  <span class="fs-12 color-dark no-mobile">Para Birimi</span>
+                </div>
+                <div class="dropdown-menu dropdown-menu-center no-close" aria-labelledby="currencyDropdown">
+                  <h5>Para Birimi</h5>
+                  <div class="custom-selectbox currency-select">
+                    <div class="custom-select-toggler">
+                      <svg class="icon">
+                        <use href="../assets/icons/sprite.svg#dollar"></use>
+                      </svg>
+                      Amerikan Doları (USD)
+                      <svg class="icon arrow">
+                        <use href="../assets/icons/sprite.svg#down-angle"></use>
+                      </svg>
+                    </div>
+                    <div class="custom-select-menu">
+                      <div class="menu">
+                        <div class="custom-select-menu-item">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#dollar"></use>
+                          </svg>
+                          Amerikan Doları (USD)
+                        </div>
+                        <div class="custom-select-menu-item">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#yuan"></use>
+                          </svg>
+                          Çin Yuanı (CNY)
+                        </div>
+                        <div class="custom-select-menu-item">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#sterlin"></use>
+                          </svg>
+                          Sterlin (GBP)
+                        </div>
+                        <div class="custom-select-menu-item">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#euro"></use>
+                          </svg>
+                          Euro (EUR)
+                        </div>
+                        <div class="custom-select-menu-item">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#dollar"></use>
+                          </svg>
+                          Avustralya Doları (AUD)
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <button class="form-button">Değiştir</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="dropdown text-center">
+                <div class="dropdown-toggler d-flex align-items-center" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <svg class="icon language">
+                    <use href="../assets/icons/sprite.svg#turkey"></use>
+                  </svg>
+                  <span class="fs-12 color-dark no-mobile">TR-TR</span>
+                </div>
+                <div class="dropdown-menu no-close dropdown-menu-center" aria-labelledby="languageDropdown">
+                  <h5>Ülke/bölge seçin</h5>
+                  <div class="custom-selectbox currency-select">
+                    <div class="custom-select-toggler">
+                      <svg class="icon">
+                        <use href="../assets/icons/sprite.svg#turkey"></use>
+                      </svg>
+                      Türkiye
+                      <svg class="icon arrow">
+                        <use href="../assets/icons/sprite.svg#down-angle"></use>
+                      </svg>
+                    </div>
+                    <div class="custom-select-menu">
+                      <div class="menu">
+                        <div class="custom-select-menu-item">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#brazil"></use>
+                          </svg>
+                          Brazil
+                        </div>
+                        <div class="custom-select-menu-item">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#china"></use>
+                          </svg>
+                          China
+                        </div>
+                        <div class="custom-select-menu-item">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#france"></use>
+                          </svg>
+                          France
+                        </div>
+                        <div class="custom-select-menu-item">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#germany"></use>
+                          </svg>
+                          Germany
+                        </div>
+                        <div class="custom-select-menu-item">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#united-kingdom"></use>
+                          </svg>
+                          United Kingdom
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <h5>Dil seçin</h5>
+                  <div class="custom-selectbox currency-select">
+                    <div class="custom-select-toggler">
+                      <svg class="icon">
+                        <use href="../assets/icons/sprite.svg#translation"></use>
+                      </svg>
+                      Türkçe
+                      <svg class="icon arrow">
+                        <use href="../assets/icons/sprite.svg#down-angle"></use>
+                      </svg>
+                    </div>
+                    <div class="custom-select-menu">
+                      <div class="menu">
+                        <div class="custom-select-menu-item">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#translation"></use>
+                          </svg>
+                          English
+                        </div>
+                        <div class="custom-select-menu-item">
+                          <svg class="icon">
+                            <use href="../assets/icons/sprite.svg#translation"></use>
+                          </svg>
+                          Arabic
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <button class="form-button">Değiştir</button>
+                </div>
+              </div>
+            </li>
+            <li class="after-login user-menu-wrapper h-dropdown">
+              <img src="../assets/images/avatar.png" alt="KKTC" class="avatar">
+              <span class="fs-12 color-dark no-mobile">John Doe</span>
+              <svg class="icon arrow">
+                <use href="../assets/icons/sprite.svg#down-angle"></use>
+              </svg>
+              <div class="h-dropdown-content">
+                <h5>John Doe</h5>
+                <ul class="user-menu vertical-menu">
+                  <li><a href="#" class="fs-14 color-dark">İlanlarım</a></li>
+                  <li><a href="#" class="fs-14 color-dark">Favorilerim</a></li>
+                  <li><a href="#" class="fs-14 color-dark">Sepetim</a></li>
+                  <li><a href="#" class="fs-14 color-dark">Siparişlerim</a></li>
+                  <li><a href="#" class="fs-14 color-dark">Satış İşlemlerim</a></li>
+                  <li><a href="#" class="fs-14 color-dark">Üyeliğim</a></li>
+                  <li><a href="#" class="fs-14 color-red">Çıkış Yap</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="game-wrapper pt-20 pb-0">
+    <div id="sidebar-toggler" class="game-sidebar-toggler" onclick="toggleSidebar()">
+      <svg class="icon">
+        <use href="../assets/icons/sprite.svg#menu"></use>
+      </svg>
+    </div>
+    <div id="GameSidebar">
+      <div class="game-sidebar-top">
+        <a href="#" class="logo">
+          <img id="logo-1" src="../assets/images/logo-yellow.svg" alt="KKTC">
+        </a>
+      </div>
+      <div class="game-sidebar-content">
+        <div class="game-sidebar-block">
+          <h4>KATEGORİLER</h4>
+          <ul class="vertical">
+            <li class="active">
+              <a href="#">
+                <svg class="icon">
+                  <use href="../assets/icons/sprite.svg#flame"></use>
+                </svg>
+                Trend Oyunlar
+              </a>
+            </li>
+            <li>
+              <a data-toggle="collapse" href="#collapseAllGames" role="button" aria-expanded="false" aria-controls="collapseAllGames">
+                <svg class="icon">
+                  <use href="../assets/icons/sprite.svg#games"></use>
+                </svg>
+                Tüm Oyunlar
+                <svg class="icon arrow">
+                  <use href="../assets/icons/sprite.svg#down-angle"></use>
+                </svg>
+              </a>
+              <div class="collapse show all-games-list" id="collapseAllGames">
+                <div class="all-games-list-item">
+                  <a href="#">Okey</a>
+                </div>
+                <div class="all-games-list-item">
+                  <a href="#">Satranç</a>
+                </div>
+                <div class="all-games-list-item">
+                  <a href="#">Pişti</a>
+                </div>
+                <div class="all-games-list-item">
+                  <a href="#">Batak</a>
+                </div>
+                <div class="all-games-list-item">
+                  <a href="#">King</a>
+                </div>
+                <div class="all-games-list-item">
+                  <a href="#">Pis Yedili</a>
+                </div>
+                <div class="collapse" id="collapseOthers">
+                  <div class="all-games-list-item">
+                    <a href="#">Blackjack</a>
+                  </div>
+                  <div class="all-games-list-item">
+                    <a href="#">Okey</a>
+                  </div>
+                  <div class="all-games-list-item">
+                    <a href="#">Satranç</a>
+                  </div>
+                  <div class="all-games-list-item">
+                    <a href="#">Pişti</a>
+                  </div>
+                </div>
+                <div class="all-games-list-item">
+                  <a data-toggle="collapse" href="#collapseOthers" role="button" aria-expanded="false" aria-controls="collapseOthers">
+                    Tümünü Göster
+                    <svg class="icon arrow">
+                      <use href="../assets/icons/sprite.svg#down-angle"></use>
+                    </svg>
+                  </a>
+                </div>
+
+
+              </div>
+            </li>
+            <li class="new">
+              <a href="#">
+                <svg class="icon">
+                  <use href="../assets/icons/sprite.svg#new"></use>
+                </svg>
+                Yeni Oyunlar
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="../assets/icons/sprite.svg#chat-4"></use>
+                </svg>
+                Sohbet
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="../assets/icons/sprite.svg#poker"></use>
+                </svg>
+                Kağıt Oyunları
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="../assets/icons/sprite.svg#table"></use>
+                </svg>
+                Masa Oyunları
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <svg class="icon">
+                  <use href="../assets/icons/sprite.svg#okey"></use>
+                </svg>
+                Taş Oyunları
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="game-sidebar-block">
+          <h4>FAVORİLERİM <span>29</span> </h4>
+          <ul class="vertical small-game-list">
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/games/game-3.png" alt="KKTC">
+                Tavla
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/games/game-1.png" alt="KKTC">
+                Okey
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/games/game-5.png" alt="KKTC">
+                Pişti
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/games/game-4.png" alt="KKTC">
+                Poker
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="game-sidebar-block">
+          <h4>KALDIĞIN YERDEN DEVAM ET</h4>
+          <ul class="vertical small-game-list">
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/games/game-3.png" alt="KKTC">
+                Tavla
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/games/game-1.png" alt="KKTC">
+                Okey
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/games/game-5.png" alt="KKTC">
+                Pişti
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/games/game-4.png" alt="KKTC">
+                Poker
+              </a>
+            </li>
+
+          </ul>
+        </div>
+        <div class="game-sidebar-block">
+          <h4>ARKADAŞLARIM <span>39</span> </h4>
+          <ul class="vertical game-friends-list">
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/users/user-1.png" alt="KKTC">
+                besiktas111
+                <span class="status online"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/users/user-2.png" alt="KKTC">
+                bilaldmn.04
+                <span class="status online"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/users/user-3.png" alt="KKTC">
+                okey777
+                <span class="status">2S</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/users/user-4.png" alt="KKTC">
+                replayyX
+                <span class="status">2S</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/users/user-5.png" alt="KKTC">
+                besiktas111
+                <span class="status online"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/users/user-6.png" alt="KKTC">
+                bilaldmn.04
+                <span class="status online"></span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/users/user-7.png" alt="KKTC">
+                okey777
+                <span class="status">2S</span>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="../assets/images/game/users/user-8.png" alt="KKTC">
+                replayyX
+                <span class="status">2S</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="d-flex flex-column game-content">
+      <div class="row mb-30">
+        <div class="game-subheader">
+          <ul class="horizontal">
+            <li>
+              <svg class="icon">
+                <use href="../assets/icons/sprite.svg#wifi"></use>
+              </svg>
+              <h4>SALON LİSTESİ</h4>
+            </li>
+            <li>
+              <img src="../assets/images/game/games/game-1.png" alt="KKTC">
+              <h4>101 OKEY</h4>
+            </li>
+            <li>
+              <span>1.289 Kişi Oyunda</span>
+            </li>
+            <li>
+              <a href="#">Favorilerime Ekle</a>
+            </li>
+          </ul>
+          <div class="d-flex align-items-center">
+            <a href="#">Daha Fazlası</a>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-40">
+        <div class="col-lg-12">
+          <div class="game-banner-big bg-secondaryy">
+            <div class="text">
+              <h1>HEMEN İNDİR OYUNUN <span class="yellow">TADINA BAK!</span> </h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+              <div class="banner-socials">
+                <button type="button" name="button" class="empty-button">
+                  <div class="icon-wrapper">
+                    <svg class="icon">
+                      <use href="../assets/icons/sprite.svg#app-store"></use>
+                    </svg>
+                  </div>
+                  <div class="text">
+                    App Store
+                  </div>
+                </button>
+                <button type="button" name="button" class="empty-button">
+                  <div class="icon-wrapper">
+                    <svg class="icon">
+                      <use href="../assets/icons/sprite.svg#google-play"></use>
+                    </svg>
+                  </div>
+                  <div class="text">
+                    Android
+                  </div>
+                </button>
+                <button type="button" name="button" class="empty-button">
+                  <div class="icon-wrapper">
+                    <svg class="icon">
+                      <use href="../assets/icons/sprite.svg#windows"></use>
+                    </svg>
+                  </div>
+                  <div class="text">
+                    Windows
+                  </div>
+                </button>
+                <button type="button" name="button" class="empty-button">
+                  <div class="icon-wrapper">
+                    <svg class="icon">
+                      <use href="../assets/icons/sprite.svg#apple-logo"></use>
+                    </svg>
+                  </div>
+                  <div class="text">
+                    Mac
+                  </div>
+                </button>
+              </div>
+            </div>
+            <div class="img">
+              <img src="../assets/images/game/banners/banner-6.png" alt="KKTC">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-40">
+        <div class="col-lg-6">
+          <ul class="game-table small-table vertical">
+            <li class="game-table-head">
+              <div class="game-table-col">
+                <h6 class="f-bold">KKTC SALONLAR</h6>
+              </div>
+              <div class="game-table-col">
+                <h6>COIN MİKTARI</h6>
+              </div>
+              <div class="game-table-col">
+                <h6>OYUNCU</h6>
+              </div>
+              <div class="game-table-col small">
+
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col">
+                <svg class="icon yellow">
+                  <use href="../assets/icons/sprite.svg#new"></use>
+                </svg>
+                <h5 class="f-bold">Yeniler</h5>
+              </div>
+              <div class="game-table-col">
+                <svg class="icon coin">
+                  <use href="../assets/icons/sprite.svg#coin"></use>
+                </svg>
+                <h5>50 - 250</h5>
+              </div>
+              <div class="game-table-col">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">GİR</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col">
+                <svg class="icon yellow">
+                  <use href="../assets/icons/sprite.svg#premium"></use>
+                </svg>
+                <h5 class="f-bold">Tecrübeliler</h5>
+              </div>
+              <div class="game-table-col">
+                <svg class="icon coin">
+                  <use href="../assets/icons/sprite.svg#coin"></use>
+                </svg>
+                <h5>250 - 2.000</h5>
+              </div>
+              <div class="game-table-col">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">GİR</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col">
+                <svg class="icon yellow">
+                  <use href="../assets/icons/sprite.svg#premium-badge"></use>
+                </svg>
+                <h5 class="f-bold">Ustalar</h5>
+              </div>
+              <div class="game-table-col">
+                <svg class="icon coin">
+                  <use href="../assets/icons/sprite.svg#coin"></use>
+                </svg>
+                <h5>2.000 - 10.000</h5>
+              </div>
+              <div class="game-table-col">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">GİR</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col">
+                <svg class="icon yellow">
+                  <use href="../assets/icons/sprite.svg#star-2"></use>
+                </svg>
+                <h5 class="f-bold">Korkusuzlar</h5>
+              </div>
+              <div class="game-table-col">
+                <svg class="icon coin">
+                  <use href="../assets/icons/sprite.svg#coin"></use>
+                </svg>
+                <h5>10.000 - 50.000</h5>
+              </div>
+              <div class="game-table-col">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">GİR</button>
+              </div>
+            </li>
+            <div class="collapse" id="collapseGame1">
+              <li class="game-table-row">
+                <div class="game-table-col">
+                  <svg class="icon yellow">
+                    <use href="../assets/icons/sprite.svg#new"></use>
+                  </svg>
+                  <h5 class="f-bold">Yeniler</h5>
+                </div>
+                <div class="game-table-col">
+                  <svg class="icon coin">
+                    <use href="../assets/icons/sprite.svg#coin"></use>
+                  </svg>
+                  <h5>50 - 250</h5>
+                </div>
+                <div class="game-table-col">
+                  <h5>258</h5>
+                </div>
+                <div class="game-table-col small">
+                  <button type="button" class="empty-button" name="button">GİR</button>
+                </div>
+              </li>
+              <li class="game-table-row">
+                <div class="game-table-col">
+                  <svg class="icon yellow">
+                    <use href="../assets/icons/sprite.svg#premium"></use>
+                  </svg>
+                  <h5 class="f-bold">Tecrübeliler</h5>
+                </div>
+                <div class="game-table-col">
+                  <svg class="icon coin">
+                    <use href="../assets/icons/sprite.svg#coin"></use>
+                  </svg>
+                  <h5>250 - 2.000</h5>
+                </div>
+                <div class="game-table-col">
+                  <h5>258</h5>
+                </div>
+                <div class="game-table-col small">
+                  <button type="button" class="empty-button" name="button">GİR</button>
+                </div>
+              </li>
+            </div>
+            <li class="game-table-collapse">
+              <a class="empty-button" data-toggle="collapse" href="#collapseGame1" role="button" aria-expanded="false" aria-controls="collapseGame1">
+                Daha Fazla Göster
+                <svg class="icon">
+                  <use href="../assets/icons/sprite.svg#down-angle"></use>
+                </svg>
+              </a>
+            </li>
+        </div>
+        <div class="col-lg-6">
+          <ul class="game-table small-table vertical">
+            <li class="game-table-head">
+              <div class="game-table-col">
+                <h6 class="f-bold">KKTC SALONLAR</h6>
+              </div>
+              <div class="game-table-col">
+                <h6>COIN MİKTARI</h6>
+              </div>
+              <div class="game-table-col">
+                <h6>OYUNCU</h6>
+              </div>
+              <div class="game-table-col small">
+
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col">
+                <svg class="icon yellow">
+                  <use href="../assets/icons/sprite.svg#new"></use>
+                </svg>
+                <h5 class="f-bold">Yeniler</h5>
+              </div>
+              <div class="game-table-col">
+                <svg class="icon coin">
+                  <use href="../assets/icons/sprite.svg#coin"></use>
+                </svg>
+                <h5>50 - 250</h5>
+              </div>
+              <div class="game-table-col">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">GİR</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col">
+                <svg class="icon yellow">
+                  <use href="../assets/icons/sprite.svg#premium"></use>
+                </svg>
+                <h5 class="f-bold">Tecrübeliler</h5>
+              </div>
+              <div class="game-table-col">
+                <svg class="icon coin">
+                  <use href="../assets/icons/sprite.svg#coin"></use>
+                </svg>
+                <h5>250 - 2.000</h5>
+              </div>
+              <div class="game-table-col">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">GİR</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col">
+                <svg class="icon yellow">
+                  <use href="../assets/icons/sprite.svg#premium-badge"></use>
+                </svg>
+                <h5 class="f-bold">Ustalar</h5>
+              </div>
+              <div class="game-table-col">
+                <svg class="icon coin">
+                  <use href="../assets/icons/sprite.svg#coin"></use>
+                </svg>
+                <h5>2.000 - 10.000</h5>
+              </div>
+              <div class="game-table-col">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">GİR</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col">
+                <svg class="icon yellow">
+                  <use href="../assets/icons/sprite.svg#star-2"></use>
+                </svg>
+                <h5 class="f-bold">Korkusuzlar</h5>
+              </div>
+              <div class="game-table-col">
+                <svg class="icon coin">
+                  <use href="../assets/icons/sprite.svg#coin"></use>
+                </svg>
+                <h5>10.000 - 50.000</h5>
+              </div>
+              <div class="game-table-col">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">GİR</button>
+              </div>
+            </li>
+            <div class="collapse" id="collapseGame2">
+              <li class="game-table-row">
+                <div class="game-table-col">
+                  <svg class="icon yellow">
+                    <use href="../assets/icons/sprite.svg#new"></use>
+                  </svg>
+                  <h5 class="f-bold">Yeniler</h5>
+                </div>
+                <div class="game-table-col">
+                  <svg class="icon coin">
+                    <use href="../assets/icons/sprite.svg#coin"></use>
+                  </svg>
+                  <h5>50 - 250</h5>
+                </div>
+                <div class="game-table-col">
+                  <h5>258</h5>
+                </div>
+                <div class="game-table-col small">
+                  <button type="button" class="empty-button" name="button">GİR</button>
+                </div>
+              </li>
+              <li class="game-table-row">
+                <div class="game-table-col">
+                  <svg class="icon yellow">
+                    <use href="../assets/icons/sprite.svg#premium"></use>
+                  </svg>
+                  <h5 class="f-bold">Tecrübeliler</h5>
+                </div>
+                <div class="game-table-col">
+                  <svg class="icon coin">
+                    <use href="../assets/icons/sprite.svg#coin"></use>
+                  </svg>
+                  <h5>250 - 2.000</h5>
+                </div>
+                <div class="game-table-col">
+                  <h5>258</h5>
+                </div>
+                <div class="game-table-col small">
+                  <button type="button" class="empty-button" name="button">GİR</button>
+                </div>
+              </li>
+            </div>
+            <li class="game-table-collapse">
+              <a class="empty-button" data-toggle="collapse" href="#collapseGame2" role="button" aria-expanded="false" aria-controls="collapseGame2">
+                Daha Fazla Göster
+                <svg class="icon">
+                  <use href="../assets/icons/sprite.svg#down-angle"></use>
+                </svg>
+              </a>
+            </li>
+        </div>
+      </div>
+      <div class="row mb-40">
+        <div class="col-lg-6">
+          <div class="game-banner bg-secondaryy">
+            <div class="text">
+              <h2 class="m-0">SIRALAMAYA GİR</h2>
+              <h1 class="yellow">HEDİYENİ KAP!</h1>
+              <div class="borderr"></div>
+              <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. </p>
+              <button type="button" class="empty-button" name="button">Daha Fazlası İçin</button>
+            </div>
+            <div class="img">
+              <img src="../assets/images/game/banners/banner-5.svg" alt="KKTC">
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="game-banner bg-secondaryy">
+            <div class="text">
+              <h2 class="m-0">SIRALAMAYA GİR</h2>
+              <h1 class="yellow">HEDİYENİ KAP!</h1>
+              <div class="borderr"></div>
+              <p>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups. </p>
+              <button type="button" class="empty-button" name="button">Daha Fazlası İçin</button>
+            </div>
+            <div class="img">
+              <img src="../assets/images/game/banners/banner-5.svg" alt="KKTC">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-30">
+        <div class="col-lg-12">
+          <ul class="game-table big-table vertical">
+            <li class="game-table-head">
+              <div class="game-table-col big">
+                <h6 class="f-bold">ÜYE SALONLAR</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>PREMIUM SALON</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>KİŞİ LİMİTİ</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>PUAN KORUMA</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>OYUNCU</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>YILDIZ</h6>
+              </div>
+              <div class="game-table-col small">
+
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+        </div>
+      </div>
+      <div class="row mb-30">
+        <div class="col-lg-12">
+          <ul class="game-table big-table vertical">
+            <li class="game-table-head">
+              <div class="game-table-col big">
+                <h6 class="f-bold">ÜYE SALONLAR</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>PREMIUM SALON</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>KİŞİ LİMİTİ</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>PUAN KORUMA</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>OYUNCU</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>YILDIZ</h6>
+              </div>
+              <div class="game-table-col small">
+
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+        </div>
+      </div>
+      <div class="row mb-30">
+        <div class="col-lg-12">
+          <ul class="game-table big-table vertical">
+            <li class="game-table-head">
+              <div class="game-table-col big">
+                <h6 class="f-bold">ÜYE SALONLAR</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>PREMIUM SALON</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>KİŞİ LİMİTİ</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>PUAN KORUMA</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>OYUNCU</h6>
+              </div>
+              <div class="game-table-col centered">
+                <h6>YILDIZ</h6>
+              </div>
+              <div class="game-table-col small">
+
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+            <li class="game-table-row">
+              <div class="game-table-col big">
+                <h5 class="f-bold">ℂ⋆ ÐostlαrLα $iLβαsTαNℂ⋆</h5>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#diamond"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <h4>50+</h4>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon big">
+                  <use href="../assets/icons/sprite.svg#approved-badge"></use>
+                </svg>
+              </div>
+              <div class="game-table-col centered">
+                <svg class="icon star">
+                  <use href="../assets/icons/sprite.svg#star"></use>
+                </svg>
+                <h5>4.34</h5>
+              </div>
+              <div class="game-table-col centered">
+                <h5>258</h5>
+              </div>
+              <div class="game-table-col small">
+                <button type="button" class="empty-button" name="button">OYNA</button>
+              </div>
+            </li>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="Footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 footer-left pr-70">
+          <div class="footer-logo mb-30">
+            <a href="#"><img id="logo-2" src="../assets/images/logo-yellow.svg" alt="KKTC"></a>
+          </div>
+          <p class="fs-14 lh-24 mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nisi nisl.
+            Integer id ex purus. Suspendisse potenti. Cras odio </p>
+          <div class="footer-socials mb-30">
+            <ul class="horizontal">
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#whatsapp"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-payments">
+            <ul class="horizontal">
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#mastercard"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#maestro"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#visa"></use>
+                  </svg>
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-8 footer-right">
+          <div class="row m-0">
+            <div class="footer-menu-col col-lg-3">
+              <ul class="vertical">
+                <li class="menu-title fs-16 f-bold">Lorem ipsum</li>
+                <li><a href="#">Nasıl Üye Olabilirim?</a></li>
+                <li><a href="#">Nasıl İlan Verebilirim?</a></li>
+                <li><a href="#">Güvenlik İpuçları</a></li>
+                <li><a href="#">Araç</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu-col col-lg-3">
+              <ul class="vertical">
+                <li class="menu-title fs-16 f-bold">Lorem ipsum</li>
+                <li><a href="#">Mercedes</a></li>
+                <li><a href="#">Audi</a></li>
+                <li><a href="#">Volkswagen</a></li>
+                <li><a href="#">Fiat</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu-col col-lg-3">
+              <ul class="vertical">
+                <li class="menu-title fs-16 f-bold">Lorem ipsum</li>
+                <li><a href="#">Gizlilik Politikası</a></li>
+                <li><a href="#">Kullanıcı Sözleşmesi</a></li>
+                <li><a href="#">Kullanım Koşulları</a></li>
+                <li><a href="#">Kişisel Verilerin Korunması</a></li>
+                <li><a href="#">Veriler</a></li>
+              </ul>
+            </div>
+            <div class="footer-menu-col mobile-apps col-lg-3">
+              <ul class="vertical">
+                <li class="menu-title fs-16 f-bold">Mobil Uygulamalar</li>
+                <li><a href="#"><img src="../assets/images/mobile-apps/play-store.png" alt="KKTC"></a></li>
+                <li><a href="#"><img src="../assets/images/mobile-apps/app-store.png" alt="KKTC"></a></li>
+                <li class="contact-information">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#phone-call-circled"></use>
+                  </svg>
+                  <div class="d-flex flex-column">
+                    <h6>7/24 Müşteri Hizmetleri</h6>
+                    <h4> 0850 222 99 99</h4>
+                  </div>
+                </li>
+                <li class="contact-information">
+                  <svg class="icon">
+                    <use href="../assets/icons/sprite.svg#information"></use>
+                  </svg>
+                  <div class="d-flex flex-column">
+                    <h6>Yardım Merkezi</h6>
+                    <h4>yardim.kktc.com</h4>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row footer-bottom-menu">
+      <div class="container">
+        <ul class="horizontal">
+          <li><a href="#">SSS</a></li>
+          <li><a href="#">Yardım Merkezi</a></li>
+          <li><a href="#">Bize Ulaşın</a></li>
+          <li><a href="#">Sorumluluk Reddi</a></li>
+          <li><a href="#">Hizmet Şartları</a></li>
+          <li><a href="#">Gizlilik Politikası</a></li>
+        </ul>
+      </div>
+      <div class="row mx-0">
+        <div class="copyright text-center">
+          <p class="fs-14 lh-21 mt-20 mb-20">KKTC.COM | All rights reserved 2020</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    function changeTheme() {
+      if (document.getElementById('theme-switch').checked === true) {
+        document.body.classList.add('dark');
+        document.body.classList.remove('light');
+        document.getElementById("logo-1").src = "../assets/images/logo-yellow-light.svg";
+        document.getElementById("logo-2").src = "../assets/images/logo-yellow-light.svg";
+        document.getElementById("logo-sm-1").src = "../assets/images/logo-sm-light.svg";
+      } else {
+        document.body.classList.remove('dark');
+        document.body.classList.add('light');
+        document.getElementById("logo-1").src = "../assets/images/logo-yellow.svg";
+        document.getElementById("logo-2").src = "../assets/images/logo-yellow.svg";
+        document.getElementById("logo-sm-1").src = "../assets/images/logo-sm.svg";
+      }
+    }
+
+    function toggleSidebar() {
+      var toggler = document.getElementById('sidebar-toggler');
+      var sidebarDiv = document.getElementById('GameSidebar');
+      var hasClass = sidebarDiv.classList.contains('hide');
+      if (hasClass) {
+        sidebarDiv.classList.remove('hide');
+      } else {
+        sidebarDiv.classList.add('hide');
+      }
+    }
+  </script>
+
+</body>
+
+</html>
