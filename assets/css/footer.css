@@ -48,6 +48,10 @@
   fill: #FFC107;
 }
 
+.red .footer-socials a:hover .icon {
+  fill: #E63946;
+}
+
 .footer-payments .icon {
   width: 70px;
   max-height: 40px;
@@ -90,6 +94,10 @@
   background: #FFC107;
 }
 
+.red #Footer .menu-title:after {
+  background: #E63946;
+}
+
 #Footer .footer-menu-col ul a {
   color: #001C1D;
   font-size: 14px;
@@ -118,6 +126,10 @@
 
 .yellow #Footer .footer-menu-col ul a:hover {
   color: #FFC107;
+}
+
+.circled #Footer .footer-menu-col ul a:hover {
+  color: #E63946;
 }
 
 #Footer .pr-70 {
@@ -202,6 +214,87 @@
 
 .yellow .contact-information .icon {
   fill: #FFC107;
+}
+
+.red .contact-information .icon {
+  fill: #E63946;
+}
+
+.footer-popular-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-popular-box img {
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+}
+
+.footer-popular-box .text {
+  display: flex;
+  flex-direction: column;
+  height: 55px;
+  justify-content: space-between;
+}
+
+.footer-popular-box .text h5 {
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.footer-popular-box .text h4 {
+  font-family: 'Proxima Nova Sb', sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  white-space: normal;
+  line-height: 14px;
+}
+
+.footer-popular-box .text span {
+  font-size: 12px;
+  line-height: 12px;
+  color: rgba(2, 48, 71, .5);
+}
+
+.footer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.footer-tag {
+  font-size: 12px;
+  height: 24px;
+  padding: 0 14px;
+  border: 1px solid rgba(2, 48, 71, .1);
+  transition: all .3s;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.footer-tag:hover {
+  background: rgba(2, 48, 71, .1);
+}
+
+.footer-categories a {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.footer-categories a span {
+  font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.red .footer-categories a:hover span {
+  color: #E63946;
 }
 
 @media only screen and (max-width: 992px) {

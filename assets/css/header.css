@@ -156,7 +156,9 @@
 .yellow .header-top-right .dropdown .form-button {
   background: #FFC107;
 }
-
+.red .header-top-right .dropdown .form-button {
+  background: #E63946;
+}
 .more .icon {
   width: 14px;
   min-width: 14px;
@@ -310,6 +312,10 @@
   fill: #FFC107;
 }
 
+.red .right-menu .small-buttons button:hover .icon {
+  fill: #E63946;
+}
+
 .right-menu .small-buttons .icon {
   fill: rgba(2, 48, 71, .3);
   width: 20px;
@@ -459,6 +465,10 @@ div.more {
   box-shadow: inset 0 -3px 0 0 #FFC107;
   color: #FFC107;
 }
+.red .header-main-left ul li:hover a {
+  box-shadow: inset 0 -3px 0 0 #E63946;
+  color: #E63946;
+}
 
 .darkblue .header-main-left ul li:hover .icon {
   fill: #007BFF;
@@ -478,6 +488,10 @@ div.more {
 
 .yellow .header-main-left ul li:hover .icon {
   fill: #FFC107;
+}
+
+.red .header-main-left ul li:hover .icon {
+  fill: #E63946;
 }
 
 .main-navigation li {
@@ -606,10 +620,10 @@ div.more {
 
   #Header .no-mobile {
     display: none !important;
-    ;
   }
 
   #Header .show-mobile {
     display: flex !important;
+    justify-content: flex-end;
   }
 }

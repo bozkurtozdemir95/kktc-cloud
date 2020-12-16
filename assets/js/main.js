@@ -377,6 +377,18 @@ $(function() {
   $(window).on('load', function() {
     initMap();
   });
+  $('.last-min-slider').slick({
+    dots: false,
+    vertical: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    verticalSwiping: true,
+    arrows: true,
+    prevArrow: "<div class='last-min-nav'><svg class='prev'><use href='../assets/icons/sprite.svg#right-angle'></use></svg></div>",
+    nextArrow: "<div class='last-min-nav'><svg class='next'><use href='../assets/icons/sprite.svg#right-angle'></use></svg></div>",
+    autoplay: true,
+    autoplaySpeed: 1500,
+  });
 
   $('.slider-for').slick({
     slidesToShow: 1,

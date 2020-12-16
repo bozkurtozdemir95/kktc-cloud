@@ -1,0 +1,84 @@
+.news .h-dropdown-content a {
+  padding: 5px 10px;
+  color: #001C1D;
+  position: relative;
+  padding-left: 25px;
+  transition: all .3s;
+}
+
+.news .h-dropdown-content a:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(2, 48, 71, .2);
+}
+
+.news .h-dropdown-content a:hover:before {
+  background: #E63946;
+}
+
+.news .header-main-right {
+  min-width: 30%;
+  max-width: 30%;
+  width: 30%;
+}
+
+.news .header-main-right li {
+  width: 100%;
+}
+
+.last-minute-news {
+  height: 34px;
+  background: #fff;
+}
+
+.last-minute-news .title {
+  width: 132px;
+  height: 34px;
+  background: #E63946;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 132px;
+}
+
+.last-minute-news .title h4 {
+  font-size: 16px;
+  color: #fff;
+}
+
+.last-new-slide {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  padding-right: 60px;
+  overflow: hidden;
+}
+
+.last-new-slide h6 {
+  margin: 0 20px;
+  font-size: 14px;
+  font-family: 'Proxima Nova Bo', sans-serif;
+  line-height: 34px;
+}
+
+.last-new-slide p {
+  font-size: 14px;
+  line-height: 34px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media only screen and (max-width: 992px) {
+  .news .header-main-right {
+    min-width: 80%;
+    max-width: 80%;
+    width: 80%;
+  }
+}

@@ -109,6 +109,10 @@
   color: #4866FC;
 }
 
+.red .selected-filter-box.clear:hover {
+  color: #E63946;
+}
+
 .list-filter-row {
   display: flex;
   align-items: center;

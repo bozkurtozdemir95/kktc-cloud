@@ -154,6 +154,10 @@
   background: #FFC107;
 }
 
+.red .profile-socials li:hover {
+  background: #E63946;
+}
+
 .profile-socials li:hover .icon {
   fill: #FFFFFF;
 }

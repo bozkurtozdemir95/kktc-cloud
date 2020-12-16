@@ -35,6 +35,8 @@
 @import "finance/index.css";
 /** Game css files **/
 @import "game/index.css";
+/** News css files **/
+@import "news/index.css";
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -71,6 +73,11 @@
 .yellow::-webkit-scrollbar-thumb,
 .yellow ::-webkit-scrollbar-thumb {
   background: #FFC107;
+}
+
+.red::-webkit-scrollbar-thumb,
+.red ::-webkit-scrollbar-thumb {
+  background: #E63946;
 }
 
 body {
@@ -404,6 +411,10 @@ button.no-anim {
 
 .pr-10 {
   padding-right: 10px;
+}
+
+.pr-30 {
+  padding-right: 30px;
 }
 
 .pl-10 {
@@ -991,6 +1002,10 @@ button.no-anim {
   background: #FFC107;
 }
 
+.red .form-button.primary {
+  background: #E63946;
+}
+
 .form-button:focus {
   box-shadow: none;
   outline: 0;
@@ -1210,6 +1225,11 @@ button.no-anim {
 .yellow .main-button.primary {
   background: #FFC107;
   border-color: #FFC107;
+}
+
+.red .main-button.primary {
+  background: #E63946;
+  border-color: #E63946;
 }
 
 .main-button.md {
@@ -2417,7 +2437,8 @@ button.no-anim {
 }
 
 .finance-slider-nav .slick-arrow,
-.slider-nav .slick-arrow {
+.slider-nav .slick-arrow,
+.last-minute-news .slick-arrow {
   position: absolute;
   top: -30px;
   right: 70px;
@@ -2430,13 +2451,15 @@ button.no-anim {
 }
 
 .finance-slider-nav .slick-arrow.prev,
-.slider-nav .slick-arrow.prev {
+.slider-nav .slick-arrow.prev,
+.last-minute-new .slick-arrow.prev {
   transform: rotate(180deg);
   right: 85px;
 }
 
 .finance-nav .slick-arrow:hover,
-.slider-nav .slick-arrow:hover {
+.slider-nav .slick-arrow:hover,
+.last-minute-new .slick-arrow:hover {
   stroke: #4866FC;
 }
 
@@ -2520,6 +2543,46 @@ button.no-anim {
 
 .prevBig.slick-arrow svg {
   transform: rotate(180deg);
+}
+
+.last-min-slider {
+  width: calc(100% - 132px);
+}
+
+.last-min-nav {
+  width: 21px !important;
+  height: 21px !important;
+  border: 1px solid rgba(2, 48, 71, .1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 6.5px !important;
+}
+
+.last-min-nav:hover {
+  background: rgba(2, 48, 71, 1);
+}
+
+.last-min-nav svg {
+  max-width: 6px;
+  height: 6px;
+  stroke: rgba(2, 48, 71, 1);
+}
+
+.last-min-nav:hover svg {
+  stroke: #fff;
+}
+
+.last-min-slider .slick-arrow {
+  right: 0;
+}
+
+.last-min-slider .slick-arrow:first-child svg {
+  transform: rotate(180deg);
+}
+
+.last-min-slider .slick-arrow:first-child {
+  right: 31px;
 }
 
 .price-list {
@@ -3354,6 +3417,36 @@ button.no-anim {
 
 .datepickerr {
   position: relative;
+}
+
+.main-search-input {
+  position: relative;
+  width: 100%;
+}
+
+.main-search-input input {
+  height: 32px;
+  width: 100%;
+  border: 1px solid rgba(2, 48, 71, .1);
+  padding: 0 10px;
+  font-size: 12px;
+  padding-right: 40px;
+}
+
+.main-search-input .icon {
+  width: 15px;
+  height: 15px;
+  fill: #023047;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: all .3s;
+  cursor: pointer;
+}
+
+.red .main-search-input input:focus+.icon {
+  fill: #E63946;
 }
 
 @media only screen and (max-width: 1200px) {
