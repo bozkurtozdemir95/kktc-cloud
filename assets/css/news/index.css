@@ -187,9 +187,14 @@
     width: 100%;
 }
 
+.news-box-type-2 {
+    display: flex;
+    flex-direction: column;
+}
+
 .news-box-type-2 .img-wrapper {
     position: relative;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     transition: all .3s;
 }
 
@@ -219,6 +224,12 @@
     -webkit-box-orient: vertical;
 }
 
+.news-box-type-2.big .text h2 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 7px;
+}
+
 .news-box-type-2 .text .date {
     display: flex;
     align-items: center;
@@ -230,8 +241,105 @@
     color: rgba(2, 48, 71, .5);
 }
 
+.news-box-type-2.big .text span {
+    font-size: 14px;
+    line-height: 28px;
+    margin-right: 6px;
+}
+
+.news-box-type-2.big p {
+    color: rgba(2, 48, 71, .5);
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
 .news-box-type-2:hover .img-wrapper {
     box-shadow: 0 3px 22px rgba(0, 0, 0, .2);
+}
+
+.news-box-horizontal {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    transition: all .3s;
+}
+
+.news-box-horizontal:hover img {
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .2);
+}
+
+.news-box-horizontal:last-child {
+    margin-bottom: 0;
+}
+
+.news-box-horizontal.big img {
+    width: 97px;
+    height: 90px;
+    margin-right: 10px;
+}
+
+.news-box-horizontal.big .text {
+    height: 90px;
+}
+
+.news-box-horizontal.big h6 {
+    color: #023047;
+    font-size: 12px;
+    line-height: 28px;
+}
+
+.news-box-horizontal.big h2 {
+    font-size: 16px;
+    line-height: 20px;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    color: #023047;
+    font-family: 'Proxima Nova Sb', sans-serif;
+}
+
+.news-box-horizontal.big span {
+    font-size: 14px;
+    line-height: 28px;
+    margin-right: 6px;
+    color: rgba(2, 48, 71, .5);
+}
+
+.sports-tabset .nav-link {
+    padding: 0 20px;
+    font-size: 14px;
+    color: #023047;
+    line-height: 28px;
+    position: relative;
+}
+
+.sports-tabset .nav-link.active {
+    background: transparent;
+    color: #023047;
+}
+
+.sports-tabset .nav-link:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 0;
+    height: 2px;
+    background: #E63946;
+    transition: all .3s;
+
+}
+
+.sports-tabset .nav-link:hover:after,
+.sports-tabset .nav-link.active:after {
+    width: 29px;
 }
 
 @media only screen and (max-width: 992px) {
