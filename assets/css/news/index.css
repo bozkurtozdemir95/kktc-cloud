@@ -1,84 +1,169 @@
 .news .h-dropdown-content a {
-  padding: 5px 10px;
-  color: #001C1D;
-  position: relative;
-  padding-left: 25px;
-  transition: all .3s;
+    padding: 5px 10px;
+    color: #001C1D;
+    position: relative;
+    padding-left: 25px;
+    transition: all .3s;
 }
 
 .news .h-dropdown-content a:before {
-  content: "";
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: rgba(2, 48, 71, .2);
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: rgba(2, 48, 71, .2);
 }
 
 .news .h-dropdown-content a:hover:before {
-  background: #E63946;
+    background: #E63946;
 }
 
 .news .header-main-right {
-  min-width: 30%;
-  max-width: 30%;
-  width: 30%;
+    min-width: 30%;
+    max-width: 30%;
+    width: 30%;
 }
 
 .news .header-main-right li {
-  width: 100%;
+    width: 100%;
 }
 
 .last-minute-news {
-  height: 34px;
-  background: #fff;
+    height: 34px;
+    background: #fff;
 }
 
 .last-minute-news .title {
-  width: 132px;
-  height: 34px;
-  background: #E63946;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-width: 132px;
+    width: 132px;
+    height: 34px;
+    background: #E63946;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 132px;
 }
 
 .last-minute-news .title h4 {
-  font-size: 16px;
-  color: #fff;
+    font-size: 16px;
+    color: #fff;
 }
 
 .last-new-slide {
-  display: flex;
-  align-items: center;
-  white-space: nowrap;
-  padding-right: 60px;
-  overflow: hidden;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    padding-right: 60px;
+    overflow: hidden;
 }
 
 .last-new-slide h6 {
-  margin: 0 20px;
-  font-size: 14px;
-  font-family: 'Proxima Nova Bo', sans-serif;
-  line-height: 34px;
+    margin: 0 20px;
+    font-size: 14px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    line-height: 34px;
 }
 
 .last-new-slide p {
-  font-size: 14px;
-  line-height: 34px;
-  width: 100%;
-  overflow: hidden;
-  text-overflow: ellipsis;
+    font-size: 14px;
+    line-height: 34px;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
+.news-box-type-1 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .05);
+    position: relative;
+    transition: all .3s;
+}
+
+.news-box-type-1:hover {
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .3);
+}
+
+.news-box-type-1:hover .text p,
+.news-box-type-1:hover .text span {
+    color: #fff;
+}
+
+.news-box-type-1 .badgee {
+    background: #F8F8F8;
+    height: 36px;
+    padding: 0 10px;
+    font-size: 18px;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    color: #023047;
+}
+
+
+.news-box-type-1 .bg-mask {
+    background: linear-gradient(360deg, rgba(2, 48, 71, .85) 0%, transparent 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    z-index: 2;
+}
+
+.news-box-type-1 .text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: calc(100% - 40px);
+    z-index: 3;
+}
+
+.news-box-type-1 .text h2 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 22px;
+    color: #fff;
+    line-height: 28px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.news-box-type-1 .text p {
+    margin: 7px 0;
+}
+
+.news-box-type-1 .text p,
+.news-box-type-1 .text span {
+    font-size: 14px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, .5);
+    transition: all .3s;
+}
+
+.news-box-type-1 .text span {
+    margin-right: 10px;
+}
+
+.news-box-type-1.sm .text h2 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+
 @media only screen and (max-width: 992px) {
-  .news .header-main-right {
-    min-width: 80%;
-    max-width: 80%;
-    width: 80%;
-  }
+    .news .header-main-right {
+        min-width: 80%;
+        max-width: 80%;
+        width: 80%;
+    }
 }
