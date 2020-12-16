@@ -159,6 +159,80 @@
     line-height: 22px;
 }
 
+.news-subtitle {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 17px;
+    box-shadow: inset 14px 0 0 -7px #E63946;
+    margin-bottom: 30px;
+}
+
+.news-subtitle h4 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.news-subtitle a {
+    font-size: 14px;
+    line-height: 28px;
+    color: #023047;
+}
+
+.news-page-content {
+    width: 100%;
+}
+
+.news-box-type-2 .img-wrapper {
+    position: relative;
+    margin-bottom: 10px;
+    transition: all .3s;
+}
+
+.news-box-type-2 .badgee {
+    background: #F8F8F8;
+    height: 27px;
+    padding: 0 10px;
+    font-size: 14px;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    color: #023047;
+}
+
+.news-box-type-2 .text h2 {
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    color: #023047;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.news-box-type-2 .text .date {
+    display: flex;
+    align-items: center;
+}
+
+.news-box-type-2 .text .date span {
+    font-size: 14px;
+    line-height: 28px;
+    color: rgba(2, 48, 71, .5);
+}
+
+.news-box-type-2:hover .img-wrapper {
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .2);
+}
 
 @media only screen and (max-width: 992px) {
     .news .header-main-right {

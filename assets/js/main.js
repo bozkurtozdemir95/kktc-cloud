@@ -387,7 +387,7 @@ $(function() {
     prevArrow: "<div class='last-min-nav'><svg class='prev'><use href='../assets/icons/sprite.svg#right-angle'></use></svg></div>",
     nextArrow: "<div class='last-min-nav'><svg class='next'><use href='../assets/icons/sprite.svg#right-angle'></use></svg></div>",
     autoplay: true,
-    autoplaySpeed: 1500,
+    autoplaySpeed: 3000,
   });
 
   $('.slider-for').slick({
