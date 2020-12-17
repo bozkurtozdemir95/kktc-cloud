@@ -432,11 +432,125 @@
     font-family: 'Proxima Nova Bo', sans-serif;
 }
 
+.video-channel {
+    background: #fff;
+}
+
+.video-channel .video-list {
+    max-height: 420px;
+    overflow-y: auto;
+}
+
+.video-channel .news-box-type-2.big {
+    width: 100%;
+    height: 100%;
+}
+
+.video-channel .news-box-type-2.big .img-wrapper {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-channel .news-box-type-2.big img {
+    width: 100%;
+    height: 100%;
+}
+
+.news-box-horizontal.xl {
+    display: flex;
+    align-items: flex-start;
+    background: #fff;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    transition: all .3s;
+}
+
+.news-box-horizontal:hover {
+    box-shadow: 0 3px 22px rgba(0, 0, 0, .2);
+}
+
+.news-box-horizontal:hover img {
+    box-shadow: none;
+}
+
+.news-box-horizontal.xl img {
+    height: 205px;
+}
+
+.news-box-horizontal.xl .text {
+    padding: 20px;
+    height: 205px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-box-horizontal.xl h2 {
+    font-size: 20px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    line-height: 28px;
+    color: #023047;
+}
+
+.news-box-horizontal.xl p {
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(2, 48, 71, .5);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.news-box-horizontal.xl span {
+    font-size: 14px;
+    line-height: 26px;
+    color: rgba(2, 48, 71, .5);
+    margin-left: 6px;
+}
+
+.news-box-horizontal.xl .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news-box-horizontal.xl .bottom .main-button {
+    height: 40px;
+    font-size: 14px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    line-height: 28px;
+    padding: 10px 20px;
+    background: rgba(2, 48, 71, .5);
+    color: #ffffff;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 175px;
+}
+
+.news-box-horizontal.xl .bottom .main-button .icon {
+    width: 28px;
+    height: 13px;
+}
+
+.news-box-horizontal.xl .bottom .main-button:hover {
+    background: #E63946;
+}
+
 @media only screen and (max-width: 992px) {
     .news .header-main-right {
         min-width: 80%;
         max-width: 80%;
         width: 80%;
+    }
+
+    .news-box-horizontal.xl img,
+    .news-box-horizontal.xl text {
+        height: auto;
     }
 }
 
