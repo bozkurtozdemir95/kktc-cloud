@@ -181,6 +181,11 @@
     font-size: 14px;
     line-height: 28px;
     color: #023047;
+    transition: all .3s;
+}
+
+.news-subtitle a:hover {
+    color: #E63946;
 }
 
 .news-page-content {
@@ -302,6 +307,7 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     color: #023047;
+    overflow: hidden;
     font-family: 'Proxima Nova Sb', sans-serif;
 }
 
@@ -334,12 +340,96 @@
     height: 2px;
     background: #E63946;
     transition: all .3s;
-
 }
 
 .sports-tabset .nav-link:hover:after,
 .sports-tabset .nav-link.active:after {
     width: 29px;
+}
+
+.red-wrapper {
+    background: #E63946;
+    padding: 20px;
+}
+
+.red-wrapper .news-subtitle h4 {
+    color: #fff;
+}
+
+.red-wrapper .news-subtitle {
+    box-shadow: inset 14px 0 0 -7px #fff;
+}
+
+.red-wrapper .sports-tabset .nav-link {
+    color: #fff;
+}
+
+.red-wrapper .sports-tabset .nav-link:after {
+    background: #fff;
+}
+
+.red-wrapper .news-box-horizontal.big h6,
+.red-wrapper .news-box-horizontal.big h2,
+.red-wrapper .news-box-type-2 .text h2 {
+    color: #fff;
+}
+
+.red-wrapper .news-box-horizontal.big .text span,
+.red-wrapper .news-box-type-2.big .text span,
+.red-wrapper .news-box-type-2.big p {
+    color: rgba(255, 255, 255, .5);
+}
+
+.red-wrapper .news-box-type-2 .badgee {
+    background: #E63946;
+    color: #fff;
+}
+
+.news-slider {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.news-slider .slider-news-item {
+    padding: 10px;
+    max-height: 315px;
+}
+
+.news-slider .slider-news-item img {
+    height: 100%;
+}
+
+.banner-box {
+    width: 100%;
+    height: 250px;
+}
+
+#side-tab {
+    margin: 0 -5px;
+    margin-bottom: 20px !important;
+    width: calc(100% + 10px);
+    flex-wrap: nowrap;
+}
+
+#side-tab .nav-item {
+    margin: 5px;
+    white-space: nowrap;
+}
+
+#side-tab .nav-link {
+    padding: 10px;
+    background: #fff;
+    font-size: 14px;
+    color: #023047;
+    transition: all .3s;
+    border-radius: 0;
+}
+
+#side-tab .nav-link:hover,
+#side-tab .nav-link.active {
+    background: #E63946;
+    color: #ffffff;
+    font-family: 'Proxima Nova Bo', sans-serif;
 }
 
 @media only screen and (max-width: 992px) {
@@ -349,3 +439,5 @@
         width: 80%;
     }
 }
+
+
