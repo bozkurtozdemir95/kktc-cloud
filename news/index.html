@@ -1748,24 +1748,28 @@
                     <div class="row mx-0 mb-30">
                         <ul class="nav nav-pills mb-20" id="side-tab" role="tablist">
                             <li class="nav-item">
-                                <a class="nav-link active" id="side-tab-1" data-toggle="pill" href="#side-content-1" role="tab" aria-controls="pills-home" aria-selected="true">
+                                <a class="nav-link active" id="side-tab-1" data-toggle="pill" href="#side-content-1"
+                                   role="tab" aria-controls="pills-home" aria-selected="true">
                                     EN SON
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="side-tab-2" data-toggle="pill" href="#side-content-2" role="tab" aria-controls="pills-profile" aria-selected="false">
+                                <a class="nav-link" id="side-tab-2" data-toggle="pill" href="#side-content-2" role="tab"
+                                   aria-controls="pills-profile" aria-selected="false">
                                     POPÜLER
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="side-tab-3" data-toggle="pill" href="#side-content-3" role="tab" aria-controls="pills-contact" aria-selected="false">
+                                <a class="nav-link" id="side-tab-3" data-toggle="pill" href="#side-content-3" role="tab"
+                                   aria-controls="pills-contact" aria-selected="false">
                                     YORUMLAR
                                 </a>
                             </li>
                         </ul>
                         <div class="news-page-content">
                             <div class="tab-content" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="side-content-1" role="tabpanel" aria-labelledby="side-tab-1">
+                                <div class="tab-pane fade show active" id="side-content-1" role="tabpanel"
+                                     aria-labelledby="side-tab-1">
                                     <a href="#" class="news-box-horizontal big">
                                         <img src="../assets/images/news/new-sm-9.png" alt="KKTC">
                                         <div class="text">
@@ -1827,7 +1831,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="tab-pane fade" id="side-content-2" role="tabpanel" aria-labelledby="side-tab-2">
+                                <div class="tab-pane fade" id="side-content-2" role="tabpanel"
+                                     aria-labelledby="side-tab-2">
                                     <a href="#" class="news-box-horizontal big">
                                         <img src="../assets/images/news/new-sm-9.png" alt="KKTC">
                                         <div class="text">
@@ -1889,7 +1894,8 @@
                                         </div>
                                     </a>
                                 </div>
-                                <div class="tab-pane fade" id="side-content-3" role="tabpanel" aria-labelledby="side-tab-3">
+                                <div class="tab-pane fade" id="side-content-3" role="tabpanel"
+                                     aria-labelledby="side-tab-3">
                                     <a href="#" class="news-box-horizontal big">
                                         <img src="../assets/images/news/new-sm-9.png" alt="KKTC">
                                         <div class="text">
@@ -2179,14 +2185,25 @@
                 <a href="#">Daha Fazlası</a>
             </div>
             <div class="news-page-content">
-                <div class="row video-channel">
+                <div class="row mx-0 video-channel">
                     <div class="col-lg-7">
-                        <a href="#" class="news-box-type-2 big">
-                            <div class="img-wrapper">
-                                <div class="badgee">ATTACK</div>
-                                <img src="../assets/images/news/new-big-2.png" alt="KKTC">
+                        <div class="news-video">
+                            <div id="news-play-1" class="news-box-type-2 big video-trigger"
+                                 onclick="playClosestVideo(this)">
+                                <div class="img-wrapper">
+                                    <div class="badgee">ATTACK</div>
+                                    <img src="../assets/images/news/new-big-2.png" alt="KKTC">
+                                    <div class="play-button">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#play-arrow"></use>
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
-                        </a>
+                            <video id="news-video-1" height="420px" width="100%" controls>
+                                <source src="../assets/video/example-video.mp4" type="video/mp4">
+                            </video>
+                        </div>
                     </div>
                     <div class="col-lg-5">
                         <div class="video-list">
@@ -2537,7 +2554,15 @@
     </div>
 </div>
 
+<script>
+    function playClosestVideo(e) {
+        const video = document.getElementById("news-video-1");
+        video.play();
+        e.classList.add("d-none");
+    }
 
+</script>
 </body>
+
 
 </html>
