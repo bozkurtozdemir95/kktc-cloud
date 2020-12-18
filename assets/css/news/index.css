@@ -235,6 +235,12 @@
     margin-bottom: 7px;
 }
 
+.news-box-type-2 .text h6 {
+    font-size: 12px;
+    line-height: 28px;
+    color: #023047;
+}
+
 .news-box-type-2 .text .date {
     display: flex;
     align-items: center;
@@ -244,6 +250,7 @@
     font-size: 14px;
     line-height: 28px;
     color: rgba(2, 48, 71, .5);
+    margin-right: 6px;
 }
 
 .news-box-type-2.big .text span {
@@ -256,7 +263,7 @@
     color: rgba(2, 48, 71, .5);
     text-overflow: ellipsis;
     display: -webkit-box;
-    -webkit-line-clamp: 4;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     font-size: 14px;
     line-height: 18px;
@@ -286,11 +293,11 @@
 .news-box-horizontal.big img {
     width: 97px;
     height: 90px;
-    margin-right: 10px;
 }
 
 .news-box-horizontal.big .text {
     height: 90px;
+    margin-left: 10px;
 }
 
 .news-box-horizontal.big h6 {
@@ -478,6 +485,12 @@
     height: 205px;
 }
 
+.news-box-horizontal.xxl img {
+    height: 108px;
+    width: 174px;
+    min-width: 174px;
+}
+
 .news-box-horizontal.xl .text {
     padding: 20px;
     height: 205px;
@@ -493,6 +506,18 @@
     color: #023047;
 }
 
+.news-box-horizontal.xxl h2 {
+    font-size: 16px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    line-height: 20px;
+    color: #023047;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
 .news-box-horizontal.xl p {
     font-size: 14px;
     line-height: 26px;
@@ -504,11 +529,40 @@
     -webkit-box-orient: vertical;
 }
 
+.news-box-horizontal .img-wrapper {
+    position: relative;
+}
+
+.news-box-horizontal .badgee {
+    background: #F8F8F8;
+    height: 27px;
+    padding: 0 5px;
+    font-size: 14px;
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    color: #023047;
+}
+
 .news-box-horizontal.xl span {
     font-size: 14px;
     line-height: 26px;
     color: rgba(2, 48, 71, .5);
     margin-left: 6px;
+}
+
+.news-box-horizontal.xxl span {
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(2, 48, 71, .5);
+    margin-right: 6px;
+}
+
+.news-box-horizontal.xxl .text {
+    padding: 20px;
 }
 
 .news-box-horizontal.xl .bottom {
@@ -717,6 +771,107 @@
 
 .news-video video {
     object-fit: fill;
+}
+
+.news-box-type-2.xl .badgee {
+    bottom: auto;
+    top: 0;
+}
+
+.video-page .news-box-type-2 .xl img {
+    height: 450px;
+}
+
+.news-video.video-big .text {
+    position: relative;
+    padding-right: 200px;
+}
+
+.news-video.video-big .text h2 {
+    font-size: 28px;
+    font-family: 'Proxima Nova Sb', sans-serif;
+    line-height: 28px;
+    margin: 10px 0;
+}
+
+.news-video.video-big .text p {
+    color: rgba(2, 48, 71, .5);
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    font-size: 14px;
+    line-height: 18px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+.news-video.video-big .play-button {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.news-video.video-big .play-button .icon {
+    width: 84px;
+    height: 84px;
+}
+
+.news-video.video-big .text span {
+    color: rgba(2, 48, 71, .5);
+    font-size: 14px;
+    line-height: 18px;
+
+}
+
+.news-video.video-big .text .main-button {
+    height: 40px;
+    font-size: 14px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+    line-height: 28px;
+    padding: 10px 20px;
+    background: rgba(2, 48, 71, .5);
+    color: #ffffff;
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 175px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.news-video.video-big .text .main-button:hover {
+    background: #E63946;
+}
+
+.news-video.video-big .video-trigger {
+    height: 450px;
+}
+
+.video-img-wrapper {
+    position: relative;
+}
+
+.video-img-wrapper.sm .icon {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 24px;
+    height: 24px;
+    fill: #fff;
+    transition: all .3s;
+}
+
+.video-img-wrapper:hover .icon {
+    fill: #E63946;
+}
+
+.last-added-videos img {
+    height: 184px;
 }
 
 @media only screen and (max-width: 992px) {
