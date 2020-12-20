@@ -1352,6 +1352,11 @@
 
 .news-custom-input input {
     height: 48px;
+    transition: all .3s;
+}
+
+.news-custom-input input:focus {
+    border-color: rgba(230, 57, 70, .5);
 }
 
 .news-custom-input textarea {
