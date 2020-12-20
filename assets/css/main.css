@@ -185,7 +185,7 @@ button.no-anim {
 }
 
 .fs-18 {
-    font-size: 18px;
+    font-size: 18px !important;
 }
 
 .fs-19 {
@@ -261,7 +261,7 @@ button.no-anim {
 }
 
 .lh-23 {
-    line-height: 23px;
+    line-height: 23px !important;
 }
 
 .lh-24 {
@@ -286,6 +286,10 @@ button.no-anim {
 
 .lh-33 {
     line-height: 33px;
+}
+
+.lh-35 {
+    line-height: 35px;
 }
 
 .lh-49 {

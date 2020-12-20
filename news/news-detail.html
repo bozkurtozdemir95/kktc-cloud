@@ -2,767 +2,1669 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!--- LIBRARIES --->
-  <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
-  <link rel="stylesheet" href="../assets/libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
-  <link rel="stylesheet" href="../assets/libs/slick-carousel/slick.css">
-  <script src="https://kit.fontawesome.com/aede4151d0.js" crossorigin="anonymous"></script>
+    <!--- LIBRARIES --->
+    <link rel="stylesheet" href="../assets/libs/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/libs/bootstrap-datetimepicker/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" href="../assets/libs/slick-carousel/slick.css">
+    <script src="https://kit.fontawesome.com/aede4151d0.js" crossorigin="anonymous"></script>
 
-  <script src="../assets/libs/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-  <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
-  <script src="../assets/libs/slick-carousel/slick.min.js"></script>
-  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../assets/libs/jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="../assets/libs/bootstrap/bootstrap.min.js"></script>
+    <script src="../assets/libs/slick-carousel/slick.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
-  <script src="../assets/js/main.js"></script>
-  <link rel="stylesheet" href="../assets/css/main.css">
-  <title>KKTC - Haber</title>
+    <script src="../assets/js/main.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>KKTC - Haber</title>
 </head>
 
-<body class="red news">
-  <div id="Header">
+<body class="red news detail-page">
+<div id="Header">
     <div class="header-top">
-      <div class="container h-100">
-        <div class="d-flex justify-content-between align-items-center h-100">
-          <div class="header-top-left">
-            <a href="#">
-              <img src="../assets/images/logo-sm.svg" alt="KKTC">
-            </a>
-            <ul class="top-navigation no-mobile horizontal h-100">
-              <li><a href="../ads/index.html" class="color-dark fs-12 blue">İlan</a></li>
-              <li><a href="../company/index.html" class="color-dark fs-12 orange">Firma</a></li>
-              <li><a href="../rent-a-car/index.html" class="color-dark fs-12 blue">Araç Kiralama</a></li>
-              <li><a href="index.html" class="color-dark fs-12 purple">Kariyer</a></li>
-              <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
-              <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
-              <li><a href="#" class="color-dark fs-12 green">Sipariş</a></li>
-              <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
-              <li><a href="#" class="color-dark fs-12 darkblue">Alışveriş</a></li>
-              <li><a href="#" class="color-dark fs-12 darkblue">Fotoğraf</a></li>
-              <li class="more h-dropdown">
-                <div class="color-dark fs-12 mr-2">Daha fazla</div>
-                <svg class="icon">
-                  <use href="../assets/icons/sprite.svg#more"></use>
-                </svg>
+        <div class="container h-100">
+            <div class="d-flex justify-content-between align-items-center h-100">
+                <div class="header-top-left">
+                    <a href="#">
+                        <img src="../assets/images/logo-sm.svg" alt="KKTC">
+                    </a>
+                    <ul class="top-navigation no-mobile horizontal h-100">
+                        <li><a href="../ads/index.html" class="color-dark fs-12 blue">İlan</a></li>
+                        <li><a href="../company/index.html" class="color-dark fs-12 orange">Firma</a></li>
+                        <li><a href="../rent-a-car/index.html" class="color-dark fs-12 blue">Araç Kiralama</a></li>
+                        <li><a href="index.html" class="color-dark fs-12 purple">Kariyer</a></li>
+                        <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
+                        <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
+                        <li><a href="#" class="color-dark fs-12 green">Sipariş</a></li>
+                        <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
+                        <li><a href="#" class="color-dark fs-12 darkblue">Alışveriş</a></li>
+                        <li><a href="#" class="color-dark fs-12 darkblue">Fotoğraf</a></li>
+                        <li class="more h-dropdown">
+                            <div class="color-dark fs-12 mr-2">Daha fazla</div>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#more"></use>
+                            </svg>
 
-                <div class="h-dropdown-content">
-                  <a href="#">Şans Oyunları</a>
-                  <a href="#">Alışveriş</a>
-                  <a href="#">Diğer</a>
+                            <div class="h-dropdown-content">
+                                <a href="#">Şans Oyunları</a>
+                                <a href="#">Alışveriş</a>
+                                <a href="#">Diğer</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="dropdown text-center show-mobile ml-auto">
+                        <div class="dropdown-toggler d-flex align-items-center" id="leftNav" data-toggle="dropdown"
+                             aria-haspopup="true" aria-expanded="false">
+                            <div class="more">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#more"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-center no-close p-0" aria-labelledby="leftNav">
+                            <ul class="top-navigation show-mobile vertical h-100">
+                                <li><a href="../ads/index.html" class="color-dark fs-12 blue">İlan</a></li>
+                                <li><a href="../company/index.html" class="color-dark fs-12 orange">Firma</a></li>
+                                <li><a href="../rent-a-car/index.html" class="color-dark fs-12 blue">Araç Kiralama</a>
+                                </li>
+                                <li><a href="index.html" class="color-dark fs-12 purple">Kariyer</a></li>
+                                <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
+                                <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
+                                <li><a href="#" class="color-dark fs-12 green">Sipariş</a></li>
+                                <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
+                                <li><a href="#" class="color-dark fs-12 darkblue">Alışveriş</a></li>
+                                <li><a href="#" class="color-dark fs-12 darkblue">Fotoğraf</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-              </li>
-            </ul>
-            <div class="dropdown text-center show-mobile ml-auto">
-              <div class="dropdown-toggler d-flex align-items-center" id="leftNav" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <div class="more">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#more"></use>
-                  </svg>
+                <div class="header-top-right">
+                    <ul class="horizontal h-100 right-menu">
+                        <li class="after-login small-buttons">
+                            <button class="empty-button notified h-dropdown no-anim">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#mail-2"></use>
+                                </svg>
+                                <div class="h-dropdown-content">
+                                    <div class="message-list-top">
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle readable"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="message-box">
+                                            <div class="message-avatar"><img src="../assets/images/avatar-2.png"
+                                                                             alt="KKTC"></div>
+                                            <div class="message-text">
+                                                <div class="message-user">
+                                                    <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
+                                                    <span class="read-circle"></span>
+                                                </div>
+                                                <p class="fs-12 lh-19">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
+                                                    dolor velit,
+                                                    ultricies
+                                                    at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
+                                                    iaculis
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="empty-button more-comment">Tüm Mesajları Gör</a>
+                                    </div>
+                                </div>
+                            </button>
+                            <button class="empty-button">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#moon"></use>
+                                </svg>
+                            </button>
+                        </li>
+                        <li>
+                            <div class="dropdown text-center">
+                                <div class="dropdown-toggler d-flex align-items-center" id="currencyDropdown"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon currency">
+                                        <use href="../assets/icons/sprite.svg#turkish-lira"></use>
+                                    </svg>
+                                    <span class="fs-12 color-dark no-mobile">Para Birimi</span>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-center no-close"
+                                     aria-labelledby="currencyDropdown">
+                                    <h5>Para Birimi</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#dollar"></use>
+                                            </svg>
+                                            Amerikan Doları (USD)
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#dollar"></use>
+                                                    </svg>
+                                                    Amerikan Doları (USD)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#yuan"></use>
+                                                    </svg>
+                                                    Çin Yuanı (CNY)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#sterlin"></use>
+                                                    </svg>
+                                                    Sterlin (GBP)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#euro"></use>
+                                                    </svg>
+                                                    Euro (EUR)
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#dollar"></use>
+                                                    </svg>
+                                                    Avustralya Doları (AUD)
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="form-button">Değiştir</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown text-center">
+                                <div class="dropdown-toggler d-flex align-items-center" id="languageDropdown"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <svg class="icon language">
+                                        <use href="../assets/icons/sprite.svg#turkey"></use>
+                                    </svg>
+                                    <span class="fs-12 color-dark no-mobile">TR-TR</span>
+                                </div>
+                                <div class="dropdown-menu no-close dropdown-menu-center"
+                                     aria-labelledby="languageDropdown">
+                                    <h5>Ülke/bölge seçin</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#turkey"></use>
+                                            </svg>
+                                            Türkiye
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#brazil"></use>
+                                                    </svg>
+                                                    Brazil
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#china"></use>
+                                                    </svg>
+                                                    China
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#france"></use>
+                                                    </svg>
+                                                    France
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#germany"></use>
+                                                    </svg>
+                                                    Germany
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#united-kingdom"></use>
+                                                    </svg>
+                                                    United Kingdom
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <h5>Dil seçin</h5>
+                                    <div class="custom-selectbox currency-select">
+                                        <div class="custom-select-toggler">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#translation"></use>
+                                            </svg>
+                                            Türkçe
+                                            <svg class="icon arrow">
+                                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="custom-select-menu">
+                                            <div class="menu">
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#translation"></use>
+                                                    </svg>
+                                                    English
+                                                </div>
+                                                <div class="custom-select-menu-item">
+                                                    <svg class="icon">
+                                                        <use href="../assets/icons/sprite.svg#translation"></use>
+                                                    </svg>
+                                                    Arabic
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <button class="form-button">Değiştir</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="after-login user-menu-wrapper h-dropdown">
+                            <img src="../assets/images/avatar.png" alt="KKTC" class="avatar">
+                            <span class="fs-12 color-dark no-mobile">John Doe</span>
+                            <svg class="icon arrow">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                            <div class="h-dropdown-content">
+                                <h5>John Doe</h5>
+                                <ul class="user-menu vertical-menu">
+                                    <li><a href="#" class="fs-14 color-dark">İlanlarım</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Favorilerim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Sepetim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Siparişlerim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Satış İşlemlerim</a></li>
+                                    <li><a href="#" class="fs-14 color-dark">Üyeliğim</a></li>
+                                    <li><a href="#" class="fs-14 color-red">Çıkış Yap</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-              </div>
-              <div class="dropdown-menu dropdown-menu-center no-close p-0" aria-labelledby="leftNav">
-                <ul class="top-navigation show-mobile vertical h-100">
-                  <li><a href="../ads/index.html" class="color-dark fs-12 blue">İlan</a></li>
-                  <li><a href="../company/index.html" class="color-dark fs-12 orange">Firma</a></li>
-                  <li><a href="../rent-a-car/index.html" class="color-dark fs-12 blue">Araç Kiralama</a>
-                  </li>
-                  <li><a href="index.html" class="color-dark fs-12 purple">Kariyer</a></li>
-                  <li><a href="#" class="color-dark fs-12 red">Haber</a></li>
-                  <li><a href="#" class="color-dark fs-12 purple">Otel</a></li>
-                  <li><a href="#" class="color-dark fs-12 green">Sipariş</a></li>
-                  <li><a href="#" class="color-dark fs-12 turquise">Tatil</a></li>
-                  <li><a href="#" class="color-dark fs-12 darkblue">Alışveriş</a></li>
-                  <li><a href="#" class="color-dark fs-12 darkblue">Fotoğraf</a></li>
-                </ul>
-              </div>
             </div>
-          </div>
-          <div class="header-top-right">
-            <ul class="horizontal h-100 right-menu">
-              <li class="after-login small-buttons">
-                <button class="empty-button notified h-dropdown no-anim">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#mail-2"></use>
-                  </svg>
-                  <div class="h-dropdown-content">
-                    <div class="message-list-top">
-                      <div class="message-box">
-                        <div class="message-avatar"><img src="../assets/images/avatar-2.png" alt="KKTC"></div>
-                        <div class="message-text">
-                          <div class="message-user">
-                            <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
-                            <span class="read-circle readable"></span>
-                          </div>
-                          <p class="fs-12 lh-19">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            dolor velit,
-                            ultricies
-                            at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
-                            iaculis
-                          </p>
-                        </div>
-                      </div>
-                      <div class="message-box">
-                        <div class="message-avatar"><img src="../assets/images/avatar-2.png" alt="KKTC"></div>
-                        <div class="message-text">
-                          <div class="message-user">
-                            <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
-                            <span class="read-circle"></span>
-                          </div>
-                          <p class="fs-12 lh-19">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            dolor velit,
-                            ultricies
-                            at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
-                            iaculis
-                          </p>
-                        </div>
-                      </div>
-                      <div class="message-box">
-                        <div class="message-avatar"><img src="../assets/images/avatar-2.png" alt="KKTC"></div>
-                        <div class="message-text">
-                          <div class="message-user">
-                            <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
-                            <span class="read-circle"></span>
-                          </div>
-                          <p class="fs-12 lh-19">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            dolor velit,
-                            ultricies
-                            at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
-                            iaculis
-                          </p>
-                        </div>
-                      </div>
-                      <div class="message-box">
-                        <div class="message-avatar"><img src="../assets/images/avatar-2.png" alt="KKTC"></div>
-                        <div class="message-text">
-                          <div class="message-user">
-                            <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
-                            <span class="read-circle"></span>
-                          </div>
-                          <p class="fs-12 lh-19">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            dolor velit,
-                            ultricies
-                            at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
-                            iaculis
-                          </p>
-                        </div>
-                      </div>
-                      <div class="message-box">
-                        <div class="message-avatar"><img src="../assets/images/avatar-2.png" alt="KKTC"></div>
-                        <div class="message-text">
-                          <div class="message-user">
-                            <h4 class="fs-16 lh-21 color-dark f-bold">Bilal DUMAN</h4>
-                            <span class="read-circle"></span>
-                          </div>
-                          <p class="fs-12 lh-19">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam
-                            dolor velit,
-                            ultricies
-                            at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet
-                            iaculis
-                          </p>
-                        </div>
-                      </div>
-                      <a href="#" class="empty-button more-comment">Tüm Mesajları Gör</a>
-                    </div>
-                  </div>
-                </button>
-                <button class="empty-button">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#moon"></use>
-                  </svg>
-                </button>
-              </li>
-              <li>
-                <div class="dropdown text-center">
-                  <div class="dropdown-toggler d-flex align-items-center" id="currencyDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <svg class="icon currency">
-                      <use href="../assets/icons/sprite.svg#turkish-lira"></use>
-                    </svg>
-                    <span class="fs-12 color-dark no-mobile">Para Birimi</span>
-                  </div>
-                  <div class="dropdown-menu dropdown-menu-center no-close" aria-labelledby="currencyDropdown">
-                    <h5>Para Birimi</h5>
-                    <div class="custom-selectbox currency-select">
-                      <div class="custom-select-toggler">
-                        <svg class="icon">
-                          <use href="../assets/icons/sprite.svg#dollar"></use>
-                        </svg>
-                        Amerikan Doları (USD)
-                        <svg class="icon arrow">
-                          <use href="../assets/icons/sprite.svg#down-angle"></use>
-                        </svg>
-                      </div>
-                      <div class="custom-select-menu">
-                        <div class="menu">
-                          <div class="custom-select-menu-item">
-                            <svg class="icon">
-                              <use href="../assets/icons/sprite.svg#dollar"></use>
-                            </svg>
-                            Amerikan Doları (USD)
-                          </div>
-                          <div class="custom-select-menu-item">
-                            <svg class="icon">
-                              <use href="../assets/icons/sprite.svg#yuan"></use>
-                            </svg>
-                            Çin Yuanı (CNY)
-                          </div>
-                          <div class="custom-select-menu-item">
-                            <svg class="icon">
-                              <use href="../assets/icons/sprite.svg#sterlin"></use>
-                            </svg>
-                            Sterlin (GBP)
-                          </div>
-                          <div class="custom-select-menu-item">
-                            <svg class="icon">
-                              <use href="../assets/icons/sprite.svg#euro"></use>
-                            </svg>
-                            Euro (EUR)
-                          </div>
-                          <div class="custom-select-menu-item">
-                            <svg class="icon">
-                              <use href="../assets/icons/sprite.svg#dollar"></use>
-                            </svg>
-                            Avustralya Doları (AUD)
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                    <button class="form-button">Değiştir</button>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <div class="dropdown text-center">
-                  <div class="dropdown-toggler d-flex align-items-center" id="languageDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <svg class="icon language">
-                      <use href="../assets/icons/sprite.svg#turkey"></use>
-                    </svg>
-                    <span class="fs-12 color-dark no-mobile">TR-TR</span>
-                  </div>
-                  <div class="dropdown-menu no-close dropdown-menu-center" aria-labelledby="languageDropdown">
-                    <h5>Ülke/bölge seçin</h5>
-                    <div class="custom-selectbox currency-select">
-                      <div class="custom-select-toggler">
-                        <svg class="icon">
-                          <use href="../assets/icons/sprite.svg#turkey"></use>
-                        </svg>
-                        Türkiye
-                        <svg class="icon arrow">
-                          <use href="../assets/icons/sprite.svg#down-angle"></use>
-                        </svg>
-                      </div>
-                      <div class="custom-select-menu">
-                        <div class="menu">
-                          <div class="custom-select-menu-item">
-                            <svg class="icon">
-                              <use href="../assets/icons/sprite.svg#brazil"></use>
-                            </svg>
-                            Brazil
-                          </div>
-                          <div class="custom-select-menu-item">
-                            <svg class="icon">
-                              <use href="../assets/icons/sprite.svg#china"></use>
-                            </svg>
-                            China
-                          </div>
-                          <div class="custom-select-menu-item">
-                            <svg class="icon">
-                              <use href="../assets/icons/sprite.svg#france"></use>
-                            </svg>
-                            France
-                          </div>
-                          <div class="custom-select-menu-item">
-                            <svg class="icon">
-                              <use href="../assets/icons/sprite.svg#germany"></use>
-                            </svg>
-                            Germany
-                          </div>
-                          <div class="custom-select-menu-item">
-                            <svg class="icon">
-                              <use href="../assets/icons/sprite.svg#united-kingdom"></use>
-                            </svg>
-                            United Kingdom
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                    <h5>Dil seçin</h5>
-                    <div class="custom-selectbox currency-select">
-                      <div class="custom-select-toggler">
-                        <svg class="icon">
-                          <use href="../assets/icons/sprite.svg#translation"></use>
-                        </svg>
-                        Türkçe
-                        <svg class="icon arrow">
-                          <use href="../assets/icons/sprite.svg#down-angle"></use>
-                        </svg>
-                      </div>
-                      <div class="custom-select-menu">
-                        <div class="menu">
-                          <div class="custom-select-menu-item">
-                            <svg class="icon">
-                              <use href="../assets/icons/sprite.svg#translation"></use>
-                            </svg>
-                            English
-                          </div>
-                          <div class="custom-select-menu-item">
-                            <svg class="icon">
-                              <use href="../assets/icons/sprite.svg#translation"></use>
-                            </svg>
-                            Arabic
-                          </div>
-                        </div>
-                      </div>
-
-                    </div>
-                    <button class="form-button">Değiştir</button>
-                  </div>
-                </div>
-              </li>
-              <li class="after-login user-menu-wrapper h-dropdown">
-                <img src="../assets/images/avatar.png" alt="KKTC" class="avatar">
-                <span class="fs-12 color-dark no-mobile">John Doe</span>
-                <svg class="icon arrow">
-                  <use href="../assets/icons/sprite.svg#down-angle"></use>
-                </svg>
-                <div class="h-dropdown-content">
-                  <h5>John Doe</h5>
-                  <ul class="user-menu vertical-menu">
-                    <li><a href="#" class="fs-14 color-dark">İlanlarım</a></li>
-                    <li><a href="#" class="fs-14 color-dark">Favorilerim</a></li>
-                    <li><a href="#" class="fs-14 color-dark">Sepetim</a></li>
-                    <li><a href="#" class="fs-14 color-dark">Siparişlerim</a></li>
-                    <li><a href="#" class="fs-14 color-dark">Satış İşlemlerim</a></li>
-                    <li><a href="#" class="fs-14 color-dark">Üyeliğim</a></li>
-                    <li><a href="#" class="fs-14 color-red">Çıkış Yap</a></li>
-                  </ul>
-                </div>
-              </li>
-            </ul>
-          </div>
         </div>
-      </div>
     </div>
     <div class="header-main">
-      <div class="container h-100">
-        <div class="d-flex justify-content-between align-items-center h-100">
-          <div class="header-main-left w-100">
-            <a href="#" class="logo">
-              <img src="../assets/images/logo-red.svg" alt="KKTC">
-            </a>
-            <ul class="horizontal no-mobile">
-              <li class="h-dropdown left">
-                <a href="#" class="fs-14 color-dark">
-                  HABER
-                  <svg class="icon arrow">
-                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                  </svg>
-                </a>
-                <div class="h-dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </li>
-              <li>
-                <a href="#" class="fs-14 color-dark">
-                  SON DAKİKA
-                </a>
-              </li>
-              <li>
-                <a href="#" class="fs-14 color-dark">
-                  KORONA VİRÜS
-                </a>
-              </li>
-              <li>
-                <a href="#" class="fs-14 color-dark">
-                  MAGAZİN
-                </a>
-              </li>
-              <li>
-                <a href="#" class="fs-14 color-dark">
-                  SPOR
-                </a>
-              </li>
-              <li>
-                <a href="#" class="fs-14 color-dark">
-                  EKONOMİ
-                </a>
-              </li>
-              <li class="h-dropdown right">
-                <a href="#" class="fs-14 color-dark">
-                  TÜMÜ
-                  <svg class="icon arrow">
-                    <use href="../assets/icons/sprite.svg#down-angle"></use>
-                  </svg>
-                </a>
-                <div class="h-dropdown-content">
-                  <a href="#">Siyaset</a>
-                  <a href="#">Kültür</a>
-                  <a href="#">Sanat</a>
-                  <a href="#">Teknoloji</a>
-                  <a href="#">Foto Galeri</a>
-                  <a href="#">Biyografi</a>
-                  <a href="#">Eğitim</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="header-main-right">
-            <ul class="horizontal">
-              <li>
-                <div class="main-search-input">
-                  <input type="text" name="search" placeholder="Arama...">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#search"></use>
-                  </svg>
-                </div>
-              </li>
-              <li class="after-login">
-                <a href="#" class="main-button white">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#plus"></use>
-                  </svg>
-                  Kontrol Paneli
-                  <svg class="icon arrow">
-                    <use href="../assets/icons/sprite.svg#right-angle"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="show-mobile">
-                <div class="dropdown text-center main-menu">
-                  <div class="dropdown-toggler d-flex align-items-center" id="mainMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    <button class="main-button white">
-                      <svg class="icon m-0">
-                        <use href="../assets/icons/sprite.svg#menu"></use>
-                      </svg>
-                    </button>
-                  </div>
-                  <div class="dropdown-menu dropdown-menu-right no-close p-0" aria-labelledby="mainMenu">
-                    <ul class="main-navigation show-mobile vertical h-100">
-                      <li>
-                        <a href="career-search-jobs.html" class="fs-14 color-dark">
-                          HABER
-                        </a>
-                      </li>
-                      <li>
-                        <a href="career-search-jobs.html" class="fs-14 color-dark">
-                          SON DAKİKA
-                        </a>
-                      </li>
-                      <li>
-                        <a href="career-search-jobs.html" class="fs-14 color-dark">
-                          KORONA VİRÜS
-                        </a>
-                      </li>
-                      <li>
-                        <a href="career-search-jobs.html" class="fs-14 color-dark">
-                          MAGAZİN
-                        </a>
-                      </li>
-
-                      <li>
-                        <a href="career-search-jobs.html" class="fs-14 color-dark">
-                          SPOR
-                        </a>
-                      </li>
-                      <li>
-                        <a href="career-search-jobs.html" class="fs-14 color-dark">
-                          EKONOMİ
-                        </a>
-                      </li>
-                      <li>
-                        <a href="career-search-jobs.html" class="fs-14 color-dark">
-                          TÜMÜ
-                        </a>
-                      </li>
+        <div class="container h-100">
+            <div class="d-flex justify-content-between align-items-center h-100">
+                <div class="header-main-left w-100">
+                    <a href="#" class="logo">
+                        <img src="../assets/images/logo-red.svg" alt="KKTC">
+                    </a>
+                    <ul class="horizontal no-mobile">
+                        <li class="h-dropdown left">
+                            <a href="#" class="fs-14 color-dark">
+                                HABER
+                                <svg class="icon arrow">
+                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                </svg>
+                            </a>
+                            <div class="h-dropdown-content">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#">Link 3</a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-14 color-dark">
+                                SON DAKİKA
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-14 color-dark">
+                                KORONA VİRÜS
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-14 color-dark">
+                                MAGAZİN
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-14 color-dark">
+                                SPOR
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="fs-14 color-dark">
+                                EKONOMİ
+                            </a>
+                        </li>
+                        <li class="h-dropdown right">
+                            <a href="#" class="fs-14 color-dark">
+                                TÜMÜ
+                                <svg class="icon arrow">
+                                    <use href="../assets/icons/sprite.svg#down-angle"></use>
+                                </svg>
+                            </a>
+                            <div class="h-dropdown-content">
+                                <a href="#">Siyaset</a>
+                                <a href="#">Kültür</a>
+                                <a href="#">Sanat</a>
+                                <a href="#">Teknoloji</a>
+                                <a href="#">Foto Galeri</a>
+                                <a href="#">Biyografi</a>
+                                <a href="#">Eğitim</a>
+                            </div>
+                        </li>
                     </ul>
-                  </div>
                 </div>
-              </li>
-            </ul>
-          </div>
+                <div class="header-main-right">
+                    <ul class="horizontal">
+                        <li>
+                            <div class="main-search-input">
+                                <input type="text" name="search" placeholder="Arama...">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#search"></use>
+                                </svg>
+                            </div>
+                        </li>
+                        <li class="after-login">
+                            <a href="#" class="main-button white">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#plus"></use>
+                                </svg>
+                                Kontrol Paneli
+                                <svg class="icon arrow">
+                                    <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="show-mobile">
+                            <div class="dropdown text-center main-menu">
+                                <div class="dropdown-toggler d-flex align-items-center" id="mainMenu"
+                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <button class="main-button white">
+                                        <svg class="icon m-0">
+                                            <use href="../assets/icons/sprite.svg#menu"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="dropdown-menu dropdown-menu-right no-close p-0" aria-labelledby="mainMenu">
+                                    <ul class="main-navigation show-mobile vertical h-100">
+                                        <li>
+                                            <a href="career-search-jobs.html" class="fs-14 color-dark">
+                                                HABER
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="career-search-jobs.html" class="fs-14 color-dark">
+                                                SON DAKİKA
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="career-search-jobs.html" class="fs-14 color-dark">
+                                                KORONA VİRÜS
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="career-search-jobs.html" class="fs-14 color-dark">
+                                                MAGAZİN
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="career-search-jobs.html" class="fs-14 color-dark">
+                                                SPOR
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="career-search-jobs.html" class="fs-14 color-dark">
+                                                EKONOMİ
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="career-search-jobs.html" class="fs-14 color-dark">
+                                                TÜMÜ
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
+</div>
 
 
-  <div class="page-wrapper bg-light pb-40">
+<div class="page-wrapper bg-light pb-40">
     <div class="last-minute-news">
-      <div class="container mt-40">
-        <div class="d-flex align-items-center">
-          <div class="title">
-            <h4>SON DAKİKA</h4>
-          </div>
-          <div class="last-min-slider">
-            <div class="last-new-slide">
-              <div class="d-flex align-items-center">
-                <h6>20.05</h6>
-                <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar yasaklandı.</p>
-              </div>
+        <div class="container">
+            <div class="d-flex align-items-center">
+                <div class="title">
+                    <h4>SON DAKİKA</h4>
+                </div>
+                <div class="last-min-slider">
+                    <div class="last-new-slide">
+                        <div class="d-flex align-items-center">
+                            <h6>20.05</h6>
+                            <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar
+                                yasaklandı.</p>
+                        </div>
+                    </div>
+                    <div class="last-new-slide">
+                        <div class="d-flex align-items-center">
+                            <h6>20.05</h6>
+                            <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar
+                                yasaklandı.</p>
+                        </div>
+                    </div>
+                    <div class="last-new-slide">
+                        <div class="d-flex align-items-center">
+                            <h6>20.05</h6>
+                            <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar
+                                yasaklandı.</p>
+                        </div>
+                    </div>
+                    <div class="last-new-slide">
+                        <div class="d-flex align-items-center">
+                            <h6>20.05</h6>
+                            <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar
+                                yasaklandı.</p>
+                        </div>
+                    </div>
+                    <div class="last-new-slide">
+                        <div class="d-flex align-items-center">
+                            <h6>20.05</h6>
+                            <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar
+                                yasaklandı.</p>
+                        </div>
+                    </div>
+                    <div class="last-new-slide">
+                        <div class="d-flex align-items-center">
+                            <h6>20.05</h6>
+                            <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar
+                                yasaklandı.</p>
+                        </div>
+                    </div>
+                    <div class="last-new-slide">
+                        <div class="d-flex align-items-center">
+                            <h6>20.05</h6>
+                            <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar
+                                yasaklandı.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="last-new-slide">
-              <div class="d-flex align-items-center">
-                <h6>20.05</h6>
-                <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar yasaklandı.</p>
-              </div>
-            </div>
-            <div class="last-new-slide">
-              <div class="d-flex align-items-center">
-                <h6>20.05</h6>
-                <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar yasaklandı.</p>
-              </div>
-            </div>
-            <div class="last-new-slide">
-              <div class="d-flex align-items-center">
-                <h6>20.05</h6>
-                <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar yasaklandı.</p>
-              </div>
-            </div>
-            <div class="last-new-slide">
-              <div class="d-flex align-items-center">
-                <h6>20.05</h6>
-                <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar yasaklandı.</p>
-              </div>
-            </div>
-            <div class="last-new-slide">
-              <div class="d-flex align-items-center">
-                <h6>20.05</h6>
-                <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar yasaklandı.</p>
-              </div>
-            </div>
-            <div class="last-new-slide">
-              <div class="d-flex align-items-center">
-                <h6>20.05</h6>
-                <p>Danimarka’da Kovid-19 nedeniyle 280 bin kişinin yaşadığı 7 belediyeye giriş-çıkışlar yasaklandı.</p>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
     </div>
-    <div class="container">
+    <div class="container mt-20">
+        <div class="row mx-0">
+            <div class="page-link-nav mb-30">
+                <a class="fs-12 lh-16" href="#">
+                    Anasayfa
+                    <svg class="icon">
+                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                    </svg>
+                </a>
+                <a class="fs-12 lh-16" href="#">
+                    Keşfet
+                    <svg class="icon">
+                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                    </svg>
+                </a>
+                <a class="fs-12 lh-16" href="#">
+                    Lorem İpsum Dolor Sit
+                    <svg class="icon">
+                        <use href="../assets/icons/sprite.svg#right-angle"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="row mb-30">
+            <div class="col-lg-9">
+                <div class="row mx-0 mb-30">
+                    <div class="news-detail-subheader">
+                        <div class="img-wrapper">
+                            <img src="../assets/images/news/news-big-img.png" alt="KKTC">
+                            <div class="mask"></div>
+                        </div>
+                        <div class="text-wrapper">
+                            <div class="badgee">ATTACK</div>
+                            <h1>The Joy of Petty Grievances in Death Becomes Her</h1>
+                            <span>01.11.2020</span>
+                            <div class="bottom">
+                                <span>12.605 Görüntülenme</span>
+                                <div class="socials">
+                                    <button class="empty-button">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#twitter-logo"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="empty-button">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#pinterest-logo"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="empty-button">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#facebook-logo"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="empty-button">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#instagram-logo"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="empty-button">
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#youtube-logo"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 detail-text-wrapper">
+                    <div class="row mb-30">
+                        <div class="col-lg-8">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Id volutpat lacus laoreet non curabitur gravida arcu.
+                                Dignissim convallis aenean et tortor at risus viverra adipiscing at. Felis bibendum ut
+                                tristique et egestas quis. Nunc mattis enim ut tellus elementum. Dignissim diam quis
+                                enim lobortis scelerisque fermentum dui faucibus in. Condimentum lacinia</p>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="video-wrapper">
+                                <div id="news-play-1" class="video-trigger" onclick="playClosestVideo(this)">
+                                    <div class="img-wrapper m-0">
+                                        <img src="../assets/images/news/video-cover-1.png" alt="KKTC">
+                                        <div class="mask"></div>
+                                        <div class="play-button">
+                                            <svg class="icon">
+                                                <use href="../assets/icons/sprite.svg#play-arrow"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <video id="news-video-1" height="200px" width="100%" controls="">
+                                    <source src="../assets/video/example-video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-30">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Id volutpat lacus laoreet non curabitur gravida arcu.
+                            Dignissim convallis aenean et tortor at risus viverra adipiscing at. Felis bibendum ut
+                            tristique et egestas quis. Nunc mattis enim ut tellus elementum. Dignissim diam quis enim
+                            lobortis scelerisque fermentum dui faucibus in. Condimentum lacinia
+                        </p>
+                    </div>
+                    <div class="row mx-0 mb-30">
+                        <p>quis vel eros donec ac odio tempor. Duis at tellus at urna condimentum mattis. Id diam
+                            maecenas ultricies mi eget mauris pharetra et. Senectus et netus et malesuada fames ac
+                            turpis. Nisl rhoncus mattis rhoncus urna. Convallis posuere morbi leo urna molestie.
+                            Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras tincidunt. Ornare lectus
+                            sit amet est placerat in egestas. Convallis aenean et tortor at. Fames ac turpis egestas sed
+                            tempus urna.
+                        </p>
+                    </div>
+                    <div class="row mb-10">
+                        <div class="col-lg-3 mb-20">
+                            <img src="../assets/images/news/slider-new-1.png" alt="KKTC">
+                        </div>
+                        <div class="col-lg-3 mb-20">
+                            <img src="../assets/images/news/slider-new-2.png" alt="KKTC">
+                        </div>
+                        <div class="col-lg-3 mb-20">
+                            <img src="../assets/images/news/slider-new-3.png" alt="KKTC">
+                        </div>
+                        <div class="col-lg-3 mb-20">
+                            <img src="../assets/images/news/slider-new-4.png" alt="KKTC">
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-30">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing </h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Id volutpat lacus laoreet non curabitur gravida arcu.
+                            Dignissim convallis aenean et tortor at risus viverra adipiscing at. Felis bibendum ut
+                            tristique et egestas quis. Nunc mattis enim ut tellus elementum. Dignissim diam quis enim
+                            lobortis scelerisque fermentum dui faucibus in. Condimentum lacinia
+                        </p>
+                    </div>
+                    <div class="row mx-0 mb-30">
+                        <div class="quote">
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#quote"></use>
+                            </svg>
+                            <h6>You’ve got to get up every morning with determination if you’re going to go to bed with
+                                satisfaction.</h6>
+                        </div>
+                    </div>
+                    <div class="row mx-0 mb-30">
+                        <ul class="vertical">
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore
+                            </li>
+                            <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                incididunt ut labore et dolore
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="row mx-0 mb-30">
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing </h4>
+                        <div class="row mb-30">
+                            <div class="col-lg-4">
+                                <img src="../assets/images/news/slider-new-8.png" alt="KKTC">
+                            </div>
+                            <div class="col-lg-8">
+                                <p class="mb-30">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                    tempor
+                                    incididunt ut labore et dolore magna aliqua. Id volutpat lacus laoreet non curabitur
+                                    gravida arcu. Dignissim convallis aenean et </p>
+                                <p>
+                                    tortor at risus viverra adipiscing at. Felis bibendum ut tristique et egestas quis.
+                                    Nunc mattis enim ut tellus elementum. Dignissim diam quis enim lobortis scelerisque
+                                    fermentum dui faucibus in. Condimentum lacinia quis vel eros donec ac odio tempor.
+                                    Duis at tellus at urna condimentum mattis. Id diam maecenas ultricies mi eget mauris
+                                    pharetra et. Senectus et netus et malesuada fames ac turpis. Nisl rhoncus mattis
+                                    rhoncus urna.
+                                </p>
+                            </div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Id volutpat lacus laoreet non curabitur gravida arcu.
+                            Dignissim convallis aenean et
+                            tortor at risus viverra adipiscing at. Felis bibendum ut tristique et egestas quis. Nunc
+                            mattis enim ut tellus elementum. Dignissim diam quis enim lobortis scelerisque fermentum dui
+                            faucibus in. Condimentum lacinia quis vel eros donec ac </p>
+                    </div>
+                </div>
+                <div class="row mx-0 mb-30">
+                    <div class="news-subtitle w-border m-0 mb-30">
+                        <h4>Etiketler</h4>
+                    </div>
+                    <div class="news-page-content">
+                        <div class="tag-list">
+                            <a href="#" class="tag-wrapper empty-button">Ekonomi</a>
+                            <a href="#" class="tag-wrapper empty-button">Ekonomi</a>
+                            <a href="#" class="tag-wrapper empty-button">Ekonomi</a>
+                            <a href="#" class="tag-wrapper empty-button">Ekonomi</a>
+                            <a href="#" class="tag-wrapper empty-button">Ekonomi</a>
+                            <a href="#" class="tag-wrapper empty-button">Ekonomi</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 mb-30">
+                    <div class="news-subtitle w-border m-0 mb-30">
+                        <h4>Paylaş</h4>
+                    </div>
+                    <div class="news-page-content">
+                        <div class="socials-list mb-40">
+                            <a href="#" class="empty-button pink">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#google-plus-logo"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="empty-button blue">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#linkedin-logo"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="empty-button purple">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#instagram-logo"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="empty-button red">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#pinterest-logo"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="empty-button turquise">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#twitter-logo"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="empty-button blue2">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#facebook-logo"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="empty-button red2">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#youtube-logo"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="empty-button green">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#whatsapp-logo"></use>
+                                </svg>
+                            </a>
+                            <a href="#" class="empty-button white">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#more"></use>
+                                </svg>
+                            </a>
+
+                        </div>
+                        <div class="news-subnav">
+                            <div class="row mx-0">
+                                <div class="col-lg-6 subnav-box prev">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/images/news/new-big-3.png" alt="KKTC">
+                                        <div class="mask"></div>
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="text">
+                                        <h6>ÖNCEKİ HABER</h6>
+                                        <h4>Darbeci Hafter’in katliam izleri ortaya çıktı!</h4>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 subnav-box next">
+                                    <div class="img-wrapper">
+                                        <img src="../assets/images/news/new-big-1.png" alt="KKTC">
+                                        <div class="mask"></div>
+                                        <svg class="icon">
+                                            <use href="../assets/icons/sprite.svg#right-angle"></use>
+                                        </svg>
+                                    </div>
+                                    <div class="text">
+                                        <h6>SONRAKİ HABER</h6>
+                                        <h4>Darbeci Hafter’in katliam izleri ortaya çıktı!</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mx-0 mb-30">
+                    <div class="news-subtitle w-border m-0 mb-30">
+                        <h4>Yorumlar (15)</h4>
+                    </div>
+                    <div class="news-page-content">
+                        <div class="comment-list">
+                            <div class="comment-box">
+                                <div class="comment-avatar big"><img src="../assets/images/news/news-avatar.png"
+                                                                     alt="KKTC"></div>
+                                <div class="comment-text">
+                                    <div class="comment-user">
+                                        <h4 class="fs-16 lh-23 color-dark f-bold">Bilal DUMAN</h4>
+                                    </div>
+                                    <p class="fs-14 lh-23">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor velit,
+                                        ultricies
+                                        at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet iaculis
+                                    </p>
+                                    <div class="bottom">
+                                        <span>125 Beğeni</span>
+                                        <div class="right">
+                                            <span>Beğen</span>
+                                            <span>Cevapla</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-box sub">
+                                <div class="comment-avatar big"><img src="../assets/images/news/news-avatar.png"
+                                                                     alt="KKTC"></div>
+                                <div class="comment-text">
+                                    <div class="comment-user">
+                                        <h4 class="fs-16 lh-23 color-dark f-bold">Bilal DUMAN</h4>
+                                    </div>
+                                    <p class="fs-14 lh-23">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor velit,
+                                        ultricies
+                                        at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet iaculis
+                                    </p>
+                                    <div class="bottom">
+                                        <span>125 Beğeni</span>
+                                        <div class="right">
+                                            <span>Beğen</span>
+                                            <span>Cevapla</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-box">
+                                <div class="comment-avatar big"><img src="../assets/images/news/news-avatar.png"
+                                                                     alt="KKTC"></div>
+                                <div class="comment-text">
+                                    <div class="comment-user">
+                                        <h4 class="fs-16 lh-23 color-dark f-bold">Bilal DUMAN</h4>
+                                    </div>
+                                    <p class="fs-14 lh-23">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor velit,
+                                        ultricies
+                                        at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet iaculis
+                                    </p>
+                                    <div class="bottom">
+                                        <span>125 Beğeni</span>
+                                        <div class="right">
+                                            <span>Beğen</span>
+                                            <span>Cevapla</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="comment-box">
+                                <div class="comment-avatar big"><img src="../assets/images/news/news-avatar.png"
+                                                                     alt="KKTC"></div>
+                                <div class="comment-text">
+                                    <div class="comment-user">
+                                        <h4 class="fs-16 lh-23 color-dark f-bold">Bilal DUMAN</h4>
+                                    </div>
+                                    <p class="fs-14 lh-23">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor velit,
+                                        ultricies
+                                        at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet iaculis
+                                    </p>
+                                    <div class="bottom">
+                                        <span>125 Beğeni</span>
+                                        <div class="right">
+                                            <span>Beğen</span>
+                                            <span>Cevapla</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="collapse" id="moreComment">
+                                <div class="comment-box">
+                                    <div class="comment-avatar big"><img src="../assets/images/news/news-avatar.png"
+                                                                         alt="KKTC"></div>
+                                    <div class="comment-text">
+                                        <div class="comment-user">
+                                            <h4 class="fs-16 lh-23 color-dark f-bold">Bilal DUMAN</h4>
+                                        </div>
+                                        <p class="fs-14 lh-23">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor velit,
+                                            ultricies
+                                            at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet iaculis
+                                        </p>
+                                        <div class="bottom">
+                                            <span>125 Beğeni</span>
+                                            <div class="right">
+                                                <span>Beğen</span>
+                                                <span>Cevapla</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-box sub">
+                                    <div class="comment-avatar big"><img src="../assets/images/news/news-avatar.png"
+                                                                         alt="KKTC"></div>
+                                    <div class="comment-text">
+                                        <div class="comment-user">
+                                            <h4 class="fs-16 lh-23 color-dark f-bold">Bilal DUMAN</h4>
+                                        </div>
+                                        <p class="fs-14 lh-23">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor velit,
+                                            ultricies
+                                            at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet iaculis
+                                        </p>
+                                        <div class="bottom">
+                                            <span>125 Beğeni</span>
+                                            <div class="right">
+                                                <span>Beğen</span>
+                                                <span>Cevapla</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-box">
+                                    <div class="comment-avatar big"><img src="../assets/images/news/news-avatar.png"
+                                                                         alt="KKTC"></div>
+                                    <div class="comment-text">
+                                        <div class="comment-user">
+                                            <h4 class="fs-16 lh-23 color-dark f-bold">Bilal DUMAN</h4>
+                                        </div>
+                                        <p class="fs-14 lh-23">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor velit,
+                                            ultricies
+                                            at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet iaculis
+                                        </p>
+                                        <div class="bottom">
+                                            <span>125 Beğeni</span>
+                                            <div class="right">
+                                                <span>Beğen</span>
+                                                <span>Cevapla</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-box">
+                                    <div class="comment-avatar big"><img src="../assets/images/news/news-avatar.png"
+                                                                         alt="KKTC"></div>
+                                    <div class="comment-text">
+                                        <div class="comment-user">
+                                            <h4 class="fs-16 lh-23 color-dark f-bold">Bilal DUMAN</h4>
+                                        </div>
+                                        <p class="fs-14 lh-23">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam dolor velit,
+                                            ultricies
+                                            at vestibulum non,rutrum nec arcu. Etiam tristique, dui sit amet iaculis
+                                        </p>
+                                        <div class="bottom">
+                                            <span>125 Beğeni</span>
+                                            <div class="right">
+                                                <span>Beğen</span>
+                                                <span>Cevapla</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="empty-button more-comment mb-20" type="button" data-toggle="collapse"
+                                data-target="#moreComment" aria-expanded="false" aria-controls="moreComment">
+                            <h6 class="fs-16 color-dark mr-20">
+                                Daha Fazla Yorum Göster
+                            </h6>
+                            <svg class="icon">
+                                <use href="../assets/icons/sprite.svg#down-angle"></use>
+                            </svg>
+                        </button>
+                        <h5 class="f-bold fs-20 lh-35 mb-30">YORUM YAP</h5>
+                        <form action="#">
+                            <div class="row">
+                                <div class="col-lg-12 mb-20">
+                                    <div class="news-custom-input">
+                                        <textarea maxlength="150" placeholder="Yorum yazın..."></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-20">
+                                    <div class="news-custom-input">
+                                        <input type="text" placeholder="İsim">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-20">
+                                    <div class="news-custom-input">
+                                        <input type="text" placeholder="Email">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 mb-20">
+                                    <div class="news-custom-input">
+                                        <input type="text" placeholder="Website">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-9 d-flex align-items-center mb-20">
+                                    <div class="custom-checkbox">
+                                        <label for="checkk">
+                                            Bir sonraki yorumumda adımı, e-postamı ve web sitemi bu tarayıcıya kaydedin.
+                                            <input type="checkbox" name="checkk" id="checkk">
+                                            <span class="checkmark"></span>
+                                        </label>
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 mb-20">
+                                    <button class="main-button huge primary fs-18 f-bold lh-23 justify-content-center w-100">Gönder</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="row mx-0 mb-30">
+                    <div class="news-subtitle m-0 mb-30">
+                        <h4>CORONAVİRÜS</h4>
+                        <a href="#">Daha Fazlası</a>
+                    </div>
+                    <div class="news-page-content">
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <a href="#" class="news-box-type-2">
+                                    <div class="img-wrapper">
+                                        <div class="badgee">ATTACK</div>
+                                        <img src="../assets/images/news/new-sm-5.png" alt="KKTC">
+                                    </div>
+                                    <div class="text">
+                                        <h2>Vienna: Four people killed in terror attack, and
+                                            suspect shot dead</h2>
+                                        <div class="date">
+                                            <span>01.11.2020</span>
+                                            <span>20.10</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="news-box-type-2">
+                                    <div class="img-wrapper">
+                                        <div class="badgee">ATTACK</div>
+                                        <img src="../assets/images/news/new-sm-6.png" alt="KKTC">
+                                    </div>
+                                    <div class="text">
+                                        <h2>Vienna: Four people killed in terror attack, and
+                                            suspect shot dead</h2>
+                                        <div class="date">
+                                            <span>01.11.2020</span>
+                                            <span>20.10</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-4">
+                                <a href="#" class="news-box-type-2">
+                                    <div class="img-wrapper">
+                                        <div class="badgee">ATTACK</div>
+                                        <img src="../assets/images/news/new-sm-7.png" alt="KKTC">
+                                    </div>
+                                    <div class="text">
+                                        <h2>Vienna: Four people killed in terror attack, and
+                                            suspect shot dead</h2>
+                                        <div class="date">
+                                            <span>01.11.2020</span>
+                                            <span>20.10</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="news-sidebar">
+                    <div class="banner-box mb-30">
+                        <img src="../assets/images/news/advertisement-banner.png" alt="KKTC">
+                    </div>
+                    <div class="row mx-0 mb-30">
+                        <div class="news-subtitle m-0 mb-30">
+                            <h4>EN ÇOK GÖRÜNTÜLENEN</h4>
+                        </div>
+                        <div class="news-page-content">
+                            <a href="#" class="news-box-horizontal big">
+                                <img src="../assets/images/news/new-sm-9.png" alt="KKTC">
+                                <div class="text">
+                                    <h6>ATTACK</h6>
+                                    <h2>Vienna: Four people killed in terror attack, and
+                                        suspect shot dead</h2>
+                                    <div class="date">
+                                        <span>01.11.2020</span>
+                                        <span>20.10</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="news-box-horizontal big">
+                                <img src="../assets/images/news/new-sm-10.png" alt="KKTC">
+                                <div class="text">
+                                    <h6>ATTACK</h6>
+                                    <h2>Vienna: Four people killed in terror attack, and
+                                        suspect shot dead</h2>
+                                    <div class="date">
+                                        <span>01.11.2020</span>
+                                        <span>20.10</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="news-box-horizontal big">
+                                <img src="../assets/images/news/new-sm-11.png" alt="KKTC">
+                                <div class="text">
+                                    <h6>ATTACK</h6>
+                                    <h2>Vienna: Four people killed in terror attack, and
+                                        suspect shot dead</h2>
+                                    <div class="date">
+                                        <span>01.11.2020</span>
+                                        <span>20.10</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="news-box-horizontal big">
+                                <img src="../assets/images/news/new-sm-12.png" alt="KKTC">
+                                <div class="text">
+                                    <h6>ATTACK</h6>
+                                    <h2>Vienna: Four people killed in terror attack, and
+                                        suspect shot dead</h2>
+                                    <div class="date">
+                                        <span>01.11.2020</span>
+                                        <span>20.10</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#" class="news-box-horizontal big">
+                                <img src="../assets/images/news/new-sm-9.png" alt="KKTC">
+                                <div class="text">
+                                    <h6>ATTACK</h6>
+                                    <h2>Vienna: Four people killed in terror attack, and
+                                        suspect shot dead</h2>
+                                    <div class="date">
+                                        <span>01.11.2020</span>
+                                        <span>20.10</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="banner-box mb-30">
+                        <img src="../assets/images/news/advertisement-banner.png" alt="KKTC">
+                    </div>
+                    <div class="row mx-0 mb-30">
+                        <ul class="nav nav-pills mb-20" id="side-tab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="side-tab-1" data-toggle="pill" href="#side-content-1"
+                                   role="tab" aria-controls="pills-home" aria-selected="true">
+                                    EN SON
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="side-tab-2" data-toggle="pill" href="#side-content-2" role="tab"
+                                   aria-controls="pills-profile" aria-selected="false">
+                                    POPÜLER
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="side-tab-3" data-toggle="pill" href="#side-content-3" role="tab"
+                                   aria-controls="pills-contact" aria-selected="false">
+                                    YORUMLAR
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="news-page-content">
+                            <div class="tab-content" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="side-content-1" role="tabpanel"
+                                     aria-labelledby="side-tab-1">
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-9.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-10.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-11.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-12.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-9.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade" id="side-content-2" role="tabpanel"
+                                     aria-labelledby="side-tab-2">
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-9.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-10.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-11.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-12.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-9.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="tab-pane fade" id="side-content-3" role="tabpanel"
+                                     aria-labelledby="side-tab-3">
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-9.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-10.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-11.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-12.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="news-box-horizontal big">
+                                        <img src="../assets/images/news/new-sm-9.png" alt="KKTC">
+                                        <div class="text">
+                                            <h6>ATTACK</h6>
+                                            <h2>Vienna: Four people killed in terror attack, and
+                                                suspect shot dead</h2>
+                                            <div class="date">
+                                                <span>01.11.2020</span>
+                                                <span>20.10</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
     </div>
-  </div>
+</div>
 
-  <div id="Footer" class="bg-light">
+<div id="Footer" class="bg-light">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-3 footer-left pr-30">
-          <div class="footer-logo mb-30">
-            <a href="#"><img src="../assets/images/logo-red.svg" alt="KKTC"></a>
-          </div>
-          <p class="fs-14 lh-24 mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nisi nisl.
-            Integer id ex purus. Suspendisse potenti. Cras odio </p>
-          <div class="footer-socials mb-30">
-            <ul class="horizontal">
-              <li>
-                <a href="#">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#whatsapp"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#youtube"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer-payments">
-            <ul class="horizontal">
-              <li>
-                <a href="#">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#mastercard"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#maestro"></use>
-                  </svg>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#visa"></use>
-                  </svg>
-                </a>
-              </li>
+        <div class="row">
+            <div class="col-lg-3 footer-left pr-30">
+                <div class="footer-logo mb-30">
+                    <a href="#"><img src="../assets/images/logo-red.svg" alt="KKTC"></a>
+                </div>
+                <p class="fs-14 lh-24 mb-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In nec nisi nisl.
+                    Integer id ex purus. Suspendisse potenti. Cras odio </p>
+                <div class="footer-socials mb-30">
+                    <ul class="horizontal">
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#whatsapp"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#youtube"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-payments">
+                    <ul class="horizontal">
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#mastercard"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#maestro"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#visa"></use>
+                                </svg>
+                            </a>
+                        </li>
 
-            </ul>
-          </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-9 footer-right">
+                <div class="row m-0">
+                    <div class="footer-menu-col col-lg-4">
+                        <ul class="vertical">
+                            <li class="menu-title fs-16 f-bold">Popüler Haberler</li>
+                            <li>
+                                <a href="#" class="footer-popular-box">
+                                    <img src="../assets/images/news/news-footer-1.png" alt="KKTC">
+                                    <div class="text">
+                                        <h5>ATTACK</h5>
+                                        <h4>Vienna: Four people kiled in fight</h4>
+                                        <span>01.11.2020</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="footer-popular-box">
+                                    <img src="../assets/images/news/news-footer-2.png" alt="KKTC">
+                                    <div class="text">
+                                        <h5>ATTACK</h5>
+                                        <h4>Vienna: Four people kiled in fight</h4>
+                                        <span>01.11.2020</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="footer-popular-box">
+                                    <img src="../assets/images/news/news-footer-3.png" alt="KKTC">
+                                    <div class="text">
+                                        <h5>ATTACK</h5>
+                                        <h4>Vienna: Four people kiled in fight</h4>
+                                        <span>01.11.2020</span>
+                                    </div>
+                                </a>
+                                <a href="#" class="footer-popular-box">
+                                    <img src="../assets/images/news/news-footer-4.png" alt="KKTC">
+                                    <div class="text">
+                                        <h5>ATTACK</h5>
+                                        <h4>Vienna: Four people kiled in fight</h4>
+                                        <span>01.11.2020</span>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-col col-lg">
+                        <ul class="vertical">
+                            <li class="menu-title fs-16 f-bold">Etiketler</li>
+                            <li class="footer-tags">
+                                <a href="#" class="footer-tag">happy</a>
+                                <a href="#" class="footer-tag">photo</a>
+                                <a href="#" class="footer-tag">fener</a>
+                                <a href="#" class="footer-tag">haber</a>
+                                <a href="#" class="footer-tag">türkiye</a>
+                                <a href="#" class="footer-tag">ankara</a>
+                                <a href="#" class="footer-tag">happy</a>
+                                <a href="#" class="footer-tag">photo</a>
+                                <a href="#" class="footer-tag">fener</a>
+                                <a href="#" class="footer-tag">haber</a>
+                                <a href="#" class="footer-tag">türkiye</a>
+                                <a href="#" class="footer-tag">ankara</a>
+                                <a href="#" class="footer-tag">fener</a>
+                                <a href="#" class="footer-tag">ankara</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-col col-lg footer-categories">
+                        <ul class="vertical">
+                            <li class="menu-title fs-16 f-bold">Popüler Kategoriler</li>
+                            <li><a href="#">HABER <span>12</span></a></li>
+                            <li><a href="#">SON DAKİKA <span>44</span></a></li>
+                            <li><a href="#">KORONAVİRÜS <span>41</span></a></li>
+                            <li><a href="#">MAGAZİN <span>32</span></a></li>
+                            <li><a href="#">SPOR <span>65</span></a></li>
+                            <li><a href="#">EKONOMİ <span>78</span></a></li>
+                            <li><a href="#">EĞİTİM <span>95</span></a></li>
+                            <li><a href="#">POLİTİKA <span>13</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-menu-col mobile-apps col-lg">
+                        <ul class="vertical">
+                            <li class="menu-title fs-16 f-bold">Mobil Uygulamalar</li>
+                            <li><a href="#"><img src="../assets/images/mobile-apps/play-store.png" alt="KKTC"></a></li>
+                            <li><a href="#"><img src="../assets/images/mobile-apps/app-store.png" alt="KKTC"></a></li>
+                            <li class="contact-information">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#phone-call-circled"></use>
+                                </svg>
+                                <div class="d-flex flex-column">
+                                    <h6>7/24 Müşteri Hizmetleri</h6>
+                                    <h4> 0850 222 99 99</h4>
+                                </div>
+                            </li>
+                            <li class="contact-information">
+                                <svg class="icon">
+                                    <use href="../assets/icons/sprite.svg#information"></use>
+                                </svg>
+                                <div class="d-flex flex-column">
+                                    <h6>Yardım Merkezi</h6>
+                                    <h4>yardim.kktc.com</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-lg-9 footer-right">
-          <div class="row m-0">
-            <div class="footer-menu-col col-lg-4">
-              <ul class="vertical">
-                <li class="menu-title fs-16 f-bold">Popüler Haberler</li>
-                <li>
-                  <a href="#" class="footer-popular-box">
-                    <img src="../assets/images/news/news-footer-1.png" alt="KKTC">
-                    <div class="text">
-                      <h5>ATTACK</h5>
-                      <h4>Vienna: Four people kiled in fight</h4>
-                      <span>01.11.2020</span>
-                    </div>
-                  </a>
-                  <a href="#" class="footer-popular-box">
-                    <img src="../assets/images/news/news-footer-2.png" alt="KKTC">
-                    <div class="text">
-                      <h5>ATTACK</h5>
-                      <h4>Vienna: Four people kiled in fight</h4>
-                      <span>01.11.2020</span>
-                    </div>
-                  </a>
-                  <a href="#" class="footer-popular-box">
-                    <img src="../assets/images/news/news-footer-3.png" alt="KKTC">
-                    <div class="text">
-                      <h5>ATTACK</h5>
-                      <h4>Vienna: Four people kiled in fight</h4>
-                      <span>01.11.2020</span>
-                    </div>
-                  </a>
-                  <a href="#" class="footer-popular-box">
-                    <img src="../assets/images/news/news-footer-4.png" alt="KKTC">
-                    <div class="text">
-                      <h5>ATTACK</h5>
-                      <h4>Vienna: Four people kiled in fight</h4>
-                      <span>01.11.2020</span>
-                    </div>
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-menu-col col-lg">
-              <ul class="vertical">
-                <li class="menu-title fs-16 f-bold">Etiketler</li>
-                <li class="footer-tags">
-                  <a href="#" class="footer-tag">happy</a>
-                  <a href="#" class="footer-tag">photo</a>
-                  <a href="#" class="footer-tag">fener</a>
-                  <a href="#" class="footer-tag">haber</a>
-                  <a href="#" class="footer-tag">türkiye</a>
-                  <a href="#" class="footer-tag">ankara</a>
-                  <a href="#" class="footer-tag">happy</a>
-                  <a href="#" class="footer-tag">photo</a>
-                  <a href="#" class="footer-tag">fener</a>
-                  <a href="#" class="footer-tag">haber</a>
-                  <a href="#" class="footer-tag">türkiye</a>
-                  <a href="#" class="footer-tag">ankara</a>
-                  <a href="#" class="footer-tag">fener</a>
-                  <a href="#" class="footer-tag">ankara</a>
-                </li>
-              </ul>
-            </div>
-            <div class="footer-menu-col col-lg footer-categories">
-              <ul class="vertical">
-                <li class="menu-title fs-16 f-bold">Popüler Kategoriler</li>
-                <li><a href="#">HABER <span>12</span></a></li>
-                <li><a href="#">SON DAKİKA <span>44</span></a></li>
-                <li><a href="#">KORONAVİRÜS <span>41</span></a></li>
-                <li><a href="#">MAGAZİN <span>32</span></a></li>
-                <li><a href="#">SPOR <span>65</span></a></li>
-                <li><a href="#">EKONOMİ <span>78</span></a></li>
-                <li><a href="#">EĞİTİM <span>95</span></a></li>
-                <li><a href="#">POLİTİKA <span>13</span></a></li>
-              </ul>
-            </div>
-            <div class="footer-menu-col mobile-apps col-lg">
-              <ul class="vertical">
-                <li class="menu-title fs-16 f-bold">Mobil Uygulamalar</li>
-                <li><a href="#"><img src="../assets/images/mobile-apps/play-store.png" alt="KKTC"></a></li>
-                <li><a href="#"><img src="../assets/images/mobile-apps/app-store.png" alt="KKTC"></a></li>
-                <li class="contact-information">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#phone-call-circled"></use>
-                  </svg>
-                  <div class="d-flex flex-column">
-                    <h6>7/24 Müşteri Hizmetleri</h6>
-                    <h4> 0850 222 99 99</h4>
-                  </div>
-                </li>
-                <li class="contact-information">
-                  <svg class="icon">
-                    <use href="../assets/icons/sprite.svg#information"></use>
-                  </svg>
-                  <div class="d-flex flex-column">
-                    <h6>Yardım Merkezi</h6>
-                    <h4>yardim.kktc.com</h4>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     <div class="row footer-bottom-menu">
-      <div class="container">
-        <ul class="horizontal">
-          <li><a href="#">SSS</a></li>
-          <li><a href="#">Yardım Merkezi</a></li>
-          <li><a href="#">Bize Ulaşın</a></li>
-          <li><a href="#">Sorumluluk Reddi</a></li>
-          <li><a href="#">Hizmet Şartları</a></li>
-          <li><a href="#">Gizlilik Politikası</a></li>
-        </ul>
-      </div>
-      <div class="row mx-0">
-        <div class="copyright text-center">
-          <p class="fs-14 lh-21 mt-20 mb-20">KKTC.COM | All rights reserved 2020</p>
+        <div class="container">
+            <ul class="horizontal">
+                <li><a href="#">SSS</a></li>
+                <li><a href="#">Yardım Merkezi</a></li>
+                <li><a href="#">Bize Ulaşın</a></li>
+                <li><a href="#">Sorumluluk Reddi</a></li>
+                <li><a href="#">Hizmet Şartları</a></li>
+                <li><a href="#">Gizlilik Politikası</a></li>
+            </ul>
         </div>
-      </div>
+        <div class="row mx-0">
+            <div class="copyright text-center">
+                <p class="fs-14 lh-21 mt-20 mb-20">KKTC.COM | All rights reserved 2020</p>
+            </div>
+        </div>
     </div>
-  </div>
+</div>
 
+<script>
+    function playClosestVideo(e) {
+        const video = document.getElementById("news-video-1");
+        video.play();
+        e.classList.add("d-none");
+    }
 
+</script>
 </body>
 
 </html>

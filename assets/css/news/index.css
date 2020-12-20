@@ -228,6 +228,7 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
 }
+
 .news-box-type-2 .img-wrapper,
 .news-box-type-2 img {
     height: 100%;
@@ -878,6 +879,547 @@
     height: 184px;
 }
 
+.news-detail-subheader {
+    height: 340px;
+    width: 100%;
+    position: relative;
+}
+
+.news-detail-subheader .img-wrapper {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.news-detail-subheader .img-wrapper .mask {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.news-detail-subheader .img-wrapper img {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.news-detail-subheader .text-wrapper {
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 43px;
+}
+
+.news-detail-subheader .badgee {
+    background: #F8F8F8;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 18px;
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    color: #023047;
+}
+
+.news-detail-subheader h1 {
+    font-family: 'Proxima Nova Bo', sans-serif;
+    font-size: 34px;
+    line-height: 38px;
+    color: #fff;
+    max-width: 60%;
+    margin-bottom: 10px;
+    border-left: 3px solid #E63946;
+    padding-left: 12px;
+}
+
+.news-detail-subheader span {
+    font-size: 16px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, .5);
+}
+
+.news-detail-subheader .bottom {
+    padding-top: 20px;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.news-detail-subheader .socials {
+    display: flex;
+    align-items: center;
+    padding-left: 40px;
+}
+
+.news-detail-subheader .socials button {
+    background: rgb(26, 26, 26);
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    transition: all .3s;
+}
+
+.news-detail-subheader .socials .icon {
+    width: 13px;
+    max-height: 13px;
+    fill: #ffffff;
+}
+
+.news-detail-subheader .socials button:hover {
+    background: #E63946;
+}
+
+.detail-text-wrapper .video-wrapper {
+    height: 200px;
+    position: relative;
+}
+
+.detail-text-wrapper .video-trigger {
+    cursor: pointer;
+}
+
+.detail-text-wrapper .video-trigger .img-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+.detail-text-wrapper .video-trigger .play-button {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-text-wrapper .video-trigger img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.detail-text-wrapper .video-trigger .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(2, 48, 71, .5);
+}
+
+.detail-text-wrapper .video-trigger .play-button .icon {
+    width: 45px;
+    height: 45px;
+    fill: #ffffff;
+    transition: all .3s;
+}
+
+.detail-text-wrapper .video-trigger + video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    object-fit: cover;
+}
+
+.detail-text-wrapper .video-trigger:hover .icon {
+    fill: #E63946;
+}
+
+.detail-text-wrapper p {
+    font-size: 16px;
+    line-height: 35px;
+}
+
+.detail-text-wrapper h4 {
+    font-size: 24px;
+    line-height: 35px;
+    margin-bottom: 30px;
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.detail-text-wrapper .quote {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    border-left: 8px solid #E63946;
+    padding-right: 40px;
+}
+
+.detail-text-wrapper .icon {
+    width: 50px;
+    max-height: 45px;
+    fill: #E63946;
+    margin-bottom: 10px;
+}
+
+.detail-text-wrapper h6 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.detail-text-wrapper ul li {
+    font-size: 16px;
+    line-height: 35px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.detail-text-wrapper ul li:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 8px;
+    background: #023047;
+    border-radius: 50%;
+}
+
+.news-subtitle.w-border {
+    position: relative;
+}
+
+.news-subtitle.w-border h4 {
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.news-subtitle.w-border:after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: rgba(2, 48, 71, .1);
+    margin-left: 20px;
+}
+
+.socials-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -10px;
+}
+
+.socials-list .empty-button {
+    width: 56px;
+    height: 56px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s;
+}
+
+.socials-list .empty-button .icon {
+    width: 22px;
+    height: 22px;
+    fill: #ffffff;
+}
+
+.socials-list .empty-button.pink {
+    background: #EC6161;
+}
+
+.socials-list .empty-button.red {
+    background: #E63946;
+}
+
+.socials-list .empty-button.blue {
+    background: #336CF1;
+}
+
+.socials-list .empty-button.purple {
+    background: #6930C3;
+}
+
+.socials-list .empty-button.red {
+    background: #EC6161;
+}
+
+.socials-list .empty-button.turquise {
+    background: #00ACFF;
+}
+
+.socials-list .empty-button.blue2 {
+    background: #3A86FF;
+}
+
+.socials-list .empty-button.red2 {
+    background: #E5383B;
+}
+
+.socials-list .empty-button.green {
+    background: #38E55B;
+}
+
+.socials-list .empty-button.white {
+    background: #FFFFFF;
+}
+
+.socials-list .empty-button.white .icon {
+    fill: #023047;
+}
+
+.socials-list .empty-button:hover {
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .5);
+}
+
+.detail-page .tag-list .tag-wrapper {
+    border: 1px solid rgba(2, 48, 71, .1);
+    background: transparent;
+    height: 40px;
+    padding: 0 25px;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.detail-page .tag-list .tag-wrapper:hover {
+    background: rgba(2, 48, 71, .1);
+}
+
+.detail-page .tag-list {
+    margin: -10px;
+}
+
+.news-subnav {
+    cursor: pointer;
+}
+
+.news-subnav .img-wrapper {
+    position: relative;
+    width: 77px;
+}
+
+.news-subnav .img-wrapper img {
+    width: 77px;
+    height: 113px;
+    object-fit: cover;
+    border-radius: 0 180px 180px 0;
+}
+
+.news-subnav .img-wrapper .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0 180px 180px 0;
+    background: rgba(2, 48, 71, .5);
+    z-index: 3;
+    transition: all .3s;
+}
+
+.news-subnav .img-wrapper:hover .mask {
+    opacity: 0;
+}
+
+.news-subnav .img-wrapper .icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    fill: #ffffff;
+    z-index: 4;
+    width: 15px;
+    height: 28px;
+}
+
+.news-subnav .prev .img-wrapper .icon {
+    transform: translateY(-50%) translateX(-50%) rotate(180deg);
+}
+
+.news-subnav .text {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.news-subnav .text h6 {
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.news-subnav .text h4 {
+    font-family: 'Proxima Nova Sb', sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.news-subnav .subnav-box {
+    border: 1px solid rgba(2, 48, 71, .1);
+    display: flex;
+    align-items: center;
+    padding: 0;
+    transition: all .3s;
+}
+
+.news-subnav .subnav-box:hover {
+    background: rgba(2, 48, 71, .1);
+}
+
+.news-subnav .subnav-box.prev {
+    border-right: 0;
+}
+
+.news-subnav .subnav-box.next {
+    flex-direction: row-reverse;
+}
+
+.news-subnav .subnav-box.next .img-wrapper .mask,
+.news-subnav .subnav-box.next .img-wrapper img {
+    border-radius: 180px 0 0 180px;
+}
+
+.news .comment-list {
+    max-height: 550px;
+    overflow-y: auto;
+}
+
+.news .comment-list::-webkit-scrollbar-thumb,
+.news .comment-list ::-webkit-scrollbar-thumb {
+    background: rgba(2, 48, 71, .3);
+}
+
+.news .comment-box {
+    padding: 13px 0;
+}
+
+.comment-avatar.big img {
+    width: 77px;
+    height: 77px;
+}
+
+.news .comment-box .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.news .comment-box .bottom span {
+    font-size: 12px;
+    line-height: 36px;
+    cursor: pointer;
+}
+
+.news .comment-box.sub {
+    padding-left: 100px;
+}
+
+.news .comment-box .bottom span:hover {
+    font-family: 'Proxima Nova Bo', sans-serif;
+}
+
+.news .comment-box .bottom .right span {
+    margin-left: 15px;
+}
+
+.news-custom-input input,
+.news-custom-input textarea {
+    width: 100%;
+    border: 1px solid rgba(2, 48, 71, .1);
+    font-size: 16px;
+    padding: 20px;
+    background: transparent;
+}
+
+.news-custom-input input {
+    height: 48px;
+}
+
+.news-custom-input textarea {
+    height: 150px;
+}
+
+.news-custom-input input::placeholder {
+    color: rgba(2, 48, 71, .5);
+}
+
+.news .custom-checkbox input {
+    width: 20px;
+    height: 20px;
+}
+
+.news .custom-checkbox label {
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 40px;
+}
+
+.news .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.news .custom-checkbox .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #ffff;
+    border: 1px solid #023047;
+}
+
+
+.news .custom-checkbox:hover input ~ .checkmark {
+    background-color: rgba(230, 57, 70, .5);
+}
+
+.news .custom-checkbox input:checked ~ .checkmark {
+    background-color: #E63946;
+}
+
+.news .custom-checkbox:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.news .custom-checkbox input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.news .custom-checkbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
 @media only screen and (max-width: 992px) {
     .news .header-main-right {
         min-width: 80%;
@@ -916,6 +1458,11 @@
     .news-tags ul li {
         width: calc(100% / 3);
         justify-content: flex-start;
+    }
+
+    .news-detail-subheader h1 {
+        max-width: 100%;
+        font-size: 26px;
     }
 }
 
