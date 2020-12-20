@@ -1424,6 +1424,26 @@
     transform: rotate(45deg);
 }
 
+.news-box-type-1.captioned .text {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 53px;
+    background: rgba(22, 25, 34, .8);
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.news-box-type-1.captioned:hover .text {
+    background: rgba(22, 25, 34, 1);
+}
+
+.news-box-type-1.captioned p {
+    color: #ffffff;
+}
+
 @media only screen and (max-width: 992px) {
     .news .header-main-right {
         min-width: 80%;
