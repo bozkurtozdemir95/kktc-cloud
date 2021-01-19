@@ -37,6 +37,8 @@
 @import "game/index.css";
 /** News css files **/
 @import "news/index.css";
+/** Guide css files **/
+@import "guide/index.css";
 
 ::-webkit-scrollbar {
     width: 5px;
@@ -1006,6 +1008,11 @@ button.no-anim {
     background: #FFC107;
 }
 
+.yellow2 .form-button.primary {
+    background: #FFC107;
+    color: #023047;
+}
+
 .red .form-button.primary {
     background: #E63946;
 }
@@ -1206,6 +1213,10 @@ button.no-anim {
     fill: #ffffff;
 }
 
+.yellow2 .main-button.primary .icon {
+    fill: #023047;
+}
+
 .purple .main-button.primary {
     background: #4866FC;
     border-color: #4866FC;
@@ -1229,6 +1240,12 @@ button.no-anim {
 .yellow .main-button.primary {
     background: #FFC107;
     border-color: #FFC107;
+}
+
+.yellow2 .main-button.primary {
+    background: #FFC107;
+    border-color: #FFC107;
+    color: #023047;
 }
 
 .red .main-button.primary {
