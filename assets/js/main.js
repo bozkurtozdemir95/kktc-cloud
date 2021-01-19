@@ -408,6 +408,41 @@ $(function () {
         autoplay: true,
         autoplaySpeed: 3000,
     });
+    $('.guide-slider').slick({
+        dots: false,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        draggable: true,
+        swipeToSlide: true,
+        arrows: true,
+        prevArrow: "<div class='guide-slider-nav prev'><svg class='prev'><use href='../assets/icons/sprite.svg#right-angle'></use></svg></div>",
+        nextArrow: "<div class='guide-slider-nav next'><svg class='next'><use href='../assets/icons/sprite.svg#right-angle'></use></svg></div>",
+        autoplay: true,
+        autoplaySpeed: 3000,
+        responsive: [
+            {
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            },
+        ]
+    });
     $('.news-slider').slick({
         dots: false,
         slidesToShow: 7,
